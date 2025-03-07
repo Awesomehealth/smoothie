@@ -1,8 +1,10 @@
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
 import FilterRow from "@/components/search/FilterRow";
 import DietaryToggle from "@/components/search/DietaryToggle";
+import SmartSearch from "@/components/search/SmartSearch";
 import { 
   proteinOptions, 
   dietOptions, 
@@ -11,6 +13,7 @@ import {
   fatAmounts, 
   calorieRanges 
 } from "@/data/smoothies";
+import { toast } from "@/components/ui/use-toast";
 
 interface SearchSectionProps {
   onSearch: (query: string) => void;
@@ -27,6 +30,8 @@ const SearchSection = ({
   onDietaryToggle,
   showAdvancedSearch
 }: SearchSectionProps) => {
+  const [showSmartSuggestions, setShowSmartSuggestions] = useState(false);
+
   const handleFilterSelect = (filterType: string, value: string) => {
     if (onFilterSelect) {
       onFilterSelect(filterType, value);
@@ -37,6 +42,43 @@ const SearchSection = ({
     if (onDietaryToggle) {
       onDietaryToggle(preference, isChecked);
     }
+  };
+
+  const handleSearch = (query: string) => {
+    if (query.startsWith("smart:")) {
+      toast({
+        title: "AI-Powered Search",
+        description: "Finding the perfect smoothie match for you...",
+        duration: 3000,
+      });
+      
+      // Remove the smart: prefix before passing to the search handler
+      onSearch(query.substring(6));
+    } else {
+      onSearch(query);
+    }
+    
+    // Show smart suggestions after search
+    setShowSmartSuggestions(true);
+  };
+
+  const handleUrlSubmit = (url: string) => {
+    toast({
+      title: "Recipe Extraction",
+      description: `Extracting smoothie recipe from ${url}`,
+      duration: 3000,
+    });
+    
+    // Simulate processing a URL
+    console.log("Processing URL:", url);
+    
+    // Here we would typically call an API to extract recipe data
+    // For now, we'll just perform a regular search with a prefix
+    onSearch(`url:${url}`);
+  };
+
+  const handleSuggestionSelect = (suggestion: string) => {
+    onSearch(suggestion);
   };
 
   const allFilters = [
@@ -87,9 +129,19 @@ const SearchSection = ({
           delicious, nutritious smoothie recipes tailored just for your goals
         </p>
         
-        <div className="w-full max-w-2xl mx-auto mb-8">
-          <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} placeholder="Ask anything..." />
+        <div className="w-full max-w-2xl mx-auto mb-6">
+          <SearchBar 
+            onSearch={handleSearch} 
+            onImageUpload={onImageUpload} 
+            onUrlSubmit={handleUrlSubmit}
+            placeholder="Search smoothies, ingredients, or nutritional goals..." 
+          />
         </div>
+        
+        {/* Smart Search Suggestions */}
+        {showSmartSuggestions && (
+          <SmartSearch onSuggestionSelect={handleSuggestionSelect} />
+        )}
         
         {/* Advanced Search Options - controlled by sidebar toggle */}
         {showAdvancedSearch && (

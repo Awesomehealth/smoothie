@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import SearchSection from "@/components/sections/SearchSection";
 import Footer from "@/components/sections/Footer";
@@ -34,12 +33,21 @@ const Index = () => {
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     console.log("Search query:", query);
+    
+    if (query.startsWith("url:")) {
+      // Handle URL-based search
+      const url = query.substring(4);
+      toast({
+        title: "Recipe Extracted",
+        description: `We've analyzed the recipe from ${url}`,
+        duration: 5000,
+      });
+    }
   };
 
   const handleImageUpload = (file: File) => {
     console.log("Image uploaded:", file.name);
     // In a real application, you would process the image here
-    // For now, we'll just show a toast notification
     toast({
       title: "Image Uploaded",
       description: `We'll analyze ${file.name} and suggest matching smoothie recipes.`,
@@ -81,13 +89,21 @@ const Index = () => {
     let result = [...smoothies];
 
     if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      result = result.filter(
-        (smoothie) =>
-          smoothie.name.toLowerCase().includes(query) ||
-          smoothie.description.toLowerCase().includes(query) ||
-          smoothie.ingredients.some((ingredient) => ingredient.toLowerCase().includes(query))
-      );
+      // Handle special prefixed queries
+      if (searchQuery.startsWith("url:")) {
+        // For URL searches, we'd normally fetch data from an API
+        // For now, just use random smoothies as a demo
+        result = [...smoothies].sort(() => 0.5 - Math.random()).slice(0, 2);
+      } else {
+        // Regular text search
+        const query = searchQuery.toLowerCase();
+        result = result.filter(
+          (smoothie) =>
+            smoothie.name.toLowerCase().includes(query) ||
+            smoothie.description.toLowerCase().includes(query) ||
+            smoothie.ingredients.some((ingredient) => ingredient.toLowerCase().includes(query))
+        );
+      }
     }
 
     if (selectedCategory) {
@@ -96,11 +112,15 @@ const Index = () => {
       );
     }
 
-    if (filters.proteinType) {
-      result = result.filter((smoothie) => 
-        smoothie.proteinType.includes(filters.proteinType as any)
-      );
-    }
+    Object.entries(filters).forEach(([key, value]) => {
+      if (value) {
+        if (key === "proteinType") {
+          result = result.filter((smoothie) => 
+            smoothie.proteinType.includes(value as any)
+          );
+        }
+      }
+    });
 
     Object.entries(dietaryPreferences).forEach(([key, isSelected]) => {
       if (isSelected) {
