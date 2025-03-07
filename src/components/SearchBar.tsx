@@ -13,7 +13,7 @@ const SearchBar = ({
   onSearch, 
   onImageUpload, 
   onUrlSubmit,
-  placeholder = "Ask anything..." 
+  placeholder = "What are you in mood for?" 
 }: SearchBarProps) => {
   const [query, setQuery] = useState("");
   const [isUrlInputVisible, setIsUrlInputVisible] = useState(false);
@@ -67,49 +67,56 @@ const SearchBar = ({
         {!isUrlInputVisible && (
           <div className="relative">
             <div className="search-input-container">
-              <input
-                ref={queryInputRef}
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder={placeholder}
-                className="search-input-integrated"
-                aria-label="Search for smoothie recipes"
-              />
-              
-              <div className="search-actions-integrated">
-                {onImageUpload && (
-                  <button 
-                    type="button" 
-                    onClick={handleImageClick} 
-                    className="search-icon-button"
-                    aria-label="Attach image"
-                  >
-                    <Paperclip className="h-5 w-5" />
-                    <span className="text-sm ml-2">Attach</span>
-                  </button>
-                )}
+              <div className="flex items-center">
+                {/* Left side buttons */}
+                <div className="flex items-center px-4">
+                  {onImageUpload && (
+                    <button 
+                      type="button" 
+                      onClick={handleImageClick} 
+                      className="search-icon-button mr-2"
+                      aria-label="Attach image"
+                    >
+                      <Paperclip className="h-5 w-5" />
+                      <span className="text-sm ml-2">Attach</span>
+                    </button>
+                  )}
+                  
+                  {onUrlSubmit && (
+                    <button 
+                      type="button" 
+                      onClick={toggleUrlInput}
+                      className="search-icon-button"
+                      aria-label="Import from URL"
+                    >
+                      <FileSymlink className="h-5 w-5" />
+                      <span className="text-sm ml-2">Import</span>
+                    </button>
+                  )}
+                </div>
+
+                {/* Search input */}
+                <input
+                  ref={queryInputRef}
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder={placeholder}
+                  className="search-input-integrated flex-grow"
+                  aria-label="Search for smoothie recipes"
+                />
                 
-                {onUrlSubmit && (
-                  <button 
-                    type="button" 
-                    onClick={toggleUrlInput}
-                    className="search-icon-button"
-                    aria-label="Import from URL"
+                {/* Right side search button */}
+                <div className="flex items-center px-4">
+                  <button
+                    type="submit"
+                    className="search-icon-button search-button"
+                    aria-label="Search"
                   >
-                    <FileSymlink className="h-5 w-5" />
-                    <span className="text-sm ml-2">Import</span>
+                    <Search className="h-5 w-5" />
+                    <span className="text-sm ml-2">Search</span>
                   </button>
-                )}
-                
-                <button
-                  type="submit"
-                  className="search-icon-button search-button"
-                  aria-label="Search"
-                >
-                  <Search className="h-5 w-5" />
-                  <span className="text-sm ml-2">Search</span>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -119,35 +126,42 @@ const SearchBar = ({
         {isUrlInputVisible && (
           <div className="relative">
             <div className="search-input-container">
-              <input
-                id="smoothie-url-input"
-                type="url"
-                value={url}
-                onChange={(e) => setUrl(e.target.value)}
-                placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
-                className="search-input-integrated"
-                aria-label="Enter URL for recipe extraction"
-              />
-              
-              <div className="search-actions-integrated">
-                <button 
-                  type="button" 
-                  onClick={toggleUrlInput}
-                  className="search-icon-button"
-                  aria-label="Back to text search"
-                >
-                  <Search className="h-5 w-5" />
-                  <span className="text-sm ml-2">Back</span>
-                </button>
+              <div className="flex items-center">
+                {/* Left side back button */}
+                <div className="flex items-center px-4">
+                  <button 
+                    type="button" 
+                    onClick={toggleUrlInput}
+                    className="search-icon-button"
+                    aria-label="Back to text search"
+                  >
+                    <Search className="h-5 w-5" />
+                    <span className="text-sm ml-2">Back</span>
+                  </button>
+                </div>
+
+                {/* URL input */}
+                <input
+                  id="smoothie-url-input"
+                  type="url"
+                  value={url}
+                  onChange={(e) => setUrl(e.target.value)}
+                  placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
+                  className="search-input-integrated flex-grow"
+                  aria-label="Enter URL for recipe extraction"
+                />
                 
-                <button 
-                  type="submit"
-                  className="search-icon-button search-button"
-                  aria-label="Extract recipe from URL"
-                >
-                  <FileSymlink className="h-5 w-5" />
-                  <span className="text-sm ml-2">Import</span>
-                </button>
+                {/* Right side import button */}
+                <div className="flex items-center px-4">
+                  <button 
+                    type="submit"
+                    className="search-icon-button search-button"
+                    aria-label="Extract recipe from URL"
+                  >
+                    <FileSymlink className="h-5 w-5" />
+                    <span className="text-sm ml-2">Import</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
