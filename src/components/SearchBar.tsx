@@ -1,6 +1,6 @@
 
 import { useState, useRef } from "react";
-import { Search, Image, ArrowUp, X, Paperclip, FileSymlink, ClipboardList, Globe } from "lucide-react";
+import { Search, Paperclip, FileSymlink } from "lucide-react";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -60,35 +60,57 @@ const SearchBar = ({
     }
   };
 
-  const handleSmartSearch = () => {
-    if (query.trim()) {
-      onSearch(`smart:${query}`);
-    }
-  };
-
   return (
     <div className="w-full mx-auto">
-      <form onSubmit={handleSubmit} className="relative flex flex-col gap-4">
-        {/* Main Search Input */}
+      <form onSubmit={handleSubmit} className="relative">
+        {/* Main Search Input with Integrated Icons */}
         {!isUrlInputVisible && (
           <div className="relative">
-            <input
-              ref={queryInputRef}
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder={placeholder}
-              className="search-input"
-              aria-label="Search for smoothie recipes"
-            />
-            <div className="absolute right-2 top-1/2 -translate-y-1/2">
-              <button
-                type="submit"
-                className="flex items-center justify-center h-10 w-10 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700"
-                aria-label="Search"
-              >
-                <ArrowUp className="h-5 w-5" />
-              </button>
+            <div className="search-input-container">
+              <input
+                ref={queryInputRef}
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder={placeholder}
+                className="search-input-integrated"
+                aria-label="Search for smoothie recipes"
+              />
+              
+              <div className="search-actions-integrated">
+                {onImageUpload && (
+                  <button 
+                    type="button" 
+                    onClick={handleImageClick} 
+                    className="search-icon-button"
+                    aria-label="Attach image"
+                  >
+                    <Paperclip className="h-5 w-5" />
+                    <span className="text-sm ml-2">Attach</span>
+                  </button>
+                )}
+                
+                {onUrlSubmit && (
+                  <button 
+                    type="button" 
+                    onClick={toggleUrlInput}
+                    className="search-icon-button"
+                    aria-label="Import from URL"
+                  >
+                    <FileSymlink className="h-5 w-5" />
+                    <span className="text-sm ml-2">Import</span>
+                  </button>
+                )}
+                
+                <button
+                  type="submit"
+                  className="search-icon-button search-button"
+                  aria-label="Search"
+                >
+                  <Search className="h-5 w-5" />
+                  <span className="text-sm ml-2">Search</span>
+                </button>
+              </div>
             </div>
           </div>
         )}
@@ -96,79 +118,38 @@ const SearchBar = ({
         {/* URL Input (Toggle View) */}
         {isUrlInputVisible && (
           <div className="relative">
-            <input
-              id="smoothie-url-input"
-              type="url"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
-              className="search-input"
-              aria-label="Enter URL for recipe extraction"
-            />
-            <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-2">
-              <button 
-                type="button" 
-                onClick={toggleUrlInput} 
-                className="flex items-center justify-center h-10 w-10 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700"
-                aria-label="Back to text search"
-              >
-                <X className="h-5 w-5" />
-              </button>
-              <button 
-                type="submit" 
-                className="flex items-center justify-center h-10 w-10 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700"
-                aria-label="Extract recipe from URL"
-              >
-                <ArrowUp className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        )}
-
-        {/* Action Buttons Row */}
-        {!isUrlInputVisible && (
-          <div className="flex justify-between">
-            <div className="flex gap-4">
-              {onImageUpload && (
+            <div className="search-input-container">
+              <input
+                id="smoothie-url-input"
+                type="url"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
+                className="search-input-integrated"
+                aria-label="Enter URL for recipe extraction"
+              />
+              
+              <div className="search-actions-integrated">
                 <button 
                   type="button" 
-                  onClick={handleImageClick} 
-                  className="search-action-button"
-                  aria-label="Attach image"
+                  onClick={toggleUrlInput}
+                  className="search-icon-button"
+                  aria-label="Back to text search"
                 >
-                  <Paperclip className="h-5 w-5" />
-                  <span className="ml-2">Attach</span>
+                  <Search className="h-5 w-5" />
+                  <span className="text-sm ml-2">Back</span>
                 </button>
-              )}
-              {onUrlSubmit && (
+                
                 <button 
-                  type="button" 
-                  onClick={toggleUrlInput} 
-                  className="search-action-button"
-                  aria-label="Import from URL"
+                  type="submit"
+                  className="search-icon-button search-button"
+                  aria-label="Extract recipe from URL"
                 >
                   <FileSymlink className="h-5 w-5" />
-                  <span className="ml-2">Import</span>
+                  <span className="text-sm ml-2">Import</span>
                 </button>
-              )}
-              <button 
-                type="button" 
-                onClick={handleSmartSearch}
-                className="search-action-button"
-                aria-label="AI Smart Search"
-              >
-                <ClipboardList className="h-5 w-5" />
-                <span className="ml-2">Plan</span>
-              </button>
+              </div>
             </div>
-            <button 
-              type="button"
-              className="search-action-button"
-              aria-label="Public"
-            >
-              <Globe className="h-5 w-5" />
-              <span className="ml-2">Public</span>
-            </button>
           </div>
         )}
 

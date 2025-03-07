@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
@@ -45,18 +44,7 @@ const SearchSection = ({
   };
 
   const handleSearch = (query: string) => {
-    if (query.startsWith("smart:")) {
-      toast({
-        title: "AI-Powered Search",
-        description: "Finding the perfect smoothie match for you...",
-        duration: 3000,
-      });
-      
-      // Remove the smart: prefix before passing to the search handler
-      onSearch(query.substring(6));
-    } else {
-      onSearch(query);
-    }
+    onSearch(query);
     
     // Show smart suggestions after search
     setShowSmartSuggestions(true);
@@ -138,7 +126,7 @@ const SearchSection = ({
           />
         </div>
         
-        {/* Smart Search Suggestions */}
+        {/* Smart Search Suggestions - keep the component for future use */}
         {showSmartSuggestions && (
           <SmartSearch onSuggestionSelect={handleSuggestionSelect} />
         )}

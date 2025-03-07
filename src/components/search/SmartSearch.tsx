@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Sparkles, Info, ArrowUp } from "lucide-react";
+import { Info } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface SmartSearchProps {
@@ -10,12 +10,7 @@ interface SmartSearchProps {
 const SmartSearch = ({ onSuggestionSelect }: SmartSearchProps) => {
   const [showInfo, setShowInfo] = useState(false);
   
-  const suggestions = [
-    "Hacker News top 100",
-    "Slidev presentation",
-    "Expense tracker",
-    "Recharts dashboard",
-  ];
+  // Removed the suggestions array and buttons
 
   return (
     <motion.div 
@@ -33,24 +28,10 @@ const SmartSearch = ({ onSuggestionSelect }: SmartSearchProps) => {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
           >
-            Try our AI-powered search by clicking a suggestion, or use the Plan button 
-            for personalized recommendations based on your preferences.
+            Try our AI-powered search with text, images, or by importing from a URL.
           </motion.div>
         )}
       </AnimatePresence>
-      
-      <div className="flex flex-wrap gap-2 justify-center">
-        {suggestions.map((suggestion) => (
-          <button
-            key={suggestion}
-            onClick={() => onSuggestionSelect(suggestion)}
-            className="flex items-center text-sm bg-white border border-gray-200 hover:border-gray-300 rounded-full px-5 py-2.5 text-gray-700 hover:bg-gray-50 transition-colors"
-          >
-            {suggestion}
-            <ArrowUp className="ml-2 h-3 w-3" />
-          </button>
-        ))}
-      </div>
     </motion.div>
   );
 };
