@@ -11,7 +11,7 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
   return (
     <div className="min-h-screen flex flex-col bg-white relative">
       <div className="flex flex-1">
-        <aside className="sticky top-0 h-screen">
+        <aside className="sticky top-0 h-screen z-10">
           {sidebar}
         </aside>
         
