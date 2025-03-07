@@ -55,10 +55,6 @@ const CategorySidebar = ({ selectedCategory, onCategorySelect }: CategorySidebar
                   }`}
                 >
                   {getCategoryIcon(category.id)}
-                  <div 
-                    className="w-5 h-5 rounded-full bg-cover bg-center flex-shrink-0"
-                    style={{ backgroundImage: `url(${category.image})` }}
-                  />
                   <span className="text-sm">{category.name}</span>
                   {selectedCategory === category.id && (
                     <ChevronRight className="ml-auto h-4 w-4 text-gray-500" />
