@@ -113,7 +113,7 @@ const SearchSection = ({
             onSearch={handleSearch} 
             onImageUpload={onImageUpload} 
             onUrlSubmit={handleUrlSubmit}
-            placeholder="What are you in mood for?" 
+            placeholder="Ask anything..." 
           />
         </div>
         

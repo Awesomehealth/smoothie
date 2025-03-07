@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -90,38 +89,20 @@
   .toggle-switch-inactive .toggle-switch-thumb {
     @apply translate-x-1;
   }
+  
+  .search-container {
+    @apply bg-white border border-gray-200 shadow-sm;
+  }
 }
 
-.search-input-container {
-  @apply relative flex flex-col w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm;
-}
-
-.search-input-integrated {
-  @apply py-5 text-lg bg-white text-gray-900 border-none
-  focus:outline-none focus:ring-0 placeholder-gray-500;
-}
-
-.search-actions-integrated {
-  @apply flex items-center justify-end px-4 py-2 border-t border-gray-100 bg-gray-50;
-}
-
-.search-icon-button {
-  @apply flex items-center justify-center px-3 py-2 text-gray-600
-  hover:text-gray-900 transition-colors rounded-lg;
-}
-
-.search-button {
-  @apply bg-gray-100 hover:bg-gray-200;
-}
-
-.search-input {
-  @apply w-full px-6 py-6 text-lg bg-white text-gray-900 rounded-xl border border-gray-200 
-  focus:outline-none focus:border-gray-300 focus:ring-1 focus:ring-gray-300 placeholder-gray-500;
-}
-
+.search-input-container,
+.search-input-integrated,
+.search-actions-integrated,
+.search-icon-button,
+.search-button,
+.search-input,
 .search-action-button {
-  @apply flex items-center justify-center px-4 py-2.5 text-sm bg-white border border-gray-200 
-  rounded-lg hover:bg-gray-50 text-gray-700 transition-colors;
+  /* These styles will be handled by the new design */
 }
 
 .hero-section {

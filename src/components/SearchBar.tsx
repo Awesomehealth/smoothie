@@ -1,6 +1,6 @@
 
 import { useState, useRef } from "react";
-import { Search, Paperclip, FileSymlink } from "lucide-react";
+import { Search, Paperclip, Globe } from "lucide-react";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -13,7 +13,7 @@ const SearchBar = ({
   onSearch, 
   onImageUpload, 
   onUrlSubmit,
-  placeholder = "What are you in mood for?" 
+  placeholder = "Ask anything..." 
 }: SearchBarProps) => {
   const [query, setQuery] = useState("");
   const [isUrlInputVisible, setIsUrlInputVisible] = useState(false);
@@ -63,109 +63,83 @@ const SearchBar = ({
   return (
     <div className="w-full mx-auto">
       <form onSubmit={handleSubmit} className="relative">
-        {/* Main Search Input with Integrated Icons */}
-        {!isUrlInputVisible && (
-          <div className="relative">
-            <div className="search-input-container">
-              <div className="flex items-center">
-                {/* Left side buttons - Positioned here explicitly */}
-                <div className="flex items-center px-4">
-                  {onImageUpload && (
-                    <button 
-                      type="button" 
-                      onClick={handleImageClick} 
-                      className="search-icon-button mr-2"
-                      aria-label="Attach image"
-                    >
-                      <Paperclip className="h-5 w-5" />
-                      <span className="text-sm ml-2">Attach</span>
-                    </button>
-                  )}
-                  
-                  {onUrlSubmit && (
-                    <button 
-                      type="button" 
-                      onClick={toggleUrlInput}
-                      className="search-icon-button"
-                      aria-label="Import from URL"
-                    >
-                      <FileSymlink className="h-5 w-5" />
-                      <span className="text-sm ml-2">Import</span>
-                    </button>
-                  )}
+        <div className="search-container rounded-full bg-white border border-gray-200 flex items-center py-2 px-4">
+          {!isUrlInputVisible ? (
+            <>
+              {/* Left side - Search icon and input */}
+              <div className="flex-grow flex items-center">
+                <div className="flex items-center">
+                  <div className="flex items-center border rounded-full px-3 py-1 bg-gray-100 mr-3">
+                    <Search className="h-4 w-4 mr-2 text-gray-500" />
+                    <span className="text-sm text-gray-700">Auto</span>
+                  </div>
                 </div>
-
-                {/* Search input */}
                 <input
                   ref={queryInputRef}
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder={placeholder}
-                  className="search-input-integrated flex-grow"
+                  className="flex-grow bg-transparent border-none focus:outline-none focus:ring-0 text-gray-900"
                   aria-label="Search for smoothie recipes"
                 />
-                
-                {/* Right side search button */}
-                <div className="flex items-center px-4">
-                  <button
-                    type="submit"
-                    className="search-icon-button search-button"
-                    aria-label="Search"
-                  >
-                    <Search className="h-5 w-5" />
-                    <span className="text-sm ml-2">Search</span>
-                  </button>
-                </div>
               </div>
-            </div>
-          </div>
-        )}
-
-        {/* URL Input (Toggle View) */}
-        {isUrlInputVisible && (
-          <div className="relative">
-            <div className="search-input-container">
-              <div className="flex items-center">
-                {/* Left side back button */}
-                <div className="flex items-center px-4">
+              
+              {/* Right side - Action buttons */}
+              <div className="flex items-center space-x-2">
+                <button
+                  type="button"
+                  onClick={toggleUrlInput}
+                  className="rounded-full p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                  aria-label="Import from URL"
+                >
+                  <Globe className="h-5 w-5" />
+                </button>
+                
+                {onImageUpload && (
                   <button 
                     type="button" 
-                    onClick={toggleUrlInput}
-                    className="search-icon-button"
-                    aria-label="Back to text search"
+                    onClick={handleImageClick} 
+                    className="rounded-full p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                    aria-label="Attach image"
                   >
-                    <Search className="h-5 w-5" />
-                    <span className="text-sm ml-2">Back</span>
+                    <Paperclip className="h-5 w-5" />
                   </button>
-                </div>
-
-                {/* URL input */}
-                <input
-                  id="smoothie-url-input"
-                  type="url"
-                  value={url}
-                  onChange={(e) => setUrl(e.target.value)}
-                  placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
-                  className="search-input-integrated flex-grow"
-                  aria-label="Enter URL for recipe extraction"
-                />
+                )}
                 
-                {/* Right side import button */}
-                <div className="flex items-center px-4">
-                  <button 
-                    type="submit"
-                    className="search-icon-button search-button"
-                    aria-label="Extract recipe from URL"
-                  >
-                    <FileSymlink className="h-5 w-5" />
-                    <span className="text-sm ml-2">Import</span>
-                  </button>
-                </div>
+                <button
+                  type="submit"
+                  className="rounded-full p-2 bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors"
+                  aria-label="Search"
+                >
+                  <Search className="h-5 w-5" />
+                </button>
               </div>
-            </div>
-          </div>
-        )}
+            </>
+          ) : (
+            <>
+              {/* URL Input (Toggle View) */}
+              <input
+                id="smoothie-url-input"
+                type="url"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                placeholder="Paste URL to import..."
+                className="flex-grow bg-transparent border-none focus:outline-none focus:ring-0 text-gray-900"
+                aria-label="Enter URL for recipe extraction"
+              />
+              
+              <button 
+                type="button" 
+                onClick={toggleUrlInput}
+                className="rounded-full p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                aria-label="Back to text search"
+              >
+                <Search className="h-5 w-5" />
+              </button>
+            </>
+          )}
+        </div>
 
         {/* Hidden File Input */}
         <input
