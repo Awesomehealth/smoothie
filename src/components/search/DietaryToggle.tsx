@@ -14,46 +14,46 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
     >
-      {/* First row of toggles */}
-      <div className="grid grid-cols-3 gap-6 mb-6">
-        <ToggleItem 
-          label="Meal Replacement" 
-          prefId="isMealReplacement" 
-          onToggle={onDietaryToggle}
-        />
+      <div className="flex flex-col items-center gap-6">
+        {/* First row of toggles */}
+        <div className="grid grid-cols-3 gap-x-12 gap-y-6 w-full max-w-2xl mx-auto">
+          <ToggleItem 
+            label="Meal Replacement" 
+            prefId="isMealReplacement" 
+            onToggle={onDietaryToggle}
+          />
+          
+          <ToggleItem 
+            label="Nut-Free" 
+            prefId="isNutFree" 
+            onToggle={onDietaryToggle}
+          />
+          
+          <ToggleItem 
+            label="Caffeine" 
+            prefId="hasCaffeine" 
+            onToggle={onDietaryToggle}
+          />
         
-        <ToggleItem 
-          label="Nut-Free" 
-          prefId="isNutFree" 
-          onToggle={onDietaryToggle}
-        />
-        
-        <ToggleItem 
-          label="Caffeine" 
-          prefId="hasCaffeine" 
-          onToggle={onDietaryToggle}
-        />
-      </div>
-
-      {/* Second row of toggles */}
-      <div className="grid grid-cols-3 gap-6">
-        <ToggleItem 
-          label="Gluten-Free" 
-          prefId="isGlutenFree" 
-          onToggle={onDietaryToggle}
-        />
-        
-        <ToggleItem 
-          label="Soy-Free" 
-          prefId="isSoyFree" 
-          onToggle={onDietaryToggle}
-        />
-        
-        <ToggleItem 
-          label="Sugar Free" 
-          prefId="isSugarFree" 
-          onToggle={onDietaryToggle}
-        />
+          {/* Second row integrated into the same grid */}
+          <ToggleItem 
+            label="Gluten-Free" 
+            prefId="isGlutenFree" 
+            onToggle={onDietaryToggle}
+          />
+          
+          <ToggleItem 
+            label="Soy-Free" 
+            prefId="isSoyFree" 
+            onToggle={onDietaryToggle}
+          />
+          
+          <ToggleItem 
+            label="Sugar Free" 
+            prefId="isSugarFree" 
+            onToggle={onDietaryToggle}
+          />
+        </div>
       </div>
     </motion.div>
   );
