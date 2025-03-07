@@ -6,9 +6,12 @@ import CategorySidebar from "@/components/CategorySidebar";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { Card } from "@/components/ui/card";
 import { HeartPulse, Clock, Dumbbell, Trophy, ArrowRight, Utensils } from "lucide-react";
+import SearchBar from "@/components/SearchBar";
+import { useState } from "react";
 
 const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
+  const [searchQuery, setSearchQuery] = useState("");
   
   // Find the category data based on the URL parameter
   const category = categories.find((cat) => cat.id === categoryId);
@@ -18,8 +21,29 @@ const CategoryPage = () => {
     (smoothie) => smoothie.categories.includes(categoryId || '')
   );
 
+  // Filter smoothies by search query within the category
+  const filteredSmoothies = searchQuery
+    ? categorySmoothies.filter(
+        (smoothie) =>
+          smoothie.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          smoothie.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          smoothie.ingredients.some(ingredient => 
+            ingredient.toLowerCase().includes(searchQuery.toLowerCase())
+          )
+      )
+    : categorySmoothies;
+
   // Specific content for post-workout
   const isPostWorkout = categoryId === 'post-workout';
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+  
+  const handleUrlSubmit = (url: string) => {
+    console.log("URL submitted:", url);
+    // For future implementation
+  };
   
   return (
     <SmoothieAppLayout
@@ -45,6 +69,15 @@ const CategoryPage = () => {
               }
             </p>
           </header>
+          
+          {/* Search Bar */}
+          <div className="mb-8 max-w-2xl">
+            <SearchBar 
+              onSearch={handleSearch}
+              onUrlSubmit={handleUrlSubmit}
+              placeholder={`Search within ${category?.name || "this category"}...`}
+            />
+          </div>
           
           {isPostWorkout && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -80,9 +113,9 @@ const CategoryPage = () => {
             </div>
           )}
           
-          {categorySmoothies.length > 0 ? (
+          {filteredSmoothies.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {categorySmoothies.map((smoothie) => (
+              {filteredSmoothies.map((smoothie) => (
                 <Card key={smoothie.id} className="overflow-hidden border border-gray-200 rounded-xl transition-all duration-300 hover:shadow-md">
                   <div className="aspect-video w-full overflow-hidden bg-gray-100">
                     <img 
@@ -118,7 +151,7 @@ const CategoryPage = () => {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-gray-500">No smoothies found in this category.</p>
+              <p className="text-gray-500">No smoothies found for "{searchQuery}" in this category.</p>
             </div>
           )}
         </div>
