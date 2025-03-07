@@ -32,15 +32,15 @@ const FilterButton = ({ label, options, onSelect }: FilterButtonProps) => {
   }, []);
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative flex-1 max-w-[150px]" ref={dropdownRef}>
       <button 
         onClick={toggleOpen}
-        className="rounded-full border border-gray-300 bg-white px-2 py-1 text-xs text-gray-700 flex items-center gap-1 whitespace-nowrap"
+        className="w-full rounded-full border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 flex items-center justify-between gap-1 whitespace-nowrap"
       >
-        {label} <ChevronDown size={12} />
+        {label} <ChevronDown size={14} />
       </button>
       {isOpen && (
-        <div className="absolute z-50 mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+        <div className="absolute z-50 mt-2 w-full min-w-[150px] rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
           <div className="py-1 max-h-60 overflow-y-auto">
             {options.map((option) => (
               <button
