@@ -81,10 +81,10 @@ const SearchSection = ({
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          What do you want to know?
+          What can I help you make
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-10">
-          delicious, nutritious smoothie recipes tailored just for your goals
+          Find Your Perfect Smoothie
         </p>
         
         <div className="w-full max-w-2xl mx-auto mb-8">
