@@ -13,7 +13,7 @@ const CategoryCard = ({ category, onClick }: CategoryCardProps) => {
 
   return (
     <motion.div
-      className="relative overflow-hidden rounded-2xl shadow-md group cursor-pointer"
+      className="relative overflow-hidden rounded-2xl shadow-md group cursor-pointer h-56"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -22,10 +22,10 @@ const CategoryCard = ({ category, onClick }: CategoryCardProps) => {
       onHoverEnd={() => setIsHovered(false)}
       onClick={() => onClick(category.id)}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70 z-10" />
       
       <div 
-        className="h-48 bg-cover bg-center transition-transform duration-700 ease-out"
+        className="h-full w-full bg-cover bg-center transition-transform duration-700 ease-out"
         style={{ 
           backgroundImage: `url(${category.image})`,
           transform: isHovered ? 'scale(1.05)' : 'scale(1)'
@@ -39,7 +39,7 @@ const CategoryCard = ({ category, onClick }: CategoryCardProps) => {
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 p-4 z-20 text-white">
-        <h3 className="font-medium text-lg mb-1">{category.name}</h3>
+        <h3 className="font-bold text-lg mb-1">{category.name}</h3>
         <p className="text-sm opacity-90">{category.count} recipes</p>
       </div>
     </motion.div>
