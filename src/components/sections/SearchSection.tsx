@@ -48,7 +48,7 @@ const SearchSection = ({ onSearch, onFilterSelect, onDietaryToggle }: SearchSect
         </p>
         <SearchBar onSearch={onSearch} />
         
-        {/* Filter Buttons */}
+        {/* Filter Buttons - First Row (3 filters) */}
         <motion.div 
           className="flex flex-wrap justify-center gap-3 mt-8"
           initial={{ opacity: 0, y: 10 }}
@@ -129,7 +129,15 @@ const SearchSection = ({ onSearch, onFilterSelect, onDietaryToggle }: SearchSect
               </div>
             )}
           </div>
+        </motion.div>
 
+        {/* Filter Buttons - Second Row (3 filters) */}
+        <motion.div 
+          className="flex flex-wrap justify-center gap-3 mt-3"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           {/* Carbs Filter */}
           <div className="relative">
             <button 
