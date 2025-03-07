@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
 import FilterRow from "@/components/search/FilterRow";
 import DietaryToggle from "@/components/search/DietaryToggle";
@@ -12,23 +11,22 @@ import {
   fatAmounts, 
   calorieRanges 
 } from "@/data/smoothies";
-import { Switch } from "@/components/ui/switch";
 
 interface SearchSectionProps {
   onSearch: (query: string) => void;
   onImageUpload?: (file: File) => void;
   onFilterSelect?: (filterType: string, value: string) => void;
   onDietaryToggle?: (preference: string, isChecked: boolean) => void;
+  showAdvancedSearch: boolean;
 }
 
 const SearchSection = ({ 
   onSearch, 
   onImageUpload, 
   onFilterSelect, 
-  onDietaryToggle 
+  onDietaryToggle,
+  showAdvancedSearch
 }: SearchSectionProps) => {
-  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
-
   const handleFilterSelect = (filterType: string, value: string) => {
     if (onFilterSelect) {
       onFilterSelect(filterType, value);
@@ -90,17 +88,7 @@ const SearchSection = ({
         </p>
         <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} placeholder="Ask anything..." />
         
-        {/* Advanced Search Toggle */}
-        <div className="flex items-center justify-center mt-6 mb-2">
-          <span className="text-sm text-gray-600 mr-2">Advanced Search</span>
-          <Switch 
-            checked={showAdvancedSearch} 
-            onCheckedChange={setShowAdvancedSearch} 
-            className="data-[state=checked]:bg-coral-400"
-          />
-        </div>
-        
-        {/* Advanced Search Options */}
+        {/* Advanced Search Options - controlled by sidebar toggle */}
         {showAdvancedSearch && (
           <>
             {/* All Filters in a Single Row */}

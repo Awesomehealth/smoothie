@@ -13,6 +13,7 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredSmoothies, setFilteredSmoothies] = useState<Smoothie[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
   const [filters, setFilters] = useState({
     proteinType: "",
     diet: "",
@@ -69,6 +70,11 @@ const Index = () => {
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId === selectedCategory ? null : categoryId);
     console.log("Selected category:", categoryId);
+  };
+
+  const handleAdvancedSearchToggle = (show: boolean) => {
+    setShowAdvancedSearch(show);
+    console.log("Advanced search toggled:", show);
   };
 
   useEffect(() => {
@@ -156,6 +162,8 @@ const Index = () => {
           <CategorySidebar 
             selectedCategory={selectedCategory}
             onCategorySelect={handleCategorySelect}
+            showAdvancedSearch={showAdvancedSearch}
+            onAdvancedSearchToggle={handleAdvancedSearchToggle}
           />
         </aside>
         
@@ -166,6 +174,7 @@ const Index = () => {
               onImageUpload={handleImageUpload}
               onFilterSelect={handleFilterSelect}
               onDietaryToggle={handleDietaryToggle}
+              showAdvancedSearch={showAdvancedSearch}
             />
           </div>
           <Footer />

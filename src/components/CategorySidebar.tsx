@@ -2,13 +2,21 @@
 import React from 'react';
 import { ChevronRight, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle, Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
 import { categories } from "@/data/categories";
+import { Switch } from "@/components/ui/switch";
 
 interface CategorySidebarProps {
   selectedCategory: string | null;
   onCategorySelect: (categoryId: string) => void;
+  showAdvancedSearch: boolean;
+  onAdvancedSearchToggle: (show: boolean) => void;
 }
 
-const CategorySidebar = ({ selectedCategory, onCategorySelect }: CategorySidebarProps) => {
+const CategorySidebar = ({ 
+  selectedCategory, 
+  onCategorySelect, 
+  showAdvancedSearch, 
+  onAdvancedSearchToggle 
+}: CategorySidebarProps) => {
   // Map category IDs to corresponding icons
   const getCategoryIcon = (categoryId: string) => {
     switch (categoryId) {
@@ -70,10 +78,17 @@ const CategorySidebar = ({ selectedCategory, onCategorySelect }: CategorySidebar
           <h3 className="text-sm text-gray-500 font-medium mb-2">Tools</h3>
           <ul className="space-y-1">
             <li>
-              <button className="w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center gap-2 hover:bg-gray-100 text-gray-700">
+              <div className="w-full px-3 py-2 rounded-lg transition-colors flex items-center gap-2 hover:bg-gray-100 text-gray-700">
                 <Search className="h-4 w-4 text-gray-500" />
                 <span className="text-sm">Advanced Search</span>
-              </button>
+                <div className="ml-auto">
+                  <Switch 
+                    checked={showAdvancedSearch} 
+                    onCheckedChange={onAdvancedSearchToggle} 
+                    className="data-[state=checked]:bg-coral-400"
+                  />
+                </div>
+              </div>
             </li>
             <li>
               <button className="w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center gap-2 hover:bg-gray-100 text-gray-700">
