@@ -5,21 +5,29 @@ import { Category } from "@/data/categories";
 
 interface CategoryCardProps {
   category: Category;
+  isClickable?: boolean;
   onClick?: (categoryId: string) => void;
 }
 
-const CategoryCard = ({ category, onClick }: CategoryCardProps) => {
+const CategoryCard = ({ category, isClickable = true, onClick }: CategoryCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleClick = () => {
+    if (isClickable && onClick) {
+      onClick(category.id);
+    }
+  };
 
   return (
     <motion.div
-      className="relative overflow-hidden rounded-2xl shadow-md group h-56"
+      className={`relative overflow-hidden rounded-2xl shadow-md group h-56 ${isClickable ? 'cursor-pointer' : ''}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -5, transition: { duration: 0.2 } }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
+      onClick={handleClick}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70 z-10" />
       
