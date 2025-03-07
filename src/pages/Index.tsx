@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import SearchSection from "@/components/sections/SearchSection";
-import FilterSection from "@/components/sections/FilterSection";
-import ResultsSection from "@/components/sections/ResultsSection";
 import Footer from "@/components/sections/Footer";
 import CategorySidebar from "@/components/CategorySidebar";
 import { 
@@ -32,24 +30,12 @@ const Index = () => {
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-  };
-
-  const handleFilterSelect = (filterType: keyof typeof filters, value: string) => {
-    setFilters({
-      ...filters,
-      [filterType]: value,
-    });
-  };
-
-  const handleDietaryToggle = (preference: keyof typeof dietaryPreferences, isChecked: boolean) => {
-    setDietaryPreferences({
-      ...dietaryPreferences,
-      [preference]: isChecked,
-    });
+    console.log("Search query:", query);
   };
 
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId === selectedCategory ? null : categoryId);
+    console.log("Selected category:", categoryId);
   };
 
   useEffect(() => {
@@ -140,18 +126,9 @@ const Index = () => {
           />
         </aside>
         
-        <main className="flex-1">
-          <SearchSection onSearch={handleSearch} />
-          <FilterSection 
-            onFilterSelect={handleFilterSelect} 
-            onDietaryToggle={handleDietaryToggle} 
-          />
-          <div className="container mx-auto px-4 py-10">
-            <ResultsSection 
-              filteredSmoothies={filteredSmoothies}
-              selectedCategory={selectedCategory}
-              searchQuery={searchQuery}
-            />
+        <main className="flex-1 flex flex-col">
+          <div className="flex-grow flex items-center justify-center">
+            <SearchSection onSearch={handleSearch} />
           </div>
           <Footer />
         </main>
