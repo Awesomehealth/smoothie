@@ -15,12 +15,12 @@ interface FilterRowProps {
 const FilterRow = ({ filters, onFilterSelect, delay = 0.2 }: FilterRowProps) => {
   return (
     <motion.div 
-      className="flex flex-wrap justify-center gap-3 w-full mx-auto overflow-x-auto pb-2"
+      className="flex flex-wrap justify-center gap-4 w-full mx-auto overflow-x-auto pb-4 mb-6"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
     >
-      <div className="flex flex-nowrap justify-center gap-3 w-full">
+      <div className="flex flex-nowrap justify-center gap-4 w-full">
         {filters.map((filter) => (
           <FilterButton
             key={filter.filterType}
