@@ -68,7 +68,7 @@ const SearchBar = ({
           <div className="relative">
             <div className="search-input-container">
               <div className="flex items-center">
-                {/* Left side buttons */}
+                {/* Left side buttons - Positioned here explicitly */}
                 <div className="flex items-center px-4">
                   {onImageUpload && (
                     <button 
