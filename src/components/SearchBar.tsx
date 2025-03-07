@@ -1,3 +1,4 @@
+
 import { useState, useRef } from "react";
 import { Search, Paperclip, Globe } from "lucide-react";
 
@@ -12,7 +13,7 @@ const SearchBar = ({
   onSearch, 
   onImageUpload, 
   onUrlSubmit,
-  placeholder = "Ask anything..." 
+  placeholder = "What are you in mood for?" 
 }: SearchBarProps) => {
   const [query, setQuery] = useState("");
   const [isUrlInputVisible, setIsUrlInputVisible] = useState(false);
