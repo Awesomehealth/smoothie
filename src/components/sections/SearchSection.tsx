@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
@@ -109,7 +110,7 @@ const SearchSection = ({
             onSearch={handleSearch} 
             onImageUpload={onImageUpload} 
             onUrlSubmit={handleUrlSubmit}
-            placeholder="What are you in mood for?" 
+            placeholder="Smoothie, Shakes, Acai bowl..." 
           />
         </div>
         

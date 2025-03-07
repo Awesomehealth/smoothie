@@ -13,7 +13,7 @@ const SearchBar = ({
   onSearch, 
   onImageUpload, 
   onUrlSubmit,
-  placeholder = "What are you in mood for?" 
+  placeholder = "Smoothie, Shakes, Acai bowl..." 
 }: SearchBarProps) => {
   const [query, setQuery] = useState("");
   const [isUrlInputVisible, setIsUrlInputVisible] = useState(false);
