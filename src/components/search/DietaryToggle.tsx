@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { Switch } from "@/components/ui/switch";
 
 interface DietaryToggleProps {
   onDietaryToggle: (preference: string, isChecked: boolean) => void;
@@ -66,8 +67,8 @@ interface ToggleItemProps {
 
 const ToggleItem = ({ label, prefId, onToggle }: ToggleItemProps) => {
   return (
-    <div className="flex items-center justify-center">
-      <label className="relative inline-flex items-center cursor-pointer">
+    <div className="flex items-center">
+      <label className="inline-flex items-center cursor-pointer">
         <input 
           type="checkbox" 
           className="sr-only peer" 
