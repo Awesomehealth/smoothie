@@ -15,7 +15,7 @@ interface FilterRowProps {
 const FilterRow = ({ filters, onFilterSelect, delay = 0.2 }: FilterRowProps) => {
   return (
     <motion.div 
-      className="w-full max-w-3xl mx-auto pb-4 mb-6"
+      className="w-full max-w-3xl mx-auto pb-4 mb-6 px-2"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}

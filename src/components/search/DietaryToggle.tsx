@@ -8,7 +8,7 @@ interface DietaryToggleProps {
 const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
   return (
     <motion.div 
-      className="max-w-3xl mx-auto mt-8"
+      className="max-w-3xl mx-auto mt-8 px-2"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
@@ -66,7 +66,7 @@ interface ToggleItemProps {
 
 const ToggleItem = ({ label, prefId, onToggle }: ToggleItemProps) => {
   return (
-    <div className="flex items-center justify-start">
+    <div className="flex items-center justify-center">
       <label className="relative inline-flex items-center cursor-pointer">
         <input 
           type="checkbox" 
