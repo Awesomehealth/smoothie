@@ -1,6 +1,6 @@
 
 import { useState, useRef } from "react";
-import { Search, Paperclip, Globe } from "lucide-react";
+import { Search, Paperclip, Globe, X } from "lucide-react";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -58,6 +58,14 @@ const SearchBar = ({
         queryInputRef.current?.focus();
       }, 100);
     }
+  };
+
+  const clearUrl = () => {
+    setUrl("");
+    setIsUrlInputVisible(false);
+    setTimeout(() => {
+      queryInputRef.current?.focus();
+    }, 100);
   };
 
   return (
@@ -123,11 +131,20 @@ const SearchBar = ({
                 aria-label="Enter URL for recipe extraction"
               />
               
+              {/* X button to clear and return to normal search */}
               <button 
                 type="button" 
-                onClick={toggleUrlInput}
-                className="rounded-full p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
-                aria-label="Back to text search"
+                onClick={clearUrl}
+                className="rounded-full p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors mr-2"
+                aria-label="Cancel URL input"
+              >
+                <X className="h-5 w-5" />
+              </button>
+              
+              <button 
+                type="submit"
+                className="rounded-full p-2 bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors"
+                aria-label="Import from URL"
               >
                 <Search className="h-5 w-5" />
               </button>
