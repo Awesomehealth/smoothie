@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import SearchSection from "@/components/sections/SearchSection";
 import Footer from "@/components/sections/Footer";
@@ -31,6 +32,22 @@ const Index = () => {
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     console.log("Search query:", query);
+  };
+
+  const handleFilterSelect = (filterType: keyof typeof filters, value: string) => {
+    setFilters({
+      ...filters,
+      [filterType]: value,
+    });
+    console.log(`Filter selected: ${filterType} = ${value}`);
+  };
+
+  const handleDietaryToggle = (preference: keyof typeof dietaryPreferences, isChecked: boolean) => {
+    setDietaryPreferences({
+      ...dietaryPreferences,
+      [preference]: isChecked,
+    });
+    console.log(`Dietary preference toggled: ${preference} = ${isChecked}`);
   };
 
   const handleCategorySelect = (categoryId: string) => {
@@ -128,7 +145,11 @@ const Index = () => {
         
         <main className="flex-1 flex flex-col">
           <div className="flex-grow flex items-center justify-center">
-            <SearchSection onSearch={handleSearch} />
+            <SearchSection 
+              onSearch={handleSearch} 
+              onFilterSelect={handleFilterSelect}
+              onDietaryToggle={handleDietaryToggle}
+            />
           </div>
           <Footer />
         </main>
