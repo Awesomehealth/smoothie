@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle, Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
 import { categories } from "@/data/categories";
 import { Switch } from "@/components/ui/switch";
@@ -18,6 +19,7 @@ const CategorySidebar = ({
   onAdvancedSearchToggle 
 }: CategorySidebarProps) => {
   const [collapsed, setCollapsed] = useState(false);
+  const navigate = useNavigate();
 
   // Map category IDs to corresponding icons
   const getCategoryIcon = (categoryId: string) => {
@@ -45,6 +47,11 @@ const CategorySidebar = ({
 
   const toggleSidebar = () => {
     setCollapsed(!collapsed);
+  };
+
+  const handleCategoryClick = (categoryId: string) => {
+    onCategorySelect(categoryId);
+    navigate(`/category/${categoryId}`);
   };
 
   return (
@@ -76,7 +83,7 @@ const CategorySidebar = ({
             {categories.map((category) => (
               <li key={category.id}>
                 <button
-                  onClick={() => onCategorySelect(category.id)}
+                  onClick={() => handleCategoryClick(category.id)}
                   className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${
                     collapsed ? 'justify-center' : 'gap-2'
                   } ${
