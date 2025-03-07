@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import SearchBar from "@/components/SearchBar";
@@ -39,12 +38,10 @@ const Index = () => {
     isMealReplacement: false,
   });
 
-  // Handle search
   const handleSearch = (query: string) => {
     setSearchQuery(query);
   };
 
-  // Handle filter selection
   const handleFilterSelect = (filterType: keyof typeof filters, value: string) => {
     setFilters({
       ...filters,
@@ -52,7 +49,6 @@ const Index = () => {
     });
   };
 
-  // Handle dietary toggle
   const handleDietaryToggle = (preference: keyof typeof dietaryPreferences, isChecked: boolean) => {
     setDietaryPreferences({
       ...dietaryPreferences,
@@ -60,16 +56,13 @@ const Index = () => {
     });
   };
 
-  // Handle category selection
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId === selectedCategory ? null : categoryId);
   };
 
-  // Filter smoothies based on all criteria
   useEffect(() => {
     let result = [...smoothies];
 
-    // Filter by search query
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       result = result.filter(
@@ -80,21 +73,18 @@ const Index = () => {
       );
     }
 
-    // Filter by selected category
     if (selectedCategory) {
       result = result.filter((smoothie) => 
         smoothie.categories.includes(selectedCategory)
       );
     }
 
-    // Filter by protein type
     if (filters.proteinType) {
       result = result.filter((smoothie) => 
         smoothie.proteinType.includes(filters.proteinType as any)
       );
     }
 
-    // Filter by dietary preferences
     Object.entries(dietaryPreferences).forEach(([key, isSelected]) => {
       if (isSelected) {
         result = result.filter((smoothie) => 
@@ -103,7 +93,6 @@ const Index = () => {
       }
     });
 
-    // Filter by protein amount
     if (filters.protein) {
       result = result.filter((smoothie) => {
         const protein = smoothie.nutrition.protein;
@@ -114,7 +103,6 @@ const Index = () => {
       });
     }
 
-    // Filter by carbs amount
     if (filters.carbs) {
       result = result.filter((smoothie) => {
         const carbs = smoothie.nutrition.carbs;
@@ -125,7 +113,6 @@ const Index = () => {
       });
     }
 
-    // Filter by fats amount
     if (filters.fats) {
       result = result.filter((smoothie) => {
         const fat = smoothie.nutrition.fat;
@@ -136,7 +123,6 @@ const Index = () => {
       });
     }
 
-    // Filter by calorie range
     if (filters.calories) {
       result = result.filter((smoothie) => {
         const calories = smoothie.nutrition.calories;
@@ -152,7 +138,6 @@ const Index = () => {
     setFilteredSmoothies(result);
   }, [searchQuery, selectedCategory, filters, dietaryPreferences]);
 
-  // Container animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -166,7 +151,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-smoothie-50">
-      {/* Hero Section with Search */}
       <section className="hero-section py-20">
         <div className="container px-4 mx-auto">
           <motion.div 
@@ -184,7 +168,6 @@ const Index = () => {
             <SearchBar onSearch={handleSearch} />
           </motion.div>
 
-          {/* Filter Buttons */}
           <motion.div 
             className="flex flex-wrap justify-center gap-3 mb-10"
             initial={{ opacity: 0, y: 10 }}
@@ -223,42 +206,43 @@ const Index = () => {
             />
           </motion.div>
 
-          {/* Dietary Preferences */}
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 max-w-4xl mx-auto mb-16"
+            className="max-w-4xl mx-auto mb-16"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <ToggleSwitch 
-              label="Meal Replacement" 
-              onChange={(isChecked) => handleDietaryToggle("isMealReplacement", isChecked)} 
-            />
-            <ToggleSwitch 
-              label="Gluten-Free" 
-              onChange={(isChecked) => handleDietaryToggle("isGlutenFree", isChecked)} 
-            />
-            <ToggleSwitch 
-              label="Nut-Free" 
-              onChange={(isChecked) => handleDietaryToggle("isNutFree", isChecked)} 
-            />
-            <ToggleSwitch 
-              label="Soy-Free" 
-              onChange={(isChecked) => handleDietaryToggle("isSoyFree", isChecked)} 
-            />
-            <ToggleSwitch 
-              label="Sugar Free" 
-              onChange={(isChecked) => handleDietaryToggle("isSugarFree", isChecked)} 
-            />
-            <ToggleSwitch 
-              label="Caffeine" 
-              onChange={(isChecked) => handleDietaryToggle("hasCaffeine", isChecked)} 
-            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">Dietary Preferences</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <ToggleSwitch 
+                label="Meal Replacement" 
+                onChange={(isChecked) => handleDietaryToggle("isMealReplacement", isChecked)} 
+              />
+              <ToggleSwitch 
+                label="Gluten-Free" 
+                onChange={(isChecked) => handleDietaryToggle("isGlutenFree", isChecked)} 
+              />
+              <ToggleSwitch 
+                label="Nut-Free" 
+                onChange={(isChecked) => handleDietaryToggle("isNutFree", isChecked)} 
+              />
+              <ToggleSwitch 
+                label="Soy-Free" 
+                onChange={(isChecked) => handleDietaryToggle("isSoyFree", isChecked)} 
+              />
+              <ToggleSwitch 
+                label="Sugar Free" 
+                onChange={(isChecked) => handleDietaryToggle("isSugarFree", isChecked)} 
+              />
+              <ToggleSwitch 
+                label="Caffeine" 
+                onChange={(isChecked) => handleDietaryToggle("hasCaffeine", isChecked)} 
+              />
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Categories Section */}
       <section className="py-16 bg-white">
         <div className="container px-4 mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center">
@@ -285,7 +269,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Results Section */}
       <section className="py-16 bg-smoothie-50">
         <div className="container px-4 mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center">
@@ -320,7 +303,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-white py-10 border-t border-gray-100">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-600 text-sm">

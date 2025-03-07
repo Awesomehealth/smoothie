@@ -17,7 +17,7 @@ const ToggleSwitch = ({ label, onChange, defaultChecked = false }: ToggleSwitchP
   };
 
   return (
-    <div className="flex items-center justify-between space-x-4 rounded-lg bg-white/60 backdrop-blur-sm p-3 border border-gray-100 shadow-sm">
+    <div className="flex items-center justify-between space-x-4 rounded-lg bg-white/60 backdrop-blur-sm p-4 border border-gray-100 shadow-sm h-full w-full">
       <span className="text-sm font-medium text-gray-700">{label}</span>
       <Switch 
         checked={isChecked} 
