@@ -11,7 +11,7 @@ export interface Category {
 export const categories: Category[] = [
   {
     id: 'post-workout',
-    name: 'Post Workout Shakes',
+    name: 'Post Workout',
     count: 11,
     image: 'https://images.unsplash.com/photo-1622480916113-9056466a36f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'HOT',
@@ -19,7 +19,7 @@ export const categories: Category[] = [
   },
   {
     id: 'meal-replacement',
-    name: 'Meal Replacements Shakes',
+    name: 'Meal Replacements',
     count: 14,
     image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'NEW',
@@ -27,7 +27,7 @@ export const categories: Category[] = [
   },
   {
     id: 'weight-loss',
-    name: 'Weight Loss Shakes',
+    name: 'Weight Loss',
     count: 11,
     image: 'https://images.unsplash.com/photo-1638439430466-b65ff71aaf24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'YUMMY!',
@@ -35,7 +35,7 @@ export const categories: Category[] = [
   },
   {
     id: 'muscle-gain',
-    name: 'Muscle Gain Shakes',
+    name: 'Muscle Gain',
     count: 4,
     image: 'https://images.unsplash.com/photo-1623065422902-30a2d299bbe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'GOOD GOOD!',
@@ -43,7 +43,7 @@ export const categories: Category[] = [
   },
   {
     id: 'high-protein',
-    name: 'High Protein Shakes',
+    name: 'High Protein',
     count: 6,
     image: 'https://images.unsplash.com/photo-1560421741-6551a3633f86?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'OMG!',
@@ -51,7 +51,7 @@ export const categories: Category[] = [
   },
   {
     id: 'low-carb',
-    name: 'Low Carb Shakes',
+    name: 'Low Carb',
     count: 6,
     image: 'https://images.unsplash.com/photo-1571024462404-e8c954a3fb88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'DELICIOUS!',
@@ -59,7 +59,7 @@ export const categories: Category[] = [
   },
   {
     id: 'keto',
-    name: 'Keto Shakes',
+    name: 'Keto',
     count: 4,
     image: 'https://images.unsplash.com/photo-1571907483083-af70aeda3086?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'HEALTHY',
@@ -67,7 +67,7 @@ export const categories: Category[] = [
   },
   {
     id: 'pre-workout',
-    name: 'Pre Workout Shakes',
+    name: 'Pre Workout',
     count: 3,
     image: 'https://images.unsplash.com/photo-1578608712688-86be57a5d198?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     tag: 'ENERGY!',
