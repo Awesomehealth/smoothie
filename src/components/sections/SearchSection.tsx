@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
@@ -101,12 +100,9 @@ const SearchSection = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Find Your Perfect Smoothie
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-10">
+          What are you in mood for?
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 mb-10">
-          Delicious, healthy smoothies for your lifestyle.
-        </p>
         
         <div className="w-full max-w-3xl mx-auto mb-8">
           <SearchBar 
