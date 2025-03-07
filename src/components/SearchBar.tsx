@@ -34,13 +34,13 @@ const SearchBar = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full relative">
+    <form onSubmit={handleSubmit} className="w-full max-w-xl mx-auto relative">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder={placeholder}
-        className="search-input pr-24" // Added more padding on right for the image button
+        className="search-input pr-24 w-full" // Added full width
         aria-label="Search for smoothie recipes"
       />
       <div className="absolute right-0 top-0 flex h-full">

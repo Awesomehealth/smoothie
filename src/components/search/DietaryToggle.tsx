@@ -8,12 +8,12 @@ interface DietaryToggleProps {
 const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
   return (
     <motion.div 
-      className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
+      className="mt-2 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
     >
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <label className="relative inline-flex items-center cursor-pointer">
           <input 
             type="checkbox" 
@@ -25,7 +25,7 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
         </label>
       </div>
       
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <label className="relative inline-flex items-center cursor-pointer">
           <input 
             type="checkbox" 
@@ -37,7 +37,7 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
         </label>
       </div>
       
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <label className="relative inline-flex items-center cursor-pointer">
           <input 
             type="checkbox" 
@@ -49,7 +49,7 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
         </label>
       </div>
       
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <label className="relative inline-flex items-center cursor-pointer">
           <input 
             type="checkbox" 
@@ -61,7 +61,7 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
         </label>
       </div>
       
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <label className="relative inline-flex items-center cursor-pointer">
           <input 
             type="checkbox" 
@@ -73,7 +73,7 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
         </label>
       </div>
       
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <label className="relative inline-flex items-center cursor-pointer">
           <input 
             type="checkbox" 

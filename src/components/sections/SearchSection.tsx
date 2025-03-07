@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
 import FilterRow from "@/components/search/FilterRow";
 import DietaryToggle from "@/components/search/DietaryToggle";
@@ -11,6 +12,7 @@ import {
   fatAmounts, 
   calorieRanges 
 } from "@/data/smoothies";
+import { Switch } from "@/components/ui/switch";
 
 interface SearchSectionProps {
   onSearch: (query: string) => void;
@@ -25,6 +27,8 @@ const SearchSection = ({
   onFilterSelect, 
   onDietaryToggle 
 }: SearchSectionProps) => {
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+
   const handleFilterSelect = (filterType: string, value: string) => {
     if (onFilterSelect) {
       onFilterSelect(filterType, value);
@@ -86,16 +90,31 @@ const SearchSection = ({
         </p>
         <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} placeholder="Ask anything..." />
         
-        {/* All Filters in a Single Row */}
-        <FilterRow 
-          filters={allFilters} 
-          onFilterSelect={handleFilterSelect} 
-          delay={0.2}
-        />
+        {/* Advanced Search Toggle */}
+        <div className="flex items-center justify-center mt-6 mb-2">
+          <span className="text-sm text-gray-600 mr-2">Advanced Search</span>
+          <Switch 
+            checked={showAdvancedSearch} 
+            onCheckedChange={setShowAdvancedSearch} 
+            className="data-[state=checked]:bg-coral-400"
+          />
+        </div>
+        
+        {/* Advanced Search Options */}
+        {showAdvancedSearch && (
+          <>
+            {/* All Filters in a Single Row */}
+            <FilterRow 
+              filters={allFilters} 
+              onFilterSelect={handleFilterSelect} 
+              delay={0.2}
+            />
 
-        {/* Dietary Toggles */}
-        {onDietaryToggle && (
-          <DietaryToggle onDietaryToggle={handleDietaryToggle} />
+            {/* Dietary Toggles */}
+            {onDietaryToggle && (
+              <DietaryToggle onDietaryToggle={handleDietaryToggle} />
+            )}
+          </>
         )}
       </motion.div>
     </section>
