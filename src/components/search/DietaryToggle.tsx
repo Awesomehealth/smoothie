@@ -74,7 +74,7 @@ const ToggleItem = ({ label, prefId, onToggle }: ToggleItemProps) => {
           onCheckedChange={(checked) => onToggle(prefId, checked)}
           className="bg-gray-200 data-[state=checked]:bg-coral-400"
         />
-        <span className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap">{label}</span>
+        <span className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap">{label}</span>
       </label>
     </div>
   );
