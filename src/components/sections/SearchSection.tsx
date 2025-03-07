@@ -84,7 +84,7 @@ const SearchSection = ({
           What can I help you make
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-10">
-          Find Your Perfect Smoothie
+          delicious, nutritious smoothie recipes tailored just for your goals
         </p>
         
         <div className="w-full max-w-2xl mx-auto mb-8">
