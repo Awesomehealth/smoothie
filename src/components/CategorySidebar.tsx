@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ChevronRight, ChevronLeft, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle, Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
 import { categories } from "@/data/categories";
@@ -49,19 +48,7 @@ const CategorySidebar = ({
 
   return (
     <div className={`h-full bg-gray-50 border-r border-gray-200 transition-all duration-300 flex flex-col relative ${collapsed ? 'w-16' : 'w-64'}`}>
-      {/* Collapse Toggle Button */}
-      <button 
-        onClick={toggleSidebar}
-        className="absolute -right-4 top-20 bg-white border border-gray-200 rounded-full p-1 shadow-md z-10 hover:bg-gray-50 transition-colors"
-        aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-      >
-        {collapsed ? (
-          <ChevronRight className="h-4 w-4 text-gray-500" />
-        ) : (
-          <ChevronLeft className="h-4 w-4 text-gray-500" />
-        )}
-      </button>
-
+      {/* User Profile, moved to top */}
       <div className="p-4 border-b border-gray-200 flex justify-between items-center">
         <h2 className={`text-coral-500 font-bold text-xl transition-opacity duration-300 ${collapsed ? 'opacity-0' : 'opacity-100'}`}>
           {!collapsed && "Smoothie Search"}
