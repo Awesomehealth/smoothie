@@ -22,9 +22,9 @@ const FilterButton = ({ label, options, onSelect }: FilterButtonProps) => {
     <div className="relative">
       <button 
         onClick={toggleOpen}
-        className="rounded-full border border-gray-300 bg-white px-5 py-2 text-gray-700 flex items-center gap-2"
+        className="rounded-full border border-gray-300 bg-white px-3 py-1.5 text-sm text-gray-700 flex items-center gap-1 whitespace-nowrap"
       >
-        {label} <ChevronDown size={16} />
+        {label} <ChevronDown size={14} />
       </button>
       {isOpen && (
         <div className="absolute z-50 mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">

@@ -37,7 +37,7 @@ const SearchSection = ({
     }
   };
 
-  const firstRowFilters = [
+  const allFilters = [
     {
       label: "PROTEIN TYPE",
       filterType: "proteinType",
@@ -52,10 +52,7 @@ const SearchSection = ({
       label: "PROTEIN",
       filterType: "protein",
       options: proteinAmounts
-    }
-  ];
-
-  const secondRowFilters = [
+    },
     {
       label: "CARBS",
       filterType: "carbs",
@@ -89,18 +86,11 @@ const SearchSection = ({
         </p>
         <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} placeholder="Ask anything..." />
         
-        {/* First Row of Filters */}
+        {/* All Filters in a Single Row */}
         <FilterRow 
-          filters={firstRowFilters} 
+          filters={allFilters} 
           onFilterSelect={handleFilterSelect} 
           delay={0.2}
-        />
-
-        {/* Second Row of Filters */}
-        <FilterRow 
-          filters={secondRowFilters} 
-          onFilterSelect={handleFilterSelect} 
-          delay={0.3}
         />
 
         {/* Dietary Toggles */}
