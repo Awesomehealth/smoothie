@@ -117,7 +117,7 @@ const SearchSection = ({
   return (
     <section className="w-full max-w-5xl mx-auto px-4 py-16">
       <motion.div 
-        className="max-w-3xl mx-auto text-center"
+        className="max-w-4xl mx-auto text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -129,7 +129,7 @@ const SearchSection = ({
           delicious, nutritious smoothie recipes tailored just for your goals
         </p>
         
-        <div className="w-full max-w-2xl mx-auto mb-6">
+        <div className="w-full max-w-3xl mx-auto mb-8">
           <SearchBar 
             onSearch={handleSearch} 
             onImageUpload={onImageUpload} 

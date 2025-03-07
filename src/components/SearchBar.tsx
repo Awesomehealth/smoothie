@@ -1,6 +1,6 @@
 
 import { useState, useRef } from "react";
-import { Search, Image, Link, Sparkles, X, ArrowUp, Paperclip, FileSymlink, ClipboardList, Globe } from "lucide-react";
+import { Search, Image, ArrowUp, X, Paperclip, FileSymlink, ClipboardList, Globe } from "lucide-react";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -68,7 +68,7 @@ const SearchBar = ({
 
   return (
     <div className="w-full mx-auto">
-      <form onSubmit={handleSubmit} className="relative flex flex-col gap-2">
+      <form onSubmit={handleSubmit} className="relative flex flex-col gap-4">
         {/* Main Search Input */}
         {!isUrlInputVisible && (
           <div className="relative">
@@ -78,56 +78,16 @@ const SearchBar = ({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={placeholder}
-              className="w-full h-16 px-6 py-4 text-lg bg-gray-900/90 text-white rounded-xl border border-gray-800 focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700 placeholder-gray-500"
+              className="search-input"
               aria-label="Search for smoothie recipes"
             />
-            <div className="absolute right-2 bottom-0 flex h-full items-center gap-1">
-              {onImageUpload && (
-                <button 
-                  type="button" 
-                  onClick={handleImageClick} 
-                  className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
-                  aria-label="Upload image"
-                >
-                  <Paperclip className="h-5 w-5" />
-                  <span className="ml-2 text-sm">Attach</span>
-                </button>
-              )}
-              {onUrlSubmit && (
-                <button 
-                  type="button" 
-                  onClick={toggleUrlInput} 
-                  className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
-                  aria-label="Paste URL"
-                >
-                  <FileSymlink className="h-5 w-5" />
-                  <span className="ml-2 text-sm">Import</span>
-                </button>
-              )}
-              <button 
-                type="button" 
-                onClick={handleSmartSearch}
-                className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
-                aria-label="AI Smart Search"
-              >
-                <ClipboardList className="h-5 w-5" />
-                <span className="ml-2 text-sm">Plan</span>
-              </button>
-              <div className="mx-2 h-8 w-px bg-gray-700"></div>
-              <button 
-                type="button"
-                className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
-                aria-label="Public"
-              >
-                <Globe className="h-5 w-5" />
-                <span className="ml-2 text-sm">Public</span>
-              </button>
+            <div className="absolute right-2 top-1/2 -translate-y-1/2">
               <button
                 type="submit"
-                className="flex items-center justify-center h-8 w-8 rounded-lg bg-gray-700 hover:bg-gray-600 text-white ml-1 mr-2"
+                className="flex items-center justify-center h-10 w-10 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700"
                 aria-label="Search"
               >
-                <ArrowUp className="h-4 w-4" />
+                <ArrowUp className="h-5 w-5" />
               </button>
             </div>
           </div>
@@ -142,26 +102,73 @@ const SearchBar = ({
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
-              className="w-full h-16 px-6 py-4 text-lg bg-gray-900/90 text-white rounded-xl border border-gray-800 focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700 placeholder-gray-500"
+              className="search-input"
               aria-label="Enter URL for recipe extraction"
             />
-            <div className="absolute right-0 top-0 flex h-full">
+            <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-2">
               <button 
                 type="button" 
                 onClick={toggleUrlInput} 
-                className="h-full px-3 bg-transparent text-gray-400 hover:text-white focus:outline-none transition-colors"
+                className="flex items-center justify-center h-10 w-10 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700"
                 aria-label="Back to text search"
               >
                 <X className="h-5 w-5" />
               </button>
               <button 
                 type="submit" 
-                className="flex items-center justify-center h-8 w-8 rounded-lg bg-gray-700 hover:bg-gray-600 text-white mr-4 my-auto"
+                className="flex items-center justify-center h-10 w-10 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700"
                 aria-label="Extract recipe from URL"
               >
-                <ArrowUp className="h-4 w-4" />
+                <ArrowUp className="h-5 w-5" />
               </button>
             </div>
+          </div>
+        )}
+
+        {/* Action Buttons Row */}
+        {!isUrlInputVisible && (
+          <div className="flex justify-between">
+            <div className="flex gap-4">
+              {onImageUpload && (
+                <button 
+                  type="button" 
+                  onClick={handleImageClick} 
+                  className="search-action-button"
+                  aria-label="Attach image"
+                >
+                  <Paperclip className="h-5 w-5" />
+                  <span className="ml-2">Attach</span>
+                </button>
+              )}
+              {onUrlSubmit && (
+                <button 
+                  type="button" 
+                  onClick={toggleUrlInput} 
+                  className="search-action-button"
+                  aria-label="Import from URL"
+                >
+                  <FileSymlink className="h-5 w-5" />
+                  <span className="ml-2">Import</span>
+                </button>
+              )}
+              <button 
+                type="button" 
+                onClick={handleSmartSearch}
+                className="search-action-button"
+                aria-label="AI Smart Search"
+              >
+                <ClipboardList className="h-5 w-5" />
+                <span className="ml-2">Plan</span>
+              </button>
+            </div>
+            <button 
+              type="button"
+              className="search-action-button"
+              aria-label="Public"
+            >
+              <Globe className="h-5 w-5" />
+              <span className="ml-2">Public</span>
+            </button>
           </div>
         )}
 
@@ -174,21 +181,6 @@ const SearchBar = ({
           onChange={handleFileChange}
           aria-label="Upload image for recipe search"
         />
-
-        {/* Autocomplete Suggestions (shown when typing) */}
-        {query.length > 2 && !isUrlInputVisible && (
-          <div className="absolute top-16 left-0 right-0 bg-gray-900/95 rounded-b-lg shadow-lg z-10 border border-gray-800 border-t-0 text-white">
-            <div className="py-2 px-4 hover:bg-gray-800 cursor-pointer" onClick={() => setQuery("High-protein post-workout smoothie")}>
-              High-protein post-workout smoothie
-            </div>
-            <div className="py-2 px-4 hover:bg-gray-800 cursor-pointer" onClick={() => setQuery("Low-carb green smoothie for weight loss")}>
-              Low-carb green smoothie for weight loss
-            </div>
-            <div className="py-2 px-4 hover:bg-gray-800 cursor-pointer" onClick={() => setQuery("Keto-friendly berry smoothie")}>
-              Keto-friendly berry smoothie
-            </div>
-          </div>
-        )}
       </form>
     </div>
   );
