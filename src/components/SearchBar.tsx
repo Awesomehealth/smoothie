@@ -1,4 +1,3 @@
-
 import { useState, useRef } from "react";
 import { Search, Paperclip, Globe } from "lucide-react";
 
@@ -68,12 +67,6 @@ const SearchBar = ({
             <>
               {/* Left side - Search icon and input */}
               <div className="flex-grow flex items-center">
-                <div className="flex items-center">
-                  <div className="flex items-center border rounded-full px-3 py-1 bg-gray-100 mr-3">
-                    <Search className="h-4 w-4 mr-2 text-gray-500" />
-                    <span className="text-sm text-gray-700">Auto</span>
-                  </div>
-                </div>
                 <input
                   ref={queryInputRef}
                   type="text"
