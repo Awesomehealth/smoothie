@@ -85,7 +85,7 @@ const SearchSection = ({
           Find Your Perfect Smoothie
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-8">
-          Discover delicious, nutritious smoothie recipes tailored to your taste and health goals.
+          delicious, nutritious smoothie recipes tailored just for your goals
         </p>
         <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} placeholder="Ask anything..." />
         
