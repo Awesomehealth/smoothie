@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ChevronRight, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle } from "lucide-react";
+import { ChevronRight, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle, Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
 import { categories } from "@/data/categories";
 
 interface CategorySidebarProps {
@@ -9,6 +9,30 @@ interface CategorySidebarProps {
 }
 
 const CategorySidebar = ({ selectedCategory, onCategorySelect }: CategorySidebarProps) => {
+  // Map category IDs to corresponding icons
+  const getCategoryIcon = (categoryId: string) => {
+    switch (categoryId) {
+      case 'post-workout':
+        return <HeartPulse className="h-4 w-4 text-coral-500" />;
+      case 'meal-replacement':
+        return <Utensils className="h-4 w-4 text-coral-500" />;
+      case 'weight-loss':
+        return <Weight className="h-4 w-4 text-coral-500" />;
+      case 'muscle-gain':
+        return <Dumbbell className="h-4 w-4 text-coral-500" />;
+      case 'high-protein':
+        return <Flame className="h-4 w-4 text-coral-500" />;
+      case 'low-carb':
+        return <Carrot className="h-4 w-4 text-coral-500" />;
+      case 'keto':
+        return <Apple className="h-4 w-4 text-coral-500" />;
+      case 'pre-workout':
+        return <Timer className="h-4 w-4 text-coral-500" />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="h-full bg-gray-50 border-r border-gray-200 w-64 flex flex-col">
       <div className="p-4 border-b border-gray-200">
@@ -30,6 +54,7 @@ const CategorySidebar = ({ selectedCategory, onCategorySelect }: CategorySidebar
                       : 'hover:bg-gray-100 text-gray-700'
                   }`}
                 >
+                  {getCategoryIcon(category.id)}
                   <div 
                     className="w-5 h-5 rounded-full bg-cover bg-center flex-shrink-0"
                     style={{ backgroundImage: `url(${category.image})` }}

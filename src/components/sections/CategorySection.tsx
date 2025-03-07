@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import CategoryCard from "@/components/CategoryCard";
 import { categories } from "@/data/categories";
+import { Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
 
 const CategorySection = () => {
   const containerVariants = {
@@ -13,6 +14,30 @@ const CategorySection = () => {
         staggerChildren: 0.1,
       },
     },
+  };
+
+  // Map category IDs to corresponding icons
+  const getCategoryIcon = (categoryId: string) => {
+    switch (categoryId) {
+      case 'post-workout':
+        return <HeartPulse className="h-5 w-5 text-coral-500" />;
+      case 'meal-replacement':
+        return <Utensils className="h-5 w-5 text-coral-500" />;
+      case 'weight-loss':
+        return <Weight className="h-5 w-5 text-coral-500" />;
+      case 'muscle-gain':
+        return <Dumbbell className="h-5 w-5 text-coral-500" />;
+      case 'high-protein':
+        return <Flame className="h-5 w-5 text-coral-500" />;
+      case 'low-carb':
+        return <Carrot className="h-5 w-5 text-coral-500" />;
+      case 'keto':
+        return <Apple className="h-5 w-5 text-coral-500" />;
+      case 'pre-workout':
+        return <Timer className="h-5 w-5 text-coral-500" />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -32,11 +57,17 @@ const CategorySection = () => {
           animate="visible"
         >
           {categories.map((category) => (
-            <CategoryCard 
-              key={category.id} 
-              category={category}
-              isClickable={false}
-            />
+            <div key={category.id} className="relative">
+              {getCategoryIcon(category.id) && (
+                <div className="absolute top-3 left-3 z-10">
+                  {getCategoryIcon(category.id)}
+                </div>
+              )}
+              <CategoryCard 
+                category={category}
+                isClickable={false}
+              />
+            </div>
           ))}
         </motion.div>
       </div>
