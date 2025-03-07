@@ -119,7 +119,12 @@ const SearchSection = ({
         
         {/* Advanced Search Options - controlled by sidebar toggle */}
         {showAdvancedSearch && (
-          <div className="space-y-8">
+          <motion.div 
+            className="space-y-4 max-w-5xl mx-auto"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            transition={{ duration: 0.3 }}
+          >
             {/* All Filters in a Single Row */}
             <FilterRow 
               filters={allFilters} 
@@ -131,7 +136,7 @@ const SearchSection = ({
             {onDietaryToggle && (
               <DietaryToggle onDietaryToggle={handleDietaryToggle} />
             )}
-          </div>
+          </motion.div>
         )}
       </motion.div>
     </section>

@@ -8,7 +8,7 @@ interface DietaryToggleProps {
 const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
   return (
     <motion.div 
-      className="grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-xl mx-auto"
+      className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl mx-auto mt-4"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
