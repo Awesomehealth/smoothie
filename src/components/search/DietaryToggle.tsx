@@ -69,12 +69,11 @@ const ToggleItem = ({ label, prefId, onToggle }: ToggleItemProps) => {
   return (
     <div className="flex items-center">
       <label className="inline-flex items-center cursor-pointer">
-        <input 
-          type="checkbox" 
-          className="sr-only peer" 
-          onChange={(e) => onToggle(prefId, e.target.checked)}
+        <Switch 
+          id={prefId}
+          onCheckedChange={(checked) => onToggle(prefId, checked)}
+          className="bg-gray-200 data-[state=checked]:bg-coral-400"
         />
-        <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-coral-400 peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
         <span className="ml-3 text-sm font-medium text-gray-700 whitespace-nowrap">{label}</span>
       </label>
     </div>
