@@ -5,7 +5,7 @@ import { Category } from "@/data/categories";
 
 interface CategoryCardProps {
   category: Category;
-  onClick: (categoryId: string) => void;
+  onClick?: (categoryId: string) => void;
 }
 
 const CategoryCard = ({ category, onClick }: CategoryCardProps) => {
@@ -13,14 +13,13 @@ const CategoryCard = ({ category, onClick }: CategoryCardProps) => {
 
   return (
     <motion.div
-      className="relative overflow-hidden rounded-2xl shadow-md group cursor-pointer h-56"
+      className="relative overflow-hidden rounded-2xl shadow-md group h-56"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -5, transition: { duration: 0.2 } }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      onClick={() => onClick(category.id)}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70 z-10" />
       

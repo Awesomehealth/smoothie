@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 import CategoryCard from "@/components/CategoryCard";
 import { categories } from "@/data/categories";
 
-interface CategorySectionProps {
-  onCategorySelect: (categoryId: string) => void;
-}
-
-const CategorySection = ({ onCategorySelect }: CategorySectionProps) => {
+const CategorySection = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -39,7 +35,6 @@ const CategorySection = ({ onCategorySelect }: CategorySectionProps) => {
             <CategoryCard 
               key={category.id} 
               category={category}
-              onClick={onCategorySelect}
             />
           ))}
         </motion.div>
