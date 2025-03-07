@@ -34,13 +34,13 @@ const SearchBar = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-xl mx-auto relative">
+    <form onSubmit={handleSubmit} className="w-full mx-auto relative">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder={placeholder}
-        className="search-input pr-24 w-full" // Added full width
+        className="search-input pr-24 w-full h-16 text-lg" 
         aria-label="Search for smoothie recipes"
       />
       <div className="absolute right-0 top-0 flex h-full">
@@ -48,7 +48,7 @@ const SearchBar = ({
           <button 
             type="button" 
             onClick={handleImageClick} 
-            className="h-full px-3 bg-transparent text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
+            className="h-full px-4 bg-transparent text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
             aria-label="Upload image"
           >
             <Image className="h-5 w-5" />
@@ -56,7 +56,7 @@ const SearchBar = ({
         )}
         <button 
           type="submit" 
-          className="search-button" 
+          className="search-button mr-2" 
           aria-label="Search"
         >
           <Search className="h-6 w-6" />

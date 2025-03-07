@@ -15,7 +15,7 @@ interface FilterRowProps {
 const FilterRow = ({ filters, onFilterSelect, delay = 0.2 }: FilterRowProps) => {
   return (
     <motion.div 
-      className="flex flex-wrap justify-center gap-2 mt-4 mb-4 w-full"
+      className="flex flex-wrap justify-center gap-3 w-full max-w-xl mx-auto"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
