@@ -11,7 +11,7 @@ interface SearchBarProps {
 const SearchBar = ({ 
   onSearch, 
   onImageUpload, 
-  placeholder = "What smoothie would you like to make today?" 
+  placeholder = "Ask anything..." 
 }: SearchBarProps) => {
   const [query, setQuery] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);

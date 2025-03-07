@@ -82,12 +82,12 @@ const SearchSection = ({
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Power Your Day with the Best Smoothies
+          Find Your Perfect Smoothie
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-8">
           Discover delicious, nutritious smoothie recipes tailored to your taste and health goals.
         </p>
-        <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} />
+        <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} placeholder="Ask anything..." />
         
         {/* First Row of Filters */}
         <FilterRow 
