@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import SearchSection from "@/components/sections/SearchSection";
 import FilterSection from "@/components/sections/FilterSection";
-import CategorySection from "@/components/sections/CategorySection";
 import ResultsSection from "@/components/sections/ResultsSection";
 import Footer from "@/components/sections/Footer";
 import CategorySidebar from "@/components/CategorySidebar";
@@ -132,31 +131,31 @@ const Index = () => {
   }, [searchQuery, selectedCategory, filters, dietaryPreferences]);
 
   return (
-    <div className="min-h-screen bg-white">
-      <SearchSection onSearch={handleSearch} />
-      <FilterSection 
-        onFilterSelect={handleFilterSelect} 
-        onDietaryToggle={handleDietaryToggle} 
-      />
-      <div className="container mx-auto px-4 py-10">
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="w-full md:w-64 md:flex-shrink-0">
-            <CategorySidebar 
-              selectedCategory={selectedCategory}
-              onCategorySelect={handleCategorySelect}
-            />
-          </div>
-          <div className="flex-1">
+    <div className="min-h-screen flex flex-col bg-white">
+      <div className="flex flex-1">
+        <aside className="sticky top-0 h-screen">
+          <CategorySidebar 
+            selectedCategory={selectedCategory}
+            onCategorySelect={handleCategorySelect}
+          />
+        </aside>
+        
+        <main className="flex-1">
+          <SearchSection onSearch={handleSearch} />
+          <FilterSection 
+            onFilterSelect={handleFilterSelect} 
+            onDietaryToggle={handleDietaryToggle} 
+          />
+          <div className="container mx-auto px-4 py-10">
             <ResultsSection 
               filteredSmoothies={filteredSmoothies}
               selectedCategory={selectedCategory}
               searchQuery={searchQuery}
             />
           </div>
-        </div>
+          <Footer />
+        </main>
       </div>
-      <CategorySection />
-      <Footer />
     </div>
   );
 };

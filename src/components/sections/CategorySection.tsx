@@ -16,13 +16,13 @@ const CategorySection = () => {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="bg-white py-12 border-t border-gray-100">
       <div className="container px-4 mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 text-center">
-          Popular Categories
+          Explore Smoothie Categories
         </h2>
         <p className="text-gray-600 text-center mb-10">
-          Explore our most popular smoothie collections
+          Browse our popular smoothie collections
         </p>
         
         <motion.div 
@@ -35,6 +35,7 @@ const CategorySection = () => {
             <CategoryCard 
               key={category.id} 
               category={category}
+              isClickable={false}
             />
           ))}
         </motion.div>
