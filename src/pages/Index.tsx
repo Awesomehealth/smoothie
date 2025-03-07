@@ -7,6 +7,7 @@ import {
   smoothies,
   Smoothie
 } from "@/data/smoothies";
+import { toast } from "@/components/ui/use-toast";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -32,6 +33,21 @@ const Index = () => {
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     console.log("Search query:", query);
+  };
+
+  const handleImageUpload = (file: File) => {
+    console.log("Image uploaded:", file.name);
+    // In a real application, you would process the image here
+    // For now, we'll just show a toast notification
+    toast({
+      title: "Image Uploaded",
+      description: `We'll analyze ${file.name} and suggest matching smoothie recipes.`,
+      duration: 5000,
+    });
+    
+    // Simulate finding similar smoothies based on image
+    const randomSmoothies = [...smoothies].sort(() => 0.5 - Math.random()).slice(0, 4);
+    setFilteredSmoothies(randomSmoothies);
   };
 
   const handleFilterSelect = (filterType: keyof typeof filters, value: string) => {
@@ -147,6 +163,7 @@ const Index = () => {
           <div className="flex-grow flex items-center justify-center">
             <SearchSection 
               onSearch={handleSearch} 
+              onImageUpload={handleImageUpload}
               onFilterSelect={handleFilterSelect}
               onDietaryToggle={handleDietaryToggle}
             />

@@ -14,11 +14,17 @@ import {
 
 interface SearchSectionProps {
   onSearch: (query: string) => void;
+  onImageUpload?: (file: File) => void;
   onFilterSelect?: (filterType: string, value: string) => void;
   onDietaryToggle?: (preference: string, isChecked: boolean) => void;
 }
 
-const SearchSection = ({ onSearch, onFilterSelect, onDietaryToggle }: SearchSectionProps) => {
+const SearchSection = ({ 
+  onSearch, 
+  onImageUpload, 
+  onFilterSelect, 
+  onDietaryToggle 
+}: SearchSectionProps) => {
   const [openFilter, setOpenFilter] = useState<string | null>(null);
   
   const toggleFilter = (filter: string) => {
@@ -46,7 +52,7 @@ const SearchSection = ({ onSearch, onFilterSelect, onDietaryToggle }: SearchSect
         <p className="text-lg md:text-xl text-gray-600 mb-8">
           Discover delicious, nutritious smoothie recipes tailored to your taste and health goals.
         </p>
-        <SearchBar onSearch={onSearch} />
+        <SearchBar onSearch={onSearch} onImageUpload={onImageUpload} />
         
         {/* Filter Buttons - First Row (3 filters) */}
         <motion.div 
