@@ -30,7 +30,7 @@ const SearchSection = ({
   onDietaryToggle,
   showAdvancedSearch
 }: SearchSectionProps) => {
-  const [showSmartSuggestions, setShowSmartSuggestions] = useState(false);
+  const [showSmartSuggestions, setShowSmartSuggestions] = useState(true);
 
   const handleFilterSelect = (filterType: string, value: string) => {
     if (onFilterSelect) {
@@ -134,7 +134,7 @@ const SearchSection = ({
             onSearch={handleSearch} 
             onImageUpload={onImageUpload} 
             onUrlSubmit={handleUrlSubmit}
-            placeholder="Search smoothies, ingredients, or nutritional goals..." 
+            placeholder="Ask Lovable to create a prototype..." 
           />
         </div>
         

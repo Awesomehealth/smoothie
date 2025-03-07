@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Sparkles, Info } from "lucide-react";
+import { Sparkles, Info, ArrowUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface SmartSearchProps {
@@ -11,12 +11,10 @@ const SmartSearch = ({ onSuggestionSelect }: SmartSearchProps) => {
   const [showInfo, setShowInfo] = useState(false);
   
   const suggestions = [
-    "Post-workout recovery smoothie",
-    "High-protein breakfast smoothie",
-    "Green detox smoothie",
-    "Keto-friendly smoothie",
-    "Energy-boosting smoothie",
-    "Weight loss smoothie",
+    "Hacker News top 100",
+    "Slidev presentation",
+    "Expense tracker",
+    "Recharts dashboard",
   ];
 
   return (
@@ -26,24 +24,10 @@ const SmartSearch = ({ onSuggestionSelect }: SmartSearchProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center">
-          <Sparkles className="h-4 w-4 text-coral-500 mr-2" />
-          <h3 className="text-sm font-medium text-gray-700">AI-Powered Suggestions</h3>
-        </div>
-        <button 
-          className="text-gray-500 hover:text-gray-700" 
-          onClick={() => setShowInfo(!showInfo)}
-          aria-label="Toggle info"
-        >
-          <Info className="h-4 w-4" />
-        </button>
-      </div>
-      
       <AnimatePresence>
         {showInfo && (
           <motion.div 
-            className="bg-gray-50 p-3 rounded-lg text-xs text-gray-600 mb-3"
+            className="bg-gray-800/60 p-3 rounded-lg text-xs text-gray-300 mb-3"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -55,14 +39,15 @@ const SmartSearch = ({ onSuggestionSelect }: SmartSearchProps) => {
         )}
       </AnimatePresence>
       
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 justify-center">
         {suggestions.map((suggestion) => (
           <button
             key={suggestion}
             onClick={() => onSuggestionSelect(suggestion)}
-            className="text-xs bg-white border border-gray-200 hover:border-coral-300 rounded-full px-3 py-1 text-gray-700 hover:bg-coral-50 transition-colors"
+            className="flex items-center text-sm bg-gray-900 border border-gray-800 hover:border-gray-700 rounded-full px-5 py-2.5 text-gray-300 hover:bg-gray-800 transition-colors"
           >
             {suggestion}
+            <ArrowUp className="ml-2 h-3 w-3" />
           </button>
         ))}
       </div>

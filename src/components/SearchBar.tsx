@@ -1,6 +1,6 @@
 
 import { useState, useRef } from "react";
-import { Search, Image, Link, Sparkles, X } from "lucide-react";
+import { Search, Image, Link, Sparkles, X, ArrowUp, Paperclip, FileSymlink, ClipboardList, Globe } from "lucide-react";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -78,44 +78,56 @@ const SearchBar = ({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={placeholder}
-              className="search-input pr-32 w-full h-16 text-lg" 
+              className="w-full h-16 px-6 py-4 text-lg bg-gray-900/90 text-white rounded-xl border border-gray-800 focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700 placeholder-gray-500"
               aria-label="Search for smoothie recipes"
             />
-            <div className="absolute right-0 top-0 flex h-full">
+            <div className="absolute right-2 bottom-0 flex h-full items-center gap-1">
               {onImageUpload && (
                 <button 
                   type="button" 
                   onClick={handleImageClick} 
-                  className="h-full px-3 bg-transparent text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
+                  className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
                   aria-label="Upload image"
                 >
-                  <Image className="h-5 w-5" />
+                  <Paperclip className="h-5 w-5" />
+                  <span className="ml-2 text-sm">Attach</span>
                 </button>
               )}
               {onUrlSubmit && (
                 <button 
                   type="button" 
                   onClick={toggleUrlInput} 
-                  className="h-full px-3 bg-transparent text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
+                  className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
                   aria-label="Paste URL"
                 >
-                  <Link className="h-5 w-5" />
+                  <FileSymlink className="h-5 w-5" />
+                  <span className="ml-2 text-sm">Import</span>
                 </button>
               )}
               <button 
                 type="button" 
                 onClick={handleSmartSearch}
-                className="h-full px-3 bg-transparent text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
+                className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
                 aria-label="AI Smart Search"
               >
-                <Sparkles className="h-5 w-5" />
+                <ClipboardList className="h-5 w-5" />
+                <span className="ml-2 text-sm">Plan</span>
               </button>
+              <div className="mx-2 h-8 w-px bg-gray-700"></div>
               <button 
-                type="submit" 
-                className="search-button mr-2" 
+                type="button"
+                className="flex items-center justify-center h-10 px-3 text-gray-400 hover:text-white focus:outline-none transition-colors"
+                aria-label="Public"
+              >
+                <Globe className="h-5 w-5" />
+                <span className="ml-2 text-sm">Public</span>
+              </button>
+              <button
+                type="submit"
+                className="flex items-center justify-center h-8 w-8 rounded-lg bg-gray-700 hover:bg-gray-600 text-white ml-1 mr-2"
                 aria-label="Search"
               >
-                <Search className="h-6 w-6" />
+                <ArrowUp className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -130,24 +142,24 @@ const SearchBar = ({
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               placeholder="Paste recipe URL from YouTube, Instagram, Pinterest..."
-              className="search-input pr-24 w-full h-16 text-lg" 
+              className="w-full h-16 px-6 py-4 text-lg bg-gray-900/90 text-white rounded-xl border border-gray-800 focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700 placeholder-gray-500"
               aria-label="Enter URL for recipe extraction"
             />
             <div className="absolute right-0 top-0 flex h-full">
               <button 
                 type="button" 
                 onClick={toggleUrlInput} 
-                className="h-full px-3 bg-transparent text-gray-500 hover:text-gray-700 focus:outline-none transition-colors"
+                className="h-full px-3 bg-transparent text-gray-400 hover:text-white focus:outline-none transition-colors"
                 aria-label="Back to text search"
               >
                 <X className="h-5 w-5" />
               </button>
               <button 
                 type="submit" 
-                className="search-button mr-2" 
+                className="flex items-center justify-center h-8 w-8 rounded-lg bg-gray-700 hover:bg-gray-600 text-white mr-4 my-auto"
                 aria-label="Extract recipe from URL"
               >
-                <Search className="h-6 w-6" />
+                <ArrowUp className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -165,14 +177,14 @@ const SearchBar = ({
 
         {/* Autocomplete Suggestions (shown when typing) */}
         {query.length > 2 && !isUrlInputVisible && (
-          <div className="absolute top-16 left-0 right-0 bg-white rounded-b-lg shadow-lg z-10 border border-gray-200 border-t-0">
-            <div className="py-2 px-4 hover:bg-gray-100 cursor-pointer" onClick={() => setQuery("High-protein post-workout smoothie")}>
+          <div className="absolute top-16 left-0 right-0 bg-gray-900/95 rounded-b-lg shadow-lg z-10 border border-gray-800 border-t-0 text-white">
+            <div className="py-2 px-4 hover:bg-gray-800 cursor-pointer" onClick={() => setQuery("High-protein post-workout smoothie")}>
               High-protein post-workout smoothie
             </div>
-            <div className="py-2 px-4 hover:bg-gray-100 cursor-pointer" onClick={() => setQuery("Low-carb green smoothie for weight loss")}>
+            <div className="py-2 px-4 hover:bg-gray-800 cursor-pointer" onClick={() => setQuery("Low-carb green smoothie for weight loss")}>
               Low-carb green smoothie for weight loss
             </div>
-            <div className="py-2 px-4 hover:bg-gray-100 cursor-pointer" onClick={() => setQuery("Keto-friendly berry smoothie")}>
+            <div className="py-2 px-4 hover:bg-gray-800 cursor-pointer" onClick={() => setQuery("Keto-friendly berry smoothie")}>
               Keto-friendly berry smoothie
             </div>
           </div>
