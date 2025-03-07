@@ -41,7 +41,7 @@ const SearchSection = ({ onSearch, onFilterSelect, onDietaryToggle }: SearchSect
         transition={{ duration: 0.5 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Find Your Perfect Smoothie
+          Power Your Day with the Best Smoothies
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-8">
           Discover delicious, nutritious smoothie recipes tailored to your taste and health goals.
