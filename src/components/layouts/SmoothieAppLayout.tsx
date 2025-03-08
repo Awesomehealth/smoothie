@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle } from "lucide-react";
@@ -6,12 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-
 interface SmoothieAppLayoutProps {
   sidebar: React.ReactNode;
   mainContent: React.ReactNode;
 }
-
 const SmoothieAppLayout = ({
   sidebar,
   mainContent
@@ -24,7 +21,6 @@ const SmoothieAppLayout = ({
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
   };
-  
   return <div className="min-h-screen flex flex-col bg-white relative">
       {/* App header */}
       <header className="w-full bg-white border-b border-gray-200 py-3">
@@ -32,7 +28,7 @@ const SmoothieAppLayout = ({
           {/* Logo area - left aligned */}
           <div className="flex items-center ml-0">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-awesome-green">Awesome Body</span>
+              <span className="text-xl font-bold text-slate-950">Awesome Body</span>
             </Link>
           </div>
 
@@ -104,5 +100,4 @@ const SmoothieAppLayout = ({
       <Footer />
     </div>;
 };
-
 export default SmoothieAppLayout;
