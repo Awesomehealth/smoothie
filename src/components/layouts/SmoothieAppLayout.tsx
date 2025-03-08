@@ -65,7 +65,7 @@ const SmoothieAppLayout = ({
               </Link>
             </div>
             <div className="flex items-center space-x-4">
-              <Button className="text-gray-800 font-medium rounded-full flex items-center gap-2 bg-mint-500 hover:bg-mint-400">
+              <Button className="text-white font-medium rounded-full flex items-center gap-2 bg-awesome-green hover:bg-awesome-green/90">
                 <Gem className="h-4 w-4" />
                 <span>Upgrade to Premium</span>
               </Button>
