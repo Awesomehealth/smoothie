@@ -32,8 +32,8 @@ const CategoryHeader = ({ category, isPostWorkout }: CategoryHeaderProps) => {
   };
 
   return (
-    <header className="mb-8">
-      <div className="flex items-center gap-2 mb-2">
+    <header className="mb-8 text-center">
+      <div className="flex items-center justify-center gap-2 mb-2">
         <h1 className="text-3xl font-bold">{category?.name || "Category"}</h1>
         {category?.tag && (
           <span className={`px-2 py-1 text-xs font-medium rounded-full ${category.tagStyle}`}>
@@ -41,7 +41,7 @@ const CategoryHeader = ({ category, isPostWorkout }: CategoryHeaderProps) => {
           </span>
         )}
       </div>
-      <p className="text-gray-600 max-w-2xl">
+      <p className="text-gray-600 max-w-2xl mx-auto">
         {getCategoryDescription(category?.id)}
       </p>
     </header>
