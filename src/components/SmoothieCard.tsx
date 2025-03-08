@@ -2,7 +2,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Trophy, Wheat, Droplet, Utensils, ArrowRight, ImageOff } from "lucide-react";
 import { motion } from "framer-motion";
-import { toast } from "@/components/ui/use-toast";
 import { Smoothie } from "@/data/types";
 import { useState } from "react";
 
@@ -20,12 +19,7 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
     target.src = "/placeholder.svg";
     setImageError(true);
     
-    // Notify user about the image loading issue with a toast
-    toast({
-      title: "Image couldn't load",
-      description: `Using a placeholder image for ${smoothie.name}`,
-      variant: "default",
-    });
+    // Toast notification removed
   };
 
   // Use a consistent image for all smoothie cards
