@@ -4,8 +4,8 @@ import { Facebook, Twitter, Instagram, Youtube, Music } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-gray-200 py-6 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+    <footer className="w-full border-t border-gray-200 py-4 bg-white">
+      <div className="mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between items-center space-y-4 md:space-y-0">
           {/* Left side - Links and Copyright */}
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500">

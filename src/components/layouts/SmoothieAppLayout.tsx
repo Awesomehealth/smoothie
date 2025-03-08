@@ -132,7 +132,7 @@ const SmoothieAppLayout = ({
       </div>
       
       {/* Footer completely separated from the navigation */}
-      <div className="max-w-[calc(100vw-64px)] mx-auto">
+      <div className="max-w-[1280px] mx-auto px-4">
         <Footer />
       </div>
     </>
