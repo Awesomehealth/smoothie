@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
@@ -47,20 +48,22 @@ const SmoothieAppLayout = ({
       <div className="flex flex-col bg-white relative h-screen overflow-hidden">
         <header className="w-full bg-white border-b border-gray-200 py-3">
           <div className="flex items-center justify-between px-4 w-full">
-            {isCategoryPage && (
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                onClick={toggleSidebar} 
-                className="mr-2"
-                aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
-              >
-                <Menu className="h-5 w-5 text-awesome-green" />
-              </Button>
-            )}
-            <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-slate-950">Awesome Body</span>
-            </Link>
+            <div className="flex items-center">
+              {isCategoryPage && (
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  onClick={toggleSidebar} 
+                  className="mr-2"
+                  aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+                >
+                  <Menu className="h-5 w-5 text-awesome-green" />
+                </Button>
+              )}
+              <Link to="/" className="flex items-center">
+                <span className="text-xl font-bold text-slate-950">Awesome Body</span>
+              </Link>
+            </div>
             <div className="flex items-center space-x-4">
               <Button className="text-gray-800 font-medium rounded-full flex items-center gap-2 bg-mint-500 hover:bg-mint-400">
                 <Gem className="h-4 w-4" />
