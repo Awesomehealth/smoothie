@@ -67,11 +67,9 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
       </header>
 
       <div className="flex flex-1">
-        {isCategoryPage && (
-          <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed ? 'w-16' : 'w-64'}`}>
-            {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: sidebarCollapsed })}
-          </aside>
-        )}
+        <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed && isCategoryPage ? 'w-16' : 'w-64'}`}>
+          {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: isCategoryPage ? sidebarCollapsed : false })}
+        </aside>
         
         <main className="flex-1 flex flex-col">
           <div className="flex-grow flex items-center justify-center">
