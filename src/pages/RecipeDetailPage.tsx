@@ -1,9 +1,8 @@
-
 import { useParams, Link } from "react-router-dom";
 import { smoothies } from "@/data/smoothiesData";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { motion } from "framer-motion";
-import { Star, Heart, Printer, Mail, MessageSquare, ShoppingCart, Plus, Edit } from "lucide-react";
+import { Star, Heart, Printer, Mail, MessageSquare, ShoppingCart, Plus, Edit, Share, Save, Grid } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
@@ -16,8 +15,8 @@ const RecipeDetailPage = () => {
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [showAllPhotos, setShowAllPhotos] = useState(false);
   
-  // Find the smoothie data based on the URL parameter
   const smoothie = smoothies.find((s) => s.id === smoothieId);
   
   if (!smoothie) {
@@ -92,6 +91,21 @@ const RecipeDetailPage = () => {
     });
   };
 
+  const handleShareRecipe = () => {
+    toast({
+      title: "Share Recipe",
+      description: "Recipe link copied to clipboard!",
+    });
+  };
+
+  const dummyImages = [
+    `/lovable-uploads/742abece-02f8-477f-8e94-a0ec6d107f10.png`,
+    smoothie.image,
+    smoothie.image.replace('.jpg', '2.jpg'),
+    smoothie.image.replace('.jpg', '3.jpg'),
+    smoothie.image.replace('.jpg', '4.jpg'),
+  ];
+
   return (
     <SmoothieAppLayout
       sidebar={
@@ -103,87 +117,134 @@ const RecipeDetailPage = () => {
         />
       }
       mainContent={
-        <div className="w-full max-w-3xl mx-auto pb-20">
-          {/* Hero Section */}
-          <div className="bg-gradient-to-r from-lavender-50 to-mint-50 p-6 rounded-b-xl">
-            <div className="text-center max-w-2xl mx-auto py-8">
-              <motion.h1 
-                className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                {smoothie.name}
-              </motion.h1>
+        <div className="w-full max-w-5xl mx-auto pb-20">
+          <div className="flex justify-between items-center py-6 px-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{smoothie.name}</h1>
+            <div className="flex gap-4">
+              <Button variant="outline" onClick={handleShareRecipe}>
+                <Share size={20} className="mr-2" /> Share
+              </Button>
+              <Button variant="outline" onClick={handleSaveRecipe}>
+                <Save size={20} className="mr-2" /> Save
+              </Button>
+            </div>
+          </div>
+          
+          <div className="mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-2 relative">
+              <div className="md:col-span-2 md:row-span-2 relative">
+                <img 
+                  src={dummyImages[0]} 
+                  alt={smoothie.name} 
+                  className="w-full h-full object-cover rounded-tl-lg rounded-bl-lg"
+                  style={{ minHeight: "400px" }}
+                />
+              </div>
               
-              {/* Rating Stars */}
-              <div className="flex justify-center items-center gap-1 mb-2">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star 
-                    key={star}
-                    className={`h-6 w-6 ${star <= (smoothie.recipe?.rating || 4.5) 
-                      ? "text-coral-500 fill-coral-500" 
-                      : "text-gray-300"}`}
-                  />
-                ))}
-                <span className="ml-2 text-gray-600">
-                  {smoothie.recipe?.reviews || 5} Reviews
+              <div className="hidden md:block">
+                <img 
+                  src={dummyImages[1]} 
+                  alt={`${smoothie.name} detail 1`} 
+                  className="w-full h-full object-cover rounded-tr-lg"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="hidden md:block">
+                <img 
+                  src={dummyImages[2]} 
+                  alt={`${smoothie.name} detail 2`} 
+                  className="w-full h-full object-cover"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="hidden md:block">
+                <img 
+                  src={dummyImages[3]} 
+                  alt={`${smoothie.name} detail 3`} 
+                  className="w-full h-full object-cover"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="hidden md:block relative">
+                <img 
+                  src={dummyImages[4]} 
+                  alt={`${smoothie.name} detail 4`} 
+                  className="w-full h-full object-cover rounded-br-lg"
+                  style={{ height: "200px" }}
+                />
+                <button 
+                  className="absolute bottom-4 right-4 bg-white rounded-full px-4 py-2 flex items-center gap-2 shadow-md"
+                  onClick={() => setShowAllPhotos(true)}
+                >
+                  <Grid size={16} /> Show all photos
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-8 px-6 mb-8">
+            <div className="flex-1">
+              <h2 className="text-2xl font-semibold mb-2">{smoothie.name} in a glass</h2>
+              <div className="flex items-center mb-4">
+                <div className="flex">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star 
+                      key={star}
+                      className={`h-5 w-5 ${star <= (smoothie.recipe?.rating || 4.5) 
+                        ? "text-coral-500 fill-coral-500" 
+                        : "text-gray-300"}`}
+                    />
+                  ))}
+                </div>
+                <span className="ml-2 text-gray-600 font-medium">
+                  {(smoothie.recipe?.rating || 4.5).toFixed(1)} · {smoothie.recipe?.reviews || 271} reviews
                 </span>
               </div>
-              
-              <p className="text-gray-600 italic mt-4">
-                {smoothie.description}
-              </p>
-            </div>
-          </div>
-          
-          {/* Recipe Info Cards */}
-          <div className="grid grid-cols-2 gap-4 p-6 bg-white rounded-xl -mt-5 shadow-sm border border-gray-100">
-            <div className="flex flex-col">
-              <span className="text-gray-500 text-sm">Level:</span>
-              <span className="font-semibold">{smoothie.recipe?.difficulty || "Easy"}</span>
+              <p className="text-gray-700 mb-4">{smoothie.description}</p>
             </div>
             
-            <div className="flex flex-col">
-              <span className="text-gray-500 text-sm">Total:</span>
-              <span className="font-semibold">{smoothie.recipe?.totalTime || 10} min</span>
-            </div>
-            
-            <div className="flex flex-col">
-              <span className="text-gray-500 text-sm">Yield:</span>
-              <span className="font-semibold">{smoothie.recipe?.servings || 1} serving</span>
-            </div>
-            
-            <div className="flex flex-col">
-              <span className="text-gray-500 text-sm">Active:</span>
-              <span className="font-semibold">{smoothie.recipe?.prepTime || 5} min</span>
-            </div>
-          </div>
-          
-          {/* Nutrition Info */}
-          <div className="mt-8 px-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Nutrition Facts</h2>
-            <div className="bg-gray-50 rounded-lg p-4 grid grid-cols-4 gap-4">
-              <div className="text-center">
-                <p className="text-sm text-gray-500">Calories</p>
-                <p className="font-bold">{smoothie.nutrition.calories}</p>
-              </div>
-              <div className="text-center">
-                <p className="text-sm text-gray-500">Protein</p>
-                <p className="font-bold">{smoothie.nutrition.protein}g</p>
-              </div>
-              <div className="text-center">
-                <p className="text-sm text-gray-500">Carbs</p>
-                <p className="font-bold">{smoothie.nutrition.carbs}g</p>
-              </div>
-              <div className="text-center">
-                <p className="text-sm text-gray-500">Fat</p>
-                <p className="font-bold">{smoothie.nutrition.fat}g</p>
+            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 w-full md:w-80">
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Nutrition Facts</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-2xl font-bold text-coral-600">{smoothie.nutrition.calories}</p>
+                  <p className="text-sm text-gray-500">calories</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-2xl font-bold text-mint-600">{smoothie.nutrition.protein}g</p>
+                  <p className="text-sm text-gray-500">protein</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-2xl font-bold text-lavender-600">{smoothie.nutrition.carbs}g</p>
+                  <p className="text-sm text-gray-500">carbs</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-2xl font-bold text-sky-600">{smoothie.nutrition.fat}g</p>
+                  <p className="text-sm text-gray-500">fat</p>
+                </div>
               </div>
             </div>
           </div>
           
-          {/* Ingredients */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-6 mb-8">
+            <div className="bg-gray-50 p-4 rounded-lg text-center">
+              <p className="text-sm text-gray-500">Level</p>
+              <p className="font-semibold">{smoothie.recipe?.difficulty || "Easy"}</p>
+            </div>
+            <div className="bg-gray-50 p-4 rounded-lg text-center">
+              <p className="text-sm text-gray-500">Total Time</p>
+              <p className="font-semibold">{smoothie.recipe?.totalTime || 10} min</p>
+            </div>
+            <div className="bg-gray-50 p-4 rounded-lg text-center">
+              <p className="text-sm text-gray-500">Servings</p>
+              <p className="font-semibold">{smoothie.recipe?.servings || 1}</p>
+            </div>
+            <div className="bg-gray-50 p-4 rounded-lg text-center">
+              <p className="text-sm text-gray-500">Prep Time</p>
+              <p className="font-semibold">{smoothie.recipe?.prepTime || 5} min</p>
+            </div>
+          </div>
+          
           <div className="mt-8 px-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Ingredients:</h2>
             <Card className="p-4">
@@ -218,7 +279,6 @@ const RecipeDetailPage = () => {
               </ul>
             </Card>
             
-            {/* Ingredient Action Buttons */}
             <div className="mt-6 space-y-3">
               <Button 
                 className="w-full bg-gray-700 hover:bg-gray-800 text-white"
@@ -261,7 +321,6 @@ const RecipeDetailPage = () => {
             </div>
           </div>
           
-          {/* Instructions */}
           {smoothie.recipe?.instructions && smoothie.recipe.instructions.length > 0 && (
             <div className="mt-10 px-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">Directions:</h2>
@@ -276,7 +335,6 @@ const RecipeDetailPage = () => {
             </div>
           )}
           
-          {/* Recipe Tips */}
           {smoothie.recipe?.tips && smoothie.recipe.tips.length > 0 && (
             <div className="mt-8 px-6">
               <h2 className="text-xl font-bold text-gray-800 mb-4">Recipe Tips:</h2>
@@ -293,7 +351,6 @@ const RecipeDetailPage = () => {
             </div>
           )}
           
-          {/* Action Buttons */}
           <div className="mt-10 px-6">
             <Button 
               className="w-full bg-coral-500 hover:bg-coral-600 text-white h-12 rounded-full mb-4"
