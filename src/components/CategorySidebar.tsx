@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronLeft, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle, Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
@@ -56,17 +55,11 @@ const CategorySidebar = ({
 
   return (
     <div className={`h-full bg-gray-50 border-r border-gray-200 transition-all duration-300 flex flex-col relative ${collapsed ? 'w-16' : 'w-64'}`}>
-      {/* User Profile, moved to top */}
-      <div className="p-4 border-b border-gray-200 flex justify-between items-center">
-        <h2 className={`text-coral-500 font-bold text-xl transition-opacity duration-300 ${collapsed ? 'opacity-0' : 'opacity-100'}`}>
-          {!collapsed && "Smoothie Search"}
-        </h2>
-        {collapsed && <div className="mx-auto text-coral-500"><Search className="h-5 w-5" /></div>}
-        
-        {/* Toggle button inside the navigation panel */}
+      {/* Collapse button */}
+      <div className="p-4 border-b border-gray-200 flex justify-end items-center">
         <button 
           onClick={toggleSidebar}
-          className="bg-white rounded-full p-2 shadow-md hover:shadow-lg transition-shadow ml-2"
+          className="bg-white rounded-full p-2 shadow-md hover:shadow-lg transition-shadow"
           aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
         >
           <ChevronLeft className={`h-4 w-4 text-gray-500 transition-transform ${collapsed ? 'rotate-180' : ''}`} />
@@ -160,22 +153,6 @@ const CategorySidebar = ({
             </li>
           </ul>
         </div>
-      </div>
-      
-      {/* User Profile */}
-      <div className="border-t border-gray-200 p-3">
-        <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100`}>
-          <div className="bg-coral-100 text-coral-500 h-8 w-8 rounded-full flex items-center justify-center">
-            <User className="h-4 w-4" />
-          </div>
-          {!collapsed && (
-            <div className="flex-1">
-              <p className="text-sm font-medium text-gray-700">Profile</p>
-              <p className="text-xs text-gray-500">View your account</p>
-            </div>
-          )}
-          {!collapsed && <ChevronRight className="h-4 w-4 text-gray-400" />}
-        </button>
       </div>
     </div>
   );
