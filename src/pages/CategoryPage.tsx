@@ -6,7 +6,7 @@ import CategorySidebar from "@/components/CategorySidebar";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { useState } from "react";
 import CategoryHeader from "@/components/CategoryHeader";
-import PostWorkoutInfoCards from "@/components/PostWorkoutInfoCards";
+import CategoryInfoCards from "@/components/CategoryInfoCards";
 import CategorySearchSection from "@/components/CategorySearchSection";
 import SmoothieList from "@/components/SmoothieList";
 
@@ -34,9 +34,6 @@ const CategoryPage = () => {
           )
       )
     : categorySmoothies;
-
-  // Specific content for post-workout
-  const isPostWorkout = categoryId === 'post-workout';
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -73,7 +70,7 @@ const CategoryPage = () => {
       }
       mainContent={
         <div className="w-full max-w-7xl mx-auto p-8">
-          <CategoryHeader category={category} isPostWorkout={isPostWorkout} />
+          <CategoryHeader category={category} isPostWorkout={categoryId === 'post-workout'} />
           
           {/* Search Section with Advanced Search */}
           <CategorySearchSection 
@@ -85,7 +82,8 @@ const CategoryPage = () => {
             onDietaryToggle={handleDietaryToggle}
           />
           
-          {isPostWorkout && <PostWorkoutInfoCards />}
+          {/* Category-specific info cards */}
+          <CategoryInfoCards categoryId={categoryId} />
           
           <SmoothieList smoothies={filteredSmoothies} searchQuery={searchQuery} />
         </div>
