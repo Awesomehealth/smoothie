@@ -9,10 +9,13 @@ import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/components/ui/use-toast";
+import CategorySidebar from "@/components/CategorySidebar";
 
 const RecipeDetailPage = () => {
   const { smoothieId } = useParams<{ smoothieId: string }>();
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   
   // Find the smoothie data based on the URL parameter
   const smoothie = smoothies.find((s) => s.id === smoothieId);
@@ -20,6 +23,14 @@ const RecipeDetailPage = () => {
   if (!smoothie) {
     return (
       <SmoothieAppLayout
+        sidebar={
+          <CategorySidebar
+            selectedCategory={selectedCategory}
+            onCategorySelect={setSelectedCategory}
+            showAdvancedSearch={showAdvancedSearch}
+            onAdvancedSearchToggle={setShowAdvancedSearch}
+          />
+        }
         mainContent={
           <div className="w-full max-w-3xl mx-auto p-8 text-center">
             <h1 className="text-2xl font-bold mb-4">Recipe not found</h1>
@@ -83,6 +94,14 @@ const RecipeDetailPage = () => {
 
   return (
     <SmoothieAppLayout
+      sidebar={
+        <CategorySidebar
+          selectedCategory={selectedCategory}
+          onCategorySelect={setSelectedCategory}
+          showAdvancedSearch={showAdvancedSearch}
+          onAdvancedSearchToggle={setShowAdvancedSearch}
+        />
+      }
       mainContent={
         <div className="w-full max-w-3xl mx-auto pb-20">
           {/* Hero Section */}
