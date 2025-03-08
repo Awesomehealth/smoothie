@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
@@ -23,9 +22,8 @@ const SmoothieAppLayout = ({
   const location = useLocation();
   const { user, signOut } = useAuth();
 
-  // Check if we are on a category page (not the home page)
   const isCategoryPage = location.pathname !== "/";
-  
+
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
   };
@@ -40,36 +38,27 @@ const SmoothieAppLayout = ({
 
   return (
     <div className="min-h-screen flex flex-col bg-white relative">
-      {/* App header */}
       <header className="w-full bg-white border-b border-gray-200 py-3">
         <div className="flex items-center justify-between px-4 w-full">
-          {/* Logo area - left aligned with hamburger menu */}
-          <div className="flex items-center ml-0">
-            {isCategoryPage && (
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                onClick={toggleSidebar} 
-                className="mr-2"
-                aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
-              >
-                <Menu className="h-5 w-5 text-awesome-green" />
-              </Button>
-            )}
-            <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-slate-950">Awesome Body</span>
-            </Link>
-          </div>
-
-          {/* Right side actions - right aligned */}
+          {isCategoryPage && (
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={toggleSidebar} 
+              className="mr-2"
+              aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+            >
+              <Menu className="h-5 w-5 text-awesome-green" />
+            </Button>
+          )}
+          <Link to="/" className="flex items-center">
+            <span className="text-xl font-bold text-slate-950">Awesome Body</span>
+          </Link>
           <div className="flex items-center space-x-4">
-            {/* Premium button */}
             <Button className="text-gray-800 font-medium rounded-full flex items-center gap-2 bg-mint-500 hover:bg-mint-400">
               <Gem className="h-4 w-4" />
               <span>Upgrade to Premium</span>
             </Button>
-            
-            {/* User profile with dropdown */}
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -127,14 +116,13 @@ const SmoothieAppLayout = ({
         </aside>
         
         <main className="flex-1 flex flex-col">
-          <div className="flex-grow flex items-center justify-center">
+          <div className="flex-grow">
             {mainContent}
           </div>
         </main>
       </div>
       <Footer />
       
-      {/* Login Dialog */}
       <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
     </div>
   );

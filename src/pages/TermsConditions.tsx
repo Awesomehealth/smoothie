@@ -20,7 +20,7 @@ const TermsConditions = () => {
             </Link>
           </div>
           
-          <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
+          <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
         </div>
       }
     />
