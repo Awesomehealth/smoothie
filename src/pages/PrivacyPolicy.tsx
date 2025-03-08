@@ -1,14 +1,25 @@
 
-import React from "react";
+import React, { useState } from "react";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
+import CategorySidebar from "@/components/CategorySidebar";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const PrivacyPolicy = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+
   return (
     <SmoothieAppLayout
-      sidebar={<div />}
+      sidebar={
+        <CategorySidebar
+          selectedCategory={selectedCategory}
+          onCategorySelect={setSelectedCategory}
+          showAdvancedSearch={showAdvancedSearch}
+          onAdvancedSearchToggle={setShowAdvancedSearch}
+        />
+      }
       mainContent={
         <div className="w-full max-w-3xl mx-auto px-4 py-12">
           <div className="mb-8">
