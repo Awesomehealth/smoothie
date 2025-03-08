@@ -38,7 +38,10 @@ const SmoothieAppLayout = ({
   };
 
   // Calculate content height class based on the current route
-  const contentHeightClass = location.pathname === "/" ? "h-[calc(100vh-57px-72px)]" : "min-h-[calc(100vh-57px-72px)]";
+  // For home page, we want a fixed height without scrolling
+  const contentHeightClass = location.pathname === "/" 
+    ? "h-[calc(100vh-57px-72px)]" 
+    : "min-h-[calc(100vh-57px-72px)]";
 
   return (
     <div className="flex flex-col bg-white relative h-screen overflow-hidden">
@@ -123,6 +126,8 @@ const SmoothieAppLayout = ({
           {mainContent}
         </main>
       </div>
+      
+      {/* Footer is now clearly separated from the main content */}
       <Footer />
       
       <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
