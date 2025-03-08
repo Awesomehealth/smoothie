@@ -1,9 +1,9 @@
 
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
-import { User, Gem, Menu } from "lucide-react";
+import { User, Gem, Menu, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 interface SmoothieAppLayoutProps {
   sidebar: React.ReactNode;
@@ -12,6 +12,10 @@ interface SmoothieAppLayoutProps {
 
 const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const location = useLocation();
+  
+  // Check if we are on a category page (not the home page)
+  const isCategoryPage = location.pathname !== "/";
 
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
@@ -24,14 +28,21 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo and menu section */}
           <div className="flex items-center gap-2">
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              className="mr-1" 
-              onClick={toggleSidebar}
-            >
-              <Menu className="h-5 w-5 text-gray-600" />
-            </Button>
+            {isCategoryPage && (
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="mr-1" 
+                onClick={toggleSidebar}
+                aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+              >
+                {sidebarCollapsed ? (
+                  <Menu className="h-5 w-5 text-gray-600" />
+                ) : (
+                  <ChevronLeft className="h-5 w-5 text-gray-600" />
+                )}
+              </Button>
+            )}
             <Link to="/" className="flex items-center gap-2">
               <span className="text-xl font-bold text-coral-500">Smoothie Search</span>
             </Link>
@@ -56,9 +67,11 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
       </header>
 
       <div className="flex flex-1">
-        <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 ${sidebarCollapsed ? 'hidden' : 'block'}`}>
-          {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: sidebarCollapsed })}
-        </aside>
+        {isCategoryPage && (
+          <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed ? 'w-16' : 'w-64'}`}>
+            {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: sidebarCollapsed })}
+          </aside>
+        )}
         
         <main className="flex-1 flex flex-col">
           <div className="flex-grow flex items-center justify-center">

@@ -1,9 +1,8 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
   ChevronRight, 
-  ChevronLeft, 
   Search, 
   FileText, 
   BookOpen, 
@@ -34,16 +33,14 @@ const CategorySidebar = ({
   onCategorySelect, 
   showAdvancedSearch, 
   onAdvancedSearchToggle,
-  isCollapsed 
+  isCollapsed = false
 }: CategorySidebarProps) => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(isCollapsed);
   const navigate = useNavigate();
 
-  // React to external collapse state if provided
-  React.useEffect(() => {
-    if (isCollapsed !== undefined) {
-      setCollapsed(isCollapsed);
-    }
+  // Update internal state when external prop changes
+  useEffect(() => {
+    setCollapsed(isCollapsed);
   }, [isCollapsed]);
 
   // Map category IDs to corresponding icons
@@ -76,13 +73,15 @@ const CategorySidebar = ({
   };
 
   return (
-    <div className={`h-full bg-gray-50 border-r border-gray-200 transition-all duration-300 flex flex-col relative ${collapsed ? 'w-16' : 'w-64'}`}>      
+    <div className={`h-full bg-gray-50 border-r border-gray-200 transition-all duration-300 flex flex-col ${collapsed ? 'w-16' : 'w-64'}`}>      
       <div className="flex-1 overflow-y-auto">
         {/* Categories Section */}
         <div className="p-3">
-          <h3 className={`text-sm text-gray-500 font-medium mb-2 transition-opacity duration-300 ${collapsed ? 'opacity-0 h-0' : 'opacity-100'}`}>
-            {!collapsed && "Categories"}
-          </h3>
+          {!collapsed && (
+            <h3 className="text-sm text-gray-500 font-medium mb-2">
+              Categories
+            </h3>
+          )}
           <ul className="space-y-1">
             {categories.map((category) => (
               <li key={category.id}>
@@ -110,9 +109,11 @@ const CategorySidebar = ({
         
         {/* Tools Section */}
         <div className={`p-3 ${collapsed ? 'mt-4' : ''}`}>
-          <h3 className={`text-sm text-gray-500 font-medium mb-2 transition-opacity duration-300 ${collapsed ? 'opacity-0 h-0' : 'opacity-100'}`}>
-            {!collapsed && "Tools"}
-          </h3>
+          {!collapsed && (
+            <h3 className="text-sm text-gray-500 font-medium mb-2">
+              Tools
+            </h3>
+          )}
           <ul className="space-y-1">
             <li>
               <div className={`w-full px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`}>
@@ -144,11 +145,13 @@ const CategorySidebar = ({
           </ul>
         </div>
         
-        {/* Education Section - replaced with Help and Contact */}
+        {/* Support Section */}
         <div className={`p-3 ${collapsed ? 'mt-4' : ''}`}>
-          <h3 className={`text-sm text-gray-500 font-medium mb-2 transition-opacity duration-300 ${collapsed ? 'opacity-0 h-0' : 'opacity-100'}`}>
-            {!collapsed && "Support"}
-          </h3>
+          {!collapsed && (
+            <h3 className="text-sm text-gray-500 font-medium mb-2">
+              Support
+            </h3>
+          )}
           <ul className="space-y-1">
             <li>
               <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Help Center" : undefined}>
