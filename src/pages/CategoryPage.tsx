@@ -1,7 +1,7 @@
 
 import { useParams } from "react-router-dom";
 import { categories } from "@/data/categories";
-import { smoothies } from "@/data/smoothies";
+import { smoothies } from "@/data/smoothiesData";
 import CategorySidebar from "@/components/CategorySidebar";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { Card } from "@/components/ui/card";
