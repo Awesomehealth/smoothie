@@ -99,11 +99,10 @@ const RecipeDetailPage = () => {
   };
 
   const dummyImages = [
-    `/lovable-uploads/742abece-02f8-477f-8e94-a0ec6d107f10.png`,
-    smoothie.image,
-    smoothie.image.replace('.jpg', '2.jpg'),
-    smoothie.image.replace('.jpg', '3.jpg'),
-    smoothie.image.replace('.jpg', '4.jpg'),
+    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
   ];
 
   return (
@@ -133,17 +132,22 @@ const RecipeDetailPage = () => {
           <div className="mb-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-2 relative">
               <div className="md:col-span-2 md:row-span-2 relative">
-                <img 
-                  src={dummyImages[0]} 
-                  alt={smoothie.name} 
+                <video 
                   className="w-full h-full object-cover rounded-tl-lg rounded-bl-lg"
                   style={{ minHeight: "400px" }}
-                />
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="https://player.vimeo.com/external/414566109.sd.mp4?s=c912f93f5ce54b6fe68d5bcdf3d20a3255dbba6c&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               
               <div className="hidden md:block">
                 <img 
-                  src={dummyImages[1]} 
+                  src={dummyImages[0]} 
                   alt={`${smoothie.name} detail 1`} 
                   className="w-full h-full object-cover rounded-tr-lg"
                   style={{ height: "200px" }}
@@ -151,7 +155,7 @@ const RecipeDetailPage = () => {
               </div>
               <div className="hidden md:block">
                 <img 
-                  src={dummyImages[2]} 
+                  src={dummyImages[1]} 
                   alt={`${smoothie.name} detail 2`} 
                   className="w-full h-full object-cover"
                   style={{ height: "200px" }}
@@ -159,7 +163,7 @@ const RecipeDetailPage = () => {
               </div>
               <div className="hidden md:block">
                 <img 
-                  src={dummyImages[3]} 
+                  src={dummyImages[2]} 
                   alt={`${smoothie.name} detail 3`} 
                   className="w-full h-full object-cover"
                   style={{ height: "200px" }}
@@ -167,7 +171,7 @@ const RecipeDetailPage = () => {
               </div>
               <div className="hidden md:block relative">
                 <img 
-                  src={dummyImages[4]} 
+                  src={dummyImages[3]} 
                   alt={`${smoothie.name} detail 4`} 
                   className="w-full h-full object-cover rounded-br-lg"
                   style={{ height: "200px" }}
