@@ -27,13 +27,15 @@ const Index = () => {
             />
           }
           mainContent={
-            <SearchSection
-              onSearch={handleSearch}
-              onImageUpload={handleImageUpload}
-              onFilterSelect={handleFilterSelect}
-              onDietaryToggle={handleDietaryToggle}
-              showAdvancedSearch={showAdvancedSearch}
-            />
+            <div className="h-full flex items-center justify-center">
+              <SearchSection
+                onSearch={handleSearch}
+                onImageUpload={handleImageUpload}
+                onFilterSelect={handleFilterSelect}
+                onDietaryToggle={handleDietaryToggle}
+                showAdvancedSearch={showAdvancedSearch}
+              />
+            </div>
           }
         />
       )}

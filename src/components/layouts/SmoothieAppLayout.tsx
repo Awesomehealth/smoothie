@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
@@ -36,8 +37,11 @@ const SmoothieAppLayout = ({
     await signOut();
   };
 
+  // Calculate content height class based on the current route
+  const contentHeightClass = location.pathname === "/" ? "h-[calc(100vh-57px-72px)]" : "min-h-[calc(100vh-57px-72px)]";
+
   return (
-    <div className="min-h-screen flex flex-col bg-white relative">
+    <div className="flex flex-col bg-white relative h-screen overflow-hidden">
       <header className="w-full bg-white border-b border-gray-200 py-3">
         <div className="flex items-center justify-between px-4 w-full">
           {isCategoryPage && (
@@ -108,17 +112,15 @@ const SmoothieAppLayout = ({
         </div>
       </header>
 
-      <div className="flex flex-1 relative">
-        <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed && isCategoryPage ? 'w-16' : 'w-64'}`}>
+      <div className={`flex flex-1 ${contentHeightClass} overflow-hidden`}>
+        <aside className={`sticky top-0 h-full z-10 transition-all ${sidebarCollapsed && isCategoryPage ? 'w-16' : 'w-64'}`}>
           {React.cloneElement(sidebar as React.ReactElement, {
             isCollapsed: isCategoryPage ? sidebarCollapsed : false
           })}
         </aside>
         
-        <main className="flex-1 flex flex-col">
-          <div className="flex-grow">
-            {mainContent}
-          </div>
+        <main className="flex-1 overflow-auto">
+          {mainContent}
         </main>
       </div>
       <Footer />
