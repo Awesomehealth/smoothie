@@ -1,5 +1,5 @@
 
-// This file is now deprecated. Import smoothies from './smoothies' instead.
-import { smoothies } from './smoothies';
+// This file re-exports the combined smoothies from the structured data files
+import { smoothies as allSmoothies } from './smoothies/index';
 
-export { smoothies };
+export const smoothies = allSmoothies;
