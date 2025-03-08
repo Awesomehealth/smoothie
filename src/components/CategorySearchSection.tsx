@@ -7,7 +7,7 @@ interface CategorySearchSectionProps {
   showAdvancedSearch: boolean;
   onSearch: (query: string) => void;
   onUrlSubmit: (url: string) => void;
-  onFilterSelect: (filterType: string, value: string) => void;
+  onFilterSelect: (filterType: string, values: string[]) => void;
   onDietaryToggle: (preference: string, isChecked: boolean) => void;
 }
 

@@ -10,7 +10,7 @@ interface SmoothieSearchContainerProps {
     handleAdvancedSearchToggle: (show: boolean) => void;
     handleSearch: (query: string) => void;
     handleImageUpload: (file: File) => void;
-    handleFilterSelect: (filter: string) => void;
+    handleFilterSelect: (filterType: string, values: string[]) => void;
     handleDietaryToggle: (option: string, active: boolean) => void;
   }) => React.ReactNode;
 }
@@ -39,8 +39,8 @@ const SmoothieSearchContainer = ({ children }: SmoothieSearchContainerProps) => 
     // Image upload functionality will be implemented later
   };
 
-  const handleFilterSelect = (filter: string) => {
-    console.log("Filter selected:", filter);
+  const handleFilterSelect = (filterType: string, values: string[]) => {
+    console.log(`Filter ${filterType} selected:`, values);
     // Filter functionality will be implemented later
   };
 

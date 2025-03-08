@@ -8,7 +8,7 @@ interface FilterRowProps {
     filterType: string;
     options: string[];
   }>;
-  onFilterSelect: (filterType: string, value: string) => void;
+  onFilterSelect: (filterType: string, values: string[]) => void;
   delay?: number;
 }
 
@@ -26,7 +26,7 @@ const FilterRow = ({ filters, onFilterSelect, delay = 0.2 }: FilterRowProps) => 
             key={filter.filterType}
             label={filter.label}
             options={filter.options}
-            onSelect={(value) => onFilterSelect(filter.filterType, value)}
+            onSelect={(values) => onFilterSelect(filter.filterType, values)}
           />
         ))}
       </div>
