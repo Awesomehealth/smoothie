@@ -131,8 +131,8 @@ const SmoothieAppLayout = ({
         <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
       </div>
       
-      {/* Footer completely separated from the navigation */}
-      <div className="max-w-[1280px] mx-auto px-4">
+      {/* Footer completely separated from the navigation, full width */}
+      <div className="w-full">
         <Footer />
       </div>
     </>
