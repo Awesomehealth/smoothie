@@ -14,6 +14,7 @@ const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
   const [searchQuery, setSearchQuery] = useState("");
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const [displayLimit, setDisplayLimit] = useState(6); // Initial display limit of 6 cards
   
   // Find the category data based on the URL parameter
   const category = categories.find((cat) => cat.id === categoryId);
@@ -37,6 +38,7 @@ const CategoryPage = () => {
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
+    setDisplayLimit(6); // Reset display limit when search changes
   };
   
   const handleUrlSubmit = (url: string) => {
@@ -56,6 +58,11 @@ const CategoryPage = () => {
   const handleDietaryToggle = (preference: string, isChecked: boolean) => {
     console.log("Dietary preference toggled:", preference, isChecked);
     // Dietary filter functionality will be implemented later
+  };
+
+  // Handle loading more items
+  const handleLoadMore = () => {
+    setDisplayLimit(prevLimit => prevLimit + 3); // Load 3 more items when "See More" is clicked
   };
   
   return (
@@ -92,6 +99,9 @@ const CategoryPage = () => {
             smoothies={filteredSmoothies} 
             searchQuery={searchQuery} 
             currentCategory={categoryId}
+            displayLimit={displayLimit}
+            onLoadMore={handleLoadMore}
+            hasMoreItems={displayLimit < filteredSmoothies.length}
           />
         </div>
       }
