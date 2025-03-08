@@ -72,13 +72,7 @@ const CategoryPage = () => {
         <div className="w-full max-w-7xl mx-auto p-8">
           <CategoryHeader category={category} isPostWorkout={categoryId === 'post-workout'} />
           
-          {/* Info cards section with a subtle background to tie it together */}
-          <div className="bg-gradient-to-r from-white to-mint-50/30 rounded-xl p-6 mb-8">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">Key Benefits</h2>
-            <CategoryInfoCards categoryId={categoryId} />
-          </div>
-          
-          {/* Search Section with Advanced Search */}
+          {/* Search Section with Advanced Search - MOVED ABOVE INFO CARDS */}
           <CategorySearchSection 
             categoryName={category?.name || ""}
             showAdvancedSearch={showAdvancedSearch}
@@ -87,6 +81,12 @@ const CategoryPage = () => {
             onFilterSelect={handleFilterSelect}
             onDietaryToggle={handleDietaryToggle}
           />
+          
+          {/* Info cards section with a subtle background to tie it together */}
+          <div className="bg-gradient-to-r from-white to-mint-50/30 rounded-xl p-6 mb-8">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Key Benefits</h2>
+            <CategoryInfoCards categoryId={categoryId} />
+          </div>
           
           <SmoothieList 
             smoothies={filteredSmoothies} 
