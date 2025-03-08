@@ -7,11 +7,13 @@ import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { Card } from "@/components/ui/card";
 import { HeartPulse, Clock, Dumbbell, Trophy, ArrowRight, Utensils } from "lucide-react";
 import SearchBar from "@/components/SearchBar";
+import SearchSection from "@/components/sections/SearchSection";
 import { useState } from "react";
 
 const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
   const [searchQuery, setSearchQuery] = useState("");
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
   
   // Find the category data based on the URL parameter
   const category = categories.find((cat) => cat.id === categoryId);
@@ -44,6 +46,20 @@ const CategoryPage = () => {
     console.log("URL submitted:", url);
     // For future implementation
   };
+
+  const handleAdvancedSearchToggle = (show: boolean) => {
+    setShowAdvancedSearch(show);
+  };
+
+  const handleFilterSelect = (filterType: string, value: string) => {
+    console.log("Filter selected:", filterType, value);
+    // Filter functionality will be implemented later
+  };
+
+  const handleDietaryToggle = (preference: string, isChecked: boolean) => {
+    console.log("Dietary preference toggled:", preference, isChecked);
+    // Dietary filter functionality will be implemented later
+  };
   
   return (
     <SmoothieAppLayout
@@ -51,8 +67,8 @@ const CategoryPage = () => {
         <CategorySidebar
           selectedCategory={categoryId || null}
           onCategorySelect={() => {}}
-          showAdvancedSearch={false}
-          onAdvancedSearchToggle={() => {}}
+          showAdvancedSearch={showAdvancedSearch}
+          onAdvancedSearchToggle={handleAdvancedSearchToggle}
         />
       }
       mainContent={
@@ -70,13 +86,24 @@ const CategoryPage = () => {
             </p>
           </header>
           
-          {/* Search Bar */}
-          <div className="mb-8 max-w-2xl">
-            <SearchBar 
-              onSearch={handleSearch}
-              onUrlSubmit={handleUrlSubmit}
-              placeholder={`Search within ${category?.name || "this category"}...`}
-            />
+          {/* Search Section with Advanced Search */}
+          <div className="mb-8">
+            {showAdvancedSearch ? (
+              <SearchSection 
+                onSearch={handleSearch}
+                onFilterSelect={handleFilterSelect}
+                onDietaryToggle={handleDietaryToggle}
+                showAdvancedSearch={showAdvancedSearch}
+              />
+            ) : (
+              <div className="mb-8 max-w-3xl mx-auto">
+                <SearchBar 
+                  onSearch={handleSearch}
+                  onUrlSubmit={handleUrlSubmit}
+                  placeholder={`Search within ${category?.name || "this category"}...`}
+                />
+              </div>
+            )}
           </div>
           
           {isPostWorkout && (
