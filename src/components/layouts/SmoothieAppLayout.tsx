@@ -42,7 +42,7 @@ const SmoothieAppLayout = ({
           {/* Right side actions - right aligned */}
           <div className="flex items-center space-x-4">
             {/* Premium button */}
-            <Button className="bg-awesome-yellow hover:bg-awesome-yellow/90 text-gray-800 font-medium rounded-full flex items-center gap-2">
+            <Button className="text-gray-800 font-medium rounded-full flex items-center gap-2 bg-mint-500 hover:bg-mint-400">
               <Gem className="h-4 w-4" />
               <span>Upgrade to Premium</span>
             </Button>
