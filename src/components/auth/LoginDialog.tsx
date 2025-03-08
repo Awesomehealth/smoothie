@@ -33,12 +33,12 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
     setPassword("");
   };
 
-  const handleEmailLoginWrapped = (e: React.FormEvent) => {
-    handleEmailLogin(e, email, password);
+  const handleEmailLoginWrapped = async (e: React.FormEvent) => {
+    return handleEmailLogin(e, email, password);
   };
 
-  const handleEmailSignUpWrapped = (e: React.FormEvent) => {
-    handleEmailSignUp(e, email, password);
+  const handleEmailSignUpWrapped = async (e: React.FormEvent) => {
+    return handleEmailSignUp(e, email, password);
   };
 
   return (
