@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle } from "lucide-react";
@@ -5,10 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+
 interface SmoothieAppLayoutProps {
   sidebar: React.ReactNode;
   mainContent: React.ReactNode;
 }
+
 const SmoothieAppLayout = ({
   sidebar,
   mainContent
@@ -18,26 +21,33 @@ const SmoothieAppLayout = ({
 
   // Check if we are on a category page (not the home page)
   const isCategoryPage = location.pathname !== "/";
+  
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
   };
-  return <div className="min-h-screen flex flex-col bg-white relative">
+
+  return (
+    <div className="min-h-screen flex flex-col bg-white relative">
       {/* App header */}
       <header className="w-full bg-white border-b border-gray-200 py-3">
         <div className="flex items-center justify-between px-4 w-full">
-          {/* Logo area - left aligned */}
+          {/* Logo area - left aligned with hamburger menu */}
           <div className="flex items-center ml-0">
+            {isCategoryPage && (
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={toggleSidebar} 
+                className="mr-2"
+                aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+              >
+                <Menu className="h-5 w-5 text-awesome-green" />
+              </Button>
+            )}
             <Link to="/" className="flex items-center">
               <span className="text-xl font-bold text-slate-950">Awesome Body</span>
             </Link>
           </div>
-
-          {/* Sidebar toggle - only shown on category pages */}
-          {isCategoryPage && <div className="absolute left-16 top-1/2 transform -translate-y-1/2">
-              <Button variant="ghost" size="icon" onClick={toggleSidebar} aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}>
-                {sidebarCollapsed ? <Menu className="h-5 w-5 text-awesome-green" /> : <ChevronLeft className="h-5 w-5 text-awesome-green" />}
-              </Button>
-            </div>}
 
           {/* Right side actions - right aligned */}
           <div className="flex items-center space-x-4">
@@ -87,8 +97,8 @@ const SmoothieAppLayout = ({
       <div className="flex flex-1 relative">
         <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed && isCategoryPage ? 'w-16' : 'w-64'}`}>
           {React.cloneElement(sidebar as React.ReactElement, {
-          isCollapsed: isCategoryPage ? sidebarCollapsed : false
-        })}
+            isCollapsed: isCategoryPage ? sidebarCollapsed : false
+          })}
         </aside>
         
         <main className="flex-1 flex flex-col">
@@ -98,6 +108,8 @@ const SmoothieAppLayout = ({
         </main>
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default SmoothieAppLayout;
