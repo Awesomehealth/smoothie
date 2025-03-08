@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
-import { User, Gem } from "lucide-react";
+import { User, Gem, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -13,15 +13,29 @@ interface SmoothieAppLayoutProps {
 const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
+  const toggleSidebar = () => {
+    setSidebarCollapsed(!sidebarCollapsed);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-white relative">
-      {/* New app header */}
+      {/* App header */}
       <header className="w-full bg-white border-b border-gray-200 py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Logo section */}
-          <Link to="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold text-coral-500">Smoothie Search</span>
-          </Link>
+          {/* Logo and menu section */}
+          <div className="flex items-center gap-2">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="mr-1" 
+              onClick={toggleSidebar}
+            >
+              <Menu className="h-5 w-5 text-gray-600" />
+            </Button>
+            <Link to="/" className="flex items-center gap-2">
+              <span className="text-xl font-bold text-coral-500">Smoothie Search</span>
+            </Link>
+          </div>
 
           {/* Right side actions */}
           <div className="flex items-center gap-3">
@@ -43,7 +57,7 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
 
       <div className="flex flex-1">
         <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 ${sidebarCollapsed ? 'hidden' : 'block'}`}>
-          {sidebar}
+          {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: sidebarCollapsed })}
         </aside>
         
         <main className="flex-1 flex flex-col">

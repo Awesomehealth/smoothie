@@ -1,6 +1,23 @@
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ChevronRight, ChevronLeft, Search, User, FileText, BookOpen, Rocket, MessageCircle, HelpCircle, Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
+import { 
+  ChevronRight, 
+  ChevronLeft, 
+  Search, 
+  FileText, 
+  BookOpen, 
+  HelpCircle, 
+  MessageCircle,
+  Dumbbell, 
+  Utensils, 
+  Weight, 
+  Flame, 
+  Apple, 
+  Carrot, 
+  HeartPulse, 
+  Timer 
+} from "lucide-react";
 import { categories } from "@/data/categories";
 import { Switch } from "@/components/ui/switch";
 
@@ -9,16 +26,25 @@ interface CategorySidebarProps {
   onCategorySelect: (categoryId: string) => void;
   showAdvancedSearch: boolean;
   onAdvancedSearchToggle: (show: boolean) => void;
+  isCollapsed?: boolean;
 }
 
 const CategorySidebar = ({ 
   selectedCategory, 
   onCategorySelect, 
   showAdvancedSearch, 
-  onAdvancedSearchToggle 
+  onAdvancedSearchToggle,
+  isCollapsed 
 }: CategorySidebarProps) => {
   const [collapsed, setCollapsed] = useState(false);
   const navigate = useNavigate();
+
+  // React to external collapse state if provided
+  React.useEffect(() => {
+    if (isCollapsed !== undefined) {
+      setCollapsed(isCollapsed);
+    }
+  }, [isCollapsed]);
 
   // Map category IDs to corresponding icons
   const getCategoryIcon = (categoryId: string) => {
@@ -44,28 +70,13 @@ const CategorySidebar = ({
     }
   };
 
-  const toggleSidebar = () => {
-    setCollapsed(!collapsed);
-  };
-
   const handleCategoryClick = (categoryId: string) => {
     onCategorySelect(categoryId);
     navigate(`/category/${categoryId}`);
   };
 
   return (
-    <div className={`h-full bg-gray-50 border-r border-gray-200 transition-all duration-300 flex flex-col relative ${collapsed ? 'w-16' : 'w-64'}`}>
-      {/* Collapse button */}
-      <div className="p-4 border-b border-gray-200 flex justify-end items-center">
-        <button 
-          onClick={toggleSidebar}
-          className="bg-white rounded-full p-2 shadow-md hover:shadow-lg transition-shadow"
-          aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
-        >
-          <ChevronLeft className={`h-4 w-4 text-gray-500 transition-transform ${collapsed ? 'rotate-180' : ''}`} />
-        </button>
-      </div>
-      
+    <div className={`h-full bg-gray-50 border-r border-gray-200 transition-all duration-300 flex flex-col relative ${collapsed ? 'w-16' : 'w-64'}`}>      
       <div className="flex-1 overflow-y-auto">
         {/* Categories Section */}
         <div className="p-3">
@@ -81,7 +92,7 @@ const CategorySidebar = ({
                     collapsed ? 'justify-center' : 'gap-2'
                   } ${
                     selectedCategory === category.id
-                      ? 'bg-gray-200 text-gray-800 font-medium'
+                      ? 'bg-coral-100 text-coral-700 font-medium border-l-4 border-coral-500'
                       : 'hover:bg-gray-100 text-gray-700'
                   }`}
                   title={collapsed ? category.name : undefined}
@@ -133,22 +144,22 @@ const CategorySidebar = ({
           </ul>
         </div>
         
-        {/* Education Section */}
+        {/* Education Section - replaced with Help and Contact */}
         <div className={`p-3 ${collapsed ? 'mt-4' : ''}`}>
           <h3 className={`text-sm text-gray-500 font-medium mb-2 transition-opacity duration-300 ${collapsed ? 'opacity-0 h-0' : 'opacity-100'}`}>
-            {!collapsed && "Education"}
+            {!collapsed && "Support"}
           </h3>
           <ul className="space-y-1">
             <li>
-              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Get Started" : undefined}>
-                <Rocket className="h-4 w-4 text-gray-500" />
-                {!collapsed && <span className="text-sm">Get Started</span>}
+              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Help Center" : undefined}>
+                <HelpCircle className="h-4 w-4 text-gray-500" />
+                {!collapsed && <span className="text-sm">Help Center</span>}
               </button>
             </li>
             <li>
-              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "FAQ" : undefined}>
-                <HelpCircle className="h-4 w-4 text-gray-500" />
-                {!collapsed && <span className="text-sm">FAQ</span>}
+              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Contact Us" : undefined}>
+                <MessageCircle className="h-4 w-4 text-gray-500" />
+                {!collapsed && <span className="text-sm">Contact Us</span>}
               </button>
             </li>
           </ul>
