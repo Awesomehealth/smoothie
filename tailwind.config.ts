@@ -129,6 +129,16 @@ export default {
 					'900': '#0c4a6e',
 					'950': '#082f49',
 				},
+				// AWESOME brand colors from screenshot
+				'awesome': {
+					'red': '#ED3D25',       // A in AWESOME
+					'blue': '#4B6BF9',      // W in AWESOME
+					'yellow': '#F7CB45',    // E in AWESOME
+					'pink': '#FFC0CB',      // S in AWESOME
+					'orange': '#F04E23',    // O in AWESOME
+					'purple': '#8A2BE2',    // M in AWESOME
+					'green': '#22c55e',     // E in AWESOME
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

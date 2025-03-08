@@ -49,21 +49,30 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
                 aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
               >
                 {sidebarCollapsed ? (
-                  <Menu className="h-5 w-5 text-green-600" />
+                  <Menu className="h-5 w-5 text-awesome-green" />
                 ) : (
-                  <ChevronLeft className="h-5 w-5 text-green-600" />
+                  <ChevronLeft className="h-5 w-5 text-awesome-green" />
                 )}
               </Button>
             )}
             <Link to="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-green-600">Awesome Body</span>
+              <span className="text-xl font-bold font-display">
+                <span className="text-awesome-red">A</span>
+                <span className="text-awesome-blue">w</span>
+                <span className="text-awesome-yellow">e</span>
+                <span className="text-awesome-pink">s</span>
+                <span className="text-awesome-orange">o</span>
+                <span className="text-awesome-purple">m</span>
+                <span className="text-awesome-green">e</span>
+                <span className="text-gray-800"> Body</span>
+              </span>
             </Link>
           </div>
 
           {/* Right side actions */}
           <div className="flex items-center gap-3">
             {/* Premium button */}
-            <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center gap-2">
+            <Button className="bg-awesome-yellow hover:bg-awesome-yellow/90 text-gray-800 font-medium rounded-full flex items-center gap-2">
               <Gem className="h-4 w-4" />
               <span>Upgrade to Premium</span>
             </Button>

@@ -21,18 +21,21 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
             label="Meal Replacement" 
             prefId="isMealReplacement" 
             onToggle={onDietaryToggle}
+            color="awesome-red"
           />
           
           <ToggleItem 
             label="Nut-Free" 
             prefId="isNutFree" 
             onToggle={onDietaryToggle}
+            color="awesome-blue"
           />
           
           <ToggleItem 
             label="Caffeine" 
             prefId="hasCaffeine" 
             onToggle={onDietaryToggle}
+            color="awesome-yellow"
           />
         
           {/* Second row integrated into the same grid */}
@@ -40,18 +43,21 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
             label="Gluten-Free" 
             prefId="isGlutenFree" 
             onToggle={onDietaryToggle}
+            color="awesome-pink"
           />
           
           <ToggleItem 
             label="Soy-Free" 
             prefId="isSoyFree" 
             onToggle={onDietaryToggle}
+            color="awesome-orange"
           />
           
           <ToggleItem 
             label="Sugar Free" 
             prefId="isSugarFree" 
             onToggle={onDietaryToggle}
+            color="awesome-purple"
           />
         </div>
       </div>
@@ -62,17 +68,18 @@ const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
 interface ToggleItemProps {
   label: string;
   prefId: string;
+  color?: string;
   onToggle: (preference: string, isChecked: boolean) => void;
 }
 
-const ToggleItem = ({ label, prefId, onToggle }: ToggleItemProps) => {
+const ToggleItem = ({ label, prefId, color = "awesome-green", onToggle }: ToggleItemProps) => {
   return (
     <div className="flex items-center">
       <label className="inline-flex items-center cursor-pointer">
         <Switch 
           id={prefId}
           onCheckedChange={(checked) => onToggle(prefId, checked)}
-          className="bg-gray-200 data-[state=checked]:bg-green-600"
+          className={`bg-gray-200 data-[state=checked]:bg-${color}`}
         />
         <span className="ml-2 text-sm font-medium text-gray-700 whitespace-nowrap">{label}</span>
       </label>
