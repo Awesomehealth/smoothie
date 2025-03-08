@@ -183,10 +183,10 @@ const CategoryInfoCards = ({ categoryId }: CategoryInfoCardsProps) => {
       {cardContent.map((card, index) => (
         <Card 
           key={index} 
-          className="bg-gradient-to-br from-coral-50 to-coral-100 p-6 border border-coral-200 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300"
+          className="bg-gradient-to-br from-mint-50 to-mint-100 p-6 border border-mint-200 shadow-sm rounded-xl hover:shadow-md transition-shadow duration-300"
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="bg-coral-500 rounded-full p-2 text-white">
+            <div className="bg-green-600 rounded-full p-2 text-white">
               {card.icon}
             </div>
             <h3 className="font-semibold text-lg text-gray-800">{card.title}</h3>
