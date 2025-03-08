@@ -50,8 +50,8 @@ const CategoryPage = () => {
     setShowAdvancedSearch(show);
   };
 
-  const handleFilterSelect = (filterType: string, value: string) => {
-    console.log("Filter selected:", filterType, value);
+  const handleFilterSelect = (filterType: string, values: string[]) => {
+    console.log("Filter selected:", filterType, values);
     // Filter functionality will be implemented later
   };
 

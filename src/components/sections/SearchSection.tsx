@@ -17,7 +17,7 @@ import { toast } from "@/components/ui/use-toast";
 interface SearchSectionProps {
   onSearch: (query: string) => void;
   onImageUpload?: (file: File) => void;
-  onFilterSelect?: (filterType: string, value: string) => void;
+  onFilterSelect?: (filterType: string, values: string[]) => void;
   onDietaryToggle?: (preference: string, isChecked: boolean) => void;
   showAdvancedSearch: boolean;
   hideHeading?: boolean;
@@ -31,9 +31,9 @@ const SearchSection = ({
   showAdvancedSearch,
   hideHeading = false
 }: SearchSectionProps) => {
-  const handleFilterSelect = (filterType: string, value: string) => {
+  const handleFilterSelect = (filterType: string, values: string[]) => {
     if (onFilterSelect) {
-      onFilterSelect(filterType, value);
+      onFilterSelect(filterType, values);
     }
   };
 
