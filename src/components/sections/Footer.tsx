@@ -15,7 +15,7 @@ const Footer = () => {
             Terms & Conditions
           </Link>
           <span className="text-gray-500">
-            © 2025 Awesome Health LLC, 1 E Erie St, Suite 525-2207 Chicago, IL 60611
+            © 2025 Awesome Kitchen LLC, 1 E Erie St, Suite 525-2207 Chicago, IL 60611
           </span>
         </div>
 

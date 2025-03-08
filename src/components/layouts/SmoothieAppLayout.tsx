@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
@@ -37,8 +36,6 @@ const SmoothieAppLayout = ({
     await signOut();
   };
 
-  // Calculate content height class based on the current route
-  // For home page, we want a fixed height without scrolling
   const contentHeightClass = location.pathname === "/" 
     ? "h-[calc(100vh-57px-72px)]" 
     : "min-h-[calc(100vh-57px-72px)]";
@@ -61,7 +58,7 @@ const SmoothieAppLayout = ({
                 </Button>
               )}
               <Link to="/" className="flex items-center">
-                <span className="text-xl font-bold text-slate-950">Awesome Health</span>
+                <span className="text-xl font-bold text-slate-950">Awesome Kitchen</span>
               </Link>
             </div>
             <div className="flex items-center space-x-4">
