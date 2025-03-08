@@ -1,11 +1,13 @@
 
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
-import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle } from "lucide-react";
+import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import LoginDialog from "@/components/auth/LoginDialog";
+import { useAuth } from "@/contexts/AuthContext";
 
 interface SmoothieAppLayoutProps {
   sidebar: React.ReactNode;
@@ -17,13 +19,23 @@ const SmoothieAppLayout = ({
   mainContent
 }: SmoothieAppLayoutProps) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [loginDialogOpen, setLoginDialogOpen] = useState(false);
   const location = useLocation();
+  const { user, signOut } = useAuth();
 
   // Check if we are on a category page (not the home page)
   const isCategoryPage = location.pathname !== "/";
   
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  const handleLoginClick = () => {
+    setLoginDialogOpen(true);
+  };
+
+  const handleSignOut = async () => {
+    await signOut();
   };
 
   return (
@@ -70,10 +82,23 @@ const SmoothieAppLayout = ({
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end" className="w-56 bg-white shadow-md">
-                      <DropdownMenuItem className="flex items-center gap-2 py-2 cursor-pointer">
-                        <LogIn className="h-4 w-4" />
-                        <span>Log in / Sign up</span>
-                      </DropdownMenuItem>
+                      {user ? (
+                        <>
+                          <DropdownMenuItem className="flex items-center gap-2 py-2 cursor-default">
+                            <User className="h-4 w-4" />
+                            <span>{user.email}</span>
+                          </DropdownMenuItem>
+                          <DropdownMenuItem className="flex items-center gap-2 py-2 cursor-pointer" onClick={handleSignOut}>
+                            <LogOut className="h-4 w-4" />
+                            <span>Sign out</span>
+                          </DropdownMenuItem>
+                        </>
+                      ) : (
+                        <DropdownMenuItem className="flex items-center gap-2 py-2 cursor-pointer" onClick={handleLoginClick}>
+                          <LogIn className="h-4 w-4" />
+                          <span>Log in / Sign up</span>
+                        </DropdownMenuItem>
+                      )}
                       <DropdownMenuItem className="flex items-center gap-2 py-2 cursor-pointer">
                         <HelpCircle className="h-4 w-4" />
                         <span>Help Center</span>
@@ -108,6 +133,9 @@ const SmoothieAppLayout = ({
         </main>
       </div>
       <Footer />
+      
+      {/* Login Dialog */}
+      <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
     </div>
   );
 };
