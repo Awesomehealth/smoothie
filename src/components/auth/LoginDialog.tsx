@@ -1,6 +1,6 @@
 
 import React from "react";
-import { X, Apple, Mail } from "lucide-react";
+import { X, Mail } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
@@ -34,23 +34,6 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
   const handleSignInWithFacebook = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'facebook',
-      options: {
-        redirectTo: `${window.location.origin}/`,
-      },
-    });
-
-    if (error) {
-      toast({
-        title: "Error signing in",
-        description: error.message,
-        variant: "destructive",
-      });
-    }
-  };
-
-  const handleSignInWithApple = async () => {
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: 'apple',
       options: {
         redirectTo: `${window.location.origin}/`,
       },
@@ -147,17 +130,6 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
                   <path fill="#000000" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                 </svg>
                 <span>Continue with X</span>
-              </div>
-            </Button>
-
-            <Button 
-              variant="outline" 
-              className="w-full justify-start px-4 py-6 hover:bg-slate-50" 
-              onClick={handleSignInWithApple}
-            >
-              <div className="flex items-center">
-                <Apple className="h-5 w-5 mr-2" />
-                <span>Continue with Apple</span>
               </div>
             </Button>
           </div>
