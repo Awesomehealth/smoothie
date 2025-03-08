@@ -21,6 +21,16 @@ export interface Smoothie {
     isMealReplacement: boolean;
   };
   proteinType: string[];
+  recipe?: {
+    difficulty: "Easy" | "Medium" | "Hard";
+    servings: number;
+    prepTime: number;
+    totalTime: number;
+    instructions: string[];
+    tips?: string[];
+    rating?: number;
+    reviews?: number;
+  };
 }
 
 export type ProteinType = "whey" | "plant" | "egg" | "collagen" | "peanut";

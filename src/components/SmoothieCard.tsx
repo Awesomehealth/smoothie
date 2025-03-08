@@ -4,6 +4,7 @@ import { Trophy, Wheat, Droplet, Utensils, ArrowRight, ImageOff } from "lucide-r
 import { motion } from "framer-motion";
 import { Smoothie } from "@/data/types";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface SmoothieCardProps {
   smoothie: Smoothie;
@@ -18,8 +19,6 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
     const target = e.target as HTMLImageElement;
     target.src = "/placeholder.svg";
     setImageError(true);
-    
-    // Toast notification removed
   };
 
   // Use a consistent image for all smoothie cards
@@ -94,10 +93,12 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
           </div>
           
           {/* Button for viewing recipe */}
-          <button className="w-full py-2.5 px-4 bg-lavender-100 hover:bg-lavender-200 text-lavender-700 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
-            View Recipe
-            <ArrowRight className="h-4 w-4" />
-          </button>
+          <Link to={`/recipe/${smoothie.id}`} className="w-full">
+            <button className="w-full py-2.5 px-4 bg-lavender-100 hover:bg-lavender-200 text-lavender-700 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
+              View Recipe
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </Link>
         </CardContent>
       </Card>
     </motion.div>

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CategoryPage from "./pages/CategoryPage";
+import RecipeDetailPage from "./pages/RecipeDetailPage";
 import { AuthProvider } from "./contexts/AuthContext";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
@@ -25,6 +26,9 @@ const App = () => (
             
             {/* Category routes */}
             <Route path="/category/:categoryId" element={<CategoryPage />} />
+            
+            {/* Recipe detail route */}
+            <Route path="/recipe/:smoothieId" element={<RecipeDetailPage />} />
             
             {/* Legal pages */}
             <Route path="/privacy" element={<PrivacyPolicy />} />
