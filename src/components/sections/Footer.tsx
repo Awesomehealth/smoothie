@@ -4,10 +4,10 @@ import { Facebook, Twitter, Instagram, Youtube, Music } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-gray-200 py-4 bg-white">
-      <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center space-y-4 md:space-y-0">
+    <footer className="border-t border-gray-200 py-4 bg-white mt-auto">
+      <div className="w-full flex flex-row justify-between items-center px-4">
         {/* Left side - Links and Copyright */}
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500">
+        <div className="flex items-center gap-x-6 text-sm text-gray-500">
           <Link to="/privacy" className="hover:text-gray-700 hover:underline">
             Privacy Policy
           </Link>

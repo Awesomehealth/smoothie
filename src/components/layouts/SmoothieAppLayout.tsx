@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
@@ -45,7 +44,7 @@ const SmoothieAppLayout = ({
 
   return (
     <>
-      <div className="flex flex-col bg-white relative h-[calc(100vh-72px)] overflow-hidden">
+      <div className="flex flex-col bg-white relative h-screen overflow-hidden">
         <header className="w-full bg-white border-b border-gray-200 py-3">
           <div className="flex items-center justify-between px-4 w-full">
             {isCategoryPage && (
@@ -123,17 +122,15 @@ const SmoothieAppLayout = ({
             })}
           </aside>
           
-          <main className="flex-1 overflow-auto">
-            {mainContent}
+          <main className="flex-1 overflow-auto flex flex-col">
+            <div className="flex-1">
+              {mainContent}
+            </div>
+            <Footer />
           </main>
         </div>
         
         <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
-      </div>
-      
-      {/* Footer completely separated from the navigation, full width */}
-      <div className="w-full">
-        <Footer />
       </div>
     </>
   );
