@@ -157,7 +157,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
               <div className="w-full space-y-4 mb-6">
                 <Button 
                   variant="outline" 
-                  className="w-full justify-start px-4 py-6 hover:bg-mint-50" 
+                  className="w-full justify-start px-4 py-6 hover:bg-mint-50 hover:text-slate-900" 
                   onClick={handleSignInWithGoogle}
                 >
                   <div className="flex items-center">
@@ -173,7 +173,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full justify-start px-4 py-6 hover:bg-mint-50" 
+                  className="w-full justify-start px-4 py-6 hover:bg-mint-50 hover:text-slate-900" 
                   onClick={handleSignInWithFacebook}
                 >
                   <div className="flex items-center">
@@ -186,7 +186,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full justify-start px-4 py-6 hover:bg-mint-50" 
+                  className="w-full justify-start px-4 py-6 hover:bg-mint-50 hover:text-slate-900" 
                   onClick={handleSignInWithX}
                 >
                   <div className="flex items-center">
@@ -206,7 +206,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
               
               <Button 
                 variant="outline" 
-                className="w-full justify-center mb-6 hover:bg-mint-50" 
+                className="w-full justify-center mb-6 hover:bg-mint-50 hover:text-slate-900" 
                 onClick={toggleEmailMode}
               >
                 <Mail className="h-4 w-4 mr-2" />
@@ -276,7 +276,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
               
               <Button 
                 variant="outline" 
-                className="w-full justify-center mb-6 hover:bg-mint-50" 
+                className="w-full justify-center mb-6 hover:bg-mint-50 hover:text-slate-900" 
                 onClick={toggleEmailMode}
               >
                 <span>Continue with social accounts</span>
