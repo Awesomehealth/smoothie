@@ -49,14 +49,14 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
                 aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
               >
                 {sidebarCollapsed ? (
-                  <Menu className="h-5 w-5 text-gray-600" />
+                  <Menu className="h-5 w-5 text-green-600" />
                 ) : (
-                  <ChevronLeft className="h-5 w-5 text-gray-600" />
+                  <ChevronLeft className="h-5 w-5 text-green-600" />
                 )}
               </Button>
             )}
             <Link to="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-coral-500">Smoothie Search</span>
+              <span className="text-xl font-bold text-green-600">Smoothie Search</span>
             </Link>
           </div>
 

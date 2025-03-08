@@ -47,21 +47,21 @@ const CategorySidebar = ({
   const getCategoryIcon = (categoryId: string) => {
     switch (categoryId) {
       case 'post-workout':
-        return <HeartPulse className="h-4 w-4 text-coral-500" />;
+        return <HeartPulse className="h-4 w-4 text-green-600" />;
       case 'meal-replacement':
-        return <Utensils className="h-4 w-4 text-coral-500" />;
+        return <Utensils className="h-4 w-4 text-green-600" />;
       case 'weight-loss':
-        return <Weight className="h-4 w-4 text-coral-500" />;
+        return <Weight className="h-4 w-4 text-green-600" />;
       case 'muscle-gain':
-        return <Dumbbell className="h-4 w-4 text-coral-500" />;
+        return <Dumbbell className="h-4 w-4 text-green-600" />;
       case 'high-protein':
-        return <Flame className="h-4 w-4 text-coral-500" />;
+        return <Flame className="h-4 w-4 text-green-600" />;
       case 'low-carb':
-        return <Carrot className="h-4 w-4 text-coral-500" />;
+        return <Carrot className="h-4 w-4 text-green-600" />;
       case 'keto':
-        return <Apple className="h-4 w-4 text-coral-500" />;
+        return <Apple className="h-4 w-4 text-green-600" />;
       case 'pre-workout':
-        return <Timer className="h-4 w-4 text-coral-500" />;
+        return <Timer className="h-4 w-4 text-green-600" />;
       default:
         return null;
     }
@@ -91,7 +91,7 @@ const CategorySidebar = ({
                     collapsed ? 'justify-center' : 'gap-2'
                   } ${
                     selectedCategory === category.id
-                      ? 'bg-coral-100 text-coral-700 font-medium border-l-4 border-coral-500'
+                      ? 'bg-green-100 text-green-700 font-medium border-l-4 border-green-500'
                       : 'hover:bg-gray-100 text-gray-700'
                   }`}
                   title={collapsed ? category.name : undefined}
@@ -99,7 +99,7 @@ const CategorySidebar = ({
                   {getCategoryIcon(category.id)}
                   {!collapsed && <span className="text-sm">{category.name}</span>}
                   {!collapsed && selectedCategory === category.id && (
-                    <ChevronRight className="ml-auto h-4 w-4 text-gray-500" />
+                    <ChevronRight className="ml-auto h-4 w-4 text-green-600" />
                   )}
                 </button>
               </li>
@@ -117,14 +117,14 @@ const CategorySidebar = ({
           <ul className="space-y-1">
             <li>
               <div className={`w-full px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`}>
-                <Search className="h-4 w-4 text-gray-500" />
+                <Search className="h-4 w-4 text-green-600" />
                 {!collapsed && <span className="text-sm">Advanced Search</span>}
                 {!collapsed && (
                   <div className="ml-auto">
                     <Switch 
                       checked={showAdvancedSearch} 
                       onCheckedChange={onAdvancedSearchToggle} 
-                      className="data-[state=checked]:bg-coral-400"
+                      className="data-[state=checked]:bg-green-600"
                     />
                   </div>
                 )}
@@ -132,13 +132,13 @@ const CategorySidebar = ({
             </li>
             <li>
               <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Recipe Creator" : undefined}>
-                <FileText className="h-4 w-4 text-gray-500" />
+                <FileText className="h-4 w-4 text-green-600" />
                 {!collapsed && <span className="text-sm">Recipe Creator</span>}
               </button>
             </li>
             <li>
               <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Nutrition Guide" : undefined}>
-                <BookOpen className="h-4 w-4 text-gray-500" />
+                <BookOpen className="h-4 w-4 text-green-600" />
                 {!collapsed && <span className="text-sm">Nutrition Guide</span>}
               </button>
             </li>
@@ -155,13 +155,13 @@ const CategorySidebar = ({
           <ul className="space-y-1">
             <li>
               <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Help Center" : undefined}>
-                <HelpCircle className="h-4 w-4 text-gray-500" />
+                <HelpCircle className="h-4 w-4 text-green-600" />
                 {!collapsed && <span className="text-sm">Help Center</span>}
               </button>
             </li>
             <li>
               <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Contact Us" : undefined}>
-                <MessageCircle className="h-4 w-4 text-gray-500" />
+                <MessageCircle className="h-4 w-4 text-green-600" />
                 {!collapsed && <span className="text-sm">Contact Us</span>}
               </button>
             </li>
