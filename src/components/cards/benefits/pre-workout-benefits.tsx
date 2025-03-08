@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Zap, Dumbbell, Timer } from "lucide-react";
+import { Zap, Dumbbell, Timer, Brain, Heart, Shield } from "lucide-react";
 import { BenefitCardData } from "@/types/benefit-types";
 
 export const preWorkoutBenefits: BenefitCardData[] = [
@@ -18,5 +18,20 @@ export const preWorkoutBenefits: BenefitCardData[] = [
     title: "Optimal Timing",
     description: "Best consumed 30-60 minutes before your workout for peak performance benefits.",
     icon: <Timer className="h-5 w-5" />,
+  },
+  {
+    title: "Mental Focus",
+    description: "Ingredients that enhance concentration and mind-muscle connection during workouts.",
+    icon: <Brain className="h-5 w-5" />,
+  },
+  {
+    title: "Cardiovascular Support",
+    description: "Components that promote better blood flow and oxygen delivery to muscles.",
+    icon: <Heart className="h-5 w-5" />,
+  },
+  {
+    title: "Immune Protection",
+    description: "Antioxidants that help protect your body during high-intensity exercise.",
+    icon: <Shield className="h-5 w-5" />,
   }
 ];
