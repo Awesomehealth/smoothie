@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { smoothies } from "@/data/smoothiesData";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
@@ -9,6 +10,9 @@ import { useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "@/components/ui/use-toast";
 import CategorySidebar from "@/components/CategorySidebar";
+import { useAuth } from "@/contexts/AuthContext";
+import LoginDialog from "@/components/auth/LoginDialog";
+import CollectionDialog from "@/components/collections/CollectionDialog";
 
 const RecipeDetailPage = () => {
   const { smoothieId } = useParams<{ smoothieId: string }>();
@@ -16,6 +20,9 @@ const RecipeDetailPage = () => {
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showAllPhotos, setShowAllPhotos] = useState(false);
+  const [loginDialogOpen, setLoginDialogOpen] = useState(false);
+  const [collectionDialogOpen, setCollectionDialogOpen] = useState(false);
+  const { user } = useAuth();
   
   const smoothie = smoothies.find((s) => s.id === smoothieId);
   
@@ -63,10 +70,12 @@ const RecipeDetailPage = () => {
   };
 
   const handleSaveRecipe = () => {
-    toast({
-      title: "Recipe Saved",
-      description: `${smoothie.name} has been saved to your favorites`,
-    });
+    if (!user) {
+      setLoginDialogOpen(true);
+      return;
+    }
+    
+    setCollectionDialogOpen(true);
   };
 
   const handlePrintRecipe = () => {
@@ -372,6 +381,15 @@ const RecipeDetailPage = () => {
               </Button>
             </div>
           </div>
+          
+          <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
+          
+          <CollectionDialog 
+            isOpen={collectionDialogOpen} 
+            onClose={() => setCollectionDialogOpen(false)} 
+            smoothieId={smoothieId || ''}
+            smoothieName={smoothie.name}
+          />
         </div>
       }
     />
