@@ -17,7 +17,7 @@ interface SmoothieSearchContainerProps {
 
 const SmoothieSearchContainer = ({ children }: SmoothieSearchContainerProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(true); // Changed to true for default on
   const navigate = useNavigate();
 
   const handleCategorySelect = (categoryId: string) => {
