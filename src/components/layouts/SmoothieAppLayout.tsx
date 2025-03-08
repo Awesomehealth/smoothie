@@ -37,14 +37,20 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
     <div className="min-h-screen flex flex-col bg-white relative">
       {/* App header */}
       <header className="w-full bg-white border-b border-gray-200 py-3">
-        <div className="flex items-center justify-between px-6 md:px-10 max-w-screen-2xl mx-auto">
-          {/* Logo and menu section */}
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          {/* Logo area - left aligned */}
           <div className="flex items-center">
-            {isCategoryPage && (
+            <Link to="/" className="flex items-center">
+              <span className="text-xl font-bold text-awesome-green">Awesome Body</span>
+            </Link>
+          </div>
+
+          {/* Sidebar toggle - only shown on category pages */}
+          {isCategoryPage && (
+            <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
               <Button 
                 variant="ghost" 
-                size="icon" 
-                className="mr-3" 
+                size="icon"
                 onClick={toggleSidebar}
                 aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
               >
@@ -54,14 +60,11 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
                   <ChevronLeft className="h-5 w-5 text-awesome-green" />
                 )}
               </Button>
-            )}
-            <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-awesome-green">Awesome Body</span>
-            </Link>
-          </div>
+            </div>
+          )}
 
-          {/* Right side actions */}
-          <div className="flex items-center gap-4">
+          {/* Right side actions - right aligned */}
+          <div className="flex items-center space-x-4">
             {/* Premium button */}
             <Button className="bg-awesome-yellow hover:bg-awesome-yellow/90 text-gray-800 font-medium rounded-full flex items-center gap-2">
               <Gem className="h-4 w-4" />
