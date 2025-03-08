@@ -10,6 +10,7 @@ import SearchBar from "@/components/SearchBar";
 import SearchSection from "@/components/sections/SearchSection";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { toast } from "@/components/ui/use-toast";
 
 const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
@@ -60,6 +61,20 @@ const CategoryPage = () => {
   const handleDietaryToggle = (preference: string, isChecked: boolean) => {
     console.log("Dietary preference toggled:", preference, isChecked);
     // Dietary filter functionality will be implemented later
+  };
+  
+  // Handle image error for smoothie cards
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.target as HTMLImageElement;
+    target.src = "/placeholder.svg";
+    target.onerror = null; // Prevent infinite loops
+    
+    // Notify user about the image loading issue with a toast
+    toast({
+      title: "Image couldn't load",
+      description: "Using a placeholder image instead",
+      variant: "default",
+    });
   };
   
   return (
@@ -151,18 +166,14 @@ const CategoryPage = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <Card className="overflow-hidden border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                    {/* Larger image section */}
+                    {/* Larger image section with error handling */}
                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                       {smoothie.image && (
                         <img 
                           src={smoothie.image} 
                           alt={smoothie.name} 
                           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
-                          onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-                            target.src = "/placeholder.svg";
-                            target.onerror = null; // Prevent infinite loop
-                          }}
+                          onError={handleImageError}
                         />
                       )}
                       <div className="absolute top-3 left-3 flex gap-2">
