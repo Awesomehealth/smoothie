@@ -28,7 +28,7 @@ export const smoothies: Smoothie[] = [
     id: "berry-blast",
     name: "Berry Blast Protein Smoothie",
     description: "A delicious blend of mixed berries with vanilla protein powder, perfect for post-workout recovery.",
-    image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
+    image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
     ingredients: [
       "1 cup mixed berries",
       "1 scoop vanilla protein powder",
@@ -119,7 +119,7 @@ export const smoothies: Smoothie[] = [
     id: "chocolate-peanut",
     name: "Chocolate Peanut Butter Power Shake",
     description: "A rich, creamy blend of chocolate protein and peanut butter, perfect for muscle gain and recovery.",
-    image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
+    image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
     ingredients: [
       "1 scoop chocolate protein powder",
       "1 tbsp natural peanut butter",
