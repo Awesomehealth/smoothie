@@ -102,7 +102,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
           </button>
           
           <div className="flex items-center justify-center mb-4">
-            <span className="text-xl font-bold text-slate-950">Awesome Body</span>
+            <span className="text-xl font-bold text-slate-950">Awesome Health</span>
           </div>
           
           <h2 className="text-2xl font-semibold text-center mb-6">Live a long healthy life</h2>

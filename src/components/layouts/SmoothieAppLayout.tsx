@@ -61,7 +61,7 @@ const SmoothieAppLayout = ({
                 </Button>
               )}
               <Link to="/" className="flex items-center">
-                <span className="text-xl font-bold text-slate-950">Awesome Body</span>
+                <span className="text-xl font-bold text-slate-950">Awesome Health</span>
               </Link>
             </div>
             <div className="flex items-center space-x-4">
