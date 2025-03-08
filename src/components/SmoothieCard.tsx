@@ -1,25 +1,27 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Trophy, Wheat, Droplet, Utensils, ArrowRight } from "lucide-react";
+import { Trophy, Wheat, Droplet, Utensils, ArrowRight, ImageOff } from "lucide-react";
 import { motion } from "framer-motion";
 import { toast } from "@/components/ui/use-toast";
 import { Smoothie } from "@/data/types";
+import { useState } from "react";
 
 interface SmoothieCardProps {
   smoothie: Smoothie;
 }
 
 const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
+  const [imageError, setImageError] = useState(false);
+  
   // Handle image error for smoothie cards
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const target = e.target as HTMLImageElement;
     target.src = "/placeholder.svg";
-    target.onerror = null; // Prevent infinite loops
+    setImageError(true);
     
     // Notify user about the image loading issue with a toast
     toast({
       title: "Image couldn't load",
-      description: "Using a placeholder image instead",
+      description: `Using a placeholder image for ${smoothie.name}`,
       variant: "default",
     });
   };
@@ -32,7 +34,11 @@ const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
       <Card className="overflow-hidden border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
         {/* Larger image section with error handling */}
         <div className="aspect-[4/3] w-full overflow-hidden relative">
-          {smoothie.image && (
+          {imageError ? (
+            <div className="w-full h-full flex items-center justify-center bg-gray-100">
+              <ImageOff className="h-12 w-12 text-gray-400" />
+            </div>
+          ) : (
             <img 
               src={smoothie.image} 
               alt={smoothie.name} 
