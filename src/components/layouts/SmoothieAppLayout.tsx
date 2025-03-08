@@ -55,7 +55,7 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
                 )}
               </Button>
             )}
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center">
               <span className="text-xl font-bold text-awesome-green">Awesome Body</span>
             </Link>
           </div>
