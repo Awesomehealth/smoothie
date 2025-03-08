@@ -11,7 +11,7 @@ import {
   carbAmounts, 
   fatAmounts, 
   calorieRanges 
-} from "@/data/smoothies";
+} from "@/data/options";
 import { toast } from "@/components/ui/use-toast";
 
 interface SearchSectionProps {
