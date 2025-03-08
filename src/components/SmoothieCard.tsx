@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Trophy, Wheat, Droplet, Utensils, ArrowRight, ImageOff } from "lucide-react";
 import { motion } from "framer-motion";
@@ -26,6 +27,9 @@ const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
     });
   };
 
+  // Use a consistent image for all smoothie cards
+  const smoothieImage = "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg";
+
   return (
     <motion.div
       whileHover={{ y: -5 }}
@@ -40,7 +44,7 @@ const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
             </div>
           ) : (
             <img 
-              src={smoothie.image} 
+              src={smoothieImage} 
               alt={smoothie.name} 
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
               onError={handleImageError}
