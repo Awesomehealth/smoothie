@@ -1,67 +1,43 @@
-
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { 
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger
-} from "@/components/ui/tooltip";
-
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 interface SmoothieAppLayoutProps {
   sidebar: React.ReactNode;
   mainContent: React.ReactNode;
 }
-
-const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => {
+const SmoothieAppLayout = ({
+  sidebar,
+  mainContent
+}: SmoothieAppLayoutProps) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const location = useLocation();
-  
+
   // Check if we are on a category page (not the home page)
   const isCategoryPage = location.pathname !== "/";
-
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
   };
-
-  return (
-    <div className="min-h-screen flex flex-col bg-white relative">
+  return <div className="min-h-screen flex flex-col bg-white relative">
       {/* App header */}
       <header className="w-full bg-white border-b border-gray-200 py-3">
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo area - left aligned */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-awesome-green">Awesome Body</span>
+              <span className="text-xl font-bold text-awesome-green text-left">Awesome Body</span>
             </Link>
           </div>
 
           {/* Sidebar toggle - only shown on category pages */}
-          {isCategoryPage && (
-            <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
-              <Button 
-                variant="ghost" 
-                size="icon"
-                onClick={toggleSidebar}
-                aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
-              >
-                {sidebarCollapsed ? (
-                  <Menu className="h-5 w-5 text-awesome-green" />
-                ) : (
-                  <ChevronLeft className="h-5 w-5 text-awesome-green" />
-                )}
+          {isCategoryPage && <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
+              <Button variant="ghost" size="icon" onClick={toggleSidebar} aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}>
+                {sidebarCollapsed ? <Menu className="h-5 w-5 text-awesome-green" /> : <ChevronLeft className="h-5 w-5 text-awesome-green" />}
               </Button>
-            </div>
-          )}
+            </div>}
 
           {/* Right side actions - right aligned */}
           <div className="flex items-center space-x-4">
@@ -110,7 +86,9 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
 
       <div className="flex flex-1 relative">
         <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed && isCategoryPage ? 'w-16' : 'w-64'}`}>
-          {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: isCategoryPage ? sidebarCollapsed : false })}
+          {React.cloneElement(sidebar as React.ReactElement, {
+          isCollapsed: isCategoryPage ? sidebarCollapsed : false
+        })}
         </aside>
         
         <main className="flex-1 flex flex-col">
@@ -120,8 +98,6 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
         </main>
       </div>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default SmoothieAppLayout;
