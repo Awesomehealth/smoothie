@@ -36,15 +36,15 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
   return (
     <div className="min-h-screen flex flex-col bg-white relative">
       {/* App header */}
-      <header className="w-full bg-white border-b border-gray-200 py-3 px-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <header className="w-full bg-white border-b border-gray-200 py-3">
+        <div className="flex items-center justify-between px-6 md:px-10 max-w-screen-2xl mx-auto">
           {/* Logo and menu section */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             {isCategoryPage && (
               <Button 
                 variant="ghost" 
                 size="icon" 
-                className="mr-1" 
+                className="mr-3" 
                 onClick={toggleSidebar}
                 aria-label={sidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
               >
@@ -61,7 +61,7 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
           </div>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             {/* Premium button */}
             <Button className="bg-awesome-yellow hover:bg-awesome-yellow/90 text-gray-800 font-medium rounded-full flex items-center gap-2">
               <Gem className="h-4 w-4" />
