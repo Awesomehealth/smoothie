@@ -94,6 +94,7 @@ const CategoryPage = () => {
                 onFilterSelect={handleFilterSelect}
                 onDietaryToggle={handleDietaryToggle}
                 showAdvancedSearch={showAdvancedSearch}
+                hideHeading={true} // Pass prop to hide the heading in category pages
               />
             ) : (
               <div className="mb-8 max-w-3xl mx-auto">

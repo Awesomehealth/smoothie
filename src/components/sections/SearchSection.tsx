@@ -20,6 +20,7 @@ interface SearchSectionProps {
   onFilterSelect?: (filterType: string, value: string) => void;
   onDietaryToggle?: (preference: string, isChecked: boolean) => void;
   showAdvancedSearch: boolean;
+  hideHeading?: boolean;
 }
 
 const SearchSection = ({ 
@@ -27,7 +28,8 @@ const SearchSection = ({
   onImageUpload, 
   onFilterSelect, 
   onDietaryToggle,
-  showAdvancedSearch
+  showAdvancedSearch,
+  hideHeading = false
 }: SearchSectionProps) => {
   const handleFilterSelect = (filterType: string, value: string) => {
     if (onFilterSelect) {
@@ -101,9 +103,12 @@ const SearchSection = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-10">
-          What are you in mood for?
-        </h1>
+        {/* Show heading only if not hidden */}
+        {!hideHeading && (
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-10">
+            What are you in mood for?
+          </h1>
+        )}
         
         <div className="w-full max-w-3xl mx-auto mb-8">
           <SearchBar 
