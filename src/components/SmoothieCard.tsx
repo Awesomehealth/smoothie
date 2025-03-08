@@ -8,9 +8,10 @@ import { useState } from "react";
 
 interface SmoothieCardProps {
   smoothie: Smoothie;
+  currentCategory?: string;
 }
 
-const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
+const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
   const [imageError, setImageError] = useState(false);
   
   // Handle image error for smoothie cards
@@ -29,6 +30,11 @@ const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
 
   // Use a consistent image for all smoothie cards
   const smoothieImage = "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg";
+
+  // Filter out the current category from the displayed tags
+  const displayCategories = currentCategory 
+    ? smoothie.categories.filter(cat => cat !== currentCategory)
+    : smoothie.categories;
 
   return (
     <motion.div
@@ -51,7 +57,7 @@ const SmoothieCard = ({ smoothie }: SmoothieCardProps) => {
             />
           )}
           <div className="absolute top-3 left-3 flex gap-2">
-            {smoothie.categories.map((cat, idx) => (
+            {displayCategories.map((cat, idx) => (
               <span 
                 key={idx} 
                 className="px-2 py-1 text-xs font-medium rounded-full bg-white/80 backdrop-blur-sm shadow-sm"

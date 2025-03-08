@@ -85,7 +85,11 @@ const CategoryPage = () => {
           {/* Category-specific info cards */}
           <CategoryInfoCards categoryId={categoryId} />
           
-          <SmoothieList smoothies={filteredSmoothies} searchQuery={searchQuery} />
+          <SmoothieList 
+            smoothies={filteredSmoothies} 
+            searchQuery={searchQuery} 
+            currentCategory={categoryId}
+          />
         </div>
       }
     />
