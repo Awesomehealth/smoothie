@@ -7,11 +7,7 @@ import { Plus, Check, Folder } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "@/components/ui/use-toast";
-
-interface Collection {
-  id: string;
-  name: string;
-}
+import { Collection } from "@/types/collection-types";
 
 interface CollectionDialogProps {
   isOpen: boolean;
@@ -39,8 +35,9 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
+      // Use type assertion to handle the Supabase query
       const { data, error } = await supabase
-        .from('collections')
+        .from('collections' as any)
         .select('*')
         .eq('user_id', user.id);
       
@@ -63,23 +60,27 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
+      // Use type assertion to handle the Supabase query
       const { data, error } = await supabase
-        .from('collections')
+        .from('collections' as any)
         .insert([{ name: newCollectionName, user_id: user.id }])
         .select()
         .single();
       
       if (error) throw error;
       
-      setCollections([...collections, data]);
-      setNewCollectionName("");
-      setIsCreatingNew(false);
-      setSelectedCollectionId(data.id);
-      
-      toast({
-        title: "Success",
-        description: `Collection "${newCollectionName}" created`,
-      });
+      // Add null check for data
+      if (data) {
+        setCollections([...collections, data as Collection]);
+        setNewCollectionName("");
+        setIsCreatingNew(false);
+        setSelectedCollectionId(data.id);
+        
+        toast({
+          title: "Success",
+          description: `Collection "${newCollectionName}" created`,
+        });
+      }
     } catch (error) {
       console.error("Error creating collection:", error);
       toast({
@@ -97,8 +98,9 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
+      // Use type assertion to handle the Supabase query
       const { error } = await supabase
-        .from('collection_items')
+        .from('collection_items' as any)
         .insert([{ 
           collection_id: selectedCollectionId, 
           smoothie_id: smoothieId,
