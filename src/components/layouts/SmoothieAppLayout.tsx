@@ -132,7 +132,9 @@ const SmoothieAppLayout = ({
       </div>
       
       {/* Footer completely separated from the navigation */}
-      <Footer />
+      <div className="max-w-[calc(100vw-64px)] mx-auto">
+        <Footer />
+      </div>
     </>
   );
 };
