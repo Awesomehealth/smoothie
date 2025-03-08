@@ -14,7 +14,7 @@ const CategoryPage = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
   const [searchQuery, setSearchQuery] = useState("");
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
-  const [displayLimit, setDisplayLimit] = useState(6); // Initial display limit of 6 cards
+  const [displayLimit, setDisplayLimit] = useState(6); // Always initialize with 6 cards
   
   // Find the category data based on the URL parameter
   const category = categories.find((cat) => cat.id === categoryId);
@@ -38,7 +38,7 @@ const CategoryPage = () => {
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
-    setDisplayLimit(6); // Reset display limit when search changes
+    setDisplayLimit(6); // Reset display limit to 6 when search changes
   };
   
   const handleUrlSubmit = (url: string) => {
@@ -60,9 +60,9 @@ const CategoryPage = () => {
     // Dietary filter functionality will be implemented later
   };
 
-  // Handle loading more items - showing 3 more items each time
+  // Handle loading more items - add exactly 3 more items each time
   const handleLoadMore = () => {
-    setDisplayLimit(prevLimit => prevLimit + 3); // Load 3 more items when "See More" is clicked
+    setDisplayLimit(prevLimit => prevLimit + 3);
   };
   
   return (

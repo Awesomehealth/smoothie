@@ -16,7 +16,7 @@ const SmoothieList = ({
   smoothies, 
   searchQuery, 
   currentCategory,
-  displayLimit = smoothies.length,
+  displayLimit = 6, // Default to 6 if not specified
   onLoadMore,
   hasMoreItems = false
 }: SmoothieListProps) => {
@@ -43,7 +43,7 @@ const SmoothieList = ({
         ))}
       </div>
       
-      {/* Show the "See More" button if there are more items to load */}
+      {/* Show the "See More" button only if there are more items to display */}
       {onLoadMore && hasMoreItems && (
         <div className="flex justify-center mt-8">
           <Button 
