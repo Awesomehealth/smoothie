@@ -1,4 +1,3 @@
-
 import React from "react";
 import { X, Apple, Mail } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -66,7 +65,6 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
   };
 
   const handleSignInWithEmail = () => {
-    // This would open the email sign-in form
     toast({
       title: "Email sign-in",
       description: "Email sign-in is not implemented yet",
@@ -89,7 +87,7 @@ const LoginDialog = ({ isOpen, onClose }: LoginDialogProps) => {
             <span className="text-xl font-bold text-slate-950">Awesome Body</span>
           </div>
           
-          <h2 className="text-2xl font-semibold text-center mb-6">Make healthy living painless</h2>
+          <h2 className="text-2xl font-semibold text-center mb-6">Live a long healthy life</h2>
           
           <div className="w-full space-y-4 mb-6">
             <Button 
