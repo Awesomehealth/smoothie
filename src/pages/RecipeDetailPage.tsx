@@ -206,25 +206,22 @@ const RecipeDetailPage = () => {
               </div>
               <p className="text-gray-700 mb-4">{smoothie.description}</p>
               
-              <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 w-full mb-6">
-                <h3 className="text-xl font-bold mb-4 text-gray-800">Nutrition Facts</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gray-50 p-4 rounded-lg text-center">
-                    <p className="text-2xl font-bold text-coral-600">{smoothie.nutrition.calories}</p>
-                    <p className="text-sm text-gray-500">calories</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg text-center">
-                    <p className="text-2xl font-bold text-mint-600">{smoothie.nutrition.protein}g</p>
-                    <p className="text-sm text-gray-500">protein</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg text-center">
-                    <p className="text-2xl font-bold text-lavender-600">{smoothie.nutrition.carbs}g</p>
-                    <p className="text-sm text-gray-500">carbs</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg text-center">
-                    <p className="text-2xl font-bold text-sky-600">{smoothie.nutrition.fat}g</p>
-                    <p className="text-sm text-gray-500">fat</p>
-                  </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-sm text-gray-500">Calories</p>
+                  <p className="font-semibold text-coral-600">{smoothie.nutrition.calories}</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-sm text-gray-500">Protein</p>
+                  <p className="font-semibold text-mint-600">{smoothie.nutrition.protein}g</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-sm text-gray-500">Carbs</p>
+                  <p className="font-semibold text-lavender-600">{smoothie.nutrition.carbs}g</p>
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg text-center">
+                  <p className="text-sm text-gray-500">Fat</p>
+                  <p className="font-semibold text-sky-600">{smoothie.nutrition.fat}g</p>
                 </div>
               </div>
             </div>
