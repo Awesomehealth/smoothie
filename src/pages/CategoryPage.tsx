@@ -60,7 +60,7 @@ const CategoryPage = () => {
     // Dietary filter functionality will be implemented later
   };
 
-  // Handle loading more items
+  // Handle loading more items - showing 3 more items each time
   const handleLoadMore = () => {
     setDisplayLimit(prevLimit => prevLimit + 3); // Load 3 more items when "See More" is clicked
   };
@@ -79,7 +79,7 @@ const CategoryPage = () => {
         <div className="w-full max-w-7xl mx-auto p-8">
           <CategoryHeader category={category} isPostWorkout={categoryId === 'post-workout'} />
           
-          {/* Search Section with Advanced Search - MOVED ABOVE INFO CARDS */}
+          {/* Search Section with Advanced Search */}
           <CategorySearchSection 
             categoryName={category?.name || ""}
             showAdvancedSearch={showAdvancedSearch}
@@ -89,7 +89,7 @@ const CategoryPage = () => {
             onDietaryToggle={handleDietaryToggle}
           />
           
-          {/* Info cards section with a subtle background to tie it together */}
+          {/* Info cards section with a subtle background */}
           <div className="bg-gradient-to-r from-white to-mint-50/30 rounded-xl p-6 mb-8">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">Key Benefits</h2>
             <CategoryInfoCards categoryId={categoryId} />
