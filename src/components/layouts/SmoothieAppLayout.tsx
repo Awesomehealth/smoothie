@@ -56,16 +56,7 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
               </Button>
             )}
             <Link to="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold font-display">
-                <span className="text-awesome-red">A</span>
-                <span className="text-awesome-blue">w</span>
-                <span className="text-awesome-yellow">e</span>
-                <span className="text-awesome-pink">s</span>
-                <span className="text-awesome-orange">o</span>
-                <span className="text-awesome-purple">m</span>
-                <span className="text-awesome-green">e</span>
-                <span className="text-gray-800"> Body</span>
-              </span>
+              <span className="text-xl font-bold text-awesome-green">Awesome Body</span>
             </Link>
           </div>
 
@@ -114,7 +105,7 @@ const SmoothieAppLayout = ({ sidebar, mainContent }: SmoothieAppLayoutProps) => 
         </div>
       </header>
 
-      <div className="flex flex-1">
+      <div className="flex flex-1 relative">
         <aside className={`sticky top-0 h-[calc(100vh-57px)] z-10 transition-all ${sidebarCollapsed && isCategoryPage ? 'w-16' : 'w-64'}`}>
           {React.cloneElement(sidebar as React.ReactElement, { isCollapsed: isCategoryPage ? sidebarCollapsed : false })}
         </aside>
