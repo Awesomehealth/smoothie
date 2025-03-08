@@ -146,11 +146,18 @@ const CategoryPage = () => {
               {filteredSmoothies.map((smoothie) => (
                 <Card key={smoothie.id} className="overflow-hidden border border-gray-200 rounded-xl transition-all duration-300 hover:shadow-md">
                   <div className="aspect-video w-full overflow-hidden bg-gray-100">
-                    <img 
-                      src={smoothie.image} 
-                      alt={smoothie.name} 
-                      className="w-full h-full object-cover" 
-                    />
+                    {smoothie.image && (
+                      <img 
+                        src={smoothie.image} 
+                        alt={smoothie.name} 
+                        className="w-full h-full object-cover" 
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = "/placeholder.svg";
+                          target.onerror = null; // Prevent infinite loop
+                        }}
+                      />
+                    )}
                   </div>
                   
                   <div className="p-5">
