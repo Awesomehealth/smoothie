@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
@@ -27,7 +28,9 @@ const SearchResultsPage = () => {
       const nameMatch = smoothie.name.toLowerCase().includes(lowerCaseQuery);
       const descMatch = smoothie.description.toLowerCase().includes(lowerCaseQuery);
       const ingredientsMatch = smoothie.ingredients.some(
-        ingredient => ingredient.name.toLowerCase().includes(lowerCaseQuery)
+        ingredient => typeof ingredient === 'string' 
+          ? ingredient.toLowerCase().includes(lowerCaseQuery)
+          : ingredient.toLowerCase().includes(lowerCaseQuery)
       );
       const categoriesMatch = smoothie.categories.some(
         category => category.toLowerCase().includes(lowerCaseQuery)
