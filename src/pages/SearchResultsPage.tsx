@@ -32,7 +32,7 @@ const SearchResultsPage = () => {
           if (typeof ingredient === 'string') {
             return ingredient.toLowerCase().includes(lowerCaseQuery);
           } else if (ingredient && typeof ingredient === 'object' && 'name' in ingredient) {
-            return ingredient.name.toLowerCase().includes(lowerCaseQuery);
+            return String(ingredient.name).toLowerCase().includes(lowerCaseQuery);
           }
           return false;
         }
