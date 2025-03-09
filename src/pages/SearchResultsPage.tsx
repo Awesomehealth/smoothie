@@ -28,9 +28,14 @@ const SearchResultsPage = () => {
       const nameMatch = smoothie.name.toLowerCase().includes(lowerCaseQuery);
       const descMatch = smoothie.description.toLowerCase().includes(lowerCaseQuery);
       const ingredientsMatch = smoothie.ingredients.some(
-        ingredient => typeof ingredient === 'string' 
-          ? ingredient.toLowerCase().includes(lowerCaseQuery)
-          : ingredient.toLowerCase().includes(lowerCaseQuery)
+        ingredient => {
+          if (typeof ingredient === 'string') {
+            return ingredient.toLowerCase().includes(lowerCaseQuery);
+          } else if (ingredient && typeof ingredient === 'object' && 'name' in ingredient) {
+            return ingredient.name.toLowerCase().includes(lowerCaseQuery);
+          }
+          return false;
+        }
       );
       const categoriesMatch = smoothie.categories.some(
         category => category.toLowerCase().includes(lowerCaseQuery)
