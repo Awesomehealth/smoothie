@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import { smoothies } from "@/data/smoothiesData";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
@@ -89,13 +88,6 @@ const RecipeDetailPage = () => {
     });
   };
 
-  const handleShareRecipe = () => {
-    toast({
-      title: "Share Recipe",
-      description: "Recipe link copied to clipboard!",
-    });
-  };
-
   const videoThumbnail = "https://player.vimeo.com/external/414566109.sd.mp4?s=c912f93f5ce54b6fe68d5bcdf3d20a3255dbba6c&profile_id=139&oauth2_token_id=57447761";
   const dummyImages = [
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
@@ -137,7 +129,6 @@ const RecipeDetailPage = () => {
         <div className="w-full max-w-5xl mx-auto pb-20">
           <RecipeHeader 
             smoothie={smoothie} 
-            onShareRecipe={handleShareRecipe} 
             onSaveRecipe={handleSaveRecipe} 
           />
           
@@ -175,7 +166,6 @@ const RecipeDetailPage = () => {
             onTextIngredients={handleTextIngredients}
           />
           
-          {/* Reviews Section */}
           <div id="reviews-section" className="mt-10 px-6">
             <ReviewList 
               smoothieId={smoothieId || ''} 
@@ -185,7 +175,6 @@ const RecipeDetailPage = () => {
             />
           </div>
           
-          {/* Related Recipes Section */}
           <RelatedRecipes 
             currentSmoothieId={smoothieId || ''} 
             categories={smoothie.categories} 
