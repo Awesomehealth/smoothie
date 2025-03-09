@@ -1,8 +1,9 @@
+
 import { useParams, Link } from "react-router-dom";
 import { smoothies } from "@/data/smoothiesData";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { motion } from "framer-motion";
-import { Star, Heart, Printer, Mail, MessageSquare, ShoppingCart, Plus, Edit, Share, Save, Grid } from "lucide-react";
+import { Star, Heart, Printer, Mail, MessageSquare, Share, Save, Grid } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
@@ -60,17 +61,6 @@ const RecipeDetailPage = () => {
     );
   };
 
-  const handleAddToShoppingList = () => {
-    const items = selectedIngredients.length > 0 
-      ? selectedIngredients 
-      : smoothie.ingredients;
-      
-    toast({
-      title: "Added to Shopping List",
-      description: `${items.length} ingredients added to your shopping list`,
-    });
-  };
-
   const handleSaveRecipe = () => {
     if (!user) {
       setLoginDialogOpen(true);
@@ -93,12 +83,6 @@ const RecipeDetailPage = () => {
   const handleTextIngredients = () => {
     toast({
       description: "Text feature coming soon!",
-    });
-  };
-
-  const handleViewShoppingList = () => {
-    toast({
-      description: "Shopping list feature coming soon!",
     });
   };
 
@@ -306,47 +290,6 @@ const RecipeDetailPage = () => {
                 ))}
               </ul>
             </Card>
-            
-            <div className="mt-6 space-y-3">
-              <Button 
-                className="w-full bg-gray-700 hover:bg-gray-800 text-white"
-                onClick={() => toast({ description: "Ingredients feature coming soon!" })}
-              >
-                Get Ingredients
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                className="w-full border-gray-300 flex items-center justify-center gap-2"
-                onClick={handleAddToShoppingList}
-              >
-                <Plus size={18} /> Add to Shopping List
-              </Button>
-              
-              <Button 
-                variant="outline"
-                className="w-full border-gray-300 flex items-center justify-center gap-2"
-                onClick={handleViewShoppingList}
-              >
-                <ShoppingCart size={18} /> View Shopping List
-              </Button>
-              
-              <Button 
-                variant="outline"
-                className="w-full border-gray-300 flex items-center justify-center gap-2"
-                onClick={() => toast({ description: "Substitutions feature coming soon!" })}
-              >
-                <Edit size={18} /> Ingredient Substitutions
-              </Button>
-              
-              <Button 
-                variant="outline"
-                className="w-full border-gray-300 flex items-center justify-center gap-2"
-                onClick={handleTextIngredients}
-              >
-                <MessageSquare size={18} /> Text Ingredients
-              </Button>
-            </div>
           </div>
           
           {smoothie.recipe?.instructions && smoothie.recipe.instructions.length > 0 && (

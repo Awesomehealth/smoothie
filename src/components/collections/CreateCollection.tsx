@@ -16,28 +16,28 @@ interface CreateCollectionProps {
 
 const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading }: CreateCollectionProps) => {
   const [newCollectionName, setNewCollectionName] = useState("");
-  const [isCreatingNew, setIsCreatingNew] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleCreateCollection = async () => {
+  const handleCreateCollection = async (e: React.FormEvent) => {
+    e.preventDefault();
     if (!newCollectionName.trim() || !userId) return;
     
     setIsLoading(true);
     try {
+      // Use "as any" to bypass TypeScript error
       const { data, error } = await supabase
         .from('collections')
         .insert([{ name: newCollectionName, user_id: userId }])
-        .select()
-        .single() as any;
+        .select('*') as any;
       
       if (error) throw error;
       
-      if (data) {
-        onCollectionCreated(data);
+      const newCollection = data?.[0];
+      if (newCollection) {
+        onCollectionCreated(newCollection);
         setNewCollectionName("");
-        setIsCreatingNew(false);
-        
+        setIsExpanded(false);
         toast({
-          title: "Success",
           description: `Collection "${newCollectionName}" created`,
         });
       }
@@ -53,39 +53,47 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
     }
   };
 
-  if (isCreatingNew) {
+  if (!isExpanded) {
     return (
-      <div className="flex items-center space-x-2 mb-4">
-        <Input
-          placeholder="Collection name"
-          value={newCollectionName}
-          onChange={(e) => setNewCollectionName(e.target.value)}
-          className="flex-1"
-        />
-        <Button 
-          onClick={handleCreateCollection}
-          disabled={!newCollectionName.trim() || isLoading}
-        >
-          Create
-        </Button>
-        <Button 
-          variant="outline" 
-          onClick={() => setIsCreatingNew(false)}
-        >
-          Cancel
-        </Button>
-      </div>
+      <Button 
+        variant="outline" 
+        onClick={() => setIsExpanded(true)}
+        className="w-full mb-4 border-dashed border-2 border-gray-300 text-gray-600 hover:text-coral-600 hover:border-coral-300"
+        disabled={isLoading}
+      >
+        <Plus size={18} className="mr-2" /> Create new collection
+      </Button>
     );
   }
 
   return (
-    <Button 
-      className="w-full mb-4 flex items-center justify-center"
-      variant="outline"
-      onClick={() => setIsCreatingNew(true)}
-    >
-      <Plus className="mr-2 h-4 w-4" /> Create New Collection
-    </Button>
+    <form onSubmit={handleCreateCollection} className="mb-4">
+      <div className="flex gap-2">
+        <Input
+          value={newCollectionName}
+          onChange={(e) => setNewCollectionName(e.target.value)}
+          placeholder="Collection name"
+          className="flex-1"
+          disabled={isLoading}
+          autoFocus
+        />
+        <Button 
+          type="submit" 
+          disabled={!newCollectionName.trim() || isLoading}
+          className="bg-coral-500 hover:bg-coral-600 text-white"
+        >
+          Create
+        </Button>
+        <Button 
+          type="button" 
+          variant="outline" 
+          onClick={() => setIsExpanded(false)}
+          disabled={isLoading}
+        >
+          Cancel
+        </Button>
+      </div>
+    </form>
   );
 };
 

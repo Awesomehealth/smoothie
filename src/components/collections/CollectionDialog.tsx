@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
@@ -33,6 +33,7 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
+      // Use "as any" to bypass TypeScript error
       const { data, error } = await supabase
         .from('collections')
         .select('*')
@@ -62,6 +63,7 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
+      // Use "as any" to bypass TypeScript error
       const { error } = await supabase
         .from('collection_items')
         .insert([{ 
@@ -103,6 +105,9 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
       <DialogContent className="sm:max-w-md p-6">
         <DialogHeader>
           <DialogTitle className="text-xl">Save to Collection</DialogTitle>
+          <DialogDescription className="text-sm text-gray-500">
+            Save this recipe to one of your collections
+          </DialogDescription>
         </DialogHeader>
         
         <div className="mt-4">
