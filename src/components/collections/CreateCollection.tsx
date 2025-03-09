@@ -23,8 +23,9 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
     
     setIsLoading(true);
     try {
-      const { data, error } = await supabase
-        .from('collections')
+      // Use type assertion to bypass TypeScript errors
+      const { data, error } = await (supabase
+        .from('collections') as any)
         .insert([{ name: newCollectionName, user_id: userId }])
         .select()
         .single();

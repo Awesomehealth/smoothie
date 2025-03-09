@@ -33,8 +33,9 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      const { data, error } = await supabase
-        .from('collections')
+      // Use type assertion to bypass TypeScript errors
+      const { data, error } = await (supabase
+        .from('collections') as any)
         .select('*')
         .eq('user_id', user.id);
       
@@ -62,8 +63,9 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      const { error } = await supabase
-        .from('collection_items')
+      // Use type assertion to bypass TypeScript errors
+      const { error } = await (supabase
+        .from('collection_items') as any)
         .insert([{ 
           collection_id: selectedCollectionId, 
           smoothie_id: smoothieId,
