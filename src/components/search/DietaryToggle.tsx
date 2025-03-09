@@ -9,14 +9,14 @@ interface DietaryToggleProps {
 const DietaryToggle = ({ onDietaryToggle }: DietaryToggleProps) => {
   return (
     <motion.div 
-      className="max-w-3xl mx-auto mt-8 px-2"
+      className="max-w-5xl mx-auto mt-6 px-4"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
     >
       <div className="flex flex-col items-center gap-6">
         {/* First row of toggles */}
-        <div className="grid grid-cols-3 gap-x-12 gap-y-6 w-full max-w-2xl mx-auto">
+        <div className="grid grid-cols-3 gap-x-16 gap-y-6 w-full max-w-3xl mx-auto">
           <ToggleItem 
             label="Meal Replacement" 
             prefId="isMealReplacement" 

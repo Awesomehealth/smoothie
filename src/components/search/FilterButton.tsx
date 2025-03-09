@@ -46,7 +46,7 @@ const FilterButton = ({ label, options, onSelect }: FilterButtonProps) => {
     : label;
 
   return (
-    <div className="relative min-w-[130px] max-w-[180px]" ref={dropdownRef}>
+    <div className="relative w-[170px]" ref={dropdownRef}>
       <button 
         onClick={toggleOpen}
         className="w-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 flex items-center justify-between gap-2 whitespace-nowrap"

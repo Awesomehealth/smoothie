@@ -35,8 +35,8 @@ const SearchResultsPage = () => {
           } else if (ingredient && typeof ingredient === 'object') {
             // Fix for TypeScript error - Check if the object has a name property
             return 'name' in ingredient && 
-              ingredient.name !== undefined &&
-              String(ingredient.name).toLowerCase().includes(lowerCaseQuery);
+              typeof ingredient.name === 'string' &&
+              ingredient.name.toLowerCase().includes(lowerCaseQuery);
           }
           return false;
         }
