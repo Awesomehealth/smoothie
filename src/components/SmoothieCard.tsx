@@ -28,6 +28,9 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
   const displayCategories = currentCategory 
     ? smoothie.categories.filter(cat => cat !== currentCategory)
     : smoothie.categories;
+    
+  // Recipe link path
+  const recipePath = `/recipe/${smoothie.id}`;
 
   return (
     <motion.div
@@ -35,8 +38,8 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
       transition={{ duration: 0.3 }}
     >
       <Card className="overflow-hidden border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
-        {/* Larger image section with error handling */}
-        <div className="aspect-[4/3] w-full overflow-hidden relative">
+        {/* Clickable image section with error handling */}
+        <Link to={recipePath} className="block aspect-[4/3] w-full overflow-hidden relative">
           {imageError ? (
             <div className="w-full h-full flex items-center justify-center bg-gray-100">
               <ImageOff className="h-12 w-12 text-gray-400" />
@@ -59,10 +62,15 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
               </span>
             ))}
           </div>
-        </div>
+        </Link>
         
         <CardContent className="p-5 flex-grow flex flex-col">
-          <h3 className="font-bold text-xl mb-2 text-gray-800">{smoothie.name}</h3>
+          {/* Clickable title */}
+          <Link to={recipePath} className="group">
+            <h3 className="font-bold text-xl mb-2 text-gray-800 group-hover:text-lavender-700 transition-colors">
+              {smoothie.name}
+            </h3>
+          </Link>
           <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-grow">{smoothie.description}</p>
           
           {/* Nutrition facts display */}
@@ -93,7 +101,7 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
           </div>
           
           {/* Button for viewing recipe */}
-          <Link to={`/recipe/${smoothie.id}`} className="w-full">
+          <Link to={recipePath} className="w-full">
             <button className="w-full py-2.5 px-4 bg-lavender-100 hover:bg-lavender-200 text-lavender-700 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
               View Recipe
               <ArrowRight className="h-4 w-4" />
