@@ -33,11 +33,10 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Add the "as any" type assertion to bypass TypeScript errors
-      const { data, error } = await (supabase
-        .from('collections') as any)
+      const { data, error } = await supabase
+        .from('collections')
         .select('*')
-        .eq('user_id', user.id);
+        .eq('user_id', user.id) as any;
       
       if (error) throw error;
       setCollections(data || []);
@@ -63,14 +62,13 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Add the "as any" type assertion here as well
-      const { error } = await (supabase
-        .from('collection_items') as any)
+      const { error } = await supabase
+        .from('collection_items')
         .insert([{ 
           collection_id: selectedCollectionId, 
           smoothie_id: smoothieId,
           user_id: user.id
-        }]);
+        }]) as any;
       
       if (error) {
         // Check if it's a duplicate error
