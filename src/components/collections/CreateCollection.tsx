@@ -23,6 +23,7 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
     
     setIsLoading(true);
     try {
+      // Add the "as any" type assertion here
       const { data, error } = await (supabase
         .from('collections') as any)
         .insert([{ name: newCollectionName, user_id: userId }])
