@@ -100,9 +100,9 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
             </div>
           </div>
           
-          {/* Button for viewing recipe */}
+          {/* Button for viewing recipe - Updated to black background with white text */}
           <Link to={recipePath} className="w-full">
-            <button className="w-full py-2.5 px-4 bg-lavender-100 hover:bg-lavender-200 text-lavender-700 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
+            <button className="w-full py-2.5 px-4 bg-black hover:bg-gray-800 text-white rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
               View Recipe
               <ArrowRight className="h-4 w-4" />
             </button>

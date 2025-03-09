@@ -22,6 +22,7 @@ const buttonVariants = cva(
         coral: "bg-coral-500 text-white hover:bg-coral-600",
         lavender: "bg-lavender-500 text-white hover:bg-lavender-600",
         mint: "bg-mint-500 text-white hover:bg-mint-600",
+        black: "bg-black text-white hover:bg-gray-800",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -43,12 +43,12 @@ const SmoothieList = ({
         ))}
       </div>
       
-      {/* Show the "See More" button only if there are more items to display */}
+      {/* Show the "See More" button only if there are more items to display - Updated to black background with white text */}
       {onLoadMore && hasMoreItems && (
         <div className="flex justify-center mt-8">
           <Button 
             onClick={onLoadMore}
-            className="px-8 py-2 bg-lavender-500 hover:bg-lavender-600 text-white"
+            className="px-8 py-2 bg-black hover:bg-gray-800 text-white"
           >
             See More
           </Button>
