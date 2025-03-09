@@ -13,7 +13,6 @@ const SearchResultsPage = () => {
   const query = searchParams.get("q") || "";
   const [filteredSmoothies, setFilteredSmoothies] = useState<Smoothie[]>([]);
   const [displayLimit, setDisplayLimit] = useState(12);
-  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
   const location = useLocation();
 
   // Filter smoothies based on search query
@@ -33,10 +32,9 @@ const SearchResultsPage = () => {
           if (typeof ingredient === 'string') {
             return ingredient.toLowerCase().includes(lowerCaseQuery);
           } else if (ingredient && typeof ingredient === 'object') {
-            // Fix for TypeScript error - Check if the object has a name property
+            // Check if the object has a name property
             return 'name' in ingredient && 
-              typeof ingredient.name === 'string' &&
-              ingredient.name.toLowerCase().includes(lowerCaseQuery);
+              String(ingredient.name).toLowerCase().includes(lowerCaseQuery);
           }
           return false;
         }
@@ -93,18 +91,14 @@ const SearchResultsPage = () => {
     // URL processing functionality will be implemented later
   };
 
-  const handleAdvancedSearchToggle = (show: boolean) => {
-    setShowAdvancedSearch(show);
-  };
-
   return (
     <SmoothieAppLayout
       sidebar={
         <CategorySidebar
           selectedCategory={null}
           onCategorySelect={() => {}}
-          showAdvancedSearch={showAdvancedSearch}
-          onAdvancedSearchToggle={handleAdvancedSearchToggle}
+          showAdvancedSearch={false}
+          onAdvancedSearchToggle={() => {}}
         />
       }
       mainContent={
@@ -112,15 +106,12 @@ const SearchResultsPage = () => {
           {/* Keep search bar at top */}
           <div className="w-full bg-white py-6 px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
-                Anything else you're in the mood for?
-              </h2>
               <SearchSection
                 onSearch={handleSearch}
                 onImageUpload={handleImageUpload}
                 onFilterSelect={handleFilterSelect}
                 onDietaryToggle={handleDietaryToggle}
-                showAdvancedSearch={showAdvancedSearch}
+                showAdvancedSearch={false}
                 hideHeading={true}
                 initialQuery={query}
               />
