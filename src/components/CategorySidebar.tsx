@@ -78,7 +78,7 @@ const CategorySidebar = ({
         {/* Categories Section */}
         <div className="p-3">
           {!collapsed && (
-            <h3 className="text-sm text-gray-500 font-medium mb-2">
+            <h3 className="text-sm text-gray-500 font-medium mb-2 text-left">
               Categories
             </h3>
           )}
@@ -110,7 +110,7 @@ const CategorySidebar = ({
         {/* Tools Section */}
         <div className={`p-3 ${collapsed ? 'mt-4' : ''}`}>
           {!collapsed && (
-            <h3 className="text-sm text-gray-500 font-medium mb-2">
+            <h3 className="text-sm text-gray-500 font-medium mb-2 text-left">
               Tools
             </h3>
           )}
@@ -148,7 +148,7 @@ const CategorySidebar = ({
         {/* Support Section */}
         <div className={`p-3 ${collapsed ? 'mt-4' : ''}`}>
           {!collapsed && (
-            <h3 className="text-sm text-gray-500 font-medium mb-2">
+            <h3 className="text-sm text-gray-500 font-medium mb-2 text-left">
               Support
             </h3>
           )}
