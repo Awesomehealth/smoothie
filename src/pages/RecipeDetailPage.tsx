@@ -50,16 +50,6 @@ const RecipeDetailPage = () => {
         }
         mainContent={
           <div className="w-full">
-            <div className="px-6 pt-4">
-              <Button 
-                variant="ghost" 
-                className="flex items-center text-gray-600 hover:text-gray-900"
-                onClick={handleGoBack}
-              >
-                <ChevronLeft className="h-5 w-5 mr-1" />
-                Back
-              </Button>
-            </div>
             {!smoothie ? (
               <NotFoundContent />
             ) : (
@@ -68,6 +58,7 @@ const RecipeDetailPage = () => {
                 smoothieId={smoothieId || ''}
                 {...recipeProps}
                 onViewAllPhotos={() => setGalleryOpen(true)}
+                onGoBack={handleGoBack}
               />
             )}
           </div>

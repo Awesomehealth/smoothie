@@ -10,6 +10,8 @@ import RecipeTips from "./RecipeTips";
 import RecipeActions from "./RecipeActions";
 import ReviewList from "../reviews/ReviewList";
 import RelatedRecipes from "./RelatedRecipes";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft } from "lucide-react";
 
 interface RecipeContentProps {
   smoothie: Smoothie;
@@ -26,6 +28,7 @@ interface RecipeContentProps {
   handleReviewsUpdate: (newAvgRating: number, newReviewCount: number) => void;
   scrollToReviews: () => void;
   onViewAllPhotos: () => void;
+  onGoBack: () => void;
 }
 
 const RecipeContent = ({
@@ -42,10 +45,24 @@ const RecipeContent = ({
   reviewCount,
   handleReviewsUpdate,
   scrollToReviews,
-  onViewAllPhotos
+  onViewAllPhotos,
+  onGoBack
 }: RecipeContentProps) => {
   return (
     <div className="w-full max-w-5xl mx-auto pb-20">
+      <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm border-b border-gray-100 shadow-sm px-4 py-2 flex items-center">
+        <Button 
+          variant="ghost" 
+          size="sm"
+          rounded="full"
+          className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          onClick={onGoBack}
+        >
+          <ChevronLeft className="h-4 w-4 mr-1" />
+          Back
+        </Button>
+      </div>
+      
       <RecipeHeader 
         smoothie={smoothie} 
         onSaveRecipe={handleSaveRecipe} 
