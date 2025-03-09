@@ -31,8 +31,10 @@ const SearchResultsPage = () => {
         ingredient => {
           if (typeof ingredient === 'string') {
             return ingredient.toLowerCase().includes(lowerCaseQuery);
-          } else if (ingredient && typeof ingredient === 'object' && 'name' in ingredient) {
-            return String(ingredient.name).toLowerCase().includes(lowerCaseQuery);
+          } else if (ingredient && typeof ingredient === 'object') {
+            // Check if the object has a name property that is a string or can be converted to string
+            return typeof ingredient.name !== 'undefined' && 
+              String(ingredient.name).toLowerCase().includes(lowerCaseQuery);
           }
           return false;
         }
