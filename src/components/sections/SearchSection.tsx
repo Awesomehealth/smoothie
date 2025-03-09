@@ -21,6 +21,7 @@ interface SearchSectionProps {
   onDietaryToggle?: (preference: string, isChecked: boolean) => void;
   showAdvancedSearch: boolean;
   hideHeading?: boolean;
+  initialQuery?: string;
 }
 
 const SearchSection = ({ 
@@ -29,7 +30,8 @@ const SearchSection = ({
   onFilterSelect, 
   onDietaryToggle,
   showAdvancedSearch,
-  hideHeading = false
+  hideHeading = false,
+  initialQuery = ""
 }: SearchSectionProps) => {
   const handleFilterSelect = (filterType: string, values: string[]) => {
     if (onFilterSelect) {
@@ -116,6 +118,7 @@ const SearchSection = ({
             onImageUpload={onImageUpload} 
             onUrlSubmit={handleUrlSubmit}
             placeholder="Smoothie, Shakes, Acai bowl..." 
+            initialQuery={initialQuery}
           />
         </div>
         

@@ -1,32 +1,46 @@
 
 import { useState, useRef } from "react";
 import { Search, Paperclip, Globe, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
   onImageUpload?: (file: File) => void;
   onUrlSubmit?: (url: string) => void;
   placeholder?: string;
+  initialQuery?: string;
+  navigateOnSearch?: boolean;
 }
 
 const SearchBar = ({ 
   onSearch, 
   onImageUpload, 
   onUrlSubmit,
-  placeholder = "Smoothie, Shakes, Acai bowl..." 
+  placeholder = "Smoothie, Shakes, Acai bowl...",
+  initialQuery = "",
+  navigateOnSearch = true
 }: SearchBarProps) => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialQuery);
   const [isUrlInputVisible, setIsUrlInputVisible] = useState(false);
   const [url, setUrl] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const queryInputRef = useRef<HTMLInputElement>(null);
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
       onSearch(query);
+      
+      // Navigate to search results page if needed
+      if (navigateOnSearch) {
+        navigate(`/search?q=${encodeURIComponent(query)}`);
+      }
     } else if (isUrlInputVisible && url.trim() && onUrlSubmit) {
       onUrlSubmit(url);
+      if (navigateOnSearch) {
+        navigate(`/search?url=${encodeURIComponent(url)}`);
+      }
     }
   };
 
@@ -76,6 +90,7 @@ const SearchBar = ({
             <>
               {/* Left side - Search icon and input */}
               <div className="flex-grow flex items-center">
+                <Search className="h-5 w-5 text-gray-400 mr-2" />
                 <input
                   ref={queryInputRef}
                   type="text"

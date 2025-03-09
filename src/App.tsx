@@ -1,46 +1,33 @@
 
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import CategoryPage from "./pages/CategoryPage";
-import RecipeDetailPage from "./pages/RecipeDetailPage";
-import { AuthProvider } from "./contexts/AuthContext";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsConditions from "./pages/TermsConditions";
+import { AuthProvider } from "@/contexts/AuthContext";
+import Index from "@/pages/Index";
+import CategoryPage from "@/pages/CategoryPage";
+import RecipeDetailPage from "@/pages/RecipeDetailPage";
+import NotFound from "@/pages/NotFound";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsConditions from "@/pages/TermsConditions";
+import SearchResultsPage from "@/pages/SearchResultsPage";
+import "./App.css";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+function App() {
+  return (
     <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            
-            {/* Category routes */}
-            <Route path="/category/:categoryId" element={<CategoryPage />} />
-            
-            {/* Recipe detail route */}
-            <Route path="/recipe/:smoothieId" element={<RecipeDetailPage />} />
-            
-            {/* Legal pages */}
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsConditions />} />
-            
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/category/:categoryId" element={<CategoryPage />} />
+          <Route path="/recipe/:smoothieId" element={<RecipeDetailPage />} />
+          <Route path="/search" element={<SearchResultsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+      <Toaster />
     </AuthProvider>
-  </QueryClientProvider>
-);
+  );
+}
 
 export default App;

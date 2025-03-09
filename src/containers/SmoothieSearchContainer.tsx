@@ -31,7 +31,9 @@ const SmoothieSearchContainer = ({ children }: SmoothieSearchContainerProps) => 
 
   const handleSearch = (query: string) => {
     console.log("Searching for:", query);
-    // Search functionality will be implemented later
+    if (query.trim()) {
+      navigate(`/search?q=${encodeURIComponent(query)}`);
+    }
   };
 
   const handleImageUpload = (file: File) => {
