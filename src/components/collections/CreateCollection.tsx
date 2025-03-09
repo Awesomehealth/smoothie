@@ -23,18 +23,11 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
     
     setIsLoading(true);
     try {
-      // Apply type assertion to the entire query chain
-      const result = await supabase
-        .from('collections')
+      const { data, error } = await (supabase
+        .from('collections') as any)
         .insert([{ name: newCollectionName, user_id: userId }])
         .select()
         .single();
-      
-      // Cast the result to the expected type
-      const { data, error } = result as unknown as {
-        data: Collection | null;
-        error: Error | null;
-      };
       
       if (error) throw error;
       

@@ -33,17 +33,10 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Apply type assertion to the entire query chain
-      const result = await supabase
-        .from('collections')
+      const { data, error } = await (supabase
+        .from('collections') as any)
         .select('*')
         .eq('user_id', user.id);
-      
-      // Cast the result to the expected type
-      const { data, error } = result as unknown as { 
-        data: Collection[] | null; 
-        error: Error | null 
-      };
       
       if (error) throw error;
       setCollections(data || []);
@@ -69,19 +62,13 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Apply type assertion to the entire query chain
-      const result = await supabase
-        .from('collection_items')
+      const { error } = await (supabase
+        .from('collection_items') as any)
         .insert([{ 
           collection_id: selectedCollectionId, 
           smoothie_id: smoothieId,
           user_id: user.id
         }]);
-      
-      // Cast the result to the expected type
-      const { error } = result as unknown as {
-        error: { code: string } | null
-      };
       
       if (error) {
         // Check if it's a duplicate error
