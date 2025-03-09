@@ -18,7 +18,8 @@ const RecipeActions = ({
   return (
     <div className="mt-10 px-6">
       <Button 
-        className="w-full bg-coral-500 hover:bg-coral-600 text-white h-12 rounded-full mb-4"
+        variant="black"
+        className="w-full h-12 rounded-full mb-4"
         onClick={onSaveRecipe}
       >
         <Heart className="mr-2 h-5 w-5" /> Save Recipe
