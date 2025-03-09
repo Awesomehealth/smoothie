@@ -50,7 +50,7 @@ const RecipeContent = ({
 }: RecipeContentProps) => {
   return (
     <div className="w-full max-w-5xl mx-auto pb-20">
-      <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm border-b border-gray-100 shadow-sm px-4 py-2 flex items-center">
+      <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm px-4 py-2 flex items-center">
         <Button 
           variant="ghost" 
           size="sm"
