@@ -2,13 +2,12 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
-import { Star, User } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import ReviewForm from "./ReviewForm";
-import { formatDistanceToNow } from "date-fns";
 import { toast } from "@/hooks/use-toast";
 import LoginDialog from "@/components/auth/LoginDialog";
+import ReviewForm from "./ReviewForm";
+import ReviewListHeader from "./ReviewListHeader";
+import ReviewItem from "./ReviewItem";
+import EmptyReviewState from "./EmptyReviewState";
 
 type Review = {
   id: string;
@@ -49,7 +48,6 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
       if (error) throw error;
       
       // Since we can't query auth.users directly, we'll use a simplified approach
-      // Instead of querying email from auth table
       const reviewsWithUserInfo = (data || []).map(review => ({
         ...review,
         // Use a default username based on user ID when email is not available
@@ -133,24 +131,6 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
     });
   };
 
-  const renderStars = (rating: number) => {
-    return (
-      <div className="flex">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <Star
-            key={star}
-            className={`h-4 w-4 ${
-              star <= rating
-                ? "text-coral-500 fill-coral-500"
-                : "text-gray-300"
-            }`}
-          />
-        ))}
-      </div>
-    );
-  };
-
-  // Display when user already has a review
   const handleEditReview = () => {
     setShowReviewForm(true);
   };
@@ -183,70 +163,28 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
 
   return (
     <div className="w-full space-y-6">
-      <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold text-gray-800">
-          Reviews ({reviews.length})
-        </h2>
-        
-        {user && userReview ? (
-          <div className="flex gap-2">
-            <Button variant="outline" onClick={handleEditReview}>
-              Edit Your Review
-            </Button>
-            <Button variant="destructive" onClick={handleDeleteReview}>
-              Delete
-            </Button>
-          </div>
-        ) : (
-          <Button 
-            onClick={handleAddReviewClick}
-            className="bg-coral-500 hover:bg-coral-600 text-white"
-          >
-            Write a Review
-          </Button>
-        )}
-      </div>
+      <ReviewListHeader 
+        reviewsCount={reviews.length}
+        userHasReview={!!userReview}
+        onAddReviewClick={handleAddReviewClick}
+        onEditReviewClick={handleEditReview}
+        onDeleteReviewClick={handleDeleteReview}
+      />
 
       {isLoading ? (
         <div className="flex justify-center py-8">
           <div className="animate-pulse text-gray-400">Loading reviews...</div>
         </div>
       ) : reviews.length === 0 ? (
-        <Card className="p-6 text-center">
-          <p className="text-gray-500 mb-4">No reviews yet. Be the first to review this recipe!</p>
-          <Button 
-            onClick={handleAddReviewClick}
-            className="bg-coral-500 hover:bg-coral-600 text-white"
-          >
-            Write a Review
-          </Button>
-        </Card>
+        <EmptyReviewState onAddReviewClick={handleAddReviewClick} />
       ) : (
         <div className="space-y-4">
           {reviews.map((review) => (
-            <Card key={review.id} className="p-4">
-              <div className="flex justify-between mb-2">
-                <div className="flex items-center gap-2">
-                  <div className="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center">
-                    <User className="h-4 w-4 text-gray-500" />
-                  </div>
-                  <div>
-                    <p className="font-medium">
-                      {review.user_id === user?.id ? "You" : review.user_email?.split('@')[0] || "Anonymous"}
-                    </p>
-                    <p className="text-xs text-gray-500">
-                      {formatDistanceToNow(new Date(review.created_at), { addSuffix: true })}
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  {renderStars(review.rating)}
-                </div>
-              </div>
-              {review.comment && (
-                <p className="text-gray-700 mt-2">{review.comment}</p>
-              )}
-            </Card>
+            <ReviewItem 
+              key={review.id} 
+              review={review} 
+              currentUserId={user?.id}
+            />
           ))}
         </div>
       )}
