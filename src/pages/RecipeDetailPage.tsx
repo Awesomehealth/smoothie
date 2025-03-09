@@ -20,6 +20,7 @@ import RecipeIngredients from "@/components/recipe/RecipeIngredients";
 import RecipeInstructions from "@/components/recipe/RecipeInstructions";
 import RecipeTips from "@/components/recipe/RecipeTips";
 import RecipeActions from "@/components/recipe/RecipeActions";
+import RelatedRecipes from "@/components/recipe/RelatedRecipes";
 
 // Import Link for the Not Found state
 import { Link } from "react-router-dom";
@@ -183,6 +184,12 @@ const RecipeDetailPage = () => {
               onReviewsUpdate={handleReviewsUpdate}
             />
           </div>
+          
+          {/* Related Recipes Section */}
+          <RelatedRecipes 
+            currentSmoothieId={smoothieId || ''} 
+            categories={smoothie.categories} 
+          />
           
           <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
           
