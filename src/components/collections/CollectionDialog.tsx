@@ -33,11 +33,11 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Use "as any" to bypass TypeScript error
+      // Using the type-bypassed supabase client
       const { data, error } = await supabase
         .from('collections')
         .select('*')
-        .eq('user_id', user.id) as any;
+        .eq('user_id', user.id);
       
       if (error) throw error;
       setCollections(data || []);
@@ -63,14 +63,14 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Use "as any" to bypass TypeScript error
+      // Using the type-bypassed supabase client
       const { error } = await supabase
         .from('collection_items')
-        .insert([{ 
+        .insert({ 
           collection_id: selectedCollectionId, 
           smoothie_id: smoothieId,
           user_id: user.id
-        }]) as any;
+        });
       
       if (error) {
         // Check if it's a duplicate error

@@ -24,11 +24,11 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
     
     setIsLoading(true);
     try {
-      // Use "as any" to bypass TypeScript error
+      // Using the type-bypassed supabase client
       const { data, error } = await supabase
         .from('collections')
-        .insert([{ name: newCollectionName, user_id: userId }])
-        .select('*') as any;
+        .insert({ name: newCollectionName, user_id: userId })
+        .select();
       
       if (error) throw error;
       

@@ -48,23 +48,17 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
 
       if (error) throw error;
       
-      // Get user emails for reviews
-      const enrichedReviews = await Promise.all(
-        (data || []).map(async (review) => {
-          const { data: userData } = await supabase
-            .from('auth')
-            .select('email')
-            .eq('id', review.user_id)
-            .single();
-          
-          return {
-            ...review,
-            user_email: userData?.email || 'Anonymous User',
-          };
-        })
-      );
+      // Since we can't query auth.users directly, we'll use a simplified approach
+      // Instead of querying email from auth table
+      const reviewsWithUserInfo = (data || []).map(review => ({
+        ...review,
+        // Use a default username based on user ID when email is not available
+        user_email: review.user_id === user?.id 
+          ? user.email 
+          : `user_${review.user_id.substring(0, 8)}`
+      }));
 
-      setReviews(data || []);
+      setReviews(reviewsWithUserInfo);
       
       if (user) {
         const userExistingReview = data?.find(review => review.user_id === user.id) || null;
