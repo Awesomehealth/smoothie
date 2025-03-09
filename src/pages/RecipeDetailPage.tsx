@@ -8,12 +8,13 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "@/hooks/use-toast";
 import CategorySidebar from "@/components/CategorySidebar";
 import { useAuth } from "@/contexts/AuthContext";
 import LoginDialog from "@/components/auth/LoginDialog";
 import CollectionDialog from "@/components/collections/CollectionDialog";
 import ImageGallery from "@/components/gallery/ImageGallery";
+import ReviewList from "@/components/reviews/ReviewList";
 
 const RecipeDetailPage = () => {
   const { smoothieId } = useParams<{ smoothieId: string }>();
@@ -25,6 +26,8 @@ const RecipeDetailPage = () => {
   const [collectionDialogOpen, setCollectionDialogOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [initialImageIndex, setInitialImageIndex] = useState(0);
+  const [averageRating, setAverageRating] = useState<number>(0);
+  const [reviewCount, setReviewCount] = useState<number>(0);
   const { user } = useAuth();
   
   const smoothie = smoothies.find((s) => s.id === smoothieId);
@@ -109,6 +112,11 @@ const RecipeDetailPage = () => {
   const openGallery = (index: number) => {
     setInitialImageIndex(index);
     setGalleryOpen(true);
+  };
+
+  const handleReviewsUpdate = (newAvgRating: number, newReviewCount: number) => {
+    setAverageRating(newAvgRating);
+    setReviewCount(newReviewCount);
   };
 
   return (
@@ -205,14 +213,20 @@ const RecipeDetailPage = () => {
                   {[1, 2, 3, 4, 5].map((star) => (
                     <Star 
                       key={star}
-                      className={`h-5 w-5 ${star <= (smoothie.recipe?.rating || 4.5) 
+                      className={`h-5 w-5 ${star <= (averageRating || smoothie.recipe?.rating || 4.5) 
                         ? "text-coral-500 fill-coral-500" 
                         : "text-gray-300"}`}
                     />
                   ))}
                 </div>
                 <span className="ml-2 text-gray-600 font-medium">
-                  {(smoothie.recipe?.rating || 4.5).toFixed(1)} · {smoothie.recipe?.reviews || 271} reviews
+                  {(averageRating || smoothie.recipe?.rating || 4.5).toFixed(1)} · 
+                  <button 
+                    className="ml-1 underline text-lavender-600 focus:outline-none"
+                    onClick={() => document.getElementById('reviews-section')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    {reviewCount || smoothie.recipe?.reviews || 271} reviews
+                  </button>
                 </span>
               </div>
               <p className="text-gray-700 mb-4">{smoothie.description}</p>
@@ -341,6 +355,16 @@ const RecipeDetailPage = () => {
                 <MessageSquare className="mr-2 h-4 w-4" /> Text
               </Button>
             </div>
+          </div>
+          
+          {/* Reviews Section */}
+          <div id="reviews-section" className="mt-10 px-6">
+            <ReviewList 
+              smoothieId={smoothieId || ''} 
+              reviewCount={smoothie.recipe?.reviews || 271}
+              averageRating={smoothie.recipe?.rating || 4.5}
+              onReviewsUpdate={handleReviewsUpdate}
+            />
           </div>
           
           <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
