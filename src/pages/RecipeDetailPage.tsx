@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { smoothies } from "@/data/smoothiesData";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
@@ -13,6 +12,7 @@ import CategorySidebar from "@/components/CategorySidebar";
 import { useAuth } from "@/contexts/AuthContext";
 import LoginDialog from "@/components/auth/LoginDialog";
 import CollectionDialog from "@/components/collections/CollectionDialog";
+import ImageGallery from "@/components/gallery/ImageGallery";
 
 const RecipeDetailPage = () => {
   const { smoothieId } = useParams<{ smoothieId: string }>();
@@ -22,6 +22,8 @@ const RecipeDetailPage = () => {
   const [showAllPhotos, setShowAllPhotos] = useState(false);
   const [loginDialogOpen, setLoginDialogOpen] = useState(false);
   const [collectionDialogOpen, setCollectionDialogOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [initialImageIndex, setInitialImageIndex] = useState(0);
   const { user } = useAuth();
   
   const smoothie = smoothies.find((s) => s.id === smoothieId);
@@ -107,12 +109,23 @@ const RecipeDetailPage = () => {
     });
   };
 
+  const videoThumbnail = "https://player.vimeo.com/external/414566109.sd.mp4?s=c912f93f5ce54b6fe68d5bcdf3d20a3255dbba6c&profile_id=139&oauth2_token_id=57447761";
   const dummyImages = [
     "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
   ];
+
+  const galleryImages = [
+    smoothie.image || "/placeholder.svg", 
+    ...dummyImages
+  ];
+
+  const openGallery = (index: number) => {
+    setInitialImageIndex(index);
+    setGalleryOpen(true);
+  };
 
   return (
     <SmoothieAppLayout
@@ -142,14 +155,15 @@ const RecipeDetailPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-2 relative">
               <div className="md:col-span-2 md:row-span-2 relative">
                 <video 
-                  className="w-full h-full object-cover rounded-tl-lg rounded-bl-lg"
+                  className="w-full h-full object-cover rounded-tl-lg rounded-bl-lg cursor-pointer"
                   style={{ minHeight: "400px" }}
                   controls
                   autoPlay
                   muted
                   loop
+                  onClick={() => openGallery(0)}
                 >
-                  <source src="https://player.vimeo.com/external/414566109.sd.mp4?s=c912f93f5ce54b6fe68d5bcdf3d20a3255dbba6c&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+                  <source src={videoThumbnail} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -158,36 +172,40 @@ const RecipeDetailPage = () => {
                 <img 
                   src={dummyImages[0]} 
                   alt={`${smoothie.name} detail 1`} 
-                  className="w-full h-full object-cover rounded-tr-lg"
+                  className="w-full h-full object-cover rounded-tr-lg cursor-pointer"
                   style={{ height: "200px" }}
+                  onClick={() => openGallery(1)}
                 />
               </div>
               <div className="hidden md:block">
                 <img 
                   src={dummyImages[1]} 
                   alt={`${smoothie.name} detail 2`} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                   style={{ height: "200px" }}
+                  onClick={() => openGallery(2)}
                 />
               </div>
               <div className="hidden md:block">
                 <img 
                   src={dummyImages[2]} 
                   alt={`${smoothie.name} detail 3`} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover cursor-pointer"
                   style={{ height: "200px" }}
+                  onClick={() => openGallery(3)}
                 />
               </div>
               <div className="hidden md:block relative">
                 <img 
                   src={dummyImages[3]} 
                   alt={`${smoothie.name} detail 4`} 
-                  className="w-full h-full object-cover rounded-br-lg"
+                  className="w-full h-full object-cover rounded-br-lg cursor-pointer"
                   style={{ height: "200px" }}
+                  onClick={() => openGallery(4)}
                 />
                 <button 
                   className="absolute bottom-4 right-4 bg-white rounded-full px-4 py-2 flex items-center gap-2 shadow-md"
-                  onClick={() => setShowAllPhotos(true)}
+                  onClick={() => setGalleryOpen(true)}
                 >
                   <Grid size={16} /> Show all photos
                 </button>
@@ -389,6 +407,13 @@ const RecipeDetailPage = () => {
             onClose={() => setCollectionDialogOpen(false)} 
             smoothieId={smoothieId || ''}
             smoothieName={smoothie.name}
+          />
+
+          <ImageGallery 
+            isOpen={galleryOpen}
+            onClose={() => setGalleryOpen(false)}
+            images={galleryImages}
+            initialIndex={initialImageIndex}
           />
         </div>
       }
