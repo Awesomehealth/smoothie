@@ -1,6 +1,8 @@
 
+'use client';
+
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import {
   ChevronRight,
   Search,
@@ -22,7 +24,6 @@ interface CategorySidebarProps {
   isCollapsed?: boolean;
 }
 
-
 const CategorySidebar = ({
   selectedCategory,
   onCategorySelect,
@@ -30,42 +31,18 @@ const CategorySidebar = ({
   onAdvancedSearchToggle,
   isCollapsed = false
 }: CategorySidebarProps) => {
-  const { categories, loading: isCategoriesLoading, error: categoriesFetchError } = useCategories()
+  const { categories, loading: isCategoriesLoading, error: categoriesFetchError } = useCategories();
   const [collapsed, setCollapsed] = useState(isCollapsed);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   // Update internal state when external prop changes
   useEffect(() => {
     setCollapsed(isCollapsed);
   }, [isCollapsed]);
 
-  // Map category IDs to corresponding icons
-  // const getCategoryIcon = (categoryId: string) => {
-  //   switch (categoryId) {
-  //     case 'post-workout':
-  //       return <HeartPulse className="h-4 w-4 text-green-600" />;
-  //     case 'meal-replacement':
-  //       return <Utensils className="h-4 w-4 text-green-600" />;
-  //     case 'weight-loss':
-  //       return <Weight className="h-4 w-4 text-green-600" />;
-  //     case 'muscle-gain':
-  //       return <Dumbbell className="h-4 w-4 text-green-600" />;
-  //     case 'high-protein':
-  //       return <Flame className="h-4 w-4 text-green-600" />;
-  //     case 'low-carb':
-  //       return <Carrot className="h-4 w-4 text-green-600" />;
-  //     case 'keto':
-  //       return <Apple className="h-4 w-4 text-green-600" />;
-  //     case 'pre-workout':
-  //       return <Timer className="h-4 w-4 text-green-600" />;
-  //     default:
-  //       return null;
-  //   }
-  // };
-
   const handleCategoryClick = (categoryId: string) => {
     onCategorySelect(categoryId);
-    navigate(`/category/${categoryId}`);
+    router.push(`/category/${categoryId}`);
   };
 
   return (

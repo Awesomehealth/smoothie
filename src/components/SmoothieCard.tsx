@@ -4,7 +4,7 @@ import { Trophy, Wheat, Droplet, Utensils, ArrowRight, ImageOff } from "lucide-r
 import { motion } from "framer-motion";
 import { Smoothie } from "@/data/types";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface SmoothieCardProps {
   smoothie: Smoothie;
@@ -39,7 +39,7 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
     >
       <Card className="overflow-hidden border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
         {/* Clickable image section with error handling */}
-        <Link to={recipePath} className="block aspect-[4/3] w-full overflow-hidden relative">
+        <Link href={recipePath} className="block aspect-[4/3] w-full overflow-hidden relative">
           {imageError ? (
             <div className="w-full h-full flex items-center justify-center bg-gray-100">
               <ImageOff className="h-12 w-12 text-gray-400" />
@@ -66,7 +66,7 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
         
         <CardContent className="p-5 flex-grow flex flex-col">
           {/* Clickable title */}
-          <Link to={recipePath} className="group">
+          <Link href={recipePath} className="group">
             <h3 className="font-bold text-xl mb-2 text-gray-800 group-hover:text-lavender-700 transition-colors">
               {smoothie.name}
             </h3>
@@ -101,7 +101,7 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
           </div>
           
           {/* Button for viewing recipe - Updated to black background with white text */}
-          <Link to={recipePath} className="w-full">
+          <Link href={recipePath} className="w-full">
             <button className="w-full py-2.5 px-4 bg-black hover:bg-gray-800 text-white rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2">
               View Recipe
               <ArrowRight className="h-4 w-4" />
