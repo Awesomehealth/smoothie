@@ -1,5 +1,5 @@
-import { CategoriesType } from "@/types/categories";
 
+import { CategoriesType } from "@/types/categories";
 
 interface CategoryHeaderProps {
   category: CategoriesType | undefined;
@@ -37,13 +37,13 @@ const CategoryHeader = ({ category, isPostWorkout }: CategoryHeaderProps) => {
         <h1 className="text-3xl font-bold">{category?.main_title || "Category"}</h1>
         {category?.tags && (
           <span className={`px-2 py-1 text-xs font-medium rounded-full ${category.tag_style}`}>
-            {category.tags}
+            {category.tags[0]}
           </span>
         )}
       </div>
       <p className="text-gray-600 max-w-2xl mx-auto">
         {/* {getCategoryDescription(category?.id)} */}
-        {category.main_description}
+        {category?.main_description || category?.description}
       </p>
     </header>
   );

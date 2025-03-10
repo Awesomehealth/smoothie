@@ -23,6 +23,11 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
   const [showReviewForm, setShowReviewForm] = useState(initialShowForm);
   const [userReview, setUserReview] = useState<Review | null>(null);
   
+  // Calculate average rating
+  const totalRating = reviews.reduce((sum, review) => sum + (review.rating || 0), 0);
+  const averageRating = reviews.length > 0 ? totalRating / reviews.length : 0;
+  const reviewCount = reviews.length;
+  
   useEffect(() => {
     fetchReviews();
   }, [smoothieId]);
@@ -40,19 +45,17 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
           created_at,
           updated_at,
           user_id,
-          recipe_id,
-          auth.users(email)
+          recipe_id
         `)
         .eq('recipe_id', smoothieId)
         .order('created_at', { ascending: false });
       
       if (error) throw error;
       
-      // Format the reviews with user emails
-      const formattedReviews = data.map((review: any) => ({
+      // Format the reviews
+      const formattedReviews: Review[] = data.map((review: any) => ({
         ...review,
-        user_email: review.users?.email || 'Anonymous',
-        smoothie_id: review.recipe_id // Map recipe_id to smoothie_id for compatibility
+        user_email: 'Anonymous', // Default value
       }));
       
       setReviews(formattedReviews);
@@ -64,10 +67,7 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
         );
         
         if (userExistingReview) {
-          setUserReview({
-            ...userExistingReview,
-            smoothie_id: userExistingReview.recipe_id // Map recipe_id to smoothie_id for compatibility
-          });
+          setUserReview(userExistingReview);
           setShowReviewForm(false);
         } else {
           setUserReview(null);
@@ -85,13 +85,13 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
     // Add the new review to the list
     if (review.id) {
       // Update existing review
-      setReviews(reviews.map(r => r.id === review.id ? {...review, smoothie_id: review.recipe_id} : r));
+      setReviews(reviews.map(r => r.id === review.id ? review : r));
     } else {
       // Add new review
-      setReviews([{...review, smoothie_id: review.recipe_id}, ...reviews]);
+      setReviews([review, ...reviews]);
     }
     
-    setUserReview({...review, smoothie_id: review.recipe_id});
+    setUserReview(review);
     setShowReviewForm(false);
   };
   
@@ -102,10 +102,6 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
   const handleEditReview = () => {
     setShowReviewForm(true);
   };
-  
-  // Calculate average rating
-  const totalRating = reviews.reduce((sum, review) => sum + (review.rating || 0), 0);
-  const averageRating = reviews.length > 0 ? totalRating / reviews.length : 0;
   
   if (isLoading) {
     return (
@@ -118,8 +114,8 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
   return (
     <div className="bg-white p-6 rounded-xl shadow-sm">
       <ReviewListHeader 
-        reviewCount={reviews.length} 
-        averageRating={averageRating} 
+        reviewCount={reviewCount}
+        averageRating={averageRating}
         onAddReview={handleToggleForm}
         userHasReviewed={!!userReview}
         userIsLoggedIn={!!user}
@@ -147,14 +143,7 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
             <ReviewItem 
               key={review.id} 
               review={review}
-              isAuthor={user?.id === review.user_id}
-              onEditClick={handleEditReview}
-              onDeleteSuccess={() => {
-                setReviews(reviews.filter(r => r.id !== review.id));
-                if (userReview?.id === review.id) {
-                  setUserReview(null);
-                }
-              }}
+              currentUserId={user?.id}
             />
           ))}
         </div>

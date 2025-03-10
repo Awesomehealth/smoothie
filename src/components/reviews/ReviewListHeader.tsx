@@ -3,39 +3,37 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 interface ReviewListHeaderProps {
-  reviewsCount: number;
-  userHasReview: boolean;
-  onAddReviewClick: () => void;
-  onEditReviewClick: () => void;
-  onDeleteReviewClick: () => void;
+  reviewCount: number;
+  averageRating: number;
+  onAddReview: () => void;
+  userHasReviewed: boolean;
+  userIsLoggedIn: boolean;
 }
 
 const ReviewListHeader = ({
-  reviewsCount,
-  userHasReview,
-  onAddReviewClick,
-  onEditReviewClick,
-  onDeleteReviewClick,
+  reviewCount,
+  averageRating,
+  onAddReview,
+  userHasReviewed,
+  userIsLoggedIn,
 }: ReviewListHeaderProps) => {
   return (
     <div className="flex items-center justify-between">
       <h2 className="text-2xl font-bold text-gray-800">
-        Reviews ({reviewsCount})
+        Reviews ({reviewCount})
       </h2>
       
-      {userHasReview ? (
+      {userHasReviewed ? (
         <div className="flex gap-2">
-          <Button variant="outline" onClick={onEditReviewClick}>
+          <Button variant="outline" onClick={onAddReview}>
             Edit Your Review
-          </Button>
-          <Button variant="destructive" onClick={onDeleteReviewClick}>
-            Delete
           </Button>
         </div>
       ) : (
         <Button 
-          onClick={onAddReviewClick}
+          onClick={onAddReview}
           className="bg-coral-500 hover:bg-coral-600 text-white"
+          disabled={!userIsLoggedIn}
         >
           Write a Review
         </Button>
