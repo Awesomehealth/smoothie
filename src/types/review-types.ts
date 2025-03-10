@@ -1,8 +1,7 @@
 
 export interface Review {
   id: string;
-  recipe_id?: string;
-  smoothie_id?: string; // For compatibility with existing code
+  recipe_id: string;
   user_id?: string;
   rating?: number;
   comment?: string;
