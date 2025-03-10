@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/router";
 
 interface SmoothieSearchContainerProps {
   children: (props: {
@@ -18,11 +18,11 @@ interface SmoothieSearchContainerProps {
 const SmoothieSearchContainer = ({ children }: SmoothieSearchContainerProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showAdvancedSearch, setShowAdvancedSearch] = useState(true); // Changed to true for default on
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleCategorySelect = (categoryId: string) => {
     setSelectedCategory(categoryId);
-    navigate(`/category/${categoryId}`);
+    router.push(`/category/${categoryId}`);
   };
 
   const handleAdvancedSearchToggle = (show: boolean) => {
@@ -32,7 +32,7 @@ const SmoothieSearchContainer = ({ children }: SmoothieSearchContainerProps) => 
   const handleSearch = (query: string) => {
     console.log("Searching for:", query);
     if (query.trim()) {
-      navigate(`/search?q=${encodeURIComponent(query)}`);
+      router.push(`/search?q=${encodeURIComponent(query)}`);
     }
   };
 
