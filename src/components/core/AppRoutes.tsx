@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Index from "@/pages/index"; // Fixed casing here
+import Index from "@/pages/Index"; // Using the correct casing from the filesystem
 import CategoryPage from "@/pages/CategoryPage";
 import RecipeDetailPage from "@/pages/RecipeDetailPage";
 import NotFound from "@/pages/NotFound";
