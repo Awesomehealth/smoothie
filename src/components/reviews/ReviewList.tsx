@@ -12,7 +12,7 @@ import EmptyReviewState from "./EmptyReviewState";
 type Review = {
   id: string;
   user_id: string;
-  smoothie_id: string;
+  recipe_id: string; // Changed from smoothie_id to recipe_id to match DB schema
   rating: number;
   comment: string;
   created_at: string;
@@ -42,7 +42,7 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
       const { data, error } = await supabase
         .from("reviews")
         .select("*")
-        .eq("smoothie_id", smoothieId)
+        .eq("recipe_id", smoothieId)
         .order("created_at", { ascending: false });
 
       if (error) throw error;
@@ -56,11 +56,11 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
           : `user_${review.user_id.substring(0, 8)}`
       }));
 
-      setReviews(reviewsWithUserInfo);
+      setReviews(reviewsWithUserInfo as Review[]);
       
       if (user) {
         const userExistingReview = data?.find(review => review.user_id === user.id) || null;
-        setUserReview(userExistingReview);
+        setUserReview(userExistingReview as Review | null);
       }
     } catch (error) {
       console.error("Error fetching reviews:", error);
@@ -103,7 +103,7 @@ const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }:
           event: '*',
           schema: 'public',
           table: 'reviews',
-          filter: `smoothie_id=eq.${smoothieId}`
+          filter: `recipe_id=eq.${smoothieId}`
         },
         () => fetchReviews()
       )

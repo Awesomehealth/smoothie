@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,7 +23,6 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
     
     setIsLoading(true);
     try {
-      // Using the type-bypassed supabase client
       const { data, error } = await supabase
         .from('collections')
         .insert({ name: newCollectionName, user_id: userId })
@@ -32,7 +30,7 @@ const CreateCollection = ({ onCollectionCreated, userId, isLoading, setIsLoading
       
       if (error) throw error;
       
-      const newCollection = data?.[0];
+      const newCollection = data?.[0] as Collection;
       if (newCollection) {
         onCollectionCreated(newCollection);
         setNewCollectionName("");

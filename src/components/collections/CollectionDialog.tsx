@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -33,7 +32,6 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Using the type-bypassed supabase client
       const { data, error } = await supabase
         .from('collections')
         .select('*')
@@ -63,17 +61,15 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     
     setIsLoading(true);
     try {
-      // Using the type-bypassed supabase client
       const { error } = await supabase
         .from('collection_items')
         .insert({ 
           collection_id: selectedCollectionId, 
-          smoothie_id: smoothieId,
+          recipe_id: smoothieId,
           user_id: user.id
         });
       
       if (error) {
-        // Check if it's a duplicate error
         if (error.code === '23505') {
           toast({
             description: `${smoothieName} is already in this collection`,

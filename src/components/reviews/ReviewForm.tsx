@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
@@ -75,7 +74,7 @@ const ReviewForm = ({ smoothieId, existingReview, onReviewSubmitted, onCancel }:
           .from("reviews")
           .insert({
             user_id: user.id,
-            smoothie_id: smoothieId,
+            recipe_id: smoothieId,
             rating,
             comment,
           });
