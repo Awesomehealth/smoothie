@@ -1,10 +1,9 @@
 
 import { Toaster } from "@/components/ui/toaster";
 import { AuthProvider } from "@/contexts/AuthContext";
-
+import { CategoriesProvider } from "@/contexts/CategoriesContext";
 import "./App.css";
 import AppRoutes from "./components/core/AppRoutes";
-import { CategoriesProvider } from "./contexts/CategoriesContext";
 
 function App() {
   return (
