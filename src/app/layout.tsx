@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Awesome Kitchen - Delicious Smoothie Recipes',
   description: 'Find delicious smoothie recipes for every lifestyle',
   keywords: 'smoothies, recipes, healthy, protein, workout',
+  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({

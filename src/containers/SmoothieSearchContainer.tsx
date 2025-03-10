@@ -1,6 +1,8 @@
 
+'use client';
+
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 interface SmoothieSearchContainerProps {
   children: (props: {
@@ -17,7 +19,7 @@ interface SmoothieSearchContainerProps {
 
 const SmoothieSearchContainer = ({ children }: SmoothieSearchContainerProps) => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [showAdvancedSearch, setShowAdvancedSearch] = useState(true); // Changed to true for default on
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(true);
   const router = useRouter();
 
   const handleCategorySelect = (categoryId: string) => {
