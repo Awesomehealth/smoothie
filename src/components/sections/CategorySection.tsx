@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import CategoryCard from "@/components/CategoryCard";
 import { categories } from "@/data/categories";
 import { Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
+import { CategoriesType } from "@/types/categories";
 
 const CategorySection = () => {
   const containerVariants = {
@@ -40,6 +41,28 @@ const CategorySection = () => {
     }
   };
 
+  // Create adapted categories that match CategoriesType
+  const adaptedCategories: CategoriesType[] = categories.map(category => ({
+    id: category.id,
+    main_title: category.name,
+    slug: category.id,
+    icon: null,
+    tag_style: category.tagStyle,
+    tags: category.tag ? [category.tag] : null,
+    recipes_count: category.count,
+    preview_img: category.image,
+    created_at: null,
+    updated_at: null,
+    main_description: null,
+    secondary_title: null,
+    secondary_description: null,
+    meta_title: null,
+    meta_description: null,
+    category_banner_img: null,
+    category_banner_description: null,
+    keyword_group: null
+  }));
+
   return (
     <section className="bg-white py-12 border-t border-gray-100">
       <div className="container px-4 mx-auto">
@@ -56,7 +79,7 @@ const CategorySection = () => {
           initial="hidden"
           animate="visible"
         >
-          {categories.map((category) => (
+          {adaptedCategories.map((category) => (
             <div key={category.id} className="relative">
               {getCategoryIcon(category.id) && (
                 <div className="absolute top-3 left-3 z-10">
