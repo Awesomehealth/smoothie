@@ -59,9 +59,14 @@ const ReviewForm = ({ smoothieId, onSuccess, existingReview, onCancel }: ReviewF
         
         if (data && data.length > 0) {
           const updatedReview: Review = {
-            ...data[0],
-            user_email: user.email,
-            recipe_id: smoothieId
+            id: data[0].id,
+            recipe_id: smoothieId,
+            user_id: user.id,
+            rating: data[0].rating,
+            comment: data[0].comment,
+            created_at: data[0].created_at,
+            updated_at: data[0].updated_at,
+            user_email: user.email
           };
           
           toast({
@@ -86,9 +91,13 @@ const ReviewForm = ({ smoothieId, onSuccess, existingReview, onCancel }: ReviewF
         
         if (data && data.length > 0) {
           const newReview: Review = {
-            ...data[0],
-            user_email: user.email,
-            recipe_id: smoothieId
+            id: data[0].id,
+            recipe_id: smoothieId,
+            user_id: user.id,
+            rating: data[0].rating,
+            comment: data[0].comment,
+            created_at: data[0].created_at,
+            user_email: user.email
           };
           
           toast({

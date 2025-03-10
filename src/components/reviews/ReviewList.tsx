@@ -33,7 +33,7 @@ const ReviewList = ({
   const [userReview, setUserReview] = useState<Review | null>(null);
   
   // Calculate average rating
-  const totalRating = reviews.reduce((sum, review) => sum + (review.rating || 0), 0);
+  const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
   const averageRating = reviews.length > 0 ? totalRating / reviews.length : initialAverageRating || 0;
   const reviewCount = reviews.length || initialReviewCount || 0;
   
@@ -63,8 +63,14 @@ const ReviewList = ({
       
       // Format the reviews
       const formattedReviews: Review[] = data.map((review: any) => ({
-        ...review,
-        user_email: 'Anonymous', // Default value
+        id: review.id,
+        recipe_id: review.recipe_id,
+        user_id: review.user_id,
+        rating: review.rating || 0,
+        comment: review.comment,
+        created_at: review.created_at,
+        updated_at: review.updated_at,
+        user_email: 'Anonymous' // Default value
       }));
       
       setReviews(formattedReviews);
@@ -86,7 +92,7 @@ const ReviewList = ({
       // Update parent component with new rating data
       if (onReviewsUpdate) {
         const newAvgRating = formattedReviews.length > 0 
-          ? formattedReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / formattedReviews.length 
+          ? formattedReviews.reduce((sum, r) => sum + r.rating, 0) / formattedReviews.length 
           : 0;
         onReviewsUpdate(newAvgRating, formattedReviews.length);
       }

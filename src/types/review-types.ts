@@ -3,7 +3,7 @@ export interface Review {
   id: string;
   recipe_id: string;
   user_id: string;
-  rating?: number;
+  rating: number; // Changed from optional to required to match usage in components
   comment?: string;
   created_at: string;
   updated_at?: string;

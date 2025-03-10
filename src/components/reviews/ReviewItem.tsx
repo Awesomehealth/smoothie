@@ -3,16 +3,10 @@ import React from "react";
 import { formatDistanceToNow } from "date-fns";
 import { Star, User } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Review } from "@/types/review-types";
 
 interface ReviewItemProps {
-  review: {
-    id: string;
-    user_id: string;
-    rating: number;
-    comment: string;
-    created_at: string;
-    user_email?: string;
-  };
+  review: Review;
   currentUserId?: string;
 }
 
