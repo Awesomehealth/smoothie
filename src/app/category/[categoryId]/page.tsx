@@ -65,51 +65,49 @@ export default function CategoryPage({ params }: { params: { categoryId: string 
   };
 
   return (
-    <>
-      <SmoothieAppLayout
-        sidebar={
-          <CategorySidebar
-            selectedCategory={categoryId || null}
-            onCategorySelect={() => { }}
-            showAdvancedSearch={showAdvancedSearch}
-            onAdvancedSearchToggle={handleAdvancedSearchToggle}
-          />
-        }
-        mainContent={
-          isCategoriesLoading
-            ?
-            <Loader />
-            :
-            category &&
-            <div className="w-full max-w-7xl mx-auto p-8">
-              <CategoryHeader category={category} isPostWorkout={categoryId === 'post-workout'} />
+    <SmoothieAppLayout
+      sidebar={
+        <CategorySidebar
+          selectedCategory={categoryId || null}
+          onCategorySelect={() => { }}
+          showAdvancedSearch={showAdvancedSearch}
+          onAdvancedSearchToggle={handleAdvancedSearchToggle}
+        />
+      }
+      mainContent={
+        isCategoriesLoading
+          ?
+          <Loader />
+          :
+          category &&
+          <div className="w-full max-w-7xl mx-auto p-8">
+            <CategoryHeader category={category} isPostWorkout={categoryId === 'post-workout'} />
 
-              {/* Search Section with Advanced Search */}
-              <CategorySearchSection
-                categoryName={category?.main_title || ""}
-                showAdvancedSearch={showAdvancedSearch}
-                onSearch={handleSearch}
-                onUrlSubmit={handleUrlSubmit}
-                onFilterSelect={handleFilterSelect}
-                onDietaryToggle={handleDietaryToggle}
-              />
+            {/* Search Section with Advanced Search */}
+            <CategorySearchSection
+              categoryName={category?.main_title || ""}
+              showAdvancedSearch={showAdvancedSearch}
+              onSearch={handleSearch}
+              onUrlSubmit={handleUrlSubmit}
+              onFilterSelect={handleFilterSelect}
+              onDietaryToggle={handleDietaryToggle}
+            />
 
-              {/* Info cards section with a subtle background */}
-              <div className="bg-gradient-to-r from-white to-mint-50/30 rounded-xl p-6 mb-8">
-                <CategoryInfoCards categoryId={categoryId} />
-              </div>
-
-              <SmoothieList
-                smoothies={filteredSmoothies}
-                searchQuery={searchQuery}
-                currentCategory={categoryId}
-                displayLimit={displayLimit}
-                onLoadMore={handleLoadMore}
-                hasMoreItems={displayLimit < filteredSmoothies.length}
-              />
+            {/* Info cards section with a subtle background */}
+            <div className="bg-gradient-to-r from-white to-mint-50/30 rounded-xl p-6 mb-8">
+              <CategoryInfoCards categoryId={categoryId} />
             </div>
-        }
-      />
-    </>
+
+            <SmoothieList
+              smoothies={filteredSmoothies}
+              searchQuery={searchQuery}
+              currentCategory={categoryId}
+              displayLimit={displayLimit}
+              onLoadMore={handleLoadMore}
+              hasMoreItems={displayLimit < filteredSmoothies.length}
+            />
+          </div>
+      }
+    />
   );
 }

@@ -1,6 +1,8 @@
 
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
+import { AuthProvider } from "@/contexts/AuthContext";
+import { CategoriesProvider } from "@/contexts/CategoriesContext";
 import '../index.css';
 
 export const metadata: Metadata = {
@@ -17,8 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
-        <Toaster />
+        <AuthProvider>
+          <CategoriesProvider>
+            {children}
+            <Toaster />
+          </CategoriesProvider>
+        </AuthProvider>
       </body>
     </html>
   );
