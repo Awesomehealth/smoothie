@@ -5,6 +5,10 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: "::",
+    port: 8080,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -14,7 +18,7 @@ export default defineConfig({
     outDir: "dist",
     rollupOptions: {
       input: {
-        app: "./src/app/layout.tsx",
+        main: "./index.html",
       },
     },
   },
