@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Save } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Smoothie } from "@/data/types";
@@ -11,7 +11,7 @@ interface RecipeHeaderProps {
 }
 
 const RecipeHeader = ({ smoothie, onSaveRecipe }: RecipeHeaderProps) => {
-  const recipeUrl = window.location.href;
+  const recipeUrl = typeof window !== 'undefined' ? window.location.href : '';
 
   return (
     <div className="flex justify-between items-center py-6 px-6">
