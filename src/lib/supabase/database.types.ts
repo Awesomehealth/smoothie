@@ -1,4 +1,3 @@
-
 export type Json =
   | string
   | number
@@ -16,27 +15,66 @@ export interface Database {
           description: string | null;
           id: string;
           image_url: string | null;
-          name: string;
+          name: string | null;
           slug: string;
           icon: string | null;
+          main_title: string;
+          secondary_title: string | null;
+          main_description: string | null;
+          secondary_description: string | null;
+          category_banner_description: string | null;
+          category_banner_img: string | null;
+          preview_img: string | null;
+          meta_title: string | null;
+          meta_description: string | null;
+          keyword_group: string | null;
+          tags: string[] | null;
+          tag_style: string | null;
+          recipes_count: number | null;
         }
         Insert: {
           created_at?: string;
           description?: string | null;
           id?: string;
           image_url?: string | null;
-          name: string;
+          name?: string | null;
           slug: string;
           icon?: string | null;
+          main_title: string;
+          secondary_title?: string | null;
+          main_description?: string | null;
+          secondary_description?: string | null;
+          category_banner_description?: string | null;
+          category_banner_img?: string | null;
+          preview_img?: string | null;
+          meta_title?: string | null;
+          meta_description?: string | null;
+          keyword_group?: string | null;
+          tags?: string[] | null;
+          tag_style?: string | null;
+          recipes_count?: number | null;
         }
         Update: {
           created_at?: string;
           description?: string | null;
           id?: string;
           image_url?: string | null;
-          name?: string;
+          name?: string | null;
           slug?: string;
           icon?: string | null;
+          main_title?: string;
+          secondary_title?: string | null;
+          main_description?: string | null;
+          secondary_description?: string | null;
+          category_banner_description?: string | null;
+          category_banner_img?: string | null;
+          preview_img?: string | null;
+          meta_title?: string | null;
+          meta_description?: string | null;
+          keyword_group?: string | null;
+          tags?: string[] | null;
+          tag_style?: string | null;
+          recipes_count?: number | null;
         }
         Relationships: []
       }

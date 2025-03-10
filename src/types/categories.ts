@@ -9,7 +9,6 @@ export type CategoriesType = {
   image_url?: string;
   icon?: string;
   created_at: string;
-  // Additional fields that match the database schema
   main_title: string;
   secondary_title?: string;
   main_description?: string;

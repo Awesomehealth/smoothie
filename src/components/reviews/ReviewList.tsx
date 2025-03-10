@@ -13,9 +13,18 @@ import { Review } from '@/types/review-types';
 interface ReviewListProps {
   smoothieId: string;
   initialShowForm?: boolean;
+  reviewCount?: number;
+  averageRating?: number;
+  onReviewsUpdate?: (newAvgRating: number, newReviewCount: number) => void;
 }
 
-const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) => {
+const ReviewList = ({ 
+  smoothieId, 
+  initialShowForm = false,
+  reviewCount: initialReviewCount,
+  averageRating: initialAverageRating,
+  onReviewsUpdate
+}: ReviewListProps) => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -25,8 +34,8 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
   
   // Calculate average rating
   const totalRating = reviews.reduce((sum, review) => sum + (review.rating || 0), 0);
-  const averageRating = reviews.length > 0 ? totalRating / reviews.length : 0;
-  const reviewCount = reviews.length;
+  const averageRating = reviews.length > 0 ? totalRating / reviews.length : initialAverageRating || 0;
+  const reviewCount = reviews.length || initialReviewCount || 0;
   
   useEffect(() => {
     fetchReviews();
@@ -73,6 +82,14 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
           setUserReview(null);
         }
       }
+      
+      // Update parent component with new rating data
+      if (onReviewsUpdate) {
+        const newAvgRating = formattedReviews.length > 0 
+          ? formattedReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / formattedReviews.length 
+          : 0;
+        onReviewsUpdate(newAvgRating, formattedReviews.length);
+      }
     } catch (err: any) {
       setError(err.message);
       console.error('Error fetching reviews:', err);
@@ -93,6 +110,16 @@ const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) =>
     
     setUserReview(review);
     setShowReviewForm(false);
+    
+    // Update parent component with new rating data
+    if (onReviewsUpdate) {
+      const newReviews = review.id 
+        ? reviews.map(r => r.id === review.id ? review : r)
+        : [review, ...reviews];
+      
+      const newAvgRating = newReviews.reduce((sum, r) => sum + (r.rating || 0), 0) / newReviews.length;
+      onReviewsUpdate(newAvgRating, newReviews.length);
+    }
   };
   
   const handleToggleForm = () => {

@@ -53,21 +53,23 @@ const ReviewForm = ({ smoothieId, onSuccess, existingReview, onCancel }: ReviewF
             updated_at: new Date().toISOString(),
           })
           .eq('id', existingReview.id)
-          .select('*, auth.users(email)');
+          .select();
         
         if (error) throw error;
         
-        const updatedReview = {
-          ...data[0],
-          user_email: data[0].users?.email || user.email,
-          recipe_id: smoothieId
-        };
-        
-        toast({
-          description: "Your review has been updated",
-        });
-        
-        onSuccess(updatedReview);
+        if (data && data.length > 0) {
+          const updatedReview: Review = {
+            ...data[0],
+            user_email: user.email,
+            recipe_id: smoothieId
+          };
+          
+          toast({
+            description: "Your review has been updated",
+          });
+          
+          onSuccess(updatedReview);
+        }
       } else {
         // Insert new review
         const { data, error } = await supabase
@@ -78,21 +80,23 @@ const ReviewForm = ({ smoothieId, onSuccess, existingReview, onCancel }: ReviewF
             rating,
             comment,
           })
-          .select('*, auth.users(email)');
+          .select();
         
         if (error) throw error;
         
-        const newReview = {
-          ...data[0],
-          user_email: user.email,
-          recipe_id: smoothieId
-        };
-        
-        toast({
-          description: "Your review has been submitted",
-        });
-        
-        onSuccess(newReview);
+        if (data && data.length > 0) {
+          const newReview: Review = {
+            ...data[0],
+            user_email: user.email,
+            recipe_id: smoothieId
+          };
+          
+          toast({
+            description: "Your review has been submitted",
+          });
+          
+          onSuccess(newReview);
+        }
       }
     } catch (error: any) {
       console.error('Error submitting review:', error);

@@ -6,16 +6,28 @@ import { Collection } from "@/types/collection-types";
 interface CollectionListProps {
   collections: Collection[];
   isLoading: boolean;
-  selectedCollectionId: string | null;
-  setSelectedCollectionId: (id: string) => void;
+  selectedCollectionId?: string | null;
+  setSelectedCollectionId?: (id: string) => void;
+  onAddToCollection?: (collectionId: string) => void;
+  recipeName?: string;
 }
 
 const CollectionList = ({ 
   collections, 
   isLoading, 
   selectedCollectionId, 
-  setSelectedCollectionId 
+  setSelectedCollectionId,
+  onAddToCollection,
+  recipeName
 }: CollectionListProps) => {
+  const handleCollectionClick = (collectionId: string) => {
+    if (setSelectedCollectionId) {
+      setSelectedCollectionId(collectionId);
+    } else if (onAddToCollection) {
+      onAddToCollection(collectionId);
+    }
+  };
+
   if (isLoading && collections.length === 0) {
     return (
       <div className="py-8 text-center text-gray-500">
@@ -42,7 +54,7 @@ const CollectionList = ({
               ? 'bg-mint-50 border border-mint-200' 
               : 'hover:bg-gray-50 border border-gray-100'
           }`}
-          onClick={() => setSelectedCollectionId(collection.id)}
+          onClick={() => handleCollectionClick(collection.id)}
         >
           <div className="flex items-center">
             <Folder className="mr-2 h-5 w-5 text-gray-400" />
