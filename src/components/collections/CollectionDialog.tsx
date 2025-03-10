@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
-import { useAuth } from "@/contexts/AuthContext";
-import { toast } from "@/components/ui/use-toast";
-import { Collection } from "@/types/collection-types";
-import CreateCollection from "./CreateCollection";
-import CollectionList from "./CollectionList";
+
+import { useState, useEffect } from 'react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { supabase } from '@/integrations/supabase/client';
+import { useAuth } from '@/contexts/AuthContext';
+import { toast } from '@/components/ui/use-toast';
+import { Collection } from '@/types/collection-types';
+import CreateCollection from './CreateCollection';
+import CollectionList from './CollectionList';
+import LoginDialog from '@/components/auth/LoginDialog';
 
 interface CollectionDialogProps {
   isOpen: boolean;
@@ -18,16 +19,16 @@ interface CollectionDialogProps {
 const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: CollectionDialogProps) => {
   const [collections, setCollections] = useState<Collection[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedCollectionId, setSelectedCollectionId] = useState<string | null>(null);
+  const [loginDialogOpen, setLoginDialogOpen] = useState(false);
   const { user } = useAuth();
 
   useEffect(() => {
     if (isOpen && user) {
-      fetchUserCollections();
+      fetchCollections();
     }
   }, [isOpen, user]);
 
-  const fetchUserCollections = async () => {
+  const fetchCollections = async () => {
     if (!user) return;
     
     setIsLoading(true);
@@ -35,15 +36,17 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
       const { data, error } = await supabase
         .from('collections')
         .select('*')
-        .eq('user_id', user.id);
+        .eq('user_id', user.id)
+        .order('name');
       
       if (error) throw error;
+      
       setCollections(data || []);
-    } catch (error) {
-      console.error("Error fetching collections:", error);
+    } catch (error: any) {
+      console.error('Error fetching collections:', error);
       toast({
         title: "Error",
-        description: "Failed to load your collections",
+        description: "Failed to load collections",
         variant: "destructive",
       });
     } finally {
@@ -51,44 +54,53 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
     }
   };
 
-  const handleAddCollection = (newCollection: Collection) => {
+  const handleCollectionCreated = (newCollection: Collection) => {
     setCollections([...collections, newCollection]);
-    setSelectedCollectionId(newCollection.id);
   };
 
-  const handleSaveToCollection = async () => {
-    if (!selectedCollectionId || !user) return;
+  const handleAddToCollection = async (collectionId: string) => {
+    if (!user) {
+      setLoginDialogOpen(true);
+      return;
+    }
     
     setIsLoading(true);
     try {
-      const { error } = await supabase
+      // Check if item already exists in collection
+      const { data: existingItems, error: checkError } = await supabase
         .from('collection_items')
-        .insert({ 
-          collection_id: selectedCollectionId, 
-          recipe_id: smoothieId,
-          user_id: user.id
-        });
+        .select('id')
+        .match({ collection_id: collectionId, recipe_id: smoothieId });
       
-      if (error) {
-        if (error.code === '23505') {
-          toast({
-            description: `${smoothieName} is already in this collection`,
-          });
-        } else {
-          throw error;
-        }
-      } else {
+      if (checkError) throw checkError;
+      
+      if (existingItems && existingItems.length > 0) {
         toast({
-          title: "Saved",
-          description: `${smoothieName} added to collection`,
+          description: `Recipe already in this collection`,
         });
-        onClose();
+      } else {
+        // Add to collection
+        const { error: insertError } = await supabase
+          .from('collection_items')
+          .insert({
+            collection_id: collectionId,
+            recipe_id: smoothieId,
+            user_id: user.id
+          });
+        
+        if (insertError) throw insertError;
+        
+        toast({
+          description: `Added to collection`,
+        });
       }
-    } catch (error) {
-      console.error("Error saving to collection:", error);
+      
+      onClose();
+    } catch (error: any) {
+      console.error('Error adding to collection:', error);
       toast({
         title: "Error",
-        description: "Failed to save to collection",
+        description: "Failed to add to collection",
         variant: "destructive",
       });
     } finally {
@@ -97,45 +109,50 @@ const CollectionDialog = ({ isOpen, onClose, smoothieId, smoothieName }: Collect
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-md p-6">
-        <DialogHeader>
-          <DialogTitle className="text-xl">Save to Collection</DialogTitle>
-          <DialogDescription className="text-sm text-gray-500">
-            Save this recipe to one of your collections
-          </DialogDescription>
-        </DialogHeader>
-        
-        <div className="mt-4">
-          <CreateCollection 
-            onCollectionCreated={handleAddCollection} 
-            userId={user?.id} 
-            isLoading={isLoading}
-            setIsLoading={setIsLoading}
-          />
+    <>
+      <Dialog open={isOpen} onOpenChange={onClose}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center">Save to Collection</DialogTitle>
+          </DialogHeader>
           
-          <CollectionList 
-            collections={collections} 
-            isLoading={isLoading} 
-            selectedCollectionId={selectedCollectionId}
-            setSelectedCollectionId={setSelectedCollectionId}
-          />
-        </div>
-        
-        <div className="flex justify-end mt-6 space-x-2">
-          <Button variant="outline" onClick={onClose}>
-            Cancel
-          </Button>
-          <Button 
-            onClick={handleSaveToCollection}
-            disabled={!selectedCollectionId || isLoading}
-            className="bg-coral-500 hover:bg-coral-600 text-white"
-          >
-            Save
-          </Button>
-        </div>
-      </DialogContent>
-    </Dialog>
+          {!user && (
+            <div className="text-center py-6">
+              <p className="mb-4">Please log in to save recipes to your collections</p>
+              <button
+                onClick={() => setLoginDialogOpen(true)}
+                className="px-4 py-2 bg-awesome-green text-white rounded-lg"
+              >
+                Log In
+              </button>
+            </div>
+          )}
+          
+          {user && (
+            <>
+              <CreateCollection 
+                onCollectionCreated={handleCollectionCreated} 
+                userId={user.id}
+                isLoading={isLoading}
+                setIsLoading={setIsLoading}
+              />
+              
+              <CollectionList
+                collections={collections}
+                onAddToCollection={handleAddToCollection}
+                isLoading={isLoading}
+                recipeName={smoothieName}
+              />
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
+      
+      <LoginDialog 
+        isOpen={loginDialogOpen} 
+        onClose={() => setLoginDialogOpen(false)} 
+      />
+    </>
   );
 };
 

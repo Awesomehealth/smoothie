@@ -1,141 +1,155 @@
-import React, { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { useAuth } from "@/contexts/AuthContext";
-import { Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Card } from "@/components/ui/card";
-import { toast } from "@/hooks/use-toast";
+
+import { useState } from 'react';
+import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
+import { Star } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from '@/components/ui/use-toast';
+import LoginDialog from '@/components/auth/LoginDialog';
+import { Review } from '@/types/review-types';
 
 interface ReviewFormProps {
   smoothieId: string;
-  existingReview: any | null;
-  onReviewSubmitted: () => void;
+  onSuccess: (review: Review) => void;
+  existingReview: Review | null;
   onCancel: () => void;
 }
 
-const ReviewForm = ({ smoothieId, existingReview, onReviewSubmitted, onCancel }: ReviewFormProps) => {
-  const [rating, setRating] = useState(existingReview?.rating || 5);
-  const [comment, setComment] = useState(existingReview?.comment || "");
-  const [hoveredRating, setHoveredRating] = useState(0);
+const ReviewForm = ({ smoothieId, onSuccess, existingReview, onCancel }: ReviewFormProps) => {
+  const [rating, setRating] = useState<number>(existingReview?.rating || 0);
+  const [comment, setComment] = useState<string>(existingReview?.comment || '');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showLoginDialog, setShowLoginDialog] = useState(false);
   const { user } = useAuth();
-
-  if (!user) {
-    return (
-      <Card className="p-6 text-center">
-        <p>You need to be logged in to leave a review.</p>
-      </Card>
-    );
-  }
-
-  const handleRatingClick = (value: number) => {
-    setRating(value);
-  };
-
-  const handleRatingHover = (value: number) => {
-    setHoveredRating(value);
-  };
-
-  const handleRatingLeave = () => {
-    setHoveredRating(0);
-  };
-
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!user) {
+      setShowLoginDialog(true);
+      return;
+    }
+    
+    if (rating === 0) {
       toast({
-        title: "Error",
-        description: "You must be logged in to submit a review",
+        title: "Rating required",
+        description: "Please select a star rating before submitting",
         variant: "destructive",
       });
       return;
     }
-
+    
     setIsSubmitting(true);
-
+    
     try {
       if (existingReview) {
         // Update existing review
-        const { error } = await supabase
-          .from("reviews")
+        const { data, error } = await supabase
+          .from('reviews')
           .update({
             rating,
             comment,
             updated_at: new Date().toISOString(),
           })
-          .eq("id", existingReview.id);
-
+          .eq('id', existingReview.id)
+          .select('*, auth.users(email)');
+        
         if (error) throw error;
+        
+        const updatedReview = {
+          ...data[0],
+          user_email: data[0].users?.email || user.email,
+          recipe_id: smoothieId
+        };
+        
+        toast({
+          description: "Your review has been updated",
+        });
+        
+        onSuccess(updatedReview);
       } else {
-        // Create new review
-        const { error } = await supabase
-          .from("reviews")
+        // Insert new review
+        const { data, error } = await supabase
+          .from('reviews')
           .insert({
-            user_id: user.id,
             recipe_id: smoothieId,
+            user_id: user.id,
             rating,
             comment,
-          });
-
+          })
+          .select('*, auth.users(email)');
+        
         if (error) throw error;
+        
+        const newReview = {
+          ...data[0],
+          user_email: user.email,
+          recipe_id: smoothieId
+        };
+        
+        toast({
+          description: "Your review has been submitted",
+        });
+        
+        onSuccess(newReview);
       }
-
-      onReviewSubmitted();
-    } catch (error) {
-      console.error("Error submitting review:", error);
+    } catch (error: any) {
+      console.error('Error submitting review:', error);
       toast({
         title: "Error",
-        description: "Failed to submit your review. Please try again.",
+        description: error.message || "Failed to submit review",
         variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-
+  
+  const handleRatingClick = (value: number) => {
+    setRating(value);
+  };
+  
   return (
-    <Card className="p-6">
-      <h3 className="text-xl font-bold mb-4">
-        {existingReview ? "Edit Your Review" : "Write a Review"}
+    <div className="bg-gray-50 p-5 rounded-lg my-6">
+      <h3 className="text-lg font-semibold mb-3">
+        {existingReview ? 'Edit Your Review' : 'Write a Review'}
       </h3>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="space-y-2">
-          <label className="block font-medium">Rating</label>
-          <div 
-            className="flex gap-1" 
-            onMouseLeave={handleRatingLeave}
-          >
-            {[1, 2, 3, 4, 5].map((star) => (
-              <Star
-                key={star}
-                className={`h-8 w-8 cursor-pointer ${
-                  star <= (hoveredRating || rating)
-                    ? "text-coral-500 fill-coral-500"
-                    : "text-gray-300"
-                }`}
-                onClick={() => handleRatingClick(star)}
-                onMouseEnter={() => handleRatingHover(star)}
+      
+      <form onSubmit={handleSubmit}>
+        <div className="flex mb-4">
+          {[1, 2, 3, 4, 5].map((value) => (
+            <button
+              key={value}
+              type="button"
+              onClick={() => handleRatingClick(value)}
+              className="focus:outline-none"
+            >
+              <Star 
+                className={`h-8 w-8 ${
+                  value <= rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'
+                } hover:text-yellow-400 transition-colors`} 
               />
-            ))}
-          </div>
+            </button>
+          ))}
         </div>
         
-        <div className="space-y-2">
-          <label htmlFor="comment" className="block font-medium">
-            Comment (optional)
-          </label>
-          <Textarea
-            id="comment"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-            placeholder="Share your thoughts about this recipe..."
-            rows={4}
-          />
-        </div>
+        <Textarea
+          placeholder="Share your thoughts about this smoothie..."
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+          className="min-h-[100px] mb-4"
+        />
         
-        <div className="flex justify-end gap-2">
+        <div className="flex gap-3">
+          <Button 
+            type="submit" 
+            disabled={isSubmitting}
+            className="bg-awesome-green hover:bg-awesome-green/90"
+          >
+            {isSubmitting ? 'Submitting...' : existingReview ? 'Update Review' : 'Submit Review'}
+          </Button>
+          
           <Button 
             type="button" 
             variant="outline" 
@@ -144,16 +158,14 @@ const ReviewForm = ({ smoothieId, existingReview, onReviewSubmitted, onCancel }:
           >
             Cancel
           </Button>
-          <Button 
-            type="submit" 
-            disabled={isSubmitting}
-            className="bg-coral-500 hover:bg-coral-600 text-white"
-          >
-            {isSubmitting ? "Submitting..." : existingReview ? "Update Review" : "Submit Review"}
-          </Button>
         </div>
       </form>
-    </Card>
+      
+      <LoginDialog 
+        isOpen={showLoginDialog} 
+        onClose={() => setShowLoginDialog(false)} 
+      />
+    </div>
   );
 };
 

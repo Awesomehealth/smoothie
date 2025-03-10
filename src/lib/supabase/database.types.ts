@@ -6,7 +6,7 @@ export type Json =
   | { [key: string]: Json | undefined }
   | Json[]
 
-export type Database = {
+export interface Database {
   public: {
     Tables: {
       authors: {
@@ -130,72 +130,32 @@ export type Database = {
           title?: string | null
           updated_at?: string | null
         }
-        Relationships: [
-          {
-            foreignKeyName: "category_benefits_category_id_fkey"
-            columns: ["category_id"]
-            isOneToOne: false
-            referencedRelation: "categories"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      collections: {
-        Row: {
-          id: string
-          name: string
-          user_id: string
-          created_at: string
-          updated_at: string
-        }
-        Insert: {
-          id?: string
-          name: string
-          user_id: string
-          created_at?: string
-          updated_at?: string
-        }
-        Update: {
-          id?: string
-          name?: string
-          user_id?: string
-          created_at?: string
-          updated_at?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "collections_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "users"
-            referencedColumns: ["id"]
-          }
-        ]
+        Relationships: []
       }
       collection_items: {
         Row: {
+          collection_id: string | null
+          created_at: string | null
           id: string
-          collection_id: string
-          recipe_id: string
+          recipe_id: string | null
+          updated_at: string | null
           user_id: string
-          created_at: string
-          updated_at: string
         }
         Insert: {
+          collection_id?: string | null
+          created_at?: string | null
           id?: string
-          collection_id: string
-          recipe_id: string
+          recipe_id?: string | null
+          updated_at?: string | null
           user_id: string
-          created_at?: string
-          updated_at?: string
         }
         Update: {
+          collection_id?: string | null
+          created_at?: string | null
           id?: string
-          collection_id?: string
-          recipe_id?: string
+          recipe_id?: string | null
+          updated_at?: string | null
           user_id?: string
-          created_at?: string
-          updated_at?: string
         }
         Relationships: [
           {
@@ -221,349 +181,136 @@ export type Database = {
           }
         ]
       }
-      ingredients: {
+      collections: {
         Row: {
           created_at: string | null
           id: string
-          img: string | null
           name: string
-          slug: string
           updated_at: string | null
+          user_id: string
         }
         Insert: {
           created_at?: string | null
           id?: string
-          img?: string | null
           name: string
-          slug: string
           updated_at?: string | null
+          user_id: string
         }
         Update: {
           created_at?: string | null
           id?: string
-          img?: string | null
           name?: string
-          slug?: string
           updated_at?: string | null
-        }
-        Relationships: []
-      }
-      labels: {
-        Row: {
-          created_at: string | null
-          id: string
-          slug: string
-          text: string
-          updated_at: string | null
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          slug: string
-          text: string
-          updated_at?: string | null
-        }
-        Update: {
-          created_at?: string | null
-          id?: string
-          slug?: string
-          text?: string
-          updated_at?: string | null
-        }
-        Relationships: []
-      }
-      recipe_badges: {
-        Row: {
-          created_at: string | null
-          id: string
-          info: string
-          recipe_id: string | null
-          type: string
-          updated_at: string | null
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          info: string
-          recipe_id?: string | null
-          type: string
-          updated_at?: string | null
-        }
-        Update: {
-          created_at?: string | null
-          id?: string
-          info?: string
-          recipe_id?: string | null
-          type?: string
-          updated_at?: string | null
+          user_id?: string
         }
         Relationships: [
           {
-            foreignKeyName: "recipe_badges_recipe_id_fkey"
-            columns: ["recipe_id"]
+            foreignKeyName: "collections_user_id_fkey"
+            columns: ["user_id"]
             isOneToOne: false
-            referencedRelation: "recipes"
+            referencedRelation: "users"
             referencedColumns: ["id"]
-          },
+          }
         ]
       }
-      recipe_categories: {
+      profiles: {
         Row: {
-          category_id: string | null
-          created_at: string | null
+          avatar_url: string | null
+          full_name: string | null
           id: string
-          recipe_id: string | null
           updated_at: string | null
+          username: string | null
+          website: string | null
         }
         Insert: {
-          category_id?: string | null
-          created_at?: string | null
-          id?: string
-          recipe_id?: string | null
+          avatar_url?: string | null
+          full_name?: string | null
+          id: string
           updated_at?: string | null
+          username?: string | null
+          website?: string | null
         }
         Update: {
-          category_id?: string | null
-          created_at?: string | null
+          avatar_url?: string | null
+          full_name?: string | null
           id?: string
-          recipe_id?: string | null
           updated_at?: string | null
+          username?: string | null
+          website?: string | null
         }
         Relationships: [
           {
-            foreignKeyName: "recipe_categories_category_id_fkey"
-            columns: ["category_id"]
-            isOneToOne: false
-            referencedRelation: "categories"
+            foreignKeyName: "profiles_id_fkey"
+            columns: ["id"]
+            isOneToOne: true
+            referencedRelation: "users"
             referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "recipe_categories_recipe_id_fkey"
-            columns: ["recipe_id"]
-            isOneToOne: false
-            referencedRelation: "recipes"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      recipe_ingredients: {
-        Row: {
-          created_at: string | null
-          id: string
-          info: string | null
-          ingredient_id: string | null
-          quantity: string | null
-          recipe_id: string | null
-          unit: string | null
-          updated_at: string | null
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          info?: string | null
-          ingredient_id?: string | null
-          quantity?: string | null
-          recipe_id?: string | null
-          unit?: string | null
-          updated_at?: string | null
-        }
-        Update: {
-          created_at?: string | null
-          id?: string
-          info?: string | null
-          ingredient_id?: string | null
-          quantity?: string | null
-          recipe_id?: string | null
-          unit?: string | null
-          updated_at?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "recipe_ingredients_ingredient_id_fkey"
-            columns: ["ingredient_id"]
-            isOneToOne: false
-            referencedRelation: "ingredients"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "recipe_ingredients_recipe_id_fkey"
-            columns: ["recipe_id"]
-            isOneToOne: false
-            referencedRelation: "recipes"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      recipe_labels: {
-        Row: {
-          created_at: string | null
-          id: string
-          label_id: string | null
-          recipe_id: string | null
-          updated_at: string | null
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          label_id?: string | null
-          recipe_id?: string | null
-          updated_at?: string | null
-        }
-        Update: {
-          created_at?: string | null
-          id?: string
-          label_id?: string | null
-          recipe_id?: string | null
-          updated_at?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "recipe_labels_label_id_fkey"
-            columns: ["label_id"]
-            isOneToOne: false
-            referencedRelation: "labels"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "recipe_labels_recipe_id_fkey"
-            columns: ["recipe_id"]
-            isOneToOne: false
-            referencedRelation: "recipes"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      recipe_media: {
-        Row: {
-          created_at: string | null
-          id: string
-          is_main: boolean | null
-          recipe_id: string | null
-          type: string | null
-          updated_at: string | null
-          url: string
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          is_main?: boolean | null
-          recipe_id?: string | null
-          type?: string | null
-          updated_at?: string | null
-          url: string
-        }
-        Update: {
-          created_at?: string | null
-          id?: string
-          is_main?: boolean | null
-          recipe_id?: string | null
-          type?: string | null
-          updated_at?: string | null
-          url?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "recipe_media_recipe_id_fkey"
-            columns: ["recipe_id"]
-            isOneToOne: false
-            referencedRelation: "recipes"
-            referencedColumns: ["id"]
-          },
+          }
         ]
       }
       recipes: {
         Row: {
           author_id: string | null
-          benefits: string | null
-          caffeine_free: boolean | null
-          calories: number | null
-          carbs: number | null
-          cook_time: string | null
+          category_id: string | null
           created_at: string | null
-          date: string | null
-          diet_type: string | null
-          directions: string[] | null
-          fats: number | null
-          gluten_free: boolean | null
+          description: string | null
           id: string
-          meal_replacement: boolean | null
-          nut_free: boolean | null
-          original_youtube_link: string | null
-          overview: string | null
-          preparation_time: string | null
-          protein: number | null
-          protein_type: string | null
-          recipe_cuisine: string | null
-          recipe_yield: string | null
-          slug: string
-          soy_free: boolean | null
-          sugar_free: boolean | null
-          time_to_read: number | null
-          title: string
-          total_time: string | null
+          image_url: string | null
+          ingredients: string[] | null
+          instructions: string | null
+          is_published: boolean | null
+          name: string | null
+          nutrition: Json | null
+          prep_time: number | null
+          rating: number | null
+          servings: number | null
+          slug: string | null
+          tags: string[] | null
+          total_time: number | null
           updated_at: string | null
+          user_id: string | null
         }
         Insert: {
           author_id?: string | null
-          benefits?: string | null
-          caffeine_free?: boolean | null
-          calories?: number | null
-          carbs?: number | null
-          cook_time?: string | null
+          category_id?: string | null
           created_at?: string | null
-          date?: string | null
-          diet_type?: string | null
-          directions?: string[] | null
-          fats?: number | null
-          gluten_free?: boolean | null
+          description?: string | null
           id?: string
-          meal_replacement?: boolean | null
-          nut_free?: boolean | null
-          original_youtube_link?: string | null
-          overview?: string | null
-          preparation_time?: string | null
-          protein?: number | null
-          protein_type?: string | null
-          recipe_cuisine?: string | null
-          recipe_yield?: string | null
-          slug: string
-          soy_free?: boolean | null
-          sugar_free?: boolean | null
-          time_to_read?: number | null
-          title: string
-          total_time?: string | null
+          image_url?: string | null
+          ingredients?: string[] | null
+          instructions?: string | null
+          is_published?: boolean | null
+          name?: string | null
+          nutrition?: Json | null
+          prep_time?: number | null
+          rating?: number | null
+          servings?: number | null
+          slug?: string | null
+          tags?: string[] | null
+          total_time?: number | null
           updated_at?: string | null
+          user_id?: string | null
         }
         Update: {
           author_id?: string | null
-          benefits?: string | null
-          caffeine_free?: boolean | null
-          calories?: number | null
-          carbs?: number | null
-          cook_time?: string | null
+          category_id?: string | null
           created_at?: string | null
-          date?: string | null
-          diet_type?: string | null
-          directions?: string[] | null
-          fats?: number | null
-          gluten_free?: boolean | null
+          description?: string | null
           id?: string
-          meal_replacement?: boolean | null
-          nut_free?: boolean | null
-          original_youtube_link?: string | null
-          overview?: string | null
-          preparation_time?: string | null
-          protein?: number | null
-          protein_type?: string | null
-          recipe_cuisine?: string | null
-          recipe_yield?: string | null
-          slug?: string
-          soy_free?: boolean | null
-          sugar_free?: boolean | null
-          time_to_read?: number | null
-          title?: string
-          total_time?: string | null
+          image_url?: string | null
+          ingredients?: string[] | null
+          instructions?: string | null
+          is_published?: boolean | null
+          name?: string | null
+          nutrition?: Json | null
+          prep_time?: number | null
+          rating?: number | null
+          servings?: number | null
+          slug?: string | null
+          tags?: string[] | null
+          total_time?: number | null
           updated_at?: string | null
+          user_id?: string | null
         }
         Relationships: [
           {
@@ -573,6 +320,20 @@ export type Database = {
             referencedRelation: "authors"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "recipes_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "recipes_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          }
         ]
       }
       reviews: {
@@ -611,6 +372,42 @@ export type Database = {
             referencedRelation: "recipes"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "reviews_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
+      users: {
+        Row: {
+          avatar_url: string | null
+          email: string | null
+          id: string
+          name: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          email?: string | null
+          id: string
+          name?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          email?: string | null
+          id?: string
+          name?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "users_id_fkey"
+            columns: ["id"]
+            isOneToOne: true
+            referencedRelation: "auth"."users"
+            referencedColumns: ["id"]
+          }
         ]
       }
     }
@@ -629,16 +426,14 @@ export type Database = {
   }
 }
 
-type PublicSchema = Database[Extract<keyof Database, "public">]
-
 export type Tables<
   PublicTableNameOrOptions extends
-    | keyof (PublicSchema["Tables"] & PublicSchema["Views"])
+    | keyof (Database["public"]["Tables"] & Database["public"]["Views"])
     | { schema: keyof Database },
   TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
     ? keyof (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
         Database[PublicTableNameOrOptions["schema"]]["Views"])
-    : never = never,
+    : never = never
 > = PublicTableNameOrOptions extends { schema: keyof Database }
   ? (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
       Database[PublicTableNameOrOptions["schema"]]["Views"])[TableName] extends {
@@ -646,82 +441,67 @@ export type Tables<
     }
     ? R
     : never
-  : PublicTableNameOrOptions extends keyof (PublicSchema["Tables"] &
-        PublicSchema["Views"])
-    ? (PublicSchema["Tables"] &
-        PublicSchema["Views"])[PublicTableNameOrOptions] extends {
-        Row: infer R
-      }
-      ? R
-      : never
+  : PublicTableNameOrOptions extends keyof (Database["public"]["Tables"] &
+      Database["public"]["Views"])
+  ? (Database["public"]["Tables"] &
+      Database["public"]["Views"])[PublicTableNameOrOptions] extends {
+      Row: infer R
+    }
+    ? R
     : never
+  : never
 
 export type TablesInsert<
   PublicTableNameOrOptions extends
-    | keyof PublicSchema["Tables"]
+    | keyof Database["public"]["Tables"]
     | { schema: keyof Database },
   TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
     ? keyof Database[PublicTableNameOrOptions["schema"]]["Tables"]
-    : never = never,
+    : never = never
 > = PublicTableNameOrOptions extends { schema: keyof Database }
   ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
       Insert: infer I
     }
     ? I
     : never
-  : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
-    ? PublicSchema["Tables"][PublicTableNameOrOptions] extends {
-        Insert: infer I
-      }
-      ? I
-      : never
+  : PublicTableNameOrOptions extends keyof Database["public"]["Tables"]
+  ? Database["public"]["Tables"][PublicTableNameOrOptions] extends {
+      Insert: infer I
+    }
+    ? I
     : never
+  : never
 
 export type TablesUpdate<
   PublicTableNameOrOptions extends
-    | keyof PublicSchema["Tables"]
+    | keyof Database["public"]["Tables"]
     | { schema: keyof Database },
   TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
     ? keyof Database[PublicTableNameOrOptions["schema"]]["Tables"]
-    : never = never,
+    : never = never
 > = PublicTableNameOrOptions extends { schema: keyof Database }
   ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
       Update: infer U
     }
     ? U
     : never
-  : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
-    ? PublicSchema["Tables"][PublicTableNameOrOptions] extends {
-        Update: infer U
-      }
-      ? U
-      : never
+  : PublicTableNameOrOptions extends keyof Database["public"]["Tables"]
+  ? Database["public"]["Tables"][PublicTableNameOrOptions] extends {
+      Update: infer U
+    }
+    ? U
     : never
+  : never
 
 export type Enums<
   PublicEnumNameOrOptions extends
-    | keyof PublicSchema["Enums"]
+    | keyof Database["public"]["Enums"]
     | { schema: keyof Database },
   EnumName extends PublicEnumNameOrOptions extends { schema: keyof Database }
     ? keyof Database[PublicEnumNameOrOptions["schema"]]["Enums"]
-    : never = never,
+    : never = never
 > = PublicEnumNameOrOptions extends { schema: keyof Database }
   ? Database[PublicEnumNameOrOptions["schema"]]["Enums"][EnumName]
-  : PublicEnumNameOrOptions extends keyof PublicSchema["Enums"]
-    ? PublicSchema["Enums"][PublicEnumNameOrOptions]
-    : never
-
-export type CompositeTypes<
-  PublicCompositeTypeNameOrOptions extends
-    | keyof PublicSchema["CompositeTypes"]
-    | { schema: keyof Database },
-  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
-    schema: keyof Database
-  }
-    ? keyof Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
-    : never = never,
-> = PublicCompositeTypeNameOrOptions extends { schema: keyof Database }
-  ? Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
-  : PublicCompositeTypeNameOrOptions extends keyof PublicSchema["CompositeTypes"]
-    ? PublicSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
-    : never
+  : PublicEnumNameOrOptions extends keyof Database["public"]["Enums"]
+  ? Database["public"]["Enums"][PublicEnumNameOrOptions]
+  : never

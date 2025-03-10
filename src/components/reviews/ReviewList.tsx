@@ -1,204 +1,164 @@
 
-import React, { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { useAuth } from "@/contexts/AuthContext";
-import { toast } from "@/hooks/use-toast";
-import LoginDialog from "@/components/auth/LoginDialog";
-import ReviewForm from "./ReviewForm";
-import ReviewListHeader from "./ReviewListHeader";
-import ReviewItem from "./ReviewItem";
-import EmptyReviewState from "./EmptyReviewState";
-
-type Review = {
-  id: string;
-  user_id: string;
-  recipe_id: string; // Changed from smoothie_id to recipe_id to match DB schema
-  rating: number;
-  comment: string;
-  created_at: string;
-  updated_at: string;
-  user_email?: string;
-};
+import { useState, useEffect } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/components/ui/button';
+import { Loader } from 'lucide-react';
+import EmptyReviewState from './EmptyReviewState';
+import ReviewItem from './ReviewItem';
+import ReviewForm from './ReviewForm';
+import ReviewListHeader from './ReviewListHeader';
+import { Review } from '@/types/review-types';
 
 interface ReviewListProps {
   smoothieId: string;
-  reviewCount: number;
-  averageRating: number;
-  onReviewsUpdate: (averageRating: number, reviewCount: number) => void;
+  initialShowForm?: boolean;
 }
 
-const ReviewList = ({ smoothieId, reviewCount, averageRating, onReviewsUpdate }: ReviewListProps) => {
+const ReviewList = ({ smoothieId, initialShowForm = false }: ReviewListProps) => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [showLoginDialog, setShowLoginDialog] = useState(false);
-  const [showReviewForm, setShowReviewForm] = useState(false);
-  const [userReview, setUserReview] = useState<Review | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const { user } = useAuth();
-
-  // Fetch reviews for this smoothie
+  const [showReviewForm, setShowReviewForm] = useState(initialShowForm);
+  const [userReview, setUserReview] = useState<Review | null>(null);
+  
+  useEffect(() => {
+    fetchReviews();
+  }, [smoothieId]);
+  
   const fetchReviews = async () => {
     setIsLoading(true);
     try {
+      // Query the reviews table for this recipe
       const { data, error } = await supabase
-        .from("reviews")
-        .select("*")
-        .eq("recipe_id", smoothieId)
-        .order("created_at", { ascending: false });
-
+        .from('reviews')
+        .select(`
+          id,
+          rating,
+          comment,
+          created_at,
+          updated_at,
+          user_id,
+          recipe_id,
+          auth.users(email)
+        `)
+        .eq('recipe_id', smoothieId)
+        .order('created_at', { ascending: false });
+      
       if (error) throw error;
       
-      // Since we can't query auth.users directly, we'll use a simplified approach
-      const reviewsWithUserInfo = (data || []).map(review => ({
+      // Format the reviews with user emails
+      const formattedReviews = data.map((review: any) => ({
         ...review,
-        // Use a default username based on user ID when email is not available
-        user_email: review.user_id === user?.id 
-          ? user.email 
-          : `user_${review.user_id.substring(0, 8)}`
+        user_email: review.users?.email || 'Anonymous',
+        smoothie_id: review.recipe_id // Map recipe_id to smoothie_id for compatibility
       }));
-
-      setReviews(reviewsWithUserInfo as Review[]);
       
+      setReviews(formattedReviews);
+      
+      // Check if the user has already left a review
       if (user) {
-        const userExistingReview = data?.find(review => review.user_id === user.id) || null;
-        setUserReview(userExistingReview as Review | null);
+        const userExistingReview = formattedReviews.find(
+          (review: Review) => review.user_id === user.id
+        );
+        
+        if (userExistingReview) {
+          setUserReview({
+            ...userExistingReview,
+            smoothie_id: userExistingReview.recipe_id // Map recipe_id to smoothie_id for compatibility
+          });
+          setShowReviewForm(false);
+        } else {
+          setUserReview(null);
+        }
       }
-    } catch (error) {
-      console.error("Error fetching reviews:", error);
+    } catch (err: any) {
+      setError(err.message);
+      console.error('Error fetching reviews:', err);
     } finally {
       setIsLoading(false);
     }
   };
-
-  // Calculate stats when reviews change
-  useEffect(() => {
-    if (reviews.length > 0) {
-      const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
-      const newAverage = parseFloat((totalRating / reviews.length).toFixed(1));
-      onReviewsUpdate(newAverage, reviews.length);
-    }
-  }, [reviews, onReviewsUpdate]);
-
-  // Fetch reviews on initial load
-  useEffect(() => {
-    fetchReviews();
-  }, [smoothieId]);
-
-  // Check if user already has a review when user logs in
-  useEffect(() => {
-    if (user) {
-      const existingReview = reviews.find(review => review.user_id === user.id);
-      setUserReview(existingReview || null);
+  
+  const handleSubmitReview = (review: Review) => {
+    // Add the new review to the list
+    if (review.id) {
+      // Update existing review
+      setReviews(reviews.map(r => r.id === review.id ? {...review, smoothie_id: review.recipe_id} : r));
     } else {
-      setUserReview(null);
+      // Add new review
+      setReviews([{...review, smoothie_id: review.recipe_id}, ...reviews]);
     }
-  }, [user, reviews]);
-
-  // Subscribe to real-time updates
-  useEffect(() => {
-    const channel = supabase
-      .channel('reviews-changes')
-      .on(
-        'postgres_changes',
-        {
-          event: '*',
-          schema: 'public',
-          table: 'reviews',
-          filter: `recipe_id=eq.${smoothieId}`
-        },
-        () => fetchReviews()
-      )
-      .subscribe();
     
-    return () => {
-      supabase.removeChannel(channel);
-    };
-  }, [smoothieId]);
-
-  const handleAddReviewClick = () => {
-    if (!user) {
-      setShowLoginDialog(true);
-    } else {
-      setShowReviewForm(true);
-    }
-  };
-
-  const handleReviewSubmitted = () => {
+    setUserReview({...review, smoothie_id: review.recipe_id});
     setShowReviewForm(false);
-    fetchReviews();
-    toast({
-      title: "Thank you for your review!",
-      description: "Your review has been submitted successfully.",
-    });
   };
-
+  
+  const handleToggleForm = () => {
+    setShowReviewForm(!showReviewForm);
+  };
+  
   const handleEditReview = () => {
     setShowReviewForm(true);
   };
-
-  const handleDeleteReview = async () => {
-    if (!userReview) return;
-
-    try {
-      const { error } = await supabase
-        .from("reviews")
-        .delete()
-        .eq("id", userReview.id);
-
-      if (error) throw error;
-
-      setUserReview(null);
-      fetchReviews();
-      toast({
-        description: "Your review has been deleted.",
-      });
-    } catch (error) {
-      console.error("Error deleting review:", error);
-      toast({
-        title: "Error",
-        description: "Could not delete your review. Please try again.",
-        variant: "destructive",
-      });
-    }
-  };
-
+  
+  // Calculate average rating
+  const totalRating = reviews.reduce((sum, review) => sum + (review.rating || 0), 0);
+  const averageRating = reviews.length > 0 ? totalRating / reviews.length : 0;
+  
+  if (isLoading) {
+    return (
+      <div className="flex justify-center my-8">
+        <Loader className="h-8 w-8 animate-spin text-gray-400" />
+      </div>
+    );
+  }
+  
   return (
-    <div className="w-full space-y-6">
+    <div className="bg-white p-6 rounded-xl shadow-sm">
       <ReviewListHeader 
-        reviewsCount={reviews.length}
-        userHasReview={!!userReview}
-        onAddReviewClick={handleAddReviewClick}
-        onEditReviewClick={handleEditReview}
-        onDeleteReviewClick={handleDeleteReview}
+        reviewCount={reviews.length} 
+        averageRating={averageRating} 
+        onAddReview={handleToggleForm}
+        userHasReviewed={!!userReview}
+        userIsLoggedIn={!!user}
       />
-
-      {isLoading ? (
-        <div className="flex justify-center py-8">
-          <div className="animate-pulse text-gray-400">Loading reviews...</div>
-        </div>
-      ) : reviews.length === 0 ? (
-        <EmptyReviewState onAddReviewClick={handleAddReviewClick} />
-      ) : (
-        <div className="space-y-4">
+      
+      {showReviewForm && (
+        <ReviewForm 
+          smoothieId={smoothieId} 
+          onSuccess={handleSubmitReview}
+          existingReview={userReview}
+          onCancel={() => setShowReviewForm(false)}
+        />
+      )}
+      
+      {!isLoading && reviews.length === 0 && !showReviewForm && (
+        <EmptyReviewState
+          onAddReview={handleToggleForm}
+          userIsLoggedIn={!!user}
+        />
+      )}
+      
+      {reviews.length > 0 && (
+        <div className="space-y-6 mt-6">
           {reviews.map((review) => (
             <ReviewItem 
               key={review.id} 
-              review={review} 
-              currentUserId={user?.id}
+              review={review}
+              isAuthor={user?.id === review.user_id}
+              onEditClick={handleEditReview}
+              onDeleteSuccess={() => {
+                setReviews(reviews.filter(r => r.id !== review.id));
+                if (userReview?.id === review.id) {
+                  setUserReview(null);
+                }
+              }}
             />
           ))}
         </div>
       )}
-
-      {showReviewForm && (
-        <ReviewForm
-          smoothieId={smoothieId}
-          existingReview={userReview}
-          onReviewSubmitted={handleReviewSubmitted}
-          onCancel={() => setShowReviewForm(false)}
-        />
-      )}
-
-      <LoginDialog isOpen={showLoginDialog} onClose={() => setShowLoginDialog(false)} />
     </div>
   );
 };

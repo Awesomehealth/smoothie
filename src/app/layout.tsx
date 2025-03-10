@@ -3,7 +3,11 @@ import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CategoriesProvider } from "@/contexts/CategoriesContext";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import '../index.css';
+
+// Create a client
+const queryClient = new QueryClient();
 
 export const metadata: Metadata = {
   title: 'Awesome Kitchen - Delicious Smoothie Recipes',
@@ -20,12 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AuthProvider>
-          <CategoriesProvider>
-            {children}
-            <Toaster />
-          </CategoriesProvider>
-        </AuthProvider>
+        <QueryClientProvider client={queryClient}>
+          <AuthProvider>
+            <CategoriesProvider>
+              {children}
+              <Toaster />
+            </CategoriesProvider>
+          </AuthProvider>
+        </QueryClientProvider>
       </body>
     </html>
   );
