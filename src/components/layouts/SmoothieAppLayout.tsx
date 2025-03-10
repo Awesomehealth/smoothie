@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
-import { User, Gem, Menu, ChevronLeft, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
+import { User, Gem, Menu, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
