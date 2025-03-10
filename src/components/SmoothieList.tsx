@@ -12,9 +12,9 @@ interface SmoothieListProps {
   hasMoreItems?: boolean;
 }
 
-const SmoothieList = ({ 
-  smoothies, 
-  searchQuery, 
+const SmoothieList = ({
+  smoothies,
+  searchQuery,
   currentCategory,
   displayLimit = 6, // Default to 6 if not specified
   onLoadMore,
@@ -26,7 +26,10 @@ const SmoothieList = ({
   if (smoothies.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-500">No smoothies found for "{searchQuery}" in this category.</p>
+        <p className="text-gray-500">
+          {
+            searchQuery ? `No smoothies found for "${searchQuery}" in this category.` : 'No smoothies found'
+          } </p>
       </div>
     );
   }
@@ -35,18 +38,18 @@ const SmoothieList = ({
     <div className="space-y-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {displayedSmoothies.map((smoothie) => (
-          <SmoothieCard 
-            key={smoothie.id} 
-            smoothie={smoothie} 
+          <SmoothieCard
+            key={smoothie.id}
+            smoothie={smoothie}
             currentCategory={currentCategory}
           />
         ))}
       </div>
-      
+
       {/* Show the "See More" button only if there are more items to display - Updated to black background with white text */}
       {onLoadMore && hasMoreItems && (
         <div className="flex justify-center mt-8">
-          <Button 
+          <Button
             onClick={onLoadMore}
             className="px-8 py-2 bg-black hover:bg-gray-800 text-white"
           >

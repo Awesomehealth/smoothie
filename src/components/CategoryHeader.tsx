@@ -1,8 +1,8 @@
+import { CategoriesType } from "@/types/categories";
 
-import { Category } from "@/data/categories";
 
 interface CategoryHeaderProps {
-  category: Category | undefined;
+  category: CategoriesType | undefined;
   isPostWorkout: boolean;
 }
 
@@ -27,22 +27,23 @@ const CategoryHeader = ({ category, isPostWorkout }: CategoryHeaderProps) => {
       case 'pre-workout':
         return "Boost your energy and focus with these pre-workout smoothies designed to enhance your performance.";
       default:
-        return `Explore our collection of ${category?.name} smoothies.`;
+        return `Explore our collection of ${category?.main_title} smoothies.`;
     }
   };
 
   return (
     <header className="mb-8 text-center">
       <div className="flex items-center justify-center gap-2 mb-2">
-        <h1 className="text-3xl font-bold">{category?.name || "Category"}</h1>
-        {category?.tag && (
-          <span className={`px-2 py-1 text-xs font-medium rounded-full ${category.tagStyle}`}>
-            {category.tag}
+        <h1 className="text-3xl font-bold">{category?.main_title || "Category"}</h1>
+        {category?.tags && (
+          <span className={`px-2 py-1 text-xs font-medium rounded-full ${category.tag_style}`}>
+            {category.tags}
           </span>
         )}
       </div>
       <p className="text-gray-600 max-w-2xl mx-auto">
-        {getCategoryDescription(category?.id)}
+        {/* {getCategoryDescription(category?.id)} */}
+        {category.main_description}
       </p>
     </header>
   );

@@ -44,6 +44,7 @@ export type Database = {
           category_banner_description: string | null
           category_banner_img: string | null
           created_at: string | null
+          icon: string | null
           id: string
           keyword_group: string | null
           main_description: string | null
@@ -51,15 +52,19 @@ export type Database = {
           meta_description: string | null
           meta_title: string | null
           preview_img: string | null
+          recipes_count: number | null
           secondary_description: string | null
           secondary_title: string | null
           slug: string
+          tag_style: string | null
+          tags: string[] | null
           updated_at: string | null
         }
         Insert: {
           category_banner_description?: string | null
           category_banner_img?: string | null
           created_at?: string | null
+          icon?: string | null
           id?: string
           keyword_group?: string | null
           main_description?: string | null
@@ -67,15 +72,19 @@ export type Database = {
           meta_description?: string | null
           meta_title?: string | null
           preview_img?: string | null
+          recipes_count?: number | null
           secondary_description?: string | null
           secondary_title?: string | null
           slug: string
+          tag_style?: string | null
+          tags?: string[] | null
           updated_at?: string | null
         }
         Update: {
           category_banner_description?: string | null
           category_banner_img?: string | null
           created_at?: string | null
+          icon?: string | null
           id?: string
           keyword_group?: string | null
           main_description?: string | null
@@ -83,9 +92,12 @@ export type Database = {
           meta_description?: string | null
           meta_title?: string | null
           preview_img?: string | null
+          recipes_count?: number | null
           secondary_description?: string | null
           secondary_title?: string | null
           slug?: string
+          tag_style?: string | null
+          tags?: string[] | null
           updated_at?: string | null
         }
         Relationships: []

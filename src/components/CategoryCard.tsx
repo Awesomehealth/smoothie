@@ -1,10 +1,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Category } from "@/data/categories";
+import { CategoriesType } from "@/types/categories";
 
 interface CategoryCardProps {
-  category: Category;
+  category: CategoriesType;
   isClickable?: boolean;
   onClick?: (categoryId: string) => void;
 }
@@ -34,20 +34,20 @@ const CategoryCard = ({ category, isClickable = true, onClick }: CategoryCardPro
       <div 
         className="h-full w-full bg-cover bg-center transition-transform duration-700 ease-out"
         style={{ 
-          backgroundImage: `url(${category.image})`,
+          backgroundImage: `url(${category.category_banner_img})`,
           transform: isHovered ? 'scale(1.05)' : 'scale(1)'
         }} 
       />
       
       <div className="absolute top-3 right-3 z-20">
-        <span className={`text-xs font-bold py-1 px-3 rounded-full ${category.tagStyle}`}>
-          {category.tag}
+        <span className={`text-xs font-bold py-1 px-3 rounded-full ${category.tag_style}`}>
+          {category.tags?.[0]}
         </span>
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 p-4 z-20 text-white">
-        <h3 className="font-bold text-lg mb-1">{category.name}</h3>
-        <p className="text-sm opacity-90">{category.count} recipes</p>
+        <h3 className="font-bold text-lg mb-1">{category.main_title}</h3>
+        <p className="text-sm opacity-90">{category.recipes_count} recipes</p>
       </div>
     </motion.div>
   );

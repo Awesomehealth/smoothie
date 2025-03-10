@@ -47,16 +47,19 @@ const CategoryInfoCards = ({ categoryId }: CategoryInfoCardsProps) => {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-      {benefits.map((benefit, index) => (
-        <BenefitCard
-          key={index}
-          title={benefit.title}
-          description={benefit.description}
-          icon={benefit.icon}
-        />
-      ))}
-    </div>
+    <>
+      <h2 className="text-xl font-semibold text-gray-800 mb-4">Key Benefits</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        {benefits.map((benefit, index) => (
+          <BenefitCard
+            key={index}
+            title={benefit.title}
+            description={benefit.description}
+            icon={benefit.icon}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 
