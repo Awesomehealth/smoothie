@@ -1,8 +1,12 @@
+
+'use client';
+
 import React, { useState } from "react";
 import Footer from "@/components/sections/Footer";
 import { User, Gem, Menu, LogIn, HelpCircle, MessageCircle, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import LoginDialog from "@/components/auth/LoginDialog";
@@ -19,10 +23,10 @@ const SmoothieAppLayout = ({
 }: SmoothieAppLayoutProps) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [loginDialogOpen, setLoginDialogOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
   const { user, signOut } = useAuth();
 
-  const isCategoryPage = location.pathname !== "/";
+  const isCategoryPage = pathname !== "/";
 
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
@@ -36,7 +40,7 @@ const SmoothieAppLayout = ({
     await signOut();
   };
 
-  const contentHeightClass = location.pathname === "/" 
+  const contentHeightClass = pathname === "/" 
     ? "h-[calc(100vh-57px-72px)]" 
     : "min-h-[calc(100vh-57px-72px)]";
 
@@ -57,7 +61,7 @@ const SmoothieAppLayout = ({
                   <Menu className="h-5 w-5 text-awesome-green" />
                 </Button>
               )}
-              <Link to="/" className="flex items-center">
+              <Link href="/" className="flex items-center">
                 <span className="text-xl font-bold text-slate-950">Awesome Kitchen</span>
               </Link>
             </div>

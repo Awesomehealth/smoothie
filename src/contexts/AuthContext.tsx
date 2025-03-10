@@ -1,7 +1,9 @@
 
+'use client';
+
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Session, User } from '@supabase/supabase-js';
-import { supabaseClient } from '@/lib/supabase/client';
+import { supabase } from '@/lib/supabase/client';
 import { toast } from '@/hooks/use-toast';
 
 interface AuthContextProps {
@@ -23,12 +25,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setIsLoading(true);
       
       // Check for active session
-      const { data: { session: currentSession } } = await supabaseClient.auth.getSession();
+      const { data: { session: currentSession } } = await supabase.auth.getSession();
       setSession(currentSession);
       setUser(currentSession?.user ?? null);
       
       // Set up auth state listener
-      const { data: { subscription } } = supabaseClient.auth.onAuthStateChange((event, newSession) => {
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((event, newSession) => {
         setSession(newSession);
         setUser(newSession?.user ?? null);
         
@@ -59,7 +61,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
   
   const signOut = async () => {
-    await supabaseClient.auth.signOut();
+    await supabase.auth.signOut();
   };
   
   return (

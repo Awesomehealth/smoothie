@@ -1,7 +1,9 @@
 
+'use client';
+
 import { useState, useRef } from "react";
 import { Search, Paperclip, Globe, X } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -25,7 +27,7 @@ const SearchBar = ({
   const [url, setUrl] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const queryInputRef = useRef<HTMLInputElement>(null);
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,12 +36,12 @@ const SearchBar = ({
       
       // Navigate to search results page if needed
       if (navigateOnSearch) {
-        navigate(`/search?q=${encodeURIComponent(query)}`);
+        router.push(`/search?q=${encodeURIComponent(query)}`);
       }
     } else if (isUrlInputVisible && url.trim() && onUrlSubmit) {
       onUrlSubmit(url);
       if (navigateOnSearch) {
-        navigate(`/search?url=${encodeURIComponent(url)}`);
+        router.push(`/search?url=${encodeURIComponent(url)}`);
       }
     }
   };
