@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import IndexPage from "../../pages/index"; // Updated to use lowercase and relative path
+import IndexPage from "../../pages/index"; // Using lowercase and relative path
 import CategoryPage from "@/pages/CategoryPage";
 import RecipeDetailPage from "@/pages/RecipeDetailPage";
 import NotFound from "@/pages/NotFound";
