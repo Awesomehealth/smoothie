@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import IndexPage from "../../pages/index"; // Using lowercase and relative path
+import HomePage from "../../pages/Home"; // Changed from index.tsx to Home.tsx
 import CategoryPage from "@/pages/CategoryPage";
 import RecipeDetailPage from "@/pages/RecipeDetailPage";
 import NotFound from "@/pages/NotFound";
@@ -13,7 +13,7 @@ function AppRoutes() {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<IndexPage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
           <Route path="/recipe/:smoothieId" element={<RecipeDetailPage />} />
           <Route path="/search" element={<SearchResultsPage />} />

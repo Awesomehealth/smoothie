@@ -5,7 +5,7 @@ import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import SmoothieSearchContainer from "@/containers/SmoothieSearchContainer";
 import Head from "next/head";
 
-const Index = () => {
+const Home = () => {
   return (
     <>
       {typeof window !== 'undefined' && window.document && (
@@ -55,4 +55,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Home;
