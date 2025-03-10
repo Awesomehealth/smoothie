@@ -9,8 +9,7 @@ import ImageGallery from "@/components/gallery/ImageGallery";
 import RecipeContent from "@/components/recipe/RecipeContent";
 import NotFoundContent from "@/components/recipe/NotFoundContent";
 import RecipeDetailContainer from "@/containers/RecipeDetailContainer";
-import { Button } from "@/components/ui/button";
-import { ChevronLeft } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const RecipeDetailPage = () => {
   const { smoothieId } = useParams<{ smoothieId: string }>();
@@ -39,6 +38,19 @@ const RecipeDetailPage = () => {
   
   return (
     <>
+      <Helmet>
+        <title>{smoothie?.name || "Recipe"} | Awesome Kitchen</title>
+        <meta 
+          name="description" 
+          content={smoothie?.description || "Delicious smoothie recipe"} 
+        />
+        <meta property="og:title" content={`${smoothie?.name || "Recipe"} | Awesome Kitchen`} />
+        <meta 
+          property="og:description" 
+          content={smoothie?.description || "Delicious smoothie recipe"} 
+        />
+        <meta property="og:image" content={smoothie?.image || "/og-image.png"} />
+      </Helmet>
       <SmoothieAppLayout
         sidebar={
           <CategorySidebar

@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import HomePage from "../../pages/Home"; // Changed from index.tsx to Home.tsx
+import HomePage from "@/pages/Home";
 import CategoryPage from "@/pages/CategoryPage";
 import RecipeDetailPage from "@/pages/RecipeDetailPage";
 import NotFound from "@/pages/NotFound";
@@ -21,7 +21,7 @@ function AppRoutes() {
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
+    </Router>
   )
 }
 
