@@ -1,8 +1,6 @@
-
 import React from 'react'
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-// Use a direct import instead of an alias to avoid casing issues
-import Index from "../../pages/Index";
+import IndexPage from "@/pages/index";
 import CategoryPage from "@/pages/CategoryPage";
 import RecipeDetailPage from "@/pages/RecipeDetailPage";
 import NotFound from "@/pages/NotFound";
@@ -14,7 +12,7 @@ function AppRoutes() {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<IndexPage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
           <Route path="/recipe/:smoothieId" element={<RecipeDetailPage />} />
           <Route path="/search" element={<SearchResultsPage />} />

@@ -3,19 +3,20 @@ import CategorySidebar from "@/components/CategorySidebar";
 import SearchSection from "@/components/sections/SearchSection";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import SmoothieSearchContainer from "@/containers/SmoothieSearchContainer";
-import { NextPage } from "next";
 import Head from "next/head";
 
-const IndexPage: NextPage = () => {
+const Index = () => {
   return (
     <>
-      <Head>
-        <title>Awesome Kitchen - Home</title>
-        <meta name="description" content="Find delicious smoothie recipes for every lifestyle" />
-        <meta property="og:title" content="Awesome Kitchen - Home" />
-        <meta property="og:description" content="Find delicious smoothie recipes for every lifestyle" />
-        <meta property="og:image" content="/og-image.png" />
-      </Head>
+      {typeof window !== 'undefined' && window.document && (
+        <Head>
+          <title>Awesome Kitchen - Home</title>
+          <meta name="description" content="Find delicious smoothie recipes for every lifestyle" />
+          <meta property="og:title" content="Awesome Kitchen - Home" />
+          <meta property="og:description" content="Find delicious smoothie recipes for every lifestyle" />
+          <meta property="og:image" content="/og-image.png" />
+        </Head>
+      )}
       <SmoothieSearchContainer>
         {({
           selectedCategory,
@@ -54,4 +55,4 @@ const IndexPage: NextPage = () => {
   );
 };
 
-export default IndexPage;
+export default Index;
