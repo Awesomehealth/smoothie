@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { useState, useEffect } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { useAuth } from '@/contexts/AuthContext';
-import { Button } from '@/components/ui/button';
 import { Loader } from 'lucide-react';
 import EmptyReviewState from './EmptyReviewState';
 import ReviewItem from './ReviewItem';
@@ -38,71 +38,70 @@ const ReviewList = ({
   const reviewCount = reviews.length || initialReviewCount || 0;
   
   useEffect(() => {
-    fetchReviews();
-  }, [smoothieId]);
-  
-  const fetchReviews = async () => {
-    setIsLoading(true);
-    try {
-      // Query the reviews table for this recipe
-      const { data, error } = await supabase
-        .from('reviews')
-        .select(`
-          id,
-          rating,
-          comment,
-          created_at,
-          updated_at,
-          user_id,
-          recipe_id
-        `)
-        .eq('recipe_id', smoothieId)
-        .order('created_at', { ascending: false });
-      
-      if (error) throw error;
-      
-      // Format the reviews
-      const formattedReviews: Review[] = data.map((review: any) => ({
-        id: review.id,
-        recipe_id: review.recipe_id,
-        user_id: review.user_id,
-        rating: review.rating || 0,
-        comment: review.comment,
-        created_at: review.created_at,
-        updated_at: review.updated_at,
-        user_email: 'Anonymous' // Default value
-      }));
-      
-      setReviews(formattedReviews);
-      
-      // Check if the user has already left a review
-      if (user) {
-        const userExistingReview = formattedReviews.find(
-          (review: Review) => review.user_id === user.id
-        );
+    const fetchReviews = async () => {
+      setIsLoading(true);
+      try {
+        // Query the reviews table for this recipe
+        const { data, error } = await supabase
+          .from('reviews')
+          .select(`
+            id,
+            rating,
+            comment,
+            created_at,
+            updated_at,
+            user_id,
+            recipe_id
+          `)
+          .eq('recipe_id', smoothieId)
+          .order('created_at', { ascending: false });
         
-        if (userExistingReview) {
-          setUserReview(userExistingReview);
-          setShowReviewForm(false);
-        } else {
-          setUserReview(null);
+        if (error) throw error;
+        
+        // Format the reviews
+        const formattedReviews: Review[] = data.map((review: any) => ({
+          id: review.id,
+          recipe_id: review.recipe_id,
+          user_id: review.user_id,
+          rating: review.rating || 0,
+          comment: review.comment,
+          created_at: review.created_at,
+          updated_at: review.updated_at,
+          user_email: 'Anonymous' // Default value
+        }));
+        
+        setReviews(formattedReviews);
+        
+        // Check if the user has already left a review
+        if (user) {
+          const userExistingReview = formattedReviews.find(
+            (review: Review) => review.user_id === user.id
+          );
+          
+          if (userExistingReview) {
+            setUserReview(userExistingReview);
+            setShowReviewForm(false);
+          } else {
+            setUserReview(null);
+          }
         }
+        
+        // Update parent component with new rating data
+        if (onReviewsUpdate) {
+          const newAvgRating = formattedReviews.length > 0 
+            ? formattedReviews.reduce((sum, r) => sum + r.rating, 0) / formattedReviews.length 
+            : 0;
+          onReviewsUpdate(newAvgRating, formattedReviews.length);
+        }
+      } catch (err: any) {
+        setError(err.message);
+        console.error('Error fetching reviews:', err);
+      } finally {
+        setIsLoading(false);
       }
-      
-      // Update parent component with new rating data
-      if (onReviewsUpdate) {
-        const newAvgRating = formattedReviews.length > 0 
-          ? formattedReviews.reduce((sum, r) => sum + r.rating, 0) / formattedReviews.length 
-          : 0;
-        onReviewsUpdate(newAvgRating, formattedReviews.length);
-      }
-    } catch (err: any) {
-      setError(err.message);
-      console.error('Error fetching reviews:', err);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    };
+    fetchReviews();
+  }, [onReviewsUpdate, smoothieId, user]);
   
   const handleSubmitReview = (review: Review) => {
     // Add the new review to the list

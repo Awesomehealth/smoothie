@@ -1,30 +1,34 @@
+'use client'
 
-'use client';
-
-import { useState } from "react";
-import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
-import CategorySidebar from "@/components/CategorySidebar";
-import LoginDialog from "@/components/auth/LoginDialog";
-import CollectionDialog from "@/components/collections/CollectionDialog";
-import ImageGallery from "@/components/gallery/ImageGallery";
-import RecipeContent from "@/components/recipe/RecipeContent";
-import NotFoundContent from "@/components/recipe/NotFoundContent";
 import RecipeDetailContainer from "@/containers/RecipeDetailContainer";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import LoginDialog from "../auth/LoginDialog";
+import CategorySidebar from "../CategorySidebar";
+import CollectionDialog from "../collections/CollectionDialog";
+import ImageGallery from "../gallery/ImageGallery";
+import SmoothieAppLayout from "../layouts/SmoothieAppLayout";
+import NotFoundContent from "./NotFoundContent";
+import RecipeContent from "./RecipeContent";
+import { useRecipe } from "@/contexts/RecipeContext";
+import Loader from "../ui/loader";
 
-export default function RecipeDetailPage({ params }: { params: { smoothieId: string } }) {
-  const smoothieId = params.smoothieId;
+function Recipe(){
+  
+}
+
+export default function RecipeDetail({ recipeId }: { recipeId: string }) {
+  const { recipe: smoothie, loading } = useRecipe()
   const [loginDialogOpen, setLoginDialogOpen] = useState(false);
   const [collectionDialogOpen, setCollectionDialogOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const router = useRouter();
-  
-  const { 
-    smoothie, 
-    sidebarProps, 
-    recipeProps 
-  } = RecipeDetailContainer({ 
-    smoothieId: smoothieId || '', 
+
+  const {
+    sidebarProps,
+    recipeProps
+  } = RecipeDetailContainer({
+    smoothie,
     onOpenLoginDialog: () => setLoginDialogOpen(true),
     onOpenCollectionDialog: () => setCollectionDialogOpen(true),
     onOpenGallery: (index) => {
@@ -32,11 +36,15 @@ export default function RecipeDetailPage({ params }: { params: { smoothieId: str
       setGalleryOpen(true);
     }
   });
-  
+
+  if (loading) {
+    return <Loader />
+  }
+
   const handleGoBack = () => {
     router.back();
   };
-  
+
   return (
     <>
       <SmoothieAppLayout
@@ -55,7 +63,7 @@ export default function RecipeDetailPage({ params }: { params: { smoothieId: str
             ) : (
               <RecipeContent
                 smoothie={smoothie}
-                smoothieId={smoothieId || ''}
+                smoothieId={recipeId || ''}
                 {...recipeProps}
                 onViewAllPhotos={() => setGalleryOpen(true)}
                 onGoBack={handleGoBack}
@@ -64,22 +72,22 @@ export default function RecipeDetailPage({ params }: { params: { smoothieId: str
           </div>
         }
       />
-      
+
       <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
-      
-      <CollectionDialog 
-        isOpen={collectionDialogOpen} 
-        onClose={() => setCollectionDialogOpen(false)} 
-        smoothieId={smoothieId || ''}
+
+      <CollectionDialog
+        isOpen={collectionDialogOpen}
+        onClose={() => setCollectionDialogOpen(false)}
+        smoothieId={recipeId || ''}
         smoothieName={smoothie?.name || ''}
       />
 
-      <ImageGallery 
+      <ImageGallery
         isOpen={galleryOpen}
         onClose={() => setGalleryOpen(false)}
         images={recipeProps.galleryImages}
         initialIndex={recipeProps.initialImageIndex}
       />
     </>
-  );
+  )
 }

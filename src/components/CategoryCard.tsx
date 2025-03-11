@@ -1,10 +1,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { CategoriesType } from "@/types/categories";
+import { CategoryType } from "@/types/db";
 
 interface CategoryCardProps {
-  category: CategoriesType;
+  category: CategoryType;
   isClickable?: boolean;
   onClick?: (categoryId: string) => void;
 }

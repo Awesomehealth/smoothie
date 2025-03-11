@@ -1,9 +1,8 @@
 
 import type { Metadata } from 'next';
-import { Toaster } from "@/components/ui/toaster";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CategoriesProvider } from "@/contexts/CategoriesContext";
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient } from '@tanstack/react-query';
 import '../index.css';
 
 // Create a client
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
   title: 'Awesome Kitchen - Delicious Smoothie Recipes',
   description: 'Find delicious smoothie recipes for every lifestyle',
   keywords: 'smoothies, recipes, healthy, protein, workout',
-  viewport: 'width=device-width, initial-scale=1',
 };
 
 export default function RootLayout({
@@ -23,16 +21,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>React App</title>
+        <meta name="description" content="Web site created..." />
+      </head>
       <body>
-        <QueryClientProvider client={queryClient}>
+        <div id="root">
           <AuthProvider>
             <CategoriesProvider>
               {children}
-              <Toaster />
             </CategoriesProvider>
           </AuthProvider>
-        </QueryClientProvider>
+        </div>
       </body>
     </html>
-  );
+  )
 }

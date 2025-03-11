@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Youtube, Music } from "lucide-react";
 
 const Footer = () => {
@@ -8,10 +8,10 @@ const Footer = () => {
       <div className="w-full flex flex-row justify-between items-center px-4">
         {/* Left side - Links and Copyright */}
         <div className="flex items-center gap-x-6 text-sm text-gray-500">
-          <Link to="/privacy" className="hover:text-gray-700 hover:underline">
+          <Link href="/privacy" className="hover:text-gray-700 hover:underline">
             Privacy Policy
           </Link>
-          <Link to="/terms" className="hover:text-gray-700 hover:underline">
+          <Link href="/terms" className="hover:text-gray-700 hover:underline">
             Terms & Conditions
           </Link>
           <span className="text-gray-500">

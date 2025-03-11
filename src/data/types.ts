@@ -22,10 +22,11 @@ export interface Smoothie {
   };
   proteinType: string[];
   recipe?: {
-    difficulty: "Easy" | "Medium" | "Hard";
+    // difficulty: "Easy" | "Medium" | "Hard";
+    difficulty: string;
     servings: number;
-    prepTime: number;
-    totalTime: number;
+    prepTime: string;
+    totalTime: string;
     instructions: string[];
     tips?: string[];
     rating?: number;

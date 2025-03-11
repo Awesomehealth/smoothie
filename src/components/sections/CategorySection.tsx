@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import CategoryCard from "@/components/CategoryCard";
 import { categories } from "@/data/categories";
 import { Dumbbell, Utensils, Weight, Flame, Apple, Carrot, HeartPulse, Timer } from "lucide-react";
-import { CategoriesType } from "@/types/categories";
+import { CategoryType } from "@/types/db";
 
 const CategorySection = () => {
   const containerVariants = {
@@ -41,8 +41,8 @@ const CategorySection = () => {
     }
   };
 
-  // Create adapted categories that match CategoriesType
-  const adaptedCategories: CategoriesType[] = categories.map(category => ({
+  // Create adapted categories that match CategoryType
+  const adaptedCategories: CategoryType[] = categories.map(category => ({
     id: category.id,
     main_title: category.name,
     slug: category.id,

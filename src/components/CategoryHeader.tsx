@@ -1,8 +1,8 @@
 
-import { CategoriesType } from "@/types/categories";
+import { CategoryType } from "@/types/db";
 
 interface CategoryHeaderProps {
-  category: CategoriesType | undefined;
+  category: CategoryType | undefined;
   isPostWorkout: boolean;
 }
 

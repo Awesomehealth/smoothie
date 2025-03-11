@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import CategorySidebar from "@/components/CategorySidebar";
@@ -8,12 +8,15 @@ import SearchSection from "@/components/sections/SearchSection";
 import SmoothieList from "@/components/SmoothieList";
 import { smoothies } from "@/data/smoothiesData";
 import { Smoothie } from "@/data/types";
+import SidebarProvider from "@/contexts/SidebarContext";
+import Loader from "@/components/ui/loader";
 
-export default function SearchPage() {
-  const searchParams = useSearchParams();
-  const query = searchParams.get("q") || "";
+function Search() {
   const [filteredSmoothies, setFilteredSmoothies] = useState<Smoothie[]>([]);
   const [displayLimit, setDisplayLimit] = useState(12);
+
+  const searchParams = useSearchParams();
+  const query = searchParams.get("q") || "";
 
   // Filter smoothies based on search query
   useEffect(() => {
@@ -33,7 +36,7 @@ export default function SearchPage() {
       const categoriesMatch = smoothie.categories.some(
         category => category.toLowerCase().includes(lowerCaseQuery)
       );
-      
+
       return nameMatch || descMatch || ingredientsMatch || categoriesMatch;
     });
 
@@ -50,7 +53,7 @@ export default function SearchPage() {
     const url = new URL(window.location.href);
     url.searchParams.set('q', newQuery);
     window.history.pushState({}, '', url.toString());
-    
+
     // Force a re-fetch with the new query
     const lowerCaseQuery = newQuery.toLowerCase();
     const results = smoothies.filter(smoothie => {
@@ -62,7 +65,7 @@ export default function SearchPage() {
       const categoriesMatch = smoothie.categories.some(
         category => category.toLowerCase().includes(lowerCaseQuery)
       );
-      
+
       return nameMatch || descMatch || ingredientsMatch || categoriesMatch;
     });
 
@@ -83,52 +86,55 @@ export default function SearchPage() {
   };
 
   return (
-    <SmoothieAppLayout
-      sidebar={
-        <CategorySidebar
-          selectedCategory={null}
-          onCategorySelect={() => {}}
-          showAdvancedSearch={false}
-          onAdvancedSearchToggle={() => {}}
-        />
-      }
-      mainContent={
-        <div className="flex flex-col w-full">
-          {/* Keep search bar at top */}
-          <div className="w-full bg-white py-6 px-4">
-            <div className="max-w-3xl mx-auto">
-              <SearchSection
-                onSearch={handleSearch}
-                onImageUpload={handleImageUpload}
-                onFilterSelect={handleFilterSelect}
-                onDietaryToggle={handleDietaryToggle}
-                showAdvancedSearch={false}
-                hideHeading={true}
-                initialQuery={query}
-              />
-            </div>
-          </div>
-          
-          {/* Results section */}
-          <div className="px-8 py-6 max-w-7xl mx-auto w-full">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-gray-900">
-                {filteredSmoothies.length > 0 
-                  ? `${filteredSmoothies.length} results for "${query}"` 
-                  : `No results found for "${query}"`}
-              </h2>
-            </div>
-            
-            <SmoothieList 
-              smoothies={filteredSmoothies} 
-              searchQuery={query}
-              displayLimit={displayLimit}
-              onLoadMore={handleLoadMore}
-              hasMoreItems={displayLimit < filteredSmoothies.length}
-            />
-          </div>
+    <div className="flex flex-col w-full">
+      {/* Keep search bar at top */}
+      <div className="w-full bg-white py-6 px-4">
+        <div className="max-w-3xl mx-auto">
+          <SearchSection
+            onSearch={handleSearch}
+            onImageUpload={handleImageUpload}
+            onFilterSelect={handleFilterSelect}
+            onDietaryToggle={handleDietaryToggle}
+            showAdvancedSearch={false}
+            hideHeading={true}
+            initialQuery={query}
+          />
         </div>
-      }
-    />
+      </div>
+
+      {/* Results section */}
+      <div className="px-8 py-6 max-w-7xl mx-auto w-full">
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-gray-900">
+            {filteredSmoothies.length > 0
+              ? `${filteredSmoothies.length} results for "${query}"`
+              : `No results found for "${query}"`}
+          </h2>
+        </div>
+
+        <SmoothieList
+          smoothies={filteredSmoothies}
+          searchQuery={query}
+          displayLimit={displayLimit}
+          onLoadMore={handleLoadMore}
+          hasMoreItems={displayLimit < filteredSmoothies.length}
+        />
+      </div>
+    </div>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <SidebarProvider>
+      <SmoothieAppLayout
+        sidebar={<CategorySidebar />}
+        mainContent={
+          <Suspense fallback={<Loader />}>
+            <Search />
+          </Suspense>
+        }
+      />
+    </SidebarProvider>
   );
 }

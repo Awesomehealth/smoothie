@@ -2,11 +2,11 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState } from 'react';
-import { CategoriesType } from '@/types/categories';
+import { CategoryType } from '@/types/db';
 import { supabase } from '@/lib/supabase/client';
 
 interface ICategoriesContext {
-  categories: CategoriesType[];
+  categories: CategoryType[];
   loading: boolean;
   error?: string;
 }
@@ -14,7 +14,7 @@ interface ICategoriesContext {
 const CategoriesContext = createContext<ICategoriesContext | undefined>(undefined);
 
 export function CategoriesProvider({ children }: { children: React.ReactNode }) {
-  const [categories, setCategories] = useState<CategoriesType[]>([]);
+  const [categories, setCategories] = useState<CategoryType[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -33,7 +33,7 @@ export function CategoriesProvider({ children }: { children: React.ReactNode }) 
       
       if (error) throw error;
       
-      // Map the database fields to match our CategoriesType
+      // Map the database fields to match our CategoryType
       const mappedCategories = data?.map(item => ({
         id: item.id,
         slug: item.slug,
@@ -58,6 +58,7 @@ export function CategoriesProvider({ children }: { children: React.ReactNode }) 
       })) || [];
       
       setCategories(mappedCategories);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       setError(error.message);
       console.error('Error fetching categories:', error);

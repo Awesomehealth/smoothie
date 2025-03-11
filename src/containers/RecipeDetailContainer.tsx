@@ -1,35 +1,33 @@
-
+// containers/RecipeDetailContainer.tsx
 import { useState } from "react";
-import { smoothies } from "@/data/smoothiesData";
 import { toast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { Smoothie } from "@/data/types";
 
 interface RecipeDetailContainerProps {
-  smoothieId: string;
+  smoothie: Smoothie,
   onOpenLoginDialog: () => void;
   onOpenCollectionDialog: () => void;
   onOpenGallery: (index: number) => void;
 }
 
-const RecipeDetailContainer = ({ 
-  smoothieId, 
+const RecipeDetailContainer = ({
+  smoothie,
   onOpenLoginDialog,
   onOpenCollectionDialog,
   onOpenGallery
 }: RecipeDetailContainerProps) => {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
   const [averageRating, setAverageRating] = useState<number>(0);
   const [reviewCount, setReviewCount] = useState<number>(0);
   const [initialImageIndex, setInitialImageIndex] = useState(0);
   const { user } = useAuth();
-  
-  const smoothie = smoothies.find((s) => s.id === smoothieId);
-  
+
   // Handle the case where no smoothie is found
   if (!smoothie) {
-    return { smoothie: null, sidebarProps: { selectedCategory, onCategorySelect: setSelectedCategory, showAdvancedSearch, onAdvancedSearchToggle: setShowAdvancedSearch } };
+    return {
+      smoothie: null,
+      recipeProps: {}
+    };
   }
 
   const handleSaveRecipe = () => {
@@ -37,7 +35,6 @@ const RecipeDetailContainer = ({
       onOpenLoginDialog();
       return;
     }
-    
     onOpenCollectionDialog();
   };
 
@@ -66,7 +63,7 @@ const RecipeDetailContainer = ({
   ];
 
   const galleryImages = [
-    smoothie.image || "/placeholder.svg", 
+    smoothie.image || "/placeholder.svg",
     ...dummyImages
   ];
 
@@ -86,12 +83,6 @@ const RecipeDetailContainer = ({
 
   return {
     smoothie,
-    sidebarProps: {
-      selectedCategory,
-      onCategorySelect: setSelectedCategory,
-      showAdvancedSearch,
-      onAdvancedSearchToggle: setShowAdvancedSearch
-    },
     recipeProps: {
       handleSaveRecipe,
       handlePrintRecipe,
