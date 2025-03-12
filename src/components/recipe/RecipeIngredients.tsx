@@ -26,7 +26,7 @@ const RecipeIngredients = ({ ingredients }: RecipeIngredientsProps) => {
         <div className="border-b pb-3 mb-3">
           <Button 
             variant="ghost" 
-            className="text-coral-600 hover:text-coral-700 p-0 h-auto"
+            className="text-coral-600 hover:text-coral-700 p-1 px-2 h-auto"
             onClick={() => setSelectedIngredients(
               selectedIngredients.length === ingredients.length ? [] : [...ingredients]
             )}

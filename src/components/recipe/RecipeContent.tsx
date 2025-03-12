@@ -48,6 +48,8 @@ const RecipeContent = ({
   onViewAllPhotos,
   onGoBack
 }: RecipeContentProps) => {
+  console.log(smoothie);
+  
   return (
     <div className="w-full max-w-5xl mx-auto pb-20">
       <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-sm px-4 py-2 flex items-center">
@@ -105,7 +107,7 @@ const RecipeContent = ({
       <div id="reviews-section" className="mt-10 px-6">
         <ReviewList 
           smoothieId={smoothieId} 
-          reviewCount={smoothie.recipe?.reviews || 271}
+          reviewCount={smoothie.recipe?.reviews || 0}
           averageRating={smoothie.recipe?.rating || 4.5}
           onReviewsUpdate={handleReviewsUpdate}
         />

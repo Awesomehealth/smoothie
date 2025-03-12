@@ -31,7 +31,7 @@ const RecipeInfo = ({ smoothie, averageRating, reviewCount, onScrollToReviews }:
               className="ml-1 underline text-lavender-600 focus:outline-none"
               onClick={onScrollToReviews}
             >
-              {reviewCount || smoothie.recipe?.reviews || 271} reviews
+              {reviewCount || smoothie.recipe?.reviews || 0} reviews
             </button>
           </span>
         </div>
