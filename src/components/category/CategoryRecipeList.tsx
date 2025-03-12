@@ -9,10 +9,11 @@ import SmoothieList from "../SmoothieList";
 import { useCategoryRecipes } from "@/contexts/CategoryRecipesContext";
 import { CategoryType } from "@/types/db";
 import { useSidebar } from "@/contexts/SidebarContext";
+import Loader from "../ui/loader";
 
 function RecipeList({ category }: { category: CategoryType }) {
   const { showAdvancedSearch } = useSidebar()
-  const { categoryRecipes } = useCategoryRecipes()
+  const { categoryRecipes, loading: isCategoryRecipesLoading } = useCategoryRecipes()
   const [searchQuery, setSearchQuery] = useState("");
   const [displayLimit, setDisplayLimit] = useState(6);
 
@@ -68,14 +69,20 @@ function RecipeList({ category }: { category: CategoryType }) {
         <CategoryInfoCards categoryId={category.id} />
       </div>
 
-      <SmoothieList
-        smoothies={filteredSmoothies}
-        searchQuery={searchQuery}
-        currentCategory={category.main_title}
-        displayLimit={displayLimit}
-        onLoadMore={handleLoadMore}
-        hasMoreItems={displayLimit < filteredSmoothies.length}
-      />
+      {
+        isCategoryRecipesLoading
+          ?
+          <Loader />
+          :
+          <SmoothieList
+            smoothies={filteredSmoothies}
+            searchQuery={searchQuery}
+            currentCategory={category.main_title}
+            displayLimit={displayLimit}
+            onLoadMore={handleLoadMore}
+            hasMoreItems={displayLimit < filteredSmoothies.length}
+          />
+      }
     </div>
   )
 }

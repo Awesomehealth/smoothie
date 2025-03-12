@@ -8,6 +8,7 @@ import ImageGallery from "../gallery/ImageGallery";
 import NotFoundContent from "./NotFoundContent";
 import RecipeContent from "./RecipeContent";
 import RecipeDetailContainer from "@/containers/RecipeDetailContainer";
+import Loader from "../ui/loader";
 
 export default function RecipeMainContent({ recipeId }: { recipeId: string }) {
   const { recipe: smoothie, loading } = useRecipe();
@@ -31,7 +32,7 @@ export default function RecipeMainContent({ recipeId }: { recipeId: string }) {
   }
 
   if (loading) {
-    return null;
+    return <Loader />;
   }
 
   const handleGoBack = () => {
