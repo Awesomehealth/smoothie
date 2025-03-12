@@ -55,6 +55,7 @@ export type Database = {
           recipes_count: number | null
           secondary_description: string | null
           secondary_title: string | null
+          show_in_sidebar: boolean | null
           slug: string
           tag_style: string | null
           tags: string[] | null
@@ -75,6 +76,7 @@ export type Database = {
           recipes_count?: number | null
           secondary_description?: string | null
           secondary_title?: string | null
+          show_in_sidebar?: boolean | null
           slug: string
           tag_style?: string | null
           tags?: string[] | null
@@ -95,6 +97,7 @@ export type Database = {
           recipes_count?: number | null
           secondary_description?: string | null
           secondary_title?: string | null
+          show_in_sidebar?: boolean | null
           slug?: string
           tag_style?: string | null
           tags?: string[] | null
@@ -139,72 +142,6 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
-      }
-      collection_items: {
-        Row: {
-          collection_id: string | null
-          created_at: string | null
-          id: string
-          recipe_id: string | null
-          updated_at: string | null
-          user_id: string
-        }
-        Insert: {
-          collection_id?: string | null
-          created_at?: string | null
-          id?: string
-          recipe_id?: string | null
-          updated_at?: string | null
-          user_id: string
-        }
-        Update: {
-          collection_id?: string | null
-          created_at?: string | null
-          id?: string
-          recipe_id?: string | null
-          updated_at?: string | null
-          user_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "collection_items_collection_id_fkey"
-            columns: ["collection_id"]
-            isOneToOne: false
-            referencedRelation: "collections"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "collection_items_recipe_id_fkey"
-            columns: ["recipe_id"]
-            isOneToOne: false
-            referencedRelation: "recipes"
-            referencedColumns: ["id"]
-          },
-        ]
-      }
-      collections: {
-        Row: {
-          created_at: string | null
-          id: string
-          name: string
-          updated_at: string | null
-          user_id: string
-        }
-        Insert: {
-          created_at?: string | null
-          id?: string
-          name: string
-          updated_at?: string | null
-          user_id: string
-        }
-        Update: {
-          created_at?: string | null
-          id?: string
-          name?: string
-          updated_at?: string | null
-          user_id?: string
-        }
-        Relationships: []
       }
       ingredients: {
         Row: {
@@ -294,24 +231,24 @@ export type Database = {
       }
       recipe_categories: {
         Row: {
-          category_id: string | null
+          category_id: string
           created_at: string | null
           id: string
-          recipe_id: string | null
+          recipe_id: string
           updated_at: string | null
         }
         Insert: {
-          category_id?: string | null
+          category_id: string
           created_at?: string | null
           id?: string
-          recipe_id?: string | null
+          recipe_id: string
           updated_at?: string | null
         }
         Update: {
-          category_id?: string | null
+          category_id?: string
           created_at?: string | null
           id?: string
-          recipe_id?: string | null
+          recipe_id?: string
           updated_at?: string | null
         }
         Relationships: [
@@ -466,7 +403,8 @@ export type Database = {
           cook_time: string | null
           created_at: string | null
           date: string | null
-          diet_type: string | null
+          diet_type: string[] | null
+          difficulty: string | null
           directions: string[] | null
           fats: number | null
           gluten_free: boolean | null
@@ -477,9 +415,10 @@ export type Database = {
           overview: string | null
           preparation_time: string | null
           protein: number | null
-          protein_type: string | null
+          protein_type: string[] | null
           recipe_cuisine: string | null
           recipe_yield: string | null
+          servings: number | null
           slug: string
           soy_free: boolean | null
           sugar_free: boolean | null
@@ -497,7 +436,8 @@ export type Database = {
           cook_time?: string | null
           created_at?: string | null
           date?: string | null
-          diet_type?: string | null
+          diet_type?: string[] | null
+          difficulty?: string | null
           directions?: string[] | null
           fats?: number | null
           gluten_free?: boolean | null
@@ -508,9 +448,10 @@ export type Database = {
           overview?: string | null
           preparation_time?: string | null
           protein?: number | null
-          protein_type?: string | null
+          protein_type?: string[] | null
           recipe_cuisine?: string | null
           recipe_yield?: string | null
+          servings?: number | null
           slug: string
           soy_free?: boolean | null
           sugar_free?: boolean | null
@@ -528,7 +469,8 @@ export type Database = {
           cook_time?: string | null
           created_at?: string | null
           date?: string | null
-          diet_type?: string | null
+          diet_type?: string[] | null
+          difficulty?: string | null
           directions?: string[] | null
           fats?: number | null
           gluten_free?: boolean | null
@@ -539,9 +481,10 @@ export type Database = {
           overview?: string | null
           preparation_time?: string | null
           protein?: number | null
-          protein_type?: string | null
+          protein_type?: string[] | null
           recipe_cuisine?: string | null
           recipe_yield?: string | null
+          servings?: number | null
           slug?: string
           soy_free?: boolean | null
           sugar_free?: boolean | null

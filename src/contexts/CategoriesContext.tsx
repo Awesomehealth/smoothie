@@ -7,6 +7,7 @@ import { supabase } from '@/lib/supabase/client';
 
 interface ICategoriesContext {
   categories: CategoryType[];
+  sidebarCategories: CategoryType[];
   loading: boolean;
   error?: string;
 }
@@ -15,6 +16,7 @@ const CategoriesContext = createContext<ICategoriesContext | undefined>(undefine
 
 export function CategoriesProvider({ children }: { children: React.ReactNode }) {
   const [categories, setCategories] = useState<CategoryType[]>([]);
+  const [sidebarCategories, setSidebarCategories] = useState<CategoryType[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -34,6 +36,10 @@ export function CategoriesProvider({ children }: { children: React.ReactNode }) 
       if (error) throw error;
       
       setCategories(data);
+      
+      // Filter categories for sidebar display
+      const sidebarCats = data.filter(cat => cat.show_in_sidebar);
+      setSidebarCategories(sidebarCats);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       setError(error.message);
@@ -44,7 +50,12 @@ export function CategoriesProvider({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <CategoriesContext.Provider value={{ categories, loading, error: error || undefined }}>
+    <CategoriesContext.Provider value={{ 
+      categories, 
+      sidebarCategories, 
+      loading, 
+      error: error || undefined 
+    }}>
       {children}
     </CategoriesContext.Provider>
   );
