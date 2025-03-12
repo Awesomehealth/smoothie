@@ -10,7 +10,7 @@ import RecipeContent from "./RecipeContent";
 import RecipeDetailContainer from "@/containers/RecipeDetailContainer";
 import Loader from "../ui/loader";
 
-export default function RecipeMainContent({ recipeId }: { recipeId: string }) {
+export default function RecipeMainContent({ recipeSlug }: { recipeSlug: string }) {
   const { recipe: smoothie, loading } = useRecipe();
   const [loginDialogOpen, setLoginDialogOpen] = useState(false);
   const [collectionDialogOpen, setCollectionDialogOpen] = useState(false);
@@ -44,7 +44,7 @@ export default function RecipeMainContent({ recipeId }: { recipeId: string }) {
       <div className="w-full">
         <RecipeContent
           smoothie={smoothie}
-          smoothieId={recipeId || ''}
+          smoothieId={smoothie.id || ''}
           onViewAllPhotos={() => setGalleryOpen(true)}
           onGoBack={handleGoBack}
           handleSaveRecipe={recipeProps.handleSaveRecipe}
@@ -65,7 +65,7 @@ export default function RecipeMainContent({ recipeId }: { recipeId: string }) {
       <CollectionDialog
         isOpen={collectionDialogOpen}
         onClose={() => setCollectionDialogOpen(false)}
-        smoothieId={recipeId || ''}
+        smoothieId={smoothie.id || ''}
         smoothieName={smoothie?.name || ''}
       />
       <ImageGallery

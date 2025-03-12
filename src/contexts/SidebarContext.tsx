@@ -3,7 +3,7 @@ import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface SidebarContextType {
   selectedCategory: string | null;
-  setSelectedCategory: (categoryId: string) => void;
+  setSelectedCategory: (categorySlug: string) => void;
   showAdvancedSearch: boolean;
   setShowAdvancedSearch: (show: boolean) => void;
 }

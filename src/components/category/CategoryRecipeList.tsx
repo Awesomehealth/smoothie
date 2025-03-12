@@ -87,9 +87,9 @@ function RecipeList({ category }: { category: CategoryType }) {
   )
 }
 
-function CategoryRecipeList({ categoryId }: { categoryId: string }) {
+function CategoryRecipeList({ categorySlug }: { categorySlug: string }) {
   const { categories, loading: isCategoriesLoading } = useCategories();
-  const category = categories.find((cat) => cat.id === categoryId);
+  const category = categories.find((cat) => cat.slug === categorySlug);
 
   if (isCategoriesLoading || !category) {
     return null;

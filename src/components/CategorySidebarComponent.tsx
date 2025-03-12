@@ -16,7 +16,7 @@ import { DynamicIcon } from './ui/dynamic-icon';
 
 interface CategorySidebarProps {
   selectedCategory: string | null;
-  onCategorySelect: (categoryId: string) => void;
+  onCategorySelect: (categorySlug: string) => void;
   showAdvancedSearch: boolean;
   onAdvancedSearchToggle: (show: boolean) => void;
   isCollapsed?: boolean;
@@ -38,9 +38,9 @@ const CategorySidebarComponent = ({
     setCollapsed(isCollapsed);
   }, [isCollapsed]);
 
-  const handleCategoryClick = (categoryId: string) => {
-    onCategorySelect(categoryId);
-    router.push(`/category/${categoryId}`);
+  const handleCategoryClick = (categorySlug: string) => {
+    onCategorySelect(categorySlug);
+    router.push(`/category/${categorySlug}`);
   };
 
   return (
@@ -75,9 +75,9 @@ const CategorySidebarComponent = ({
             {categories.length ? categories.slice(0, 8).map((category) => (
               <li key={category.id}>
                 <button
-                  onClick={() => handleCategoryClick(category.id)}
+                  onClick={() => handleCategoryClick(category.slug)}
                   className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'
-                    } ${selectedCategory === category.id
+                    } ${selectedCategory === category.slug
                       ? 'bg-green-100 text-green-700 font-medium border-l-4 border-green-500'
                       : 'hover:bg-gray-100 text-gray-700'
                     }`}
@@ -89,7 +89,7 @@ const CategorySidebarComponent = ({
                     )
                   }
                   {!collapsed && <span className="text-sm">{category.main_title}</span>}
-                  {!collapsed && selectedCategory === category.id && (
+                  {!collapsed && selectedCategory === category.slug && (
                     <ChevronRight className="ml-auto h-4 w-4 text-green-600" />
                   )}
                 </button>

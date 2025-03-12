@@ -14,7 +14,7 @@ interface IRecipeContext {
 
 const RecipeContext = createContext<IRecipeContext | undefined>(undefined);
 
-export function RecipeProvider({ children, recipeId }: { children: React.ReactNode; recipeId: string }) {
+export function RecipeProvider({ children, recipeSlug }: { children: React.ReactNode; recipeSlug: string }) {
   const [recipe, setRecipe] = useState<Smoothie | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -22,6 +22,7 @@ export function RecipeProvider({ children, recipeId }: { children: React.ReactNo
   const prepareRecipe = (recipe: RecipeType): Smoothie => {
     return {
       id: recipe.id,
+      slug: recipe.slug,
       name: recipe.title,
       description: recipe.overview,
       image: recipe.media?.filter(m => m.type === "image")?.map(m => m.url)?.[0],
@@ -56,14 +57,14 @@ export function RecipeProvider({ children, recipeId }: { children: React.ReactNo
   }
 
   useEffect(() => {
-    const fetchRecipe = async (recipeId: string) => {
+    const fetchRecipe = async (recipeSlug: string) => {
       try {
         setLoading(true);
 
         const { data, error } = await supabase
           .from('recipes')
           .select('*, categories(*), ingredients:recipe_ingredients(*, ingredient:ingredients(*))')
-          .eq("id", recipeId)
+          .eq("slug", recipeSlug)
           .single<RecipeType>()
           
         if (error) throw error;
@@ -77,8 +78,8 @@ export function RecipeProvider({ children, recipeId }: { children: React.ReactNo
         setLoading(false);
       }
     };
-    fetchRecipe(recipeId);
-  }, [recipeId]);
+    fetchRecipe(recipeSlug);
+  }, [recipeSlug]);
 
   return (
     <RecipeContext.Provider value={{ recipe, loading, error: error || undefined }}>

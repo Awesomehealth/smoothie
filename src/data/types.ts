@@ -1,6 +1,7 @@
 
 export interface Smoothie {
   id: string;
+  slug: string;
   name: string;
   description: string;
   image: string;

@@ -15,7 +15,7 @@ interface ICategoriesContext {
 
 const CategoriesContext = createContext<ICategoriesContext | undefined>(undefined);
 
-export function CategoryRecipesProvider({ children, categoryId }: { children: React.ReactNode; categoryId: string }) {
+export function CategoryRecipesProvider({ children, categorySlug }: { children: React.ReactNode; categorySlug: string }) {
   const [category, setCategory] = useState<CategoryType | null>(null);
   const [categoryRecipes, setCategoryRecipes] = useState<Smoothie[]>([]);
   const [loading, setLoading] = useState(true);
@@ -24,6 +24,7 @@ export function CategoryRecipesProvider({ children, categoryId }: { children: Re
   const prepareRecipe = (recipe: RecipeType): Smoothie => {
     return {
       id: recipe.id,
+      slug: recipe.slug,
       name: recipe.title,
       description: recipe.overview,
       image: recipe.media?.filter(m => m.type === "image")?.map(m => m.url)?.[0],
@@ -58,14 +59,14 @@ export function CategoryRecipesProvider({ children, categoryId }: { children: Re
   }
 
   useEffect(() => {
-    const fetchCategoryRecipes = async (categoryId: string) => {
+    const fetchCategoryRecipes = async (categorySlug: string) => {
       try {
         setLoading(true);
 
         const { data, error } = await supabase
           .from('categories')
           .select('*, recipes(*, categories(*), ingredients:recipe_ingredients(*, ingredient:ingredients(*)))')
-          .eq("id", categoryId)
+          .eq("slug", categorySlug)
           .single()
 
         if (error) throw error;
@@ -80,8 +81,8 @@ export function CategoryRecipesProvider({ children, categoryId }: { children: Re
         setLoading(false);
       }
     };
-    fetchCategoryRecipes(categoryId);
-  }, [categoryId]);
+    fetchCategoryRecipes(categorySlug);
+  }, [categorySlug]);
 
   return (
     <CategoriesContext.Provider value={{ category, categoryRecipes, loading, error: error || undefined }}>

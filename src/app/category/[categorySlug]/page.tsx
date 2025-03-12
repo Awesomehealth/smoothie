@@ -8,15 +8,15 @@ import { Suspense } from "react"
 export default async function CategoryPage({
   params,
 }: {
-  params: Promise<{ categoryId: string }>
+  params: Promise<{ categorySlug: string }>
 }) {
-  const { categoryId } = await params
+  const { categorySlug } = await params
   return <SmoothieAppLayout
     sidebar={<CategorySidebar />}
     mainContent={
       <Suspense fallback={<Loader />}>
-        <CategoryRecipesProvider categoryId={categoryId}>
-          <CategoryRecipeList categoryId={categoryId} />
+        <CategoryRecipesProvider categorySlug={categorySlug}>
+          <CategoryRecipeList categorySlug={categorySlug} />
         </CategoryRecipesProvider>
       </Suspense>
     }

@@ -30,7 +30,7 @@ const SmoothieCard = ({ smoothie, currentCategory }: SmoothieCardProps) => {
     : smoothie.categories;
     
   // Recipe link path
-  const recipePath = `/recipe/${smoothie.id}`;
+  const recipePath = `/recipe/${smoothie.slug}`;
 
   return (
     <motion.div
