@@ -1,349 +1,344 @@
 -- Generated seed SQL file
 
-INSERT INTO authors (id, slug, name, bio) VALUES ('00900618-82dd-41d5-a8e5-d0273194ea09', 'default-author', 'Default Author', 'Bio of the default author');
+INSERT INTO authors (id, slug, name, bio) VALUES ('999ee74e-c899-4638-9e1f-bf0366499947', 'default-author', 'Default Author', 'Bio of the default author');
 
 -- Insert all ingredients
-INSERT INTO ingredients (id, slug, name) VALUES ('213b99c6-89a1-4c07-af0a-41375d9ab31e', 'cup-watermelon', 'Cup watermelon');
-INSERT INTO ingredients (id, slug, name) VALUES ('9d91c617-4019-43ee-be59-11d1411a0c03', 'cup-pineapple', 'Cup pineapple');
-INSERT INTO ingredients (id, slug, name) VALUES ('dfe7f82d-b0aa-48e5-843c-db69570b0058', 'tablespoon-lemon-balm-leaves-(without-stems)', 'Tablespoon lemon balm leaves (without stems)');
-INSERT INTO ingredients (id, slug, name) VALUES ('5ddffedc-4a00-4c31-a4e2-72da1b9450c6', 'leaf-lemon-balm-for-garnishing', 'Leaf lemon balm for garnishing');
-INSERT INTO ingredients (id, slug, name) VALUES ('c7d412b4-26be-4fbd-a59a-fbdebb715e95', 'teaspoon-turmeric', 'Teaspoon turmeric');
-INSERT INTO ingredients (id, slug, name) VALUES ('ebc922a5-f827-4e85-abbb-43a24687d3cb', 'teaspoon-ginger', 'Teaspoon ginger');
-INSERT INTO ingredients (id, slug, name) VALUES ('88b8485f-697a-4d0a-8d48-801678fb8601', 'teaspoon-fresh-tamarind-(or-tamarind-paste)', 'Teaspoon fresh tamarind (or tamarind paste)');
-INSERT INTO ingredients (id, slug, name) VALUES ('9dd95988-eb93-4056-bfbb-aeb63982cfff', 'banana', 'Banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('7f579daa-d87e-4de3-8b2c-704b9177bf6c', 'celery-stalk', 'Celery stalk');
-INSERT INTO ingredients (id, slug, name) VALUES ('effa0549-b528-4470-a13f-fc96e1c18444', 'aloe-vera-for-garnishing', 'Aloe Vera for garnishing');
-INSERT INTO ingredients (id, slug, name) VALUES ('17584132-cb86-4460-9814-66e89eff6be2', 'cocoa-nibs-and-dried-goji-berries-for-garnishing', 'Cocoa nibs and dried Goji berries for garnishing');
-INSERT INTO ingredients (id, slug, name) VALUES ('a51c9bdb-c056-48a2-a454-34fc7c2f3545', 'tablespoon-dried-goji-berries', 'Tablespoon dried Goji berries');
-INSERT INTO ingredients (id, slug, name) VALUES ('d27c6f7c-e9a2-43db-bd8b-fa11ac458f25', 'cocoa-nibs-and-goji-berries-for-garnishing', 'Cocoa nibs and Goji berries for garnishing');
-INSERT INTO ingredients (id, slug, name) VALUES ('d1ac67de-484e-41e6-9a89-cfe633a72267', 'leaves-kale-(green-curly-or-another-type)', 'Leaves kale (green curly or another type)');
-INSERT INTO ingredients (id, slug, name) VALUES ('3c7a4144-bab6-4d1d-88ca-bec9e24372a1', 'tablespoon-mulberries-(use-blueberries-or-any-othe-berries-if-mulberries-are-not-available)', 'Tablespoon mulberries (use blueberries or any othe berries if mulberries are not available)');
-INSERT INTO ingredients (id, slug, name) VALUES ('52021965-1f76-45d4-9529-e4f7f4518bb7', 'tablespoon-water', 'Tablespoon water');
-INSERT INTO ingredients (id, slug, name) VALUES ('81540d62-7e7b-4fce-a495-48c3a35b05e0', 'small-sweet-potato', 'Small sweet potato');
-INSERT INTO ingredients (id, slug, name) VALUES ('2cca150f-b1f6-4113-aa0f-735c161f80ba', 'peeled-and-chopped', 'Peeled and chopped');
-INSERT INTO ingredients (id, slug, name) VALUES ('365a5b23-9cbb-4eba-8eb4-247f2cb8dcc3', '½-cup-oat-milk', '½ cup oat milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('36bd1ca9-ad55-4b50-9e5c-108825f71b8b', 'tsp-maple-syrup', 'Tsp maple syrup');
-INSERT INTO ingredients (id, slug, name) VALUES ('54e62858-34b8-4e5f-bc50-424090bc9b34', '½-tsp-cinnamon', '½ tsp cinnamon');
-INSERT INTO ingredients (id, slug, name) VALUES ('06a82a58-9241-46b4-9d91-0f8a92708d50', 'frozen-banana', 'Frozen banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('695dedfc-c37c-4de1-ae6b-2aeb4db38241', 'tbs-almond-butter', 'Tbs almond butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('7006d98b-c1d9-447a-bc9b-7a577d3c0232', 'scoop-vanilla-plant-based-protein-powder', 'Scoop vanilla plant-based protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('755cf242-2ea3-4e83-97f6-7852342502ac', '½-cup-ice', '½ cup ice');
-INSERT INTO ingredients (id, slug, name) VALUES ('3bcb0a03-1b51-42de-9b4d-682b2c19449e', '½-frozen-banana', '½ frozen banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('b4f24656-8522-4773-ad0f-e968c253e92f', 'peach', 'Peach');
-INSERT INTO ingredients (id, slug, name) VALUES ('e538b1f1-0d31-4b88-9136-f4c2df4d20df', 'cup-almond-milk', 'Cup almond milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('4af2051e-3fb4-4231-a3e5-7e43a3606c00', 'tbs-flax-seed', 'Tbs flax seed');
-INSERT INTO ingredients (id, slug, name) VALUES ('f7182f32-1415-4132-a492-cc3a20d76de9', 'tsp-ground-cinnamon', 'Tsp ground cinnamon');
-INSERT INTO ingredients (id, slug, name) VALUES ('f770310f-6b4f-41ab-a791-0809a0e55a4e', 'cup-spinach', 'Cup spinach');
-INSERT INTO ingredients (id, slug, name) VALUES ('2aeb1527-6861-4c71-8523-6d3569d65c29', 'scoops-plant-based-protein-powder', 'Scoops plant-based protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('ac3147cc-585b-4b72-a457-e97d8fe7f383', 'medium-green-apple', 'Medium green apple');
-INSERT INTO ingredients (id, slug, name) VALUES ('06edb950-0025-4fde-a33b-212bda638552', '¼-cup-light-coconut-milk', '¼ cup light coconut milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('d00ec41e-2931-4df8-b9b9-fc49016f3025', 'stalk-celery', 'Stalk celery');
-INSERT INTO ingredients (id, slug, name) VALUES ('743294af-c8e0-4853-9c47-202faf44dafe', '½-small-cucumber', '½ small cucumber');
-INSERT INTO ingredients (id, slug, name) VALUES ('de1ae764-e4d8-4eaf-b3ce-4022ff1515de', '½-cup-spinach', '½ cup spinach');
-INSERT INTO ingredients (id, slug, name) VALUES ('800ef418-2e3d-494e-8933-4f6faa1cc92c', 'lemon', 'Lemon');
-INSERT INTO ingredients (id, slug, name) VALUES ('8f9fd75e-4a47-4b1d-904b-dcdf400ae91b', 'juiced', 'Juiced');
-INSERT INTO ingredients (id, slug, name) VALUES ('bdfda85e-fd8a-4a98-a362-50d518a698e8', 'lime', 'Lime');
-INSERT INTO ingredients (id, slug, name) VALUES ('4a4eaad5-5eec-46f0-a254-7cbd02b2151b', '½-cup-water', '½ cup water');
-INSERT INTO ingredients (id, slug, name) VALUES ('857f39d0-ab38-43c6-b522-6c33917e0b27', 'cup-watermelon-(fresh-or-frozen)', 'Cup watermelon (fresh or frozen)');
-INSERT INTO ingredients (id, slug, name) VALUES ('3050386f-85de-4f27-ae94-3877e6d2a1fe', 'cup-frozen-strawberries', 'Cup frozen strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('0731b3fd-4619-49e2-81b8-77f19c276c6d', 'tablespoon-orange-juice', 'Tablespoon orange juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('c88a4ca3-afa3-49bc-bcb5-40c6b75b6eac', 'tablespoon-chia-seeds', 'Tablespoon chia seeds');
-INSERT INTO ingredients (id, slug, name) VALUES ('56d0369a-c31a-4b65-9154-75ba94acabc7', 'scoop-plant-based-protein-powder', 'Scoop plant-based protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('00fc4f82-c9e4-4836-b0e2-d112d945e8b5', 'cup-coconut-water', 'Cup coconut water');
-INSERT INTO ingredients (id, slug, name) VALUES ('6afa38a4-9343-4889-aeb4-3d0cd46942b6', 'cup-ice', 'Cup ice');
-INSERT INTO ingredients (id, slug, name) VALUES ('d87682b6-2dc9-4480-b552-c8a153ac235a', 'cup-frozen-raspberries', 'Cup frozen raspberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('26b2142b-0faa-4d92-bc34-6a07a1a4543b', 'pear', 'Pear');
-INSERT INTO ingredients (id, slug, name) VALUES ('ea64cb95-56eb-47d8-ba75-7eab97e6da13', 'avocado', 'Avocado');
-INSERT INTO ingredients (id, slug, name) VALUES ('e970454a-dc9a-4a79-8574-22a6da99cfc4', 'tablespoon-stevia', 'Tablespoon stevia');
-INSERT INTO ingredients (id, slug, name) VALUES ('516197b6-c32c-4c28-b603-5c6498813d35', 'scoop-plant-based-protein', 'Scoop plant-based protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('3dfe9f2e-7a83-4132-a66b-f544ee5c12b1', 'cup-frozen-cherries', 'Cup frozen cherries');
-INSERT INTO ingredients (id, slug, name) VALUES ('23f66450-0e46-4401-aee8-3f5acba2053e', 'cup-light-coconut-milk', 'Cup light coconut milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('ccf4a5ee-f6d3-492e-923c-b597c0d30463', 'tablespoon-coconut-yogurt', 'Tablespoon coconut yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('92940e47-70fc-4093-bf84-b813afcce9db', 'scoop-whey-protein-powder', 'Scoop whey protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('48dfaa85-7de3-4e14-acb8-8533f8f325db', 'tablespoon-cocoa-powder', 'Tablespoon cocoa powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('93998ebd-8ad0-471a-af3b-25bacd848abb', 'teaspoon-vanilla-extract', 'Teaspoon vanilla extract');
-INSERT INTO ingredients (id, slug, name) VALUES ('f6b722e3-a967-45ed-905c-59877a245e51', 'cup-strawberries', 'Cup strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('98a88ff5-543b-4f6d-8436-50a63ee52205', 'cup-pitted-cherries', 'Cup pitted cherries');
-INSERT INTO ingredients (id, slug, name) VALUES ('66dbd110-8f1b-4f24-975f-e37c215fbe33', 'sliced-banana', 'Sliced banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('b9d9dc4a-4839-4718-bddd-24838e987f7e', 'cup-frozen-pineapple', 'Cup frozen pineapple');
-INSERT INTO ingredients (id, slug, name) VALUES ('388a24ee-1abf-40b4-96fc-1fb9465c4b46', 'cup-cucumber', 'Cup cucumber');
-INSERT INTO ingredients (id, slug, name) VALUES ('4204f30e-0e9d-4e3d-bd4a-f9a01d8330c4', 'sliced', 'Sliced');
-INSERT INTO ingredients (id, slug, name) VALUES ('b83e4798-b12e-42d4-baaf-3f74662a49c5', 'cup-baby-spinach', 'Cup baby spinach');
-INSERT INTO ingredients (id, slug, name) VALUES ('77053997-69f6-4fd5-8f69-8876a74f6c89', 'cup-mint-leaves', 'Cup mint leaves');
-INSERT INTO ingredients (id, slug, name) VALUES ('ecc57390-da4b-4c14-adfb-53686cf5b747', 'cup-cold-water', 'Cup cold water');
-INSERT INTO ingredients (id, slug, name) VALUES ('71f7f1dd-6827-4064-a974-93d84b322f70', 'scoop-rice-protein-powder', 'Scoop rice protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('c0623c18-b698-4864-b903-d5b4a131d3b9', 'tbsp-cashew-butter', 'Tbsp cashew butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('83ac8def-7e29-4efc-bc5e-bd7d563abdf1', 'tsp-vanilla-extract', 'Tsp vanilla extract');
-INSERT INTO ingredients (id, slug, name) VALUES ('87aaaf71-dc91-4716-a917-c3787e463f22', 'tsp-honey', 'Tsp honey');
-INSERT INTO ingredients (id, slug, name) VALUES ('269747a7-0500-4497-9c04-94236bcdb45a', 'tsp-cinnamon', 'Tsp cinnamon');
-INSERT INTO ingredients (id, slug, name) VALUES ('c2120b5e-25cb-4266-a23c-28d2505a4980', '½-cup-light-coconut-milk', '½ cup light coconut milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('156de6dd-6a5b-4408-8966-ac0c4bc6310c', 'cup-coconut-yogurt', 'Cup coconut yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('3dba3e4e-7e2a-42d5-9e2e-7a8fd31f3687', 'cup-kale', 'Cup kale');
-INSERT INTO ingredients (id, slug, name) VALUES ('709a1de8-44d0-4f0a-b421-339b689e50cb', 'cup-frozen-mango-chunks', 'Cup frozen mango chunks');
-INSERT INTO ingredients (id, slug, name) VALUES ('386d39d2-1a02-4334-b2f7-c8fdd9ecce12', 'tbsp-flax-seed-meal', 'Tbsp flax seed meal');
-INSERT INTO ingredients (id, slug, name) VALUES ('0d3189b2-0d44-44c9-8c68-8fe0519c596c', 'scoop-pea-protein-powder', 'Scoop pea protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('8521bf6e-73a3-4d32-8bf0-eefc89612756', 'cup-frozen-blackberries', 'Cup frozen blackberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('60c4666c-cf9d-467b-9383-172f711a10d8', 'tsp-fresh-lemon-juice', 'Tsp fresh lemon juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('3a10dad0-a9c5-4adc-8223-f14d1f1e2efd', 'tsp-finely-chopped-fresh-ginger', 'Tsp finely chopped fresh ginger');
-INSERT INTO ingredients (id, slug, name) VALUES ('0248dad1-45f5-4469-bd0d-502773ed4a05', 'chopped-and-frozen', 'Chopped and frozen');
-INSERT INTO ingredients (id, slug, name) VALUES ('4d85e08a-89a3-4fe3-8d37-d9aea569fc63', 'tbs-pecans', 'Tbs pecans');
-INSERT INTO ingredients (id, slug, name) VALUES ('9cd286a3-ed17-4811-9fcd-51b7a10ed0d1', 'scoop-oat-protein-powder', 'Scoop oat protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('85243ca7-94af-4f86-9b8a-c4a78f765796', 'oz-pistachios', 'Oz pistachios');
-INSERT INTO ingredients (id, slug, name) VALUES ('70d4f7d8-923e-4707-aeb6-d30df0516618', 'cup-frozen-mango', 'Cup frozen mango');
-INSERT INTO ingredients (id, slug, name) VALUES ('aca9641d-bf4c-4a8c-830e-a2e0ce6317b3', 'cup-coconut-cream', 'Cup coconut cream');
-INSERT INTO ingredients (id, slug, name) VALUES ('d3798b21-7f24-495e-9e43-b3d5c47254d3', 'cup-orange-juice', 'Cup orange juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('102cd91f-4e09-44f4-8b62-b4be1616f9d2', 'cup-greek-yogurt', 'Cup Greek yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('0260a610-fbfb-486e-b12c-14a96f968fbc', 'cup-coconut-milk', 'Cup coconut milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('0c9d6963-9ac0-43a7-999a-7866625bb92b', 'scoop-casein-protein', 'Scoop casein protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('3cdcd813-ebe3-42c2-bfdc-b2a4fb276e5e', 'tbs-ground-flaxseed', 'Tbs ground flaxseed');
-INSERT INTO ingredients (id, slug, name) VALUES ('f2d79146-fb81-4269-ac7b-e8a1e7cb1497', 'tablespoon-unsweetened-cocoa-powder', 'Tablespoon unsweetened cocoa powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('f67e5fcc-8606-40ff-959f-fdd4220aba1c', 'tablespoons-oats', 'Tablespoons oats');
-INSERT INTO ingredients (id, slug, name) VALUES ('4526600a-dab3-490c-a829-cfde22169f5d', 'tsp-salt', 'Tsp salt');
-INSERT INTO ingredients (id, slug, name) VALUES ('b6d64020-6fbc-4633-9ebb-97438e98cead', 'tbs-cashew-butter', 'Tbs cashew butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('36d0792f-16a2-4b9c-9371-f330f1227abd', 'tsp-pure-peppermint-extract', 'Tsp pure peppermint extract');
-INSERT INTO ingredients (id, slug, name) VALUES ('6c50483a-a4e3-4e76-89af-36ba5edc65f2', 'tbsp-unsweetened-coconut-flakes', 'Tbsp unsweetened coconut flakes');
-INSERT INTO ingredients (id, slug, name) VALUES ('666c5b4b-6f7a-4202-9386-d952ffb8fb4a', 'tbs-cocoa-powder', 'Tbs cocoa powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('eea74b44-c60c-48e3-94ff-b6501370751a', 'tbsp-chia-seeds', 'Tbsp chia seeds');
-INSERT INTO ingredients (id, slug, name) VALUES ('3152ebaa-2c09-434d-aa91-5c41b4a17d4c', 'cup-cold-coffee', 'Cup cold coffee');
-INSERT INTO ingredients (id, slug, name) VALUES ('cb07b004-e042-440b-80a4-168a7aa33db5', 'cup-ice-cubes', 'Cup ice cubes');
-INSERT INTO ingredients (id, slug, name) VALUES ('a3322b37-b75f-4411-a4d2-9c9cebeda0bc', 'cup-frozen-cauliflower-rice', 'Cup frozen cauliflower rice');
-INSERT INTO ingredients (id, slug, name) VALUES ('083e60bb-c33d-4267-a151-77351a939048', 'cup-frozen-blueberries', 'Cup frozen blueberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('a699e1a4-a13c-494c-9463-71f7f53ae677', 'tablespoon-hazelnut-butter', 'Tablespoon hazelnut butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('6c66183b-aec1-40fd-8df5-e8d11da5c4f7', 'tsp-liquid-stevia', 'Tsp liquid stevia');
-INSERT INTO ingredients (id, slug, name) VALUES ('60b0364b-aa18-477a-bfc1-5f76003237ca', 'cup-light-coconut-cream', 'Cup light coconut cream');
-INSERT INTO ingredients (id, slug, name) VALUES ('37e0aced-6bd5-4e35-9ca2-27f587cee955', 'cup-pumpkin-puree', 'Cup pumpkin puree');
-INSERT INTO ingredients (id, slug, name) VALUES ('ef5f57f4-baa2-402c-a979-8c2ba9f38ce7', 'tsp-pumpkin-pie-spice', 'Tsp pumpkin pie spice');
-INSERT INTO ingredients (id, slug, name) VALUES ('8a93b3db-06af-4938-831c-6dcfc2481d47', 'scoop-vanilla-oat-protein-powder', 'Scoop vanilla oat protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('51d04809-5d24-4366-843e-b7a16521f379', 'cups-crushed-ice', 'Cups crushed ice');
-INSERT INTO ingredients (id, slug, name) VALUES ('cc38f058-9a9b-4d63-a72f-f8e70976a1ec', 'cups-kale', 'Cups kale');
-INSERT INTO ingredients (id, slug, name) VALUES ('23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', 'cup-raspberries', 'Cup raspberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('779967b7-d01c-4c05-b489-8fcabf14576e', 'squeezed-lemon', 'Squeezed lemon');
-INSERT INTO ingredients (id, slug, name) VALUES ('7768b9b9-1fd5-4fa8-8de3-d984cd5a7119', 'cup-water', 'Cup water');
-INSERT INTO ingredients (id, slug, name) VALUES ('dadc8d43-eb0c-4adc-801f-b26e4ed13097', 'beetroot', 'Beetroot');
-INSERT INTO ingredients (id, slug, name) VALUES ('399ec0ca-87a1-42d9-a208-504098448f19', 'peeled', 'Peeled');
-INSERT INTO ingredients (id, slug, name) VALUES ('461d1b12-9148-4a12-afc7-71869e5c925d', 'scoop-whey-protein', 'Scoop whey protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('2d7e1d6d-a254-4f56-995a-0bb0dcd92ea9', 'tbs-orange-juice', 'Tbs orange juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('10c7467a-8da9-4cc2-ba02-9e8e53a23a75', 'tbs-lemon-juice', 'Tbs lemon juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('17c15e63-6b2d-4f2b-abfd-02d64d75860a', 'serving-vanilla-whey-protein-powder', 'Serving vanilla whey protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('61bc0f8f-c905-4293-8412-9ad838401840', '¼-teaspoon-ground-nutmeg', '¼ teaspoon ground nutmeg');
-INSERT INTO ingredients (id, slug, name) VALUES ('6cafd19d-f0d2-40d7-aed0-5389a97e0d46', '½-teaspoon-ground-cinnamon', '½ teaspoon ground cinnamon');
-INSERT INTO ingredients (id, slug, name) VALUES ('d89781f7-b98c-41be-87f4-68e859410e06', 'scoop-casein-protein-powder', 'Scoop casein protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('64d1242d-9a02-40cf-bc2e-cc7689c6be95', 'tsp-stevia', 'Tsp stevia');
-INSERT INTO ingredients (id, slug, name) VALUES ('fb011f3e-e013-4d54-98ed-411c57d1832d', 'tbs-peanut-butter', 'Tbs peanut butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('b4c21bd5-2fd4-4d19-a29b-5997110207c3', 'scoop-chocolate-casein-protein-powder', 'Scoop chocolate casein protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('2733d3a3-a44d-4df7-bb27-e72a62e599ea', 'scoop-peanut-butter-casein-protein-powder', 'Scoop peanut butter casein protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('0c670e20-2c45-4fb4-8f16-bbb4e01f5d51', '½-tsp-vanilla-extract', '½ tsp vanilla extract');
-INSERT INTO ingredients (id, slug, name) VALUES ('3b4513c0-3266-45af-a8fc-18881cd8881c', 'egg', 'Egg');
-INSERT INTO ingredients (id, slug, name) VALUES ('f091263c-3a65-46f2-a993-a09dc7fd1f79', 'scoop-vanilla-protein-powder', 'Scoop vanilla protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('5a5b1ec3-d5ac-402d-a036-8a08732cc98f', '½-tsp-ground-nutmeg', '½ tsp ground nutmeg');
-INSERT INTO ingredients (id, slug, name) VALUES ('aeacc735-7508-4eba-be30-f81b93819896', 'apple', 'Apple');
-INSERT INTO ingredients (id, slug, name) VALUES ('eb644955-f2a2-490d-8c75-fedee7108148', 'orange', 'Orange');
-INSERT INTO ingredients (id, slug, name) VALUES ('845f2290-890d-4906-a3a6-1e95507220b7', 'teaspoon-lemon-juice', 'Teaspoon lemon juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('4d08545f-5da2-4523-b9cb-1c8a1cc8a88d', 'oat-milk', 'Oat milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('1517ec87-a694-48a0-9d65-732ed95379e9', 'tbs-maple-syrup', 'Tbs maple syrup');
-INSERT INTO ingredients (id, slug, name) VALUES ('2bc2c763-3491-4dfb-b2f1-eb70ab047db2', 'scoop-oat-protein', 'Scoop oat protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('f80932f6-796e-4c71-8bd9-39852826fefd', 'cup-cranberries', 'Cup cranberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('e13c6835-6031-4189-981b-fa815995a89b', '½-cup-raspberries', '½ cup raspberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('f80b6ac9-c528-4824-96af-b312b9506162', '¼-beetroot', '¼ beetroot');
-INSERT INTO ingredients (id, slug, name) VALUES ('7c6566bb-463f-40ee-81da-3548e816de10', 'scoop-protein-powder', 'Scoop protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('5ee9320d-8020-47e6-9873-eb070a9c4b9c', 'tablespoon-peanut-butter', 'Tablespoon peanut butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('1afb048d-c16e-4d8e-8e2e-b5ad6cf3fa8d', 'tablespoon-cocoa-nibs', 'Tablespoon cocoa nibs');
-INSERT INTO ingredients (id, slug, name) VALUES ('84e28d4b-0f27-4204-b597-bc0f9888b042', 'teaspoon-sprinkles', 'Teaspoon sprinkles');
-INSERT INTO ingredients (id, slug, name) VALUES ('cb3d12d0-709d-4244-9c80-98ad68409645', 'scoop-oat-vanilla-protein', 'Scoop oat vanilla protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('a61c83c8-11ab-48a9-b0e4-1f5f867aa00a', 'tablespoon-orange-zest', 'Tablespoon orange zest');
-INSERT INTO ingredients (id, slug, name) VALUES ('506e1a86-0aa1-487a-a82a-6e96b616c13e', 'tbsp-peanut-butter', 'Tbsp peanut butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('16d9feb1-fa24-4f81-89de-a5b6d5ac0dc9', 'date', 'Date');
-INSERT INTO ingredients (id, slug, name) VALUES ('aadc88b2-f9bd-4a52-8643-fc05b72ccda2', 'pitted', 'Pitted');
-INSERT INTO ingredients (id, slug, name) VALUES ('76631ea8-869b-4362-992d-8d008ffa4ee8', 'cup-quick-oats', 'Cup quick oats');
-INSERT INTO ingredients (id, slug, name) VALUES ('ec49671f-2f92-4f4a-b0aa-b14a713fe3ef', 'tbs-of-peanut-butter', 'Tbs of peanut butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('9560a75e-4171-4aea-9186-b27d99d7f8cb', 'g-walnuts', 'G walnuts');
-INSERT INTO ingredients (id, slug, name) VALUES ('48806fc1-25c3-43b4-b26e-61274b9f3a76', 'cup-unsweetened-almond-milk', 'Cup unsweetened almond milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('f1e14137-ccb3-420a-92b6-bfff40579dab', 'cup-rolled-oats', 'Cup rolled oats');
-INSERT INTO ingredients (id, slug, name) VALUES ('02aaecc8-c47e-4cf2-8669-b90493d611ff', 'dash-of-salt', 'Dash of salt');
-INSERT INTO ingredients (id, slug, name) VALUES ('362b8522-ffb1-44ea-93dd-498f9096a6b9', 'cup-ice-as-needed', 'Cup ice as needed');
-INSERT INTO ingredients (id, slug, name) VALUES ('02195729-0951-46b0-85c5-72d383f4795d', 'tbsp-cocoa-powder', 'Tbsp cocoa powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('4a2c572e-bf0f-4192-baa7-fdccfbd80c5f', 'tsp-cinnamin', 'Tsp cinnamin');
-INSERT INTO ingredients (id, slug, name) VALUES ('34b3647e-9223-493f-9263-5a8c1247979b', 'cup-espresso-or-strong-coffee', 'Cup espresso or strong coffee');
-INSERT INTO ingredients (id, slug, name) VALUES ('7414408f-24f3-4329-b611-3d2800c58601', 'scoop-vanilla-whey-powder', 'Scoop vanilla whey powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('c573685b-22dd-4744-8d00-b106452a9e5a', 'tbsp-lemon-juice', 'Tbsp lemon juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('ff375103-8546-49b8-9db4-5146e44ae220', 'scoops-pea-protein-powder', 'Scoops pea protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('5bb53099-f5ba-45a1-b4fb-6d857581cc59', 'tbs-fresh-ginger', 'Tbs fresh ginger');
-INSERT INTO ingredients (id, slug, name) VALUES ('ea8d8844-42a1-4bee-944c-85641ce7596a', 'grated', 'Grated');
-INSERT INTO ingredients (id, slug, name) VALUES ('98bd455a-8d5b-47b8-9f77-475ae6a62f2b', 'peeled-and-frozen', 'Peeled and frozen');
-INSERT INTO ingredients (id, slug, name) VALUES ('090b310c-ebb9-42a7-b13c-d52b52d6eaa8', 'scoop-vanilla-whey-protein-powder', 'Scoop vanilla whey protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('456b0b42-63ad-48ff-890f-a6ea5dc71bff', 'cup-blueberries', 'Cup blueberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('b2c9b094-6c2b-4a19-81c2-e12ae90715c8', 'diced', 'Diced');
-INSERT INTO ingredients (id, slug, name) VALUES ('f0fed2ab-f063-410e-949d-7dbc2e9fd962', 'tablespoon-coconut-oil', 'Tablespoon coconut oil');
-INSERT INTO ingredients (id, slug, name) VALUES ('3bde9846-81de-4d2e-afe7-6b10e3f7d90f', 'scoop-chocolate-whey-protein-powder', 'Scoop chocolate whey protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('46daa4d5-98da-4f55-910b-9a76f0e0b3b5', 'pinch-sea-salt', 'Pinch sea salt');
-INSERT INTO ingredients (id, slug, name) VALUES ('7537208e-a6c1-4c08-bcfc-18a01b7ac5cd', 'scoop-vanilla-whey-protein', 'Scoop vanilla whey protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('f07c241a-ba63-477f-bb83-3c793aac9456', 'cup-espresso', 'Cup espresso');
-INSERT INTO ingredients (id, slug, name) VALUES ('19affb80-6ba4-44b7-aff4-3b314d1a32da', 'pitted-dates', 'Pitted dates');
-INSERT INTO ingredients (id, slug, name) VALUES ('0cf2d71d-04b4-485e-b6c3-035f2e31cce1', 'cup-blackberries', 'Cup blackberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('6c0446bf-8805-4ff1-8afe-c0adc9aeb336', 'cup-fat-free-vanilla-frozen-yogurt', 'Cup fat-free vanilla frozen yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('ad2c77d0-e361-4f59-87c4-85f51b01ab0d', 'cup-cranberry-juice', 'Cup cranberry juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('28e80a60-3a60-4e8a-a9cd-d3d06e35b103', 'almonds', 'Almonds');
-INSERT INTO ingredients (id, slug, name) VALUES ('6364fec7-7418-4cec-be81-b86bfa3ce04f', 'cup-soy-milk', 'Cup soy milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('76558d79-e539-4077-888a-2c0d85ef6611', 'tablespoons-coconut-yogurt', 'Tablespoons coconut yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('aa535633-9d79-485b-b114-526796ba00ae', 'teaspoon-honey', 'Teaspoon honey');
-INSERT INTO ingredients (id, slug, name) VALUES ('264cbcee-ab79-491a-af34-d16bad14f579', 'teaspoon-blue-spirulina-powder', 'Teaspoon blue spirulina powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('9af1055d-2baf-4472-8687-012648bacfd8', 'scoop-vanilla-rice-protein-powder', 'Scoop vanilla rice protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('420787d6-481d-40e3-8aba-a69bd3402a21', 'medium-banana', 'Medium Banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('2c74674c-17e6-45b4-a59f-93457cb7aaaa', '¼-cup-chopped-pecans', '¼ cup chopped pecans');
-INSERT INTO ingredients (id, slug, name) VALUES ('cbed9c4c-db5a-4641-bd30-dcf3e735fb2a', '¼-cup-chopped-almonds', '¼ cup chopped almonds');
-INSERT INTO ingredients (id, slug, name) VALUES ('e6bc05a2-0ad0-482d-92cf-6d7e7a207bd7', 'cup-skim-milk', 'Cup skim milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('ce3d541b-5736-4d32-8d16-76b54b783062', '¾-cup-fat-free-vanilla-frozen-yogurt', '¾ cup fat-free vanilla frozen yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('5e931db8-5262-430a-accc-e30a77dc6a0b', 'small-banana', 'Small banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('5ce32f80-2642-4b33-8664-77585980d613', 'tablespoon-apple-cider', 'Tablespoon apple cider');
-INSERT INTO ingredients (id, slug, name) VALUES ('e53d134f-4aaa-4911-9ffe-269cd06cd9fd', 'tablespoon-honey', 'Tablespoon honey');
-INSERT INTO ingredients (id, slug, name) VALUES ('ab907e10-272d-4b23-9f18-5ba693403912', 'cup-fresh-lemonade', 'Cup fresh lemonade');
-INSERT INTO ingredients (id, slug, name) VALUES ('373a2f2d-dbab-4249-a770-0120f1a13292', 'cup-granola', 'Cup granola');
-INSERT INTO ingredients (id, slug, name) VALUES ('2f2cec86-052c-40d8-9765-4ea2ed7030c8', 'cup-pineapple-juice', 'Cup pineapple juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('88dfb7f5-5fc5-4364-966b-d9d82506ac68', 'cup-fresh-squeezed-orange-juice', 'Cup fresh-squeezed orange juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('41059918-7a0c-4ae4-8e2f-71784f5610ca', 'cup-chopped-mango', 'Cup  chopped Mango');
-INSERT INTO ingredients (id, slug, name) VALUES ('b7e90e59-b859-4019-98f3-0b8469477b69', 'cup-chopped-pineapple', 'Cup chopped pineapple');
-INSERT INTO ingredients (id, slug, name) VALUES ('d6a410d6-d5d4-45c6-b827-2b13a3706ab3', 'kiwi', 'Kiwi');
-INSERT INTO ingredients (id, slug, name) VALUES ('8bff7fc3-823d-4ea2-926b-d739be251641', 'strawberries', 'Strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('0a990722-46ed-47d0-9f37-4f7bbe855171', 'cup-oat-squares', 'Cup oat squares');
-INSERT INTO ingredients (id, slug, name) VALUES ('3423fd4c-4d6c-4e08-8a36-8a442358f9a8', 'cup-apple-juice', 'Cup apple juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('df58c376-0933-4107-ad13-594ea1debfce', 'cup-mango', 'Cup Mango');
-INSERT INTO ingredients (id, slug, name) VALUES ('ed257518-f255-4022-83e7-7cf9ae616b86', 'cup-coconut', 'Cup coconut');
-INSERT INTO ingredients (id, slug, name) VALUES ('1591a286-48ed-421f-8893-73699da30f4c', 'cup-organic-pineapple', 'Cup organic pineapple');
-INSERT INTO ingredients (id, slug, name) VALUES ('236b8335-3c46-480d-aa9c-ce7756a3af35', 'chopped-medium-peach', 'Chopped medium peach');
-INSERT INTO ingredients (id, slug, name) VALUES ('3eb7c432-5823-4dd5-b0ce-0f0cbe432a43', '½-cup-frozen-raspberries', '½ cup frozen raspberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('98a75334-7980-4d2d-be93-b07501ad4aab', '½-cup-frozen-strawberries', '½ cup frozen strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('d6dcdb7c-fae4-4421-bc90-3e8e15c00d35', '¼-cup-beet', '¼ cup beet');
-INSERT INTO ingredients (id, slug, name) VALUES ('ca8b3ca3-e49f-4833-968d-754d32c57756', '¼-cup-coconut-milk', '¼ cup coconut milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('437c9755-c92b-41fd-97e4-89bc4c3c6836', 'cup-peach', 'Cup peach');
-INSERT INTO ingredients (id, slug, name) VALUES ('3996784f-2da1-45fc-90d7-3b5ea1a2ba7c', 'low-fat-vanilla-yogurt', 'Low-fat vanilla yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('d93ec3bb-f7c3-40f9-93b9-964893b62a5f', 'cup-lemonade', 'Cup Lemonade');
-INSERT INTO ingredients (id, slug, name) VALUES ('53fd49d1-4632-4c53-847e-5b5f84c1b745', 'large-strawberries', 'Large strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('ebe01ce3-df8c-4853-973e-9a12253b78a3', 'cup-low-fat-vanilla-yogurt', 'Cup low-fat vanilla yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('2ab2b65d-810b-4f2f-8395-411b50286563', 'cuporange-juice', 'Cuporange juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('26edf41d-4159-4a77-ac0d-23499601ecde', 'teaspoon-chia-seeds', 'Teaspoon chia seeds');
-INSERT INTO ingredients (id, slug, name) VALUES ('b2c005ae-b690-4169-b478-ad234149ab10', 'pc-frozen-banana', 'Pc frozen banana');
-INSERT INTO ingredients (id, slug, name) VALUES ('71e15a5e-3a2f-4d74-84ea-e75b5841c59a', 'pc-passion-fruit', 'Pc passion fruit');
-INSERT INTO ingredients (id, slug, name) VALUES ('331a2b28-a9ee-4da4-9db5-cff52416510f', 'passion-fruit-for-garnishing', 'Passion fruit for garnishing');
-INSERT INTO ingredients (id, slug, name) VALUES ('7cd434ae-d9e1-4171-bceb-7e232e7ff9fc', '½-lime', '½ lime');
-INSERT INTO ingredients (id, slug, name) VALUES ('318025f9-b912-4732-9d3c-1a9119d14f01', '½-apple', '½ apple');
-INSERT INTO ingredients (id, slug, name) VALUES ('dd0eefe1-d924-4bea-9d87-3b4befd9b87f', '½-avocado', '½ avocado');
-INSERT INTO ingredients (id, slug, name) VALUES ('f211cf3e-688a-4eb9-93bf-b9944d0b908b', '½-cup-strawberries', '½ cup strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('d66a0778-e893-4cbb-9cb4-1f34b368a9c2', '½-orange', '½ orange');
-INSERT INTO ingredients (id, slug, name) VALUES ('63f41488-ad40-4302-b7bb-9645cd091d31', '¼-avocado', '¼ avocado');
-INSERT INTO ingredients (id, slug, name) VALUES ('599b520a-ba57-4280-aef0-105b0ef56981', 'tbs-chia-seeds', 'Tbs chia seeds');
-INSERT INTO ingredients (id, slug, name) VALUES ('475eadee-1634-4a4b-b05c-e36951636236', '½-cup-almond-milk', '½ cup almond milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('d7f90ff4-15d4-46ba-bbb6-e99229347e0a', 'cup-coffee', 'Cup coffee');
-INSERT INTO ingredients (id, slug, name) VALUES ('01a57246-8419-4bef-8d6a-9269c1d58175', 'medjool-date', 'Medjool date');
-INSERT INTO ingredients (id, slug, name) VALUES ('b0322e49-f110-454f-9fae-bec83b300b4a', 'scoop-chocolate-oat-protein-powder', 'Scoop chocolate oat protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('6dcbf7e5-6939-413e-9ee8-c18278066642', '½-cup-greek-yogurt', '½ cup Greek yogurt');
-INSERT INTO ingredients (id, slug, name) VALUES ('3b940834-c672-4213-a883-b21be7d0130b', 'scoop-vanilla-casein-protein-powder', 'Scoop vanilla casein protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('9a750b10-7fc5-4cb7-a03c-d582c41a8072', 'tablespoon-coconut', 'Tablespoon coconut');
-INSERT INTO ingredients (id, slug, name) VALUES ('d3c9dca0-2c04-4706-b6ae-9b8d9fac14cd', '½-cup-coconut-milk', '½ cup coconut milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('1e7c054d-90d8-48d3-9cc6-c813f81ff37d', '¼-cup-frozen-pineapple', '¼ cup frozen pineapple');
-INSERT INTO ingredients (id, slug, name) VALUES ('87a34bc3-e8c1-472f-9494-82a124a2aa5d', 'carrot', 'Carrot');
-INSERT INTO ingredients (id, slug, name) VALUES ('8fa2d6ac-fabd-4355-b7da-6cb19f224df1', '½-cup-frozen-pineapple', '½ cup frozen pineapple');
-INSERT INTO ingredients (id, slug, name) VALUES ('4d8e1624-3696-426e-b5c5-bf1f3d293f45', 'tbs-ginger', 'Tbs ginger');
-INSERT INTO ingredients (id, slug, name) VALUES ('60bd1df5-9404-49db-96b5-c6388fd56da0', '¼-cup-water', '¼ cup water');
-INSERT INTO ingredients (id, slug, name) VALUES ('f1835df2-c600-4086-bc88-b9de779251fe', '½-cup-light-coconut-cream', '½ cup light coconut cream');
-INSERT INTO ingredients (id, slug, name) VALUES ('89196c9e-4612-4a8a-80da-ac9e7bbd8490', 'scoop-chocolate-rice-protein-powder', 'Scoop chocolate rice protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('bc80d70f-9993-499c-a523-bda6a14cd918', 'scoop-chocolate-whey-protein', 'Scoop chocolate whey protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('8cb9a0bf-af57-477d-ae20-176a5aa2923e', 'tablespoons-coconut-cream', 'Tablespoons coconut cream');
-INSERT INTO ingredients (id, slug, name) VALUES ('432102dc-2a68-4090-9fce-8b73677db1d4', 'tablespoons-cashew-butter', 'Tablespoons cashew butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('ee02e838-a759-4eca-8ce9-0f19439fdec2', 'teaspoons-sprinkles', 'Teaspoons sprinkles');
-INSERT INTO ingredients (id, slug, name) VALUES ('d3000d0d-a737-48dd-b0f0-951256225ef6', 'tablespoon-coconut-flakes', 'Tablespoon coconut flakes');
-INSERT INTO ingredients (id, slug, name) VALUES ('3f1fc4f4-cdae-4281-847a-82d429602168', 'tablespoon-flaxseed', 'Tablespoon flaxseed');
-INSERT INTO ingredients (id, slug, name) VALUES ('2e31b557-b89f-4ec4-bbad-6211f8e3163d', 'scoop-peanut-butter-plant-based-protein', 'Scoop peanut butter plant-based protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('2bd3d9bc-b315-4bc3-938a-87ec74c496b8', '½-cup-vanilla-almond-milk', '½ cup vanilla almond milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('413f9832-6f95-43d3-9c3a-8a1806bf9bb0', 'scoop-plant-based-vanilla-protein-powder', 'Scoop plant-based vanilla protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('36e02ce1-6a5d-47d3-9c77-1d5326f047dc', 'tablespoon-cashew-butter', 'Tablespoon cashew butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('7be45a5f-ba94-4f44-b561-842316dbc62d', 'teaspoon-of-maple-syrup', 'Teaspoon of maple syrup');
-INSERT INTO ingredients (id, slug, name) VALUES ('edf8c28c-1233-4371-bc63-eea66929b2ae', 'cup-frozen-banana-chunks', 'Cup frozen banana chunks');
-INSERT INTO ingredients (id, slug, name) VALUES ('53ab8697-a67f-4c7a-bdde-c90e4a6ec3ce', 'cup-oat-milk', 'Cup oat milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('52a90956-6ae5-4bc0-82a7-f23040296e54', 'tsp-matcha', 'Tsp matcha');
-INSERT INTO ingredients (id, slug, name) VALUES ('e33b3f53-2893-46ac-948e-f6b070bcddfd', 'scoop-pea-protein', 'Scoop pea protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('133004cf-aa5c-4f29-9c77-eef4d5b9440e', 'cup-frozen-mixed-berries', 'Cup frozen mixed berries');
-INSERT INTO ingredients (id, slug, name) VALUES ('abb1bd55-9c26-4c02-8534-25b676bac231', 'tablespoons-cocoa-powder', 'Tablespoons cocoa powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('dd51e8de-a18b-4169-a0a0-e8372f3cb31e', 'scoop-chocolate-whey-powder', 'Scoop chocolate whey powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('fd3a93ba-5509-4d70-afeb-a9652e6d5987', 'tablespoon-almond-butter', 'Tablespoon almond butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('eadf25cd-5305-484e-8569-21c70917da1d', 'teaspoon-cinnamon', 'Teaspoon cinnamon');
-INSERT INTO ingredients (id, slug, name) VALUES ('1cb0470a-7569-42fa-977a-e5144b4cf4fc', '½-cup-frozen-pineapple-chunks', '½ cup frozen pineapple chunks');
-INSERT INTO ingredients (id, slug, name) VALUES ('86c02909-9e3f-46a8-ad7d-78a330808b45', 'tbs-turmeric', 'Tbs turmeric');
-INSERT INTO ingredients (id, slug, name) VALUES ('f6b0a071-7b46-4cc9-8182-74eac510be74', 'gr-bok-choy', 'Gr bok choy');
-INSERT INTO ingredients (id, slug, name) VALUES ('d02b4ada-5bd7-4169-90d0-8d59267b8c5a', 'teaspoon-lime-juice', 'Teaspoon lime juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('0e85d6a9-eecf-4f39-8e17-0058e9713361', 'tablespon-water', 'Tablespon water');
-INSERT INTO ingredients (id, slug, name) VALUES ('e191a678-ee3a-4823-894b-6f711ce84a62', '½-cup-coconut-water', '½ cup coconut water');
-INSERT INTO ingredients (id, slug, name) VALUES ('618cd48d-6ac1-4da8-8af6-f645321ea8df', 'tbs-shredded-coconut', 'Tbs shredded coconut');
-INSERT INTO ingredients (id, slug, name) VALUES ('34a03ea5-0ccc-4c9e-bd4a-41226f845fdf', '½-cups-frozen-strawberries', '½ cups frozen strawberries');
-INSERT INTO ingredients (id, slug, name) VALUES ('e94f1dba-94ee-4b5f-894e-289bbe83ee57', 'cup-chilled-unsweetened-chocolate-almond-milk', 'Cup chilled unsweetened chocolate almond milk');
-INSERT INTO ingredients (id, slug, name) VALUES ('2ff70d06-33fe-449b-8419-3c259b40d839', 'tsp-almond-butter', 'Tsp almond butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('9cb442c7-0850-4d77-90cd-59250e60997f', 'tsp-unsweetened-cocoa-powder', 'Tsp unsweetened cocoa powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('af9fb79c-276f-49b9-9893-d39e318e6a2d', 'scoop-chocolate-pea-protein-powder', 'Scoop chocolate pea protein powder');
-INSERT INTO ingredients (id, slug, name) VALUES ('9135eded-9422-4a01-a1e2-e9c5e2fc508f', '½-cup-frozen-mango', '½ cup frozen mango');
-INSERT INTO ingredients (id, slug, name) VALUES ('47bb90d7-b44a-4444-9a41-5f9984c764fe', 'tsp-ground-chia-seeds', 'Tsp ground chia seeds');
-INSERT INTO ingredients (id, slug, name) VALUES ('2440d918-b708-4e43-8d04-ee811b5a72ad', 'tablespoon-plant-based-protein', 'Tablespoon plant-based protein');
-INSERT INTO ingredients (id, slug, name) VALUES ('604ee887-32cc-4f33-af28-0b3d7e2b9bdf', 'cup-frozen-pineapple-chunks', 'Cup frozen pineapple chunks');
-INSERT INTO ingredients (id, slug, name) VALUES ('70e3598b-43a5-4262-93b0-88319bb793df', 'tablespoons-lime-juice', 'Tablespoons lime juice');
-INSERT INTO ingredients (id, slug, name) VALUES ('82b75e00-6c1c-4362-8a3a-75d8d32729aa', 'teaspoon-cashew-butter', 'Teaspoon cashew butter');
-INSERT INTO ingredients (id, slug, name) VALUES ('e8f5d5e3-b5a9-4339-8d92-9c31182fe0b1', 'chilled', 'Chilled');
-INSERT INTO ingredients (id, slug, name) VALUES ('d93e88aa-c54c-4677-9994-ce8537776227', 'cup-honeydew', 'Cup honeydew');
-INSERT INTO ingredients (id, slug, name) VALUES ('4645f203-f40a-42d6-bac2-4064d9b47b35', 'tablespoons-basil-leaves', 'Tablespoons basil leaves');
-INSERT INTO ingredients (id, slug, name) VALUES ('abd7cf9d-c322-47d5-a3c8-b946cdd37266', 'juice-and-zest', 'Juice and zest');
-INSERT INTO ingredients (id, slug, name) VALUES ('49d9ace5-346c-4f47-9f54-5fc6f1100230', 'dash-turmeric', 'Dash turmeric');
+INSERT INTO ingredients (id, slug, name) VALUES ('5945b47e-b46b-420a-9b5b-f6191709507d', 'cup-watermelon', 'Cup watermelon');
+INSERT INTO ingredients (id, slug, name) VALUES ('cadefd24-3a6b-4404-9244-ef93f10bf4f5', 'cup-pineapple', 'Cup pineapple');
+INSERT INTO ingredients (id, slug, name) VALUES ('6c71ed76-e412-4353-8a90-20c234fe2670', 'tablespoon-lemon-balm-leaves-(without-stems)', 'Tablespoon lemon balm leaves (without stems)');
+INSERT INTO ingredients (id, slug, name) VALUES ('3c5daeea-5d39-41ff-bc23-fd2d4278fdd7', 'leaf-lemon-balm-for-garnishing', 'Leaf lemon balm for garnishing');
+INSERT INTO ingredients (id, slug, name) VALUES ('52eaaa52-b3d2-4c80-b962-7b4e243bc5d4', 'teaspoon-turmeric', 'Teaspoon turmeric');
+INSERT INTO ingredients (id, slug, name) VALUES ('5a6aa35c-a91c-4f83-879b-28f045a230eb', 'teaspoon-ginger', 'Teaspoon ginger');
+INSERT INTO ingredients (id, slug, name) VALUES ('ec067dc8-ca8d-42b7-a463-d11402ce40a4', 'teaspoon-fresh-tamarind-(or-tamarind-paste)', 'Teaspoon fresh tamarind (or tamarind paste)');
+INSERT INTO ingredients (id, slug, name) VALUES ('33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', 'banana', 'Banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('8566c961-302f-49ba-9664-a44dafbb43cc', 'celery-stalk', 'Celery stalk');
+INSERT INTO ingredients (id, slug, name) VALUES ('02d78b62-e274-464a-8971-c6c9bed59a41', 'aloe-vera-for-garnishing', 'Aloe Vera for garnishing');
+INSERT INTO ingredients (id, slug, name) VALUES ('fec5163a-ba35-4394-bc8e-900fe73aff6f', 'cocoa-nibs-and-dried-goji-berries-for-garnishing', 'Cocoa nibs and dried Goji berries for garnishing');
+INSERT INTO ingredients (id, slug, name) VALUES ('db979b68-288f-4558-83d5-a8a2fe5e1d5d', 'tablespoon-dried-goji-berries', 'Tablespoon dried Goji berries');
+INSERT INTO ingredients (id, slug, name) VALUES ('53dc03ec-dc34-479c-a2db-4e7231c624ca', 'cocoa-nibs-and-goji-berries-for-garnishing', 'Cocoa nibs and Goji berries for garnishing');
+INSERT INTO ingredients (id, slug, name) VALUES ('cc6e68ee-1a65-4b60-a7b4-91211431d367', 'leaves-kale-(green-curly-or-another-type)', 'Leaves kale (green curly or another type)');
+INSERT INTO ingredients (id, slug, name) VALUES ('7e92f8e3-f520-43bc-badd-b159c2973dd6', 'tablespoon-mulberries-(use-blueberries-or-any-othe-berries-if-mulberries-are-not-available)', 'Tablespoon mulberries (use blueberries or any othe berries if mulberries are not available)');
+INSERT INTO ingredients (id, slug, name) VALUES ('009fc4ce-4626-400e-9b34-6f37527707d2', 'tablespoon-water', 'Tablespoon water');
+INSERT INTO ingredients (id, slug, name) VALUES ('27346cb1-431f-4035-9050-ffada3d89d42', 'small-sweet-potato', 'Small sweet potato');
+INSERT INTO ingredients (id, slug, name) VALUES ('82a9a2f7-a0e3-4c6f-9a94-057b65814a4d', 'peeled-and-chopped', 'Peeled and chopped');
+INSERT INTO ingredients (id, slug, name) VALUES ('3ad0940f-24a4-420a-9790-7d48e83b7d92', '½-cup-oat-milk', '½ cup oat milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('5ea796d6-5430-4af4-863e-6d00b29b10d3', 'tsp-maple-syrup', 'Tsp maple syrup');
+INSERT INTO ingredients (id, slug, name) VALUES ('ff10e974-6c12-4d82-9e03-6fbe26f6d204', '½-tsp-cinnamon', '½ tsp cinnamon');
+INSERT INTO ingredients (id, slug, name) VALUES ('1c104b5f-aced-4932-b99c-82594142b2bf', 'frozen-banana', 'Frozen banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('2ed0a644-e436-4faf-b278-732a82f447af', 'tbs-almond-butter', 'Tbs almond butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('0714bb59-0d3d-44ba-8a8c-edcc202a5345', 'scoop-vanilla-plant-based-protein-powder', 'Scoop vanilla plant-based protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('2bcfd1cf-07c6-471c-bf1e-0d079b17898f', '½-cup-ice', '½ cup ice');
+INSERT INTO ingredients (id, slug, name) VALUES ('3d93b988-3309-42f4-9137-3557ce797044', '½-frozen-banana', '½ frozen banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('15edf6be-c8d1-4306-b1ce-03e19864c37f', 'peach', 'Peach');
+INSERT INTO ingredients (id, slug, name) VALUES ('dd133b80-a695-4e68-9c9b-ce2548ed4c7a', 'cup-almond-milk', 'Cup almond milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('f2f9530b-e92f-40e4-85fe-bd502dd10dc3', 'tbs-flax-seed', 'Tbs flax seed');
+INSERT INTO ingredients (id, slug, name) VALUES ('bd82b519-cac2-4d68-b7df-261d5aef4635', 'tsp-ground-cinnamon', 'Tsp ground cinnamon');
+INSERT INTO ingredients (id, slug, name) VALUES ('72e33646-22c7-40ca-befc-62877d4ed626', 'cup-spinach', 'Cup spinach');
+INSERT INTO ingredients (id, slug, name) VALUES ('8b2232bc-897f-4fdc-94e4-5180c0bfd30a', 'scoops-plant-based-protein-powder', 'Scoops plant-based protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('0c18fdfa-f452-47c7-855e-ea21a703206b', 'medium-green-apple', 'Medium green apple');
+INSERT INTO ingredients (id, slug, name) VALUES ('4080f5ca-30e1-421b-9b7b-29082db322b6', '¼-cup-light-coconut-milk', '¼ cup light coconut milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('534e3009-f195-4d94-88e2-969781e1aee4', 'stalk-celery', 'Stalk celery');
+INSERT INTO ingredients (id, slug, name) VALUES ('4e7a0745-28ff-4976-acf1-d8d27a45f0ca', '½-small-cucumber', '½ small cucumber');
+INSERT INTO ingredients (id, slug, name) VALUES ('d70b0945-fffa-4d16-b330-6b2efe1cde3c', '½-cup-spinach', '½ cup spinach');
+INSERT INTO ingredients (id, slug, name) VALUES ('c9056f98-f7e5-4a6d-9dff-0edd25e45351', 'lemon', 'Lemon');
+INSERT INTO ingredients (id, slug, name) VALUES ('a2b8e28d-ab50-4441-9a3a-a4adaeb6f51e', 'juiced', 'Juiced');
+INSERT INTO ingredients (id, slug, name) VALUES ('2e234779-a3c9-440d-b2a8-eb1d4234d2b8', 'lime', 'Lime');
+INSERT INTO ingredients (id, slug, name) VALUES ('8d5f089a-4bb4-43a3-8656-b5dd54521246', '½-cup-water', '½ cup water');
+INSERT INTO ingredients (id, slug, name) VALUES ('aa92083f-3024-4a87-89eb-aa476a7fdf0e', 'cup-watermelon-(fresh-or-frozen)', 'Cup watermelon (fresh or frozen)');
+INSERT INTO ingredients (id, slug, name) VALUES ('8c5b0e6c-90ca-45a8-ad0d-8ae1989f5bf1', 'cup-frozen-strawberries', 'Cup frozen strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('958d1992-f49e-4dbf-b909-e2ba3798c1d1', 'tablespoon-orange-juice', 'Tablespoon orange juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('bd887c7f-8d75-4138-ab03-10590ae88070', 'tablespoon-chia-seeds', 'Tablespoon chia seeds');
+INSERT INTO ingredients (id, slug, name) VALUES ('8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', 'scoop-plant-based-protein-powder', 'Scoop plant-based protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('8b55b575-d43b-4bd7-8860-723d79bd83b7', 'cup-coconut-water', 'Cup coconut water');
+INSERT INTO ingredients (id, slug, name) VALUES ('c03083ce-c086-4801-a773-4c90dd3608ff', 'cup-ice', 'Cup ice');
+INSERT INTO ingredients (id, slug, name) VALUES ('349bc500-2bf1-4c7c-9f77-8079ae264c54', 'cup-frozen-raspberries', 'Cup frozen raspberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('0a41c92e-06dc-42a0-b7b3-045ec8095af2', 'pear', 'Pear');
+INSERT INTO ingredients (id, slug, name) VALUES ('38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', 'avocado', 'Avocado');
+INSERT INTO ingredients (id, slug, name) VALUES ('dd998801-54db-4e22-8e6a-f26e0bbe6491', 'tablespoon-stevia', 'Tablespoon stevia');
+INSERT INTO ingredients (id, slug, name) VALUES ('c20bdd4f-e0c9-4b48-978b-8d773d90710a', 'scoop-plant-based-protein', 'Scoop plant-based protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('4b55b20f-af32-441e-a2ad-a9a86be5829a', 'cup-frozen-cherries', 'Cup frozen cherries');
+INSERT INTO ingredients (id, slug, name) VALUES ('37e6ff62-f56a-464a-a928-42558e3999f8', 'cup-light-coconut-milk', 'Cup light coconut milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('d54c6788-c4d4-499f-8291-dd3f5e0e7b06', 'tablespoon-coconut-yogurt', 'Tablespoon coconut yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('3b4c5896-19d6-4d91-b4eb-b865dc992554', 'scoop-whey-protein-powder', 'Scoop whey protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('0d5d30d4-5bec-4e6b-8860-39498c89a0bb', 'tablespoon-cocoa-powder', 'Tablespoon cocoa powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('176b2ad8-5f61-40ef-8e81-565585ac9ddd', 'teaspoon-vanilla-extract', 'Teaspoon vanilla extract');
+INSERT INTO ingredients (id, slug, name) VALUES ('34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', 'cup-strawberries', 'Cup strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('5ca4feb1-18be-47c7-a5ff-db5e3f36daf6', 'cup-pitted-cherries', 'Cup pitted cherries');
+INSERT INTO ingredients (id, slug, name) VALUES ('2d337b6b-ef5d-4584-806b-bb20032a0b28', 'sliced-banana', 'Sliced banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('d2713795-db5a-4e97-a510-e6ab8f7b45c4', 'cup-frozen-pineapple', 'Cup frozen pineapple');
+INSERT INTO ingredients (id, slug, name) VALUES ('3850f4b7-6b9c-4702-987c-640ceca4f905', 'cup-cucumber', 'Cup cucumber');
+INSERT INTO ingredients (id, slug, name) VALUES ('f7449b67-5eeb-4419-8b17-4359d90ff3de', 'sliced', 'Sliced');
+INSERT INTO ingredients (id, slug, name) VALUES ('f50b274b-4ed7-4e3e-8d89-51db2ccb95af', 'cup-baby-spinach', 'Cup baby spinach');
+INSERT INTO ingredients (id, slug, name) VALUES ('10310779-a0ac-42a7-81a0-556627eb252f', 'cup-mint-leaves', 'Cup mint leaves');
+INSERT INTO ingredients (id, slug, name) VALUES ('b02a82ee-66c7-4909-93c7-d8bd275d7113', 'cup-cold-water', 'Cup cold water');
+INSERT INTO ingredients (id, slug, name) VALUES ('26c7c51a-484e-4481-bfa1-5df62aeff61d', 'scoop-rice-protein-powder', 'Scoop rice protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('1667d8c3-dda5-4651-9da3-ddffa0549d52', 'tbsp-cashew-butter', 'Tbsp cashew butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('58f61454-dc69-49fb-933c-8a83d9a969b7', 'tsp-vanilla-extract', 'Tsp vanilla extract');
+INSERT INTO ingredients (id, slug, name) VALUES ('8122ef25-1a7e-43a3-ba28-1952cba989a3', 'tsp-honey', 'Tsp honey');
+INSERT INTO ingredients (id, slug, name) VALUES ('96a9cec3-4bcf-4980-bf69-0f5a16d51aff', 'tsp-cinnamon', 'Tsp cinnamon');
+INSERT INTO ingredients (id, slug, name) VALUES ('a98eea2c-fa10-44b3-89ac-471e17d52ee0', '½-cup-light-coconut-milk', '½ cup light coconut milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('f947e659-2950-496f-b9ab-bb7fb55907b1', 'cup-coconut-yogurt', 'Cup coconut yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('a97cd716-6519-44e5-adc2-51d95a30aaf4', 'cup-kale', 'Cup kale');
+INSERT INTO ingredients (id, slug, name) VALUES ('74a294b0-d5a5-4f2d-9dcd-333a8c51d269', 'cup-frozen-mango-chunks', 'Cup frozen mango chunks');
+INSERT INTO ingredients (id, slug, name) VALUES ('51009a96-8a3f-4b21-83cd-a1c6b01360af', 'tbsp-flax-seed-meal', 'Tbsp flax seed meal');
+INSERT INTO ingredients (id, slug, name) VALUES ('c5be113a-450a-44e9-994a-00f1487ca66e', 'scoop-pea-protein-powder', 'Scoop pea protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('d61914a6-555c-4737-851f-f450ec193a23', 'cup-frozen-blackberries', 'Cup frozen blackberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('91b92e06-a167-4705-a3f8-fde55f3524e6', 'tsp-fresh-lemon-juice', 'Tsp fresh lemon juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('540ac873-c6b9-490a-9914-f220756dedd4', 'tsp-finely-chopped-fresh-ginger', 'Tsp finely chopped fresh ginger');
+INSERT INTO ingredients (id, slug, name) VALUES ('55816de5-c9e0-417a-8eed-47445c7b2e4a', 'chopped-and-frozen', 'Chopped and frozen');
+INSERT INTO ingredients (id, slug, name) VALUES ('8dfdcea0-8292-4bef-bf3a-bb3bc49d8c9c', 'tbs-pecans', 'Tbs pecans');
+INSERT INTO ingredients (id, slug, name) VALUES ('2f16dd60-cd27-4a3a-9feb-bea6aa464839', 'scoop-oat-protein-powder', 'Scoop oat protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('8889f2b1-a54d-419b-b928-9d4b2a2e3c50', 'oz-pistachios', 'Oz pistachios');
+INSERT INTO ingredients (id, slug, name) VALUES ('d64fd3f1-3fac-4184-a01d-57396c653660', 'cup-frozen-mango', 'Cup frozen mango');
+INSERT INTO ingredients (id, slug, name) VALUES ('b23bea4e-c2fa-48fc-a91d-1d317177fdbc', 'cup-coconut-cream', 'Cup coconut cream');
+INSERT INTO ingredients (id, slug, name) VALUES ('05bf9cb3-0f12-40c9-ad24-56723b249c43', 'cup-orange-juice', 'Cup orange juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('ade83372-cf50-44e0-8b3e-9ab5b3c86936', 'cup-greek-yogurt', 'Cup Greek yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('a0a1246c-a2f5-4e7a-80ac-4470f187efe4', 'cup-coconut-milk', 'Cup coconut milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('187c3cfd-e8f6-43bc-8ce8-690317b41c8f', 'scoop-casein-protein', 'Scoop casein protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('03576724-6abf-4698-94cd-24b854fda90a', 'tbs-ground-flaxseed', 'Tbs ground flaxseed');
+INSERT INTO ingredients (id, slug, name) VALUES ('3da82515-fe43-4317-87d7-0ae4f78a4435', 'tablespoon-unsweetened-cocoa-powder', 'Tablespoon unsweetened cocoa powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('f6d6bdc0-4012-444d-ba57-b5073546f4f7', 'tablespoons-oats', 'Tablespoons oats');
+INSERT INTO ingredients (id, slug, name) VALUES ('7b81949e-900c-42a2-b021-a87dd9da302b', 'tsp-salt', 'Tsp salt');
+INSERT INTO ingredients (id, slug, name) VALUES ('a5004e0b-ce7f-4f4b-baf2-a6f5c3eeaddf', 'tbs-cashew-butter', 'Tbs cashew butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('2bba3ce6-4191-445f-bb52-c9211aafab6a', 'tsp-pure-peppermint-extract', 'Tsp pure peppermint extract');
+INSERT INTO ingredients (id, slug, name) VALUES ('49f973bf-daef-4155-9c78-4bff488e9068', 'tbsp-unsweetened-coconut-flakes', 'Tbsp unsweetened coconut flakes');
+INSERT INTO ingredients (id, slug, name) VALUES ('1f1b4e94-5252-481a-942b-400865115262', 'tbs-cocoa-powder', 'Tbs cocoa powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('c708f7b2-f5b8-4e8a-8c0c-a671e7edfd19', 'tbsp-chia-seeds', 'Tbsp chia seeds');
+INSERT INTO ingredients (id, slug, name) VALUES ('0159ba56-1218-4bc9-852e-6e8955222fbf', 'cup-cold-coffee', 'Cup cold coffee');
+INSERT INTO ingredients (id, slug, name) VALUES ('1252c61a-9d28-41e4-85ea-e7f2bc8e8135', 'cup-ice-cubes', 'Cup ice cubes');
+INSERT INTO ingredients (id, slug, name) VALUES ('6ab1fbb2-4dab-431b-8693-12c7a79eecda', 'cup-frozen-cauliflower-rice', 'Cup frozen cauliflower rice');
+INSERT INTO ingredients (id, slug, name) VALUES ('35c83f62-3d14-4b73-ae28-a248895e284a', 'cup-frozen-blueberries', 'Cup frozen blueberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('f5942ac2-d1ca-4973-a7c8-fae9cd7234a9', 'tablespoon-hazelnut-butter', 'Tablespoon hazelnut butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('d6b9c81b-c21c-4f25-ade6-5988b9eb5660', 'tsp-liquid-stevia', 'Tsp liquid stevia');
+INSERT INTO ingredients (id, slug, name) VALUES ('d4c8e169-ac88-4039-9e11-8a6355c246ff', 'cup-light-coconut-cream', 'Cup light coconut cream');
+INSERT INTO ingredients (id, slug, name) VALUES ('606f3c8d-5af9-4310-af38-d70d1bdd5f09', 'cup-pumpkin-puree', 'Cup pumpkin puree');
+INSERT INTO ingredients (id, slug, name) VALUES ('451f3d91-c580-45f4-8126-10839c7f35b9', 'tsp-pumpkin-pie-spice', 'Tsp pumpkin pie spice');
+INSERT INTO ingredients (id, slug, name) VALUES ('26a15b3c-77bb-48e1-9252-bc0ef681955f', 'scoop-vanilla-oat-protein-powder', 'Scoop vanilla oat protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('21fe0542-5af8-477f-a9e3-f86c2c03cbd5', 'cups-crushed-ice', 'Cups crushed ice');
+INSERT INTO ingredients (id, slug, name) VALUES ('bf320a64-2360-4207-9ded-eb6409c7d3ff', 'cups-kale', 'Cups kale');
+INSERT INTO ingredients (id, slug, name) VALUES ('ca2594d4-b087-41f4-83fe-e4fd82e843b5', 'cup-raspberries', 'Cup raspberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('a84ad96d-9cfb-48d4-a633-24f90c8e7748', 'squeezed-lemon', 'Squeezed lemon');
+INSERT INTO ingredients (id, slug, name) VALUES ('2b23c2c6-aff9-45de-bbcd-c4bc90b13d4c', 'cup-water', 'Cup water');
+INSERT INTO ingredients (id, slug, name) VALUES ('a19e9688-87d4-4c76-93b4-db338f86c49d', 'beetroot', 'Beetroot');
+INSERT INTO ingredients (id, slug, name) VALUES ('aab7d2c3-9449-49f8-81f1-429a3acfc999', 'peeled', 'Peeled');
+INSERT INTO ingredients (id, slug, name) VALUES ('3c69b04a-c615-4427-bd19-dc83380abf2c', 'scoop-whey-protein', 'Scoop whey protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('9a11d02e-2a86-4c9b-a57f-7b2cb3ad807c', 'tbs-orange-juice', 'Tbs orange juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('706c3c5f-115d-4365-a877-1a9f0ea74b9f', 'tbs-lemon-juice', 'Tbs lemon juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('c33ba6ec-9f98-4a9f-87b9-864d40527d29', 'serving-vanilla-whey-protein-powder', 'Serving vanilla whey protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('e53d0cd9-b3e4-46ef-ab54-9d5579d64ac6', '¼-teaspoon-ground-nutmeg', '¼ teaspoon ground nutmeg');
+INSERT INTO ingredients (id, slug, name) VALUES ('9cc4b26a-468c-46b5-af1b-6d1096391018', '½-teaspoon-ground-cinnamon', '½ teaspoon ground cinnamon');
+INSERT INTO ingredients (id, slug, name) VALUES ('92fab1b4-5277-4165-9f80-ad521abbb8f1', 'scoop-casein-protein-powder', 'Scoop casein protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('e53a6c19-1d9e-4637-958a-d4a7e8fe059c', 'tsp-stevia', 'Tsp stevia');
+INSERT INTO ingredients (id, slug, name) VALUES ('effaad48-5304-4c69-8e90-237d88f6ab4f', 'tbs-peanut-butter', 'Tbs peanut butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('822d2eae-d540-4b8f-bc40-3c833c8c04e4', 'scoop-chocolate-casein-protein-powder', 'Scoop chocolate casein protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('fd0a69cc-0786-4b0d-a70a-7e2c1fb06875', 'scoop-peanut-butter-casein-protein-powder', 'Scoop peanut butter casein protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('2c854626-6c38-43c7-9a95-5a74bd0fe68f', '½-tsp-vanilla-extract', '½ tsp vanilla extract');
+INSERT INTO ingredients (id, slug, name) VALUES ('a07867d0-6e0d-4cbe-aa66-d2282c763209', 'egg', 'Egg');
+INSERT INTO ingredients (id, slug, name) VALUES ('a99e3702-e158-4f4c-8754-ae3984af660f', 'scoop-vanilla-protein-powder', 'Scoop vanilla protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('6f2c3ec0-24cd-49d2-9864-9e0647e31b0b', '½-tsp-ground-nutmeg', '½ tsp ground nutmeg');
+INSERT INTO ingredients (id, slug, name) VALUES ('7e335830-3f4d-40e2-83b9-270d5e7fabf3', 'apple', 'Apple');
+INSERT INTO ingredients (id, slug, name) VALUES ('6ba905b4-f22b-43b0-bf2e-dcee49371802', 'orange', 'Orange');
+INSERT INTO ingredients (id, slug, name) VALUES ('1d24db3d-a7f4-4bd3-bd67-c21b4197a75f', 'teaspoon-lemon-juice', 'Teaspoon lemon juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('33a00a7d-2af0-4b38-a3dd-188d158431df', 'oat-milk', 'Oat milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('51ff70ff-b381-4570-afb8-5f6fcd6e7d18', 'tbs-maple-syrup', 'Tbs maple syrup');
+INSERT INTO ingredients (id, slug, name) VALUES ('2568e6de-9593-4df5-ae31-98073e031db2', 'scoop-oat-protein', 'Scoop oat protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('85fb8e71-ff8a-43a2-9fdd-b70cc95aa810', 'cup-cranberries', 'Cup cranberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('2fcb975f-838c-4025-bfc5-bea7b3530355', '½-cup-raspberries', '½ cup raspberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('8199a4b4-f3ca-4622-81e4-9b9d2644d4ec', '¼-beetroot', '¼ beetroot');
+INSERT INTO ingredients (id, slug, name) VALUES ('d7de1f51-d0d4-4490-939f-a42bf81baec9', 'scoop-protein-powder', 'Scoop protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('a9147221-acc1-41c2-b14f-c4c56dca7aa8', 'tablespoon-peanut-butter', 'Tablespoon peanut butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('d68f80b2-d770-47ae-9819-f8c8c49d7af6', 'tablespoon-cocoa-nibs', 'Tablespoon cocoa nibs');
+INSERT INTO ingredients (id, slug, name) VALUES ('77683272-6d39-42ec-8cde-0be6144f4b5e', 'teaspoon-sprinkles', 'Teaspoon sprinkles');
+INSERT INTO ingredients (id, slug, name) VALUES ('a8fe0594-cdaf-4792-ad97-efc885c7f7ea', 'scoop-oat-vanilla-protein', 'Scoop oat vanilla protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('655a1603-be12-480f-b998-1a502402c988', 'tablespoon-orange-zest', 'Tablespoon orange zest');
+INSERT INTO ingredients (id, slug, name) VALUES ('192e0b08-bc7e-4ae3-8081-9680b014f536', 'tbsp-peanut-butter', 'Tbsp peanut butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('16fbf04f-3488-401a-96e0-39cddabd42c8', 'date', 'Date');
+INSERT INTO ingredients (id, slug, name) VALUES ('bba7c25a-0ebc-49cd-a351-eeac0ba9a3ec', 'pitted', 'Pitted');
+INSERT INTO ingredients (id, slug, name) VALUES ('7a39d4ae-e7a2-4b4f-9f27-143572f7774e', 'cup-quick-oats', 'Cup quick oats');
+INSERT INTO ingredients (id, slug, name) VALUES ('cfd27138-28b1-4949-9cef-5f4d6be1f04a', 'tbs-of-peanut-butter', 'Tbs of peanut butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('b36a228b-0e3e-4706-8408-dab8e0b44969', 'g-walnuts', 'G walnuts');
+INSERT INTO ingredients (id, slug, name) VALUES ('1d019929-18df-4856-bb33-f6719574d12a', 'cup-unsweetened-almond-milk', 'Cup unsweetened almond milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('0f69acb7-84b0-4d89-8b36-1afa210da46d', 'cup-rolled-oats', 'Cup rolled oats');
+INSERT INTO ingredients (id, slug, name) VALUES ('9ed6bbb3-6a00-492c-993e-d63624a0c90a', 'dash-of-salt', 'Dash of salt');
+INSERT INTO ingredients (id, slug, name) VALUES ('957a8096-22ca-4424-b894-8761ab208e88', 'cup-ice-as-needed', 'Cup ice as needed');
+INSERT INTO ingredients (id, slug, name) VALUES ('20d062c9-a1f0-43aa-86fa-19a08f6ff524', 'tbsp-cocoa-powder', 'Tbsp cocoa powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('6ad91708-16b4-426b-8f21-cf78600cc293', 'tsp-cinnamin', 'Tsp cinnamin');
+INSERT INTO ingredients (id, slug, name) VALUES ('9fc99710-eb63-41da-8438-67803c2e7294', 'cup-espresso-or-strong-coffee', 'Cup espresso or strong coffee');
+INSERT INTO ingredients (id, slug, name) VALUES ('192139a3-3f2f-4555-9a22-42dc03d67b7f', 'scoop-vanilla-whey-powder', 'Scoop vanilla whey powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('6e6331a7-2046-432a-883c-c9f5592b9cf6', 'tbsp-lemon-juice', 'Tbsp lemon juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('3b06ccec-0e96-4740-a163-568030f93f3d', 'scoops-pea-protein-powder', 'Scoops pea protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('d26607a4-9c21-4350-80ef-1859f16c857b', 'tbs-fresh-ginger', 'Tbs fresh ginger');
+INSERT INTO ingredients (id, slug, name) VALUES ('41c405b8-ab0f-4cb0-bcc6-95c9fae1ea09', 'grated', 'Grated');
+INSERT INTO ingredients (id, slug, name) VALUES ('b7842493-8d15-4228-88c0-316602028754', 'peeled-and-frozen', 'Peeled and frozen');
+INSERT INTO ingredients (id, slug, name) VALUES ('56fdfad8-c81a-4421-b7fe-e1e971a192e9', 'scoop-vanilla-whey-protein-powder', 'Scoop vanilla whey protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('789a9021-26cf-4e33-8af1-bcda624d9d52', 'cup-blueberries', 'Cup blueberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('55641b29-e1ad-4e21-b58e-d064e931e3c7', 'diced', 'Diced');
+INSERT INTO ingredients (id, slug, name) VALUES ('20ca3295-f0df-4f86-ab13-505ba21f5931', 'tablespoon-coconut-oil', 'Tablespoon coconut oil');
+INSERT INTO ingredients (id, slug, name) VALUES ('3ca52200-056d-4de8-980d-7290484be720', 'scoop-chocolate-whey-protein-powder', 'Scoop chocolate whey protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('140e694f-50ce-4276-bb93-f1b4debad0be', 'pinch-sea-salt', 'Pinch sea salt');
+INSERT INTO ingredients (id, slug, name) VALUES ('ab18b4c0-3832-488c-882d-63bd4846a9b1', 'scoop-vanilla-whey-protein', 'Scoop vanilla whey protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('b7104a58-e197-4151-92dc-60013206bda0', 'cup-espresso', 'Cup espresso');
+INSERT INTO ingredients (id, slug, name) VALUES ('8d6be6ed-ad36-46b6-bcd9-d0a344062337', 'pitted-dates', 'Pitted dates');
+INSERT INTO ingredients (id, slug, name) VALUES ('60e5da96-994f-4cd1-9388-b1713d266c1c', 'cup-blackberries', 'Cup blackberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('fff069a1-6a22-4126-91b2-230021fa2b0c', 'cup-fat-free-vanilla-frozen-yogurt', 'Cup fat-free vanilla frozen yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('6df1ac2c-5cee-4a91-8470-58844176fcbd', 'cup-cranberry-juice', 'Cup cranberry juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('7cb2d677-0c41-443c-9d98-cea08721a379', 'almonds', 'Almonds');
+INSERT INTO ingredients (id, slug, name) VALUES ('cd3f480b-e897-4b34-ab2e-7df756484d9e', 'cup-soy-milk', 'Cup soy milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('82535be2-e51d-4322-91cc-013f1c60fedc', 'tablespoons-coconut-yogurt', 'Tablespoons coconut yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('e87f9523-b391-4e07-b6b2-b4f87c087ef0', 'teaspoon-honey', 'Teaspoon honey');
+INSERT INTO ingredients (id, slug, name) VALUES ('d8d45b87-1e3e-46a1-a533-8851fbd8ebaa', 'teaspoon-blue-spirulina-powder', 'Teaspoon blue spirulina powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('cc5ed93a-4bd3-4423-ac3e-75c19455b898', 'scoop-vanilla-rice-protein-powder', 'Scoop vanilla rice protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('4b633a12-cccb-4806-b087-711eb605f33a', 'medium-banana', 'Medium Banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('297c1fca-0622-4cc2-9cd2-f8a963d0c7b6', '¼-cup-chopped-pecans', '¼ cup chopped pecans');
+INSERT INTO ingredients (id, slug, name) VALUES ('4b57dc75-ee68-411b-9835-b019f599ffd4', '¼-cup-chopped-almonds', '¼ cup chopped almonds');
+INSERT INTO ingredients (id, slug, name) VALUES ('9ce5170b-013f-4fc5-b4a1-24a5d275bd6a', 'cup-skim-milk', 'Cup skim milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('5d50f7fb-5e59-4eca-a933-590b1bd0d749', '¾-cup-fat-free-vanilla-frozen-yogurt', '¾ cup fat-free vanilla frozen yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('70973f4d-46d3-4943-8514-cd38013dc245', 'small-banana', 'Small banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('51c2ee08-ab90-40fb-9666-cab7b8417bbc', 'tablespoon-apple-cider', 'Tablespoon apple cider');
+INSERT INTO ingredients (id, slug, name) VALUES ('f05a30f9-a97a-4dd4-9317-708b260567de', 'tablespoon-honey', 'Tablespoon honey');
+INSERT INTO ingredients (id, slug, name) VALUES ('2d539f19-4125-4f72-ad01-13c4c9087b26', 'cup-fresh-lemonade', 'Cup fresh lemonade');
+INSERT INTO ingredients (id, slug, name) VALUES ('db1d511e-adf3-4201-b42f-d1b5a8d967c2', 'cup-granola', 'Cup granola');
+INSERT INTO ingredients (id, slug, name) VALUES ('5bd84c38-7e7c-40c8-a7cf-3c78792b409f', 'cup-pineapple-juice', 'Cup pineapple juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('d50fff26-d475-475a-a49c-18d61b9b6b5f', 'cup-fresh-squeezed-orange-juice', 'Cup fresh-squeezed orange juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('13a4493e-48af-43ed-b532-ce78a8af866f', 'cup-chopped-mango', 'Cup  chopped Mango');
+INSERT INTO ingredients (id, slug, name) VALUES ('5a292d44-3aee-4a9b-b452-7ad880b69e81', 'cup-chopped-pineapple', 'Cup chopped pineapple');
+INSERT INTO ingredients (id, slug, name) VALUES ('34c4fec4-3a45-40f9-9e27-ec3ff4bcd741', 'kiwi', 'Kiwi');
+INSERT INTO ingredients (id, slug, name) VALUES ('8b0ff819-cf22-4f0c-9339-095c147a111b', 'strawberries', 'Strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('f2de22f5-2242-4e9d-a0e7-931ccaa713ec', 'cup-oat-squares', 'Cup oat squares');
+INSERT INTO ingredients (id, slug, name) VALUES ('abf825dc-126c-4ec3-8b74-f921a07d8c9a', 'cup-apple-juice', 'Cup apple juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('8890ac9c-5fe4-401c-bc19-2d700175f862', 'cup-mango', 'Cup Mango');
+INSERT INTO ingredients (id, slug, name) VALUES ('b1eae386-77f7-450a-9e49-b018700028df', 'cup-coconut', 'Cup coconut');
+INSERT INTO ingredients (id, slug, name) VALUES ('d54446b4-1693-4e41-8a9a-40dac98bf607', 'cup-organic-pineapple', 'Cup organic pineapple');
+INSERT INTO ingredients (id, slug, name) VALUES ('10b46d88-06bb-43ab-867b-ad121158ef80', 'chopped-medium-peach', 'Chopped medium peach');
+INSERT INTO ingredients (id, slug, name) VALUES ('e7208176-e10e-46a9-92d3-79ba2564358c', '½-cup-frozen-raspberries', '½ cup frozen raspberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('843fa3e3-5b83-4aea-9b12-fa33a4b254cb', '½-cup-frozen-strawberries', '½ cup frozen strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('a811b704-4a35-43a5-b563-317d789e2fe4', '¼-cup-beet', '¼ cup beet');
+INSERT INTO ingredients (id, slug, name) VALUES ('97978a43-f7ef-4253-be22-a6856d2e5247', '¼-cup-coconut-milk', '¼ cup coconut milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('becbb2cc-19bc-4655-9336-4fd63adcc2a6', 'cup-peach', 'Cup peach');
+INSERT INTO ingredients (id, slug, name) VALUES ('656f5cb7-bed4-473a-94e6-e0dbe20319fe', 'low-fat-vanilla-yogurt', 'Low-fat vanilla yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('652084d7-c162-4927-b002-00dce0cbfc74', 'cup-lemonade', 'Cup Lemonade');
+INSERT INTO ingredients (id, slug, name) VALUES ('d76917fd-3775-42e9-9717-afff8b3f2183', 'large-strawberries', 'Large strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('36daee65-370c-4295-8902-c1a412b99ea7', 'cup-low-fat-vanilla-yogurt', 'Cup low-fat vanilla yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('79a5908d-7948-4a28-9bde-3f61a0eb457b', 'cuporange-juice', 'Cuporange juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('625582dd-4682-4688-89ad-a8bc546f0025', 'teaspoon-chia-seeds', 'Teaspoon chia seeds');
+INSERT INTO ingredients (id, slug, name) VALUES ('b7248b8e-3960-4750-aab1-7f82a40aacff', 'pc-frozen-banana', 'Pc frozen banana');
+INSERT INTO ingredients (id, slug, name) VALUES ('f3c8e831-e669-42d3-bc47-f307f6bd1a46', 'pc-passion-fruit', 'Pc passion fruit');
+INSERT INTO ingredients (id, slug, name) VALUES ('d521d918-28bb-429c-8ce0-a514db43321d', 'passion-fruit-for-garnishing', 'Passion fruit for garnishing');
+INSERT INTO ingredients (id, slug, name) VALUES ('f4ae276f-272a-43ae-afcd-c25b4539e137', '½-lime', '½ lime');
+INSERT INTO ingredients (id, slug, name) VALUES ('b6e065cf-8843-4fc3-869f-f5bf2e7aab91', '½-apple', '½ apple');
+INSERT INTO ingredients (id, slug, name) VALUES ('0a17fb8a-7fe8-4307-bbf0-a35a6a7efdfb', '½-avocado', '½ avocado');
+INSERT INTO ingredients (id, slug, name) VALUES ('df19648d-1645-4550-b56c-343dd0e735ef', '½-cup-strawberries', '½ cup strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('4982e162-475e-4220-b176-9091693b3fd2', '½-orange', '½ orange');
+INSERT INTO ingredients (id, slug, name) VALUES ('3dea223c-2a9f-465a-bd92-d85ddef4902a', '¼-avocado', '¼ avocado');
+INSERT INTO ingredients (id, slug, name) VALUES ('da059e9e-0d95-4c04-88d1-2c60746cd93a', 'tbs-chia-seeds', 'Tbs chia seeds');
+INSERT INTO ingredients (id, slug, name) VALUES ('e4bb5a32-b927-4f44-affc-ab2dbc428397', '½-cup-almond-milk', '½ cup almond milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('7923d6a1-8651-464a-8e04-46a97aad208d', 'cup-coffee', 'Cup coffee');
+INSERT INTO ingredients (id, slug, name) VALUES ('a263df57-3ade-4eb4-98f0-11adb5c56aee', 'medjool-date', 'Medjool date');
+INSERT INTO ingredients (id, slug, name) VALUES ('e3444b13-dea6-4349-9606-d2051c61d088', 'scoop-chocolate-oat-protein-powder', 'Scoop chocolate oat protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('ba17b0ef-d171-4ab7-b9c3-9a7c23b4daf4', '½-cup-greek-yogurt', '½ cup Greek yogurt');
+INSERT INTO ingredients (id, slug, name) VALUES ('aba33feb-1c9a-4956-947e-5620fa5724c5', 'scoop-vanilla-casein-protein-powder', 'Scoop vanilla casein protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('b455c9cd-eebc-418d-a203-d9e380d3462d', 'tablespoon-coconut', 'Tablespoon coconut');
+INSERT INTO ingredients (id, slug, name) VALUES ('9eb84209-e474-4d98-98f3-38565801af3b', '½-cup-coconut-milk', '½ cup coconut milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('66982b41-0355-4ff8-884f-2c9316724d71', '¼-cup-frozen-pineapple', '¼ cup frozen pineapple');
+INSERT INTO ingredients (id, slug, name) VALUES ('e7b85d4b-840f-47d0-914b-b0e8efabe4da', 'carrot', 'Carrot');
+INSERT INTO ingredients (id, slug, name) VALUES ('e768039a-145f-4694-bf3a-ff4f7e9b732f', '½-cup-frozen-pineapple', '½ cup frozen pineapple');
+INSERT INTO ingredients (id, slug, name) VALUES ('6aa706ea-2420-49f4-afad-a719dd2b34ca', 'tbs-ginger', 'Tbs ginger');
+INSERT INTO ingredients (id, slug, name) VALUES ('4dd0caf5-7d23-4077-8ded-86112b28e238', '¼-cup-water', '¼ cup water');
+INSERT INTO ingredients (id, slug, name) VALUES ('8ee387f9-3111-4fb0-aef8-276cb36a3035', '½-cup-light-coconut-cream', '½ cup light coconut cream');
+INSERT INTO ingredients (id, slug, name) VALUES ('69e49fbb-001d-45bf-acb5-8e587a5c28e0', 'scoop-chocolate-rice-protein-powder', 'Scoop chocolate rice protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('3178d354-d456-49f5-b150-cc929f266121', 'scoop-chocolate-whey-protein', 'Scoop chocolate whey protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('0829f65e-e91c-48b8-80a3-c774538a23c9', 'tablespoons-coconut-cream', 'Tablespoons coconut cream');
+INSERT INTO ingredients (id, slug, name) VALUES ('dc53765f-5410-483f-806c-e68aebb40af7', 'tablespoons-cashew-butter', 'Tablespoons cashew butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('2c7315c0-a53d-4d42-949c-1db6812ee135', 'teaspoons-sprinkles', 'Teaspoons sprinkles');
+INSERT INTO ingredients (id, slug, name) VALUES ('671733e6-d6c2-4dfa-863f-c3d6915c14e7', 'tablespoon-coconut-flakes', 'Tablespoon coconut flakes');
+INSERT INTO ingredients (id, slug, name) VALUES ('7e60118a-e6a6-4343-82b7-2b63d7e47ca7', 'tablespoon-flaxseed', 'Tablespoon flaxseed');
+INSERT INTO ingredients (id, slug, name) VALUES ('302e20d5-dc33-4d02-9b61-10f1f35c87d9', 'scoop-peanut-butter-plant-based-protein', 'Scoop peanut butter plant-based protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('41935302-612f-458b-82ac-8c15a6080c5e', '½-cup-vanilla-almond-milk', '½ cup vanilla almond milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('dd34e691-d409-460a-b195-995020c03bd2', 'scoop-plant-based-vanilla-protein-powder', 'Scoop plant-based vanilla protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('97dfc184-791d-4f05-bcf2-70c785f42af0', 'tablespoon-cashew-butter', 'Tablespoon cashew butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('89401a47-db79-4193-8953-826e11053070', 'teaspoon-of-maple-syrup', 'Teaspoon of maple syrup');
+INSERT INTO ingredients (id, slug, name) VALUES ('3fa3ea81-9bd9-4c41-b52d-9a6bed89f920', 'cup-frozen-banana-chunks', 'Cup frozen banana chunks');
+INSERT INTO ingredients (id, slug, name) VALUES ('dbfff2c3-669e-4528-9821-fcc979e407f6', 'cup-oat-milk', 'Cup oat milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('3590dceb-7b78-4f3d-9ceb-5ca5bfea7948', 'tsp-matcha', 'Tsp matcha');
+INSERT INTO ingredients (id, slug, name) VALUES ('15c12c40-d3e2-4456-9734-c14aa30e5b67', 'scoop-pea-protein', 'Scoop pea protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('b3e60273-d414-44d4-8c2b-2e9194407cc1', 'cup-frozen-mixed-berries', 'Cup frozen mixed berries');
+INSERT INTO ingredients (id, slug, name) VALUES ('8187d625-4ecc-4510-a5cc-d89fcd989501', 'tablespoons-cocoa-powder', 'Tablespoons cocoa powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('fbeae687-eda6-41d4-9698-29c22276e28b', 'scoop-chocolate-whey-powder', 'Scoop chocolate whey powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('121e4c7b-4bfc-4f7a-8535-6b18ebf3a409', 'tablespoon-almond-butter', 'Tablespoon almond butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('5216e132-71d0-4a3b-bc92-144bf682f2f6', 'teaspoon-cinnamon', 'Teaspoon cinnamon');
+INSERT INTO ingredients (id, slug, name) VALUES ('3d2c547e-84d3-4e5f-8b21-66cf577f3cc8', '½-cup-frozen-pineapple-chunks', '½ cup frozen pineapple chunks');
+INSERT INTO ingredients (id, slug, name) VALUES ('28b36a0b-c2c2-4f78-8b30-a9d1636438b8', 'tbs-turmeric', 'Tbs turmeric');
+INSERT INTO ingredients (id, slug, name) VALUES ('4b6b580e-e9ac-4f57-ac0c-d92ec51a5781', 'gr-bok-choy', 'Gr bok choy');
+INSERT INTO ingredients (id, slug, name) VALUES ('4f03cbf9-0d94-4905-aa05-0579e03a4796', 'teaspoon-lime-juice', 'Teaspoon lime juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('687c56c4-4fd1-4e1d-baed-dd194b71458e', 'tablespon-water', 'Tablespon water');
+INSERT INTO ingredients (id, slug, name) VALUES ('ee19621e-0cec-446e-b32b-fa7b8af1b16d', '½-cup-coconut-water', '½ cup coconut water');
+INSERT INTO ingredients (id, slug, name) VALUES ('34559114-6dff-4116-95b9-778ef861c452', 'tbs-shredded-coconut', 'Tbs shredded coconut');
+INSERT INTO ingredients (id, slug, name) VALUES ('69ff2f21-7489-4966-859d-1f28b0da8eb0', '½-cups-frozen-strawberries', '½ cups frozen strawberries');
+INSERT INTO ingredients (id, slug, name) VALUES ('a56aa61d-2bae-4489-b33b-533a163359f7', 'cup-chilled-unsweetened-chocolate-almond-milk', 'Cup chilled unsweetened chocolate almond milk');
+INSERT INTO ingredients (id, slug, name) VALUES ('ce4cab50-7a38-41e8-a9c8-5e98d64533f8', 'tsp-almond-butter', 'Tsp almond butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('6f52c041-bce5-49fc-879d-c904096045b0', 'tsp-unsweetened-cocoa-powder', 'Tsp unsweetened cocoa powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('afd2edb7-07a6-4dd5-9e53-a3e27b082824', 'scoop-chocolate-pea-protein-powder', 'Scoop chocolate pea protein powder');
+INSERT INTO ingredients (id, slug, name) VALUES ('289cf8ae-0d94-4e9f-a54f-56dd1d7bbe8b', '½-cup-frozen-mango', '½ cup frozen mango');
+INSERT INTO ingredients (id, slug, name) VALUES ('7d71b8b1-47fa-4b60-9334-8be74a08bebf', 'tsp-ground-chia-seeds', 'Tsp ground chia seeds');
+INSERT INTO ingredients (id, slug, name) VALUES ('2492d2b3-a410-4ee7-986d-ebe435cc20ec', 'tablespoon-plant-based-protein', 'Tablespoon plant-based protein');
+INSERT INTO ingredients (id, slug, name) VALUES ('afe4ad53-619a-4269-80b3-0cdaaec37e5e', 'cup-frozen-pineapple-chunks', 'Cup frozen pineapple chunks');
+INSERT INTO ingredients (id, slug, name) VALUES ('48984c28-d433-49f8-922e-9a6f183ece7c', 'tablespoons-lime-juice', 'Tablespoons lime juice');
+INSERT INTO ingredients (id, slug, name) VALUES ('856ed6f3-9e0d-4190-82b0-e6c1b784be34', 'teaspoon-cashew-butter', 'Teaspoon cashew butter');
+INSERT INTO ingredients (id, slug, name) VALUES ('9f998224-4d55-4acb-8606-44bd01f15244', 'chilled', 'Chilled');
+INSERT INTO ingredients (id, slug, name) VALUES ('a4e4bab5-e54a-48aa-815a-a236722345b0', 'cup-honeydew', 'Cup honeydew');
+INSERT INTO ingredients (id, slug, name) VALUES ('610cb00d-6cf7-46f8-b98e-00524fe5b4c3', 'tablespoons-basil-leaves', 'Tablespoons basil leaves');
+INSERT INTO ingredients (id, slug, name) VALUES ('1d5e5faa-6167-4ecd-ab5f-2e36ff550b45', 'juice-and-zest', 'Juice and zest');
+INSERT INTO ingredients (id, slug, name) VALUES ('95811b61-3020-4385-913d-cb1c4abb84e9', 'dash-turmeric', 'Dash turmeric');
 
 -- Insert all categories
-INSERT INTO categories (id, slug, main_title) VALUES ('83b438f4-88bb-4cc6-90b5-0a02cd94660a', 'low-carb-smoothies', 'Low Carb Smoothies');
-INSERT INTO categories (id, slug, main_title) VALUES ('cad9abb4-4238-443f-864b-049afadd2da6', 'anti-inflammatory-smoothies', 'Anti-Inflammatory Smoothies');
-INSERT INTO categories (id, slug, main_title) VALUES ('7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c', 'superfood-smoothies', 'Superfood smoothies');
-INSERT INTO categories (id, slug, main_title) VALUES ('43353b72-103d-44ae-bda1-7a41cee6f1da', 'meal-replacement-smoothies', 'Meal Replacement Smoothies');
-INSERT INTO categories (id, slug, main_title) VALUES ('052457cf-02cc-4515-893b-a4c212b0cdf5', 'after-workout-shake', 'After Workout Shake');
-INSERT INTO categories (id, slug, main_title) VALUES ('89149363-8dd9-43a7-b415-1b3ba3f638a6', 'meal-replacement-shakes', 'Meal Replacement Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('01cea7d2-e7bc-4405-a9f6-29e2846e99a9', 'weight-loss-shakes', 'Weight Loss Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('b996dd67-c043-473f-b250-3c98420b4b86', 'muscle-gain-shakes', 'Muscle Gain Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('e72f2908-d452-4339-a1cc-d566ba47442e', 'high-calorie-protein-shakes', 'High Calorie Protein Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('5836c625-6a95-40e9-a1dc-0173eb253edb', 'low-carb-shakes', 'Low Carb Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('c0087909-c83b-4c11-b62d-d21fde1b0e41', 'keto-shakes', 'Keto Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('a5409167-d29d-4831-b99c-eb51d58f1b8c', 'pre-workout-shakes', 'Pre Workout Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('69108149-eb3d-4cfc-84ec-20a826485ca1', 'peanut-butter-shake', 'Peanut Butter Shake');
-INSERT INTO categories (id, slug, main_title) VALUES ('fac2758d-ffa1-4edb-bc1f-f9c8d16ecf6f', 'meal-replacement-shakes-(breakfast)', 'Meal Replacement Shakes (breakfast)');
-INSERT INTO categories (id, slug, main_title) VALUES ('cd31ae7f-e2ee-43c9-96ec-e7aba7822504', 'coffee-protein-shake', 'Coffee Protein Shake');
-INSERT INTO categories (id, slug, main_title) VALUES ('1f6d5365-08ed-44f0-8812-70a587b6e7e9', 'casein-protein-shakes', 'Casein Protein Shakes');
-INSERT INTO categories (id, slug, main_title) VALUES ('70086b28-ee82-4354-a9fb-ca0c5361275f', 'low-carb', 'Low Carb');
+INSERT INTO categories (id, slug, main_title) VALUES ('994a569f-3284-42d8-babb-6ecd8aab552e', 'weight-loss', 'Weight Loss');
+INSERT INTO categories (id, slug, main_title) VALUES ('fafaeebc-8a58-49f7-80cf-eabaedf7ace5', 'anti-inflammatory', 'Anti Inflammatory');
+INSERT INTO categories (id, slug, main_title) VALUES ('bca71640-c702-40d4-b51e-21d53b9b7d92', 'superfoodss', 'Superfoodss');
+INSERT INTO categories (id, slug, main_title) VALUES ('2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4', 'meal-replacement', 'Meal Replacement');
+INSERT INTO categories (id, slug, main_title) VALUES ('ef47dd4a-92a9-4fef-80e9-26bced577583', 'superfoods', 'Superfoods');
+INSERT INTO categories (id, slug, main_title) VALUES ('2ee93ab6-ef51-40a2-8532-1445338d2051', 'post-workout', 'Post Workout');
+INSERT INTO categories (id, slug, main_title) VALUES ('6f5c6a53-a785-48cb-a1a5-2a9f664f3b10', 'muscle-gain', 'Muscle Gain');
+INSERT INTO categories (id, slug, main_title) VALUES ('72d5f822-6cac-4d8d-9c2e-5a104ae153e4', 'high-calorie', 'High Calorie');
+INSERT INTO categories (id, slug, main_title) VALUES ('1037125b-477d-419c-8651-f8efd1416f3b', 'low-carb', 'Low Carb');
+INSERT INTO categories (id, slug, main_title) VALUES ('6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c', 'keto', 'Keto');
+INSERT INTO categories (id, slug, main_title) VALUES ('a94346c6-daf1-44e0-b249-80ce7406c52b', 'pre-workout', 'Pre Workout');
+INSERT INTO categories (id, slug, main_title) VALUES ('ee157d01-5d08-4059-bfd4-fde228806eff', 'high-protein', 'High Protein');
 
 -- Insert all labels
-INSERT INTO labels (id, slug, text) VALUES ('cec8e2a6-6817-4997-b251-5453d91a6d1f', 'hydration-reconvalescence-after-sickness-or-injury', 'Hydration
+INSERT INTO labels (id, slug, text) VALUES ('2f6be597-a0b3-41bc-b67a-a9c872385ebf', 'hydration-reconvalescence-after-sickness-or-injury', 'Hydration
 Reconvalescence 
 after sickness or injury');
-INSERT INTO labels (id, slug, text) VALUES ('2a127f45-6410-4e0b-9fc2-35848078a202', 'hydration,-detoxification,-tropical-vibe', 'Hydration, 
+INSERT INTO labels (id, slug, text) VALUES ('58158a8e-684a-4520-b602-e4ee67173bf0', 'hydration,-detoxification,-tropical-vibe', 'Hydration, 
 Detoxification, 
 Tropical vibe');
-INSERT INTO labels (id, slug, text) VALUES ('cc0c368a-5500-458a-a98c-ed878b36d6ae', 'anti-inflammatory,-detoxification,-inflamation-fighter', 'Anti-inflammatory, 
+INSERT INTO labels (id, slug, text) VALUES ('b3ff9938-074d-409f-90af-f744eec91f4a', 'anti-inflammatory,-detoxification,-inflamation-fighter', 'Anti Inflammatory, 
 Detoxification, 
 Inflamation fighter');
-INSERT INTO labels (id, slug, text) VALUES ('7aa091bb-aebf-490d-a9be-b6e4de34f6a5', 'anti-inflammatory,-alkalizing,-blood-sugar-regulator', 'Anti-inflammatory, 
+INSERT INTO labels (id, slug, text) VALUES ('f1648ef0-50a3-4802-9422-fd446999b881', 'anti-inflammatory,-alkalizing,-blood-sugar-regulator', 'Anti Inflammatory, 
 Alkalizing, 
 Blood sugar regulator');
-INSERT INTO labels (id, slug, text) VALUES ('ff2c6bf4-ec52-4c25-9eed-727b906c6f62', 'antioxidants,-blood-clotting,-bones-health', 'Antioxidants, 
+INSERT INTO labels (id, slug, text) VALUES ('ee0adc14-955a-4da3-b42d-55565b179fa0', 'antioxidants,-blood-clotting,-bones-health', 'Antioxidants, 
 Blood clotting, 
 Bones health');
-INSERT INTO labels (id, slug, text) VALUES ('1553b8a2-56a1-4712-b723-0f4ba46f1cda', 'gut-and-liver-health,-iron-rich,-reduces-anxiety', 'Gut and liver health, 
+INSERT INTO labels (id, slug, text) VALUES ('53e43aae-b400-4a7d-884c-213a5cb4913c', 'gut-and-liver-health,-iron-rich,-reduces-anxiety', 'Gut and liver health, 
 Iron rich, 
 Reduces anxiety');
-INSERT INTO labels (id, slug, text) VALUES ('b1f5c3d0-c937-4550-8fb2-97aff7703f0c', 'digestion.-braiin-health.-immunity.-prevents-cold-and-flu.', 'Digestion. Braiin health. Immunity. Prevents Cold and Flu.');
-INSERT INTO labels (id, slug, text) VALUES ('05014bf3-2d42-44e1-b553-aaebf10bc3dc', 'energy', 'Energy');
-INSERT INTO labels (id, slug, text) VALUES ('856514ae-7515-427d-8642-e92859603d9e', 'appearance', 'Appearance');
-INSERT INTO labels (id, slug, text) VALUES ('2979b26b-8a4b-4d97-a363-68f1f9afacdb', 'muscle', 'Muscle');
-INSERT INTO labels (id, slug, text) VALUES ('a49a63d9-cc6b-40c7-9336-e90ed900790c', 'weight', 'Weight');
-INSERT INTO labels (id, slug, text) VALUES ('0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f', 'immunity', 'Immunity');
-INSERT INTO labels (id, slug, text) VALUES ('922b8392-0332-42b3-a0e1-ebeef974c33d', 'good-for-weight-loss', 'Good for weight loss');
-INSERT INTO labels (id, slug, text) VALUES ('ad7bd848-0fc7-42f1-bc7e-bd18f56cd07c', 'anti-inflammatory-immunity-booster,-calming-nerve-system', 'Anti-inflammatory
+INSERT INTO labels (id, slug, text) VALUES ('d4dab8aa-2834-4c54-ad34-46e8fe272059', 'digestion.-braiin-health.-immunity.-prevents-cold-and-flu.', 'Digestion. Braiin health. Immunity. Prevents Cold and Flu.');
+INSERT INTO labels (id, slug, text) VALUES ('910a6bd6-afcd-476f-a88c-09ecdab6e75f', 'energy', 'Energy');
+INSERT INTO labels (id, slug, text) VALUES ('0bba0cc1-602c-4387-877d-5281d5e5d4ff', 'appearance', 'Appearance');
+INSERT INTO labels (id, slug, text) VALUES ('b225f952-e95c-44fe-87fb-09c0bdbfbd83', 'muscle', 'Muscle');
+INSERT INTO labels (id, slug, text) VALUES ('bcc5210d-e11e-416a-b6a5-566a73a4be32', 'weight', 'Weight');
+INSERT INTO labels (id, slug, text) VALUES ('5a48e22a-f836-47a0-bdba-b59d08849d8e', 'immunity', 'Immunity');
+INSERT INTO labels (id, slug, text) VALUES ('68836e77-ce82-4016-8f5f-638d0ed73c8e', 'good-for-weight-loss', 'Good for weight loss');
+INSERT INTO labels (id, slug, text) VALUES ('9980e4e5-ac13-49c6-a84a-546b1cb404c2', 'anti-inflammatory-immunity-booster,-calming-nerve-system', 'Anti Inflammatory
 Immunity booster, 
 Calming nerve system');
-INSERT INTO labels (id, slug, text) VALUES ('b66c9378-6a0c-45d9-9839-490c69d7ac3a', 'anti-inflammatory,-digestion,-blood-sugar-regulation', 'Anti-inflammatory, 
+INSERT INTO labels (id, slug, text) VALUES ('a99b85e7-f567-4d9d-9224-2dc40ad86d35', 'anti-inflammatory,-digestion,-blood-sugar-regulation', 'Anti Inflammatory, 
 Digestion, 
 Blood sugar regulation');
-INSERT INTO labels (id, slug, text) VALUES ('4e7e8a45-540f-40ff-b11b-f000334b0c32', 'hydration,-diabetes-and-heart-diseases-prevention.-antioxidant-rich.', 'Hydration, Diabetes and Heart diseases prevention. Antioxidant rich.');
+INSERT INTO labels (id, slug, text) VALUES ('a747cf29-9eb0-4821-815c-fa7382a0ae31', 'hydration,-diabetes-and-heart-diseases-prevention.-antioxidant-rich.', 'Hydration, Diabetes and Heart diseases prevention. Antioxidant rich.');
 
-INSERT INTO ingredients (id, slug, name) VALUES ('fcad1fba-472c-4187-ac0b-1514dc9b8fef', 'ingredients', 'Ingredients');
+INSERT INTO ingredients (id, slug, name) VALUES ('b36788fb-efcf-4243-bf80-b8cc2471333c', 'ingredients', 'Ingredients');
 
 -- Insert recipe: Name
 INSERT INTO recipes (
@@ -368,7 +363,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a7a92e12-7320-4331-ae38-14c9565c53cb', 
+  '37493279-ab83-41cf-aaf8-f3fe88c75269', 
   'name', 
   'Name', 
   NULL, 
@@ -387,16 +382,16 @@ INSERT INTO recipes (
   false,
   ARRAY['Diet Type'],
   ARRAY['Protein Type'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a7a92e12-7320-4331-ae38-14c9565c53cb', 'fcad1fba-472c-4187-ac0b-1514dc9b8fef', NULL, NULL, NULL);
+VALUES ('37493279-ab83-41cf-aaf8-f3fe88c75269', 'b36788fb-efcf-4243-bf80-b8cc2471333c', NULL, NULL, NULL);
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a7a92e12-7320-4331-ae38-14c9565c53cb', '/images/recipes/name.jpg', true);
+VALUES ('37493279-ab83-41cf-aaf8-f3fe88c75269', '/images/recipes/name.jpg', true);
 
 -- Insert recipe: Hydration bomb
 INSERT INTO recipes (
@@ -421,7 +416,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'e781e216-8207-43a8-9fce-eddc5cf74f18', 
+  '08735fc5-8098-4bcc-81f5-899bb59839d1', 
   'hydration-bomb', 
   'Hydration bomb', 
   NULL, 
@@ -446,30 +441,30 @@ after sickness or injury',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', '83b438f4-88bb-4cc6-90b5-0a02cd94660a');
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', '213b99c6-89a1-4c07-af0a-41375d9ab31e', '1', NULL, NULL);
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', '5945b47e-b46b-420a-9b5b-f6191709507d', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', '9d91c617-4019-43ee-be59-11d1411a0c03', '3/4', NULL, NULL);
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', 'cadefd24-3a6b-4404-9244-ef93f10bf4f5', '3/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', 'dfe7f82d-b0aa-48e5-843c-db69570b0058', '1', NULL, NULL);
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', '6c71ed76-e412-4353-8a90-20c234fe2670', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', '5ddffedc-4a00-4c31-a4e2-72da1b9450c6', '1', NULL, NULL);
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', '3c5daeea-5d39-41ff-bc23-fd2d4278fdd7', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', 'cec8e2a6-6817-4997-b251-5453d91a6d1f');
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', '2f6be597-a0b3-41bc-b67a-a9c872385ebf');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('e781e216-8207-43a8-9fce-eddc5cf74f18', '/images/recipes/hydration-bomb.jpg', true);
+VALUES ('08735fc5-8098-4bcc-81f5-899bb59839d1', '/images/recipes/hydration-bomb.jpg', true);
 
 -- Insert recipe: Piña Colada
 INSERT INTO recipes (
@@ -494,7 +489,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '6abb6ff0-e499-4f59-9a07-bc6e20281538', 
+  '7019cd7f-83dd-4483-b5d4-91026638df90', 
   'piña-colada', 
   'Piña Colada', 
   NULL, 
@@ -519,24 +514,24 @@ Tropical vibe',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('6abb6ff0-e499-4f59-9a07-bc6e20281538', '83b438f4-88bb-4cc6-90b5-0a02cd94660a');
+VALUES ('7019cd7f-83dd-4483-b5d4-91026638df90', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('6abb6ff0-e499-4f59-9a07-bc6e20281538', '9d91c617-4019-43ee-be59-11d1411a0c03', '1', NULL, NULL);
+VALUES ('7019cd7f-83dd-4483-b5d4-91026638df90', 'cadefd24-3a6b-4404-9244-ef93f10bf4f5', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('6abb6ff0-e499-4f59-9a07-bc6e20281538', '2a127f45-6410-4e0b-9fc2-35848078a202');
+VALUES ('7019cd7f-83dd-4483-b5d4-91026638df90', '58158a8e-684a-4520-b602-e4ee67173bf0');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('6abb6ff0-e499-4f59-9a07-bc6e20281538', '/images/recipes/piña-colada.jpg', true);
+VALUES ('7019cd7f-83dd-4483-b5d4-91026638df90', '/images/recipes/piña-colada.jpg', true);
 
 -- Insert recipe: Heavy metal detox and Immunity booster
 INSERT INTO recipes (
@@ -561,7 +556,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '0d2cac84-2545-42c0-b936-8c0dba95c82d', 
+  'af175914-fcbe-4e80-8928-6ec3b0ea226d', 
   'heavy-metal-detox-and-immunity-booster', 
   'Heavy metal detox and Immunity booster', 
   NULL, 
@@ -572,7 +567,7 @@ INSERT INTO recipes (
 -        Remove stones from tamarind and cut them into smaller pieces or add 1 teaspoon of tamarind paste instead if you are using that
 -        Put all ingredients into a blender, add orange juice and blend well together
 -        Serve with grated ginger or turmeric on top and enjoy ☺'], 
-  'Anti-inflammatory, 
+  'Anti Inflammatory, 
 Detoxification, 
 Inflamation fighter', 
   3.4, 
@@ -587,28 +582,28 @@ Inflamation fighter',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('0d2cac84-2545-42c0-b936-8c0dba95c82d', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('af175914-fcbe-4e80-8928-6ec3b0ea226d', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0d2cac84-2545-42c0-b936-8c0dba95c82d', 'c7d412b4-26be-4fbd-a59a-fbdebb715e95', '1/2', NULL, NULL);
+VALUES ('af175914-fcbe-4e80-8928-6ec3b0ea226d', '52eaaa52-b3d2-4c80-b962-7b4e243bc5d4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0d2cac84-2545-42c0-b936-8c0dba95c82d', 'ebc922a5-f827-4e85-abbb-43a24687d3cb', '1/2', NULL, NULL);
+VALUES ('af175914-fcbe-4e80-8928-6ec3b0ea226d', '5a6aa35c-a91c-4f83-879b-28f045a230eb', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0d2cac84-2545-42c0-b936-8c0dba95c82d', '88b8485f-697a-4d0a-8d48-801678fb8601', '1', NULL, NULL);
+VALUES ('af175914-fcbe-4e80-8928-6ec3b0ea226d', 'ec067dc8-ca8d-42b7-a463-d11402ce40a4', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('0d2cac84-2545-42c0-b936-8c0dba95c82d', 'cc0c368a-5500-458a-a98c-ed878b36d6ae');
+VALUES ('af175914-fcbe-4e80-8928-6ec3b0ea226d', 'b3ff9938-074d-409f-90af-f744eec91f4a');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('0d2cac84-2545-42c0-b936-8c0dba95c82d', '/images/recipes/heavy-metal-detox-and-immunity-booster.jpg', true);
+VALUES ('af175914-fcbe-4e80-8928-6ec3b0ea226d', '/images/recipes/heavy-metal-detox-and-immunity-booster.jpg', true);
 
 -- Insert recipe: Green Goddess 
 INSERT INTO recipes (
@@ -633,17 +628,17 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'be1dc04a-4041-44c3-9d9c-efdf455a822c', 
+  '99216698-d85c-45a3-9ea1-02b7b0f7d374', 
   'green-goddess', 
   'Green Goddess', 
   NULL, 
-  'This smoothie is alkalizing, anti-inflammatory, regulating blood sugar and supportive for diabetes patients', 
+  'This smoothie is alkalizing, Anti Inflammatory, regulating blood sugar and supportive for diabetes patients', 
   ARRAY['-        Cut bananas, celery and Bok Choy into smaller pieces
 -        Make 4 round cucumber slices 
 -        Remove skin on Aloe Vera and use the gel inside
 -        Put all ingredients into a blender, add fresh coconut water and blend well together
 -        Serve with Aloe Vera on top and enjoy ☺'], 
-  'Anti-inflammatory, 
+  'Anti Inflammatory, 
 Alkalizing, 
 Blood sugar regulator', 
   4.1, 
@@ -658,28 +653,28 @@ Blood sugar regulator',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('be1dc04a-4041-44c3-9d9c-efdf455a822c', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('99216698-d85c-45a3-9ea1-02b7b0f7d374', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('be1dc04a-4041-44c3-9d9c-efdf455a822c', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '2 1/2', NULL, NULL);
+VALUES ('99216698-d85c-45a3-9ea1-02b7b0f7d374', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '2 1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('be1dc04a-4041-44c3-9d9c-efdf455a822c', '7f579daa-d87e-4de3-8b2c-704b9177bf6c', '1/2', NULL, NULL);
+VALUES ('99216698-d85c-45a3-9ea1-02b7b0f7d374', '8566c961-302f-49ba-9664-a44dafbb43cc', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('be1dc04a-4041-44c3-9d9c-efdf455a822c', 'effa0549-b528-4470-a13f-fc96e1c18444', NULL, NULL, NULL);
+VALUES ('99216698-d85c-45a3-9ea1-02b7b0f7d374', '02d78b62-e274-464a-8971-c6c9bed59a41', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('be1dc04a-4041-44c3-9d9c-efdf455a822c', '7aa091bb-aebf-490d-a9be-b6e4de34f6a5');
+VALUES ('99216698-d85c-45a3-9ea1-02b7b0f7d374', 'f1648ef0-50a3-4802-9422-fd446999b881');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('be1dc04a-4041-44c3-9d9c-efdf455a822c', '/images/recipes/green-goddess.jpg', true);
+VALUES ('99216698-d85c-45a3-9ea1-02b7b0f7d374', '/images/recipes/green-goddess.jpg', true);
 
 -- Insert recipe: Antioxidant bomb
 INSERT INTO recipes (
@@ -704,7 +699,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'd27d4d11-7ba7-46a4-a85c-230637ab24cd', 
+  'b7d0695c-ebe9-4101-b11c-3fbd6324073b', 
   'antioxidant-bomb', 
   'Antioxidant bomb', 
   NULL, 
@@ -729,26 +724,26 @@ Bones health',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('d27d4d11-7ba7-46a4-a85c-230637ab24cd', '7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c');
+VALUES ('b7d0695c-ebe9-4101-b11c-3fbd6324073b', 'bca71640-c702-40d4-b51e-21d53b9b7d92');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d27d4d11-7ba7-46a4-a85c-230637ab24cd', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1 1/2', NULL, NULL);
+VALUES ('b7d0695c-ebe9-4101-b11c-3fbd6324073b', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1 1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d27d4d11-7ba7-46a4-a85c-230637ab24cd', '17584132-cb86-4460-9814-66e89eff6be2', NULL, NULL, NULL);
+VALUES ('b7d0695c-ebe9-4101-b11c-3fbd6324073b', 'fec5163a-ba35-4394-bc8e-900fe73aff6f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('d27d4d11-7ba7-46a4-a85c-230637ab24cd', 'ff2c6bf4-ec52-4c25-9eed-727b906c6f62');
+VALUES ('b7d0695c-ebe9-4101-b11c-3fbd6324073b', 'ee0adc14-955a-4da3-b42d-55565b179fa0');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('d27d4d11-7ba7-46a4-a85c-230637ab24cd', '/images/recipes/antioxidant-bomb.jpg', true);
+VALUES ('b7d0695c-ebe9-4101-b11c-3fbd6324073b', '/images/recipes/antioxidant-bomb.jpg', true);
 
 -- Insert recipe: Dragon fruit Cream
 INSERT INTO recipes (
@@ -773,7 +768,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c669f9da-2f9e-4835-b060-47ab3d780f3c', 
+  'd3ba3af1-c2db-4d4c-b128-2c250cfe257a', 
   'dragon-fruit-cream', 
   'Dragon fruit Cream', 
   NULL, 
@@ -798,28 +793,28 @@ Reduces anxiety',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c669f9da-2f9e-4835-b060-47ab3d780f3c', '7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c');
+VALUES ('d3ba3af1-c2db-4d4c-b128-2c250cfe257a', 'bca71640-c702-40d4-b51e-21d53b9b7d92');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c669f9da-2f9e-4835-b060-47ab3d780f3c', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1 1/2', NULL, NULL);
+VALUES ('d3ba3af1-c2db-4d4c-b128-2c250cfe257a', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1 1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c669f9da-2f9e-4835-b060-47ab3d780f3c', 'a51c9bdb-c056-48a2-a454-34fc7c2f3545', '2', NULL, NULL);
+VALUES ('d3ba3af1-c2db-4d4c-b128-2c250cfe257a', 'db979b68-288f-4558-83d5-a8a2fe5e1d5d', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c669f9da-2f9e-4835-b060-47ab3d780f3c', 'd27c6f7c-e9a2-43db-bd8b-fa11ac458f25', NULL, NULL, NULL);
+VALUES ('d3ba3af1-c2db-4d4c-b128-2c250cfe257a', '53dc03ec-dc34-479c-a2db-4e7231c624ca', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c669f9da-2f9e-4835-b060-47ab3d780f3c', '1553b8a2-56a1-4712-b723-0f4ba46f1cda');
+VALUES ('d3ba3af1-c2db-4d4c-b128-2c250cfe257a', '53e43aae-b400-4a7d-884c-213a5cb4913c');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c669f9da-2f9e-4835-b060-47ab3d780f3c', '/images/recipes/dragon-fruit-cream.jpg', true);
+VALUES ('d3ba3af1-c2db-4d4c-b128-2c250cfe257a', '/images/recipes/dragon-fruit-cream.jpg', true);
 
 -- Insert recipe: Acai-mulberry smoothie
 INSERT INTO recipes (
@@ -844,7 +839,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '2155dc9d-4e54-4c85-bfd9-819c93e94173', 
+  'a9eae753-0299-41a8-a736-89441809b6d0', 
   'acai-mulberry-smoothie', 
   'Acai-mulberry smoothie', 
   NULL, 
@@ -867,30 +862,30 @@ INSERT INTO recipes (
   false,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', '7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c');
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', 'bca71640-c702-40d4-b51e-21d53b9b7d92');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1 1/2', NULL, NULL);
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1 1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', 'd1ac67de-484e-41e6-9a89-cfe633a72267', '2', NULL, NULL);
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', 'cc6e68ee-1a65-4b60-a7b4-91211431d367', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', '3c7a4144-bab6-4d1d-88ca-bec9e24372a1', '2', NULL, NULL);
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', '7e92f8e3-f520-43bc-badd-b159c2973dd6', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', '52021965-1f76-45d4-9529-e4f7f4518bb7', '1', NULL, NULL);
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', '009fc4ce-4626-400e-9b34-6f37527707d2', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', 'b1f5c3d0-c937-4550-8fb2-97aff7703f0c');
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', 'd4dab8aa-2834-4c54-ad34-46e8fe272059');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('2155dc9d-4e54-4c85-bfd9-819c93e94173', '/images/recipes/acai-mulberry-smoothie.jpg', true);
+VALUES ('a9eae753-0299-41a8-a736-89441809b6d0', '/images/recipes/acai-mulberry-smoothie.jpg', true);
 
 -- Insert recipe: Sweet Potato Pie
 INSERT INTO recipes (
@@ -915,7 +910,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '364fdba3-f524-46a5-9dd3-dadffe8c2876', 
+  '6d318465-9396-4c50-8b37-991fe2bf0c28', 
   'sweet-potato-pie', 
   'Sweet Potato Pie', 
   NULL, 
@@ -934,40 +929,40 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '43353b72-103d-44ae-bda1-7a41cee6f1da');
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '81540d62-7e7b-4fce-a495-48c3a35b05e0', '1', NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '27346cb1-431f-4035-9050-ffada3d89d42', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '2cca150f-b1f6-4113-aa0f-735c161f80ba', NULL, NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '82a9a2f7-a0e3-4c6f-9a94-057b65814a4d', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '365a5b23-9cbb-4eba-8eb4-247f2cb8dcc3', NULL, NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '3ad0940f-24a4-420a-9790-7d48e83b7d92', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '36bd1ca9-ad55-4b50-9e5c-108825f71b8b', '1', NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '5ea796d6-5430-4af4-863e-6d00b29b10d3', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '54e62858-34b8-4e5f-bc50-424090bc9b34', NULL, NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', 'ff10e974-6c12-4d82-9e03-6fbe26f6d204', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '695dedfc-c37c-4de1-ae6b-2aeb4db38241', '1', NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '2ed0a644-e436-4faf-b278-732a82f447af', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '7006d98b-c1d9-447a-bc9b-7a577d3c0232', '1', NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '0714bb59-0d3d-44ba-8a8c-edcc202a5345', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('364fdba3-f524-46a5-9dd3-dadffe8c2876', '/images/recipes/sweet-potato-pie.jpg', true);
+VALUES ('6d318465-9396-4c50-8b37-991fe2bf0c28', '/images/recipes/sweet-potato-pie.jpg', true);
 
 -- Insert recipe: Sweet Peach
 INSERT INTO recipes (
@@ -992,7 +987,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', 
+  '9db516e6-1dd5-4224-b61b-8cdc6b921ba4', 
   'sweet-peach', 
   'Sweet Peach', 
   NULL, 
@@ -1011,38 +1006,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c');
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', 'ef47dd4a-92a9-4fef-80e9-26bced577583');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '3bcb0a03-1b51-42de-9b4d-682b2c19449e', NULL, NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '3d93b988-3309-42f4-9137-3557ce797044', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', 'b4f24656-8522-4773-ad0f-e968c253e92f', '1', NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '15edf6be-c8d1-4306-b1ce-03e19864c37f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '4af2051e-3fb4-4231-a3e5-7e43a3606c00', '1', NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', 'f2f9530b-e92f-40e4-85fe-bd502dd10dc3', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', 'f7182f32-1415-4132-a492-cc3a20d76de9', '1/2', NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', 'bd82b519-cac2-4d68-b7df-261d5aef4635', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '2aeb1527-6861-4c71-8523-6d3569d65c29', '1', NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '8b2232bc-897f-4fdc-94e4-5180c0bfd30a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a38c4a8b-5f0d-43b5-ba91-851f5b8ed731', '/images/recipes/sweet-peach.jpg', true);
+VALUES ('9db516e6-1dd5-4224-b61b-8cdc6b921ba4', '/images/recipes/sweet-peach.jpg', true);
 
 -- Insert recipe: Veggie Apple Smoothie
 INSERT INTO recipes (
@@ -1067,7 +1062,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'f5b97ad7-ff64-4911-9694-76fc6eec03e3', 
+  '53c93766-7a3b-487a-bf19-49a7c22baa99', 
   'veggie-apple-smoothie', 
   'Veggie Apple Smoothie', 
   NULL, 
@@ -1086,44 +1081,44 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', 'ac3147cc-585b-4b72-a457-e97d8fe7f383', '1', NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '0c18fdfa-f452-47c7-855e-ea21a703206b', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '06edb950-0025-4fde-a33b-212bda638552', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '4080f5ca-30e1-421b-9b7b-29082db322b6', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', 'd00ec41e-2931-4df8-b9b9-fc49016f3025', '1', NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '534e3009-f195-4d94-88e2-969781e1aee4', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '743294af-c8e0-4853-9c47-202faf44dafe', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '4e7a0745-28ff-4976-acf1-d8d27a45f0ca', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', 'de1ae764-e4d8-4eaf-b3ce-4022ff1515de', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', 'd70b0945-fffa-4d16-b330-6b2efe1cde3c', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '800ef418-2e3d-494e-8933-4f6faa1cc92c', '1', NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', 'c9056f98-f7e5-4a6d-9dff-0edd25e45351', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '8f9fd75e-4a47-4b1d-904b-dcdf400ae91b', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', 'a2b8e28d-ab50-4441-9a3a-a4adaeb6f51e', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', 'bdfda85e-fd8a-4a98-a362-50d518a698e8', '1', NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '2e234779-a3c9-440d-b2a8-eb1d4234d2b8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '8f9fd75e-4a47-4b1d-904b-dcdf400ae91b', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', 'a2b8e28d-ab50-4441-9a3a-a4adaeb6f51e', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '4a4eaad5-5eec-46f0-a254-7cbd02b2151b', NULL, NULL, NULL);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '8d5f089a-4bb4-43a3-8656-b5dd54521246', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('f5b97ad7-ff64-4911-9694-76fc6eec03e3', '/images/recipes/veggie-apple-smoothie.jpg', true);
+VALUES ('53c93766-7a3b-487a-bf19-49a7c22baa99', '/images/recipes/veggie-apple-smoothie.jpg', true);
 
 -- Insert recipe: Watermelon Sunrise
 INSERT INTO recipes (
@@ -1148,7 +1143,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a52613e8-c0a7-471d-9d3d-9ef97258adbd', 
+  '04a51f6d-54f8-4a70-8784-19d160927fe4', 
   'watermelon-sunrise', 
   'Watermelon Sunrise', 
   NULL, 
@@ -1167,36 +1162,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '857f39d0-ab38-43c6-b522-6c33917e0b27', '1/2', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', 'aa92083f-3024-4a87-89eb-aa476a7fdf0e', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '3050386f-85de-4f27-ae94-3877e6d2a1fe', '1/2', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '8c5b0e6c-90ca-45a8-ad0d-8ae1989f5bf1', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '0731b3fd-4619-49e2-81b8-77f19c276c6d', '1', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '958d1992-f49e-4dbf-b909-e2ba3798c1d1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', 'c88a4ca3-afa3-49bc-bcb5-40c6b75b6eac', '1', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', 'bd887c7f-8d75-4138-ab03-10590ae88070', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '00fc4f82-c9e4-4836-b0e2-d112d945e8b5', '1/2', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '8b55b575-d43b-4bd7-8860-723d79bd83b7', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a52613e8-c0a7-471d-9d3d-9ef97258adbd', '/images/recipes/watermelon-sunrise.jpg', true);
+VALUES ('04a51f6d-54f8-4a70-8784-19d160927fe4', '/images/recipes/watermelon-sunrise.jpg', true);
 
 -- Insert recipe: Raspberry Chia Smoothie 
 INSERT INTO recipes (
@@ -1221,7 +1216,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5f98f41e-b488-4043-9e64-0142e77825f8', 
+  '3c88315f-6cb4-4404-8ff8-864e2c5b5891', 
   'raspberry-chia-smoothie', 
   'Raspberry Chia Smoothie', 
   NULL, 
@@ -1240,36 +1235,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', 'd87682b6-2dc9-4480-b552-c8a153ac235a', '1', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', '349bc500-2bf1-4c7c-9f77-8079ae264c54', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', '26b2142b-0faa-4d92-bc34-6a07a1a4543b', '1', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', '0a41c92e-06dc-42a0-b7b3-045ec8095af2', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', 'c88a4ca3-afa3-49bc-bcb5-40c6b75b6eac', '1', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', 'bd887c7f-8d75-4138-ab03-10590ae88070', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', 'e970454a-dc9a-4a79-8574-22a6da99cfc4', '1', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', 'dd998801-54db-4e22-8e6a-f26e0bbe6491', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5f98f41e-b488-4043-9e64-0142e77825f8', '/images/recipes/raspberry-chia-smoothie.jpg', true);
+VALUES ('3c88315f-6cb4-4404-8ff8-864e2c5b5891', '/images/recipes/raspberry-chia-smoothie.jpg', true);
 
 -- Insert recipe: Cherry Garcia
 INSERT INTO recipes (
@@ -1294,7 +1289,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', 
+  '2da45164-0a33-4382-bbf3-dec203b11fb1', 
   'cherry-garcia', 
   'Cherry Garcia', 
   NULL, 
@@ -1313,36 +1308,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '3dfe9f2e-7a83-4132-a66b-f544ee5c12b1', '1/2', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '4b55b20f-af32-441e-a2ad-a9a86be5829a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', 'ccf4a5ee-f6d3-492e-923c-b597c0d30463', '2', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', 'd54c6788-c4d4-499f-8291-dd3f5e0e7b06', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '92940e47-70fc-4093-bf84-b813afcce9db', '1', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '3b4c5896-19d6-4d91-b4eb-b865dc992554', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', 'c88a4ca3-afa3-49bc-bcb5-40c6b75b6eac', '1', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', 'bd887c7f-8d75-4138-ab03-10590ae88070', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '48dfaa85-7de3-4e14-acb8-8533f8f325db', '1', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '0d5d30d4-5bec-4e6b-8860-39498c89a0bb', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/2', NULL, NULL);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('4a2095f4-9e8e-4635-875e-e7ecd62a8f7d', '/images/recipes/cherry-garcia.jpg', true);
+VALUES ('2da45164-0a33-4382-bbf3-dec203b11fb1', '/images/recipes/cherry-garcia.jpg', true);
 
 -- Insert recipe: Creamy Cherry Shake
 INSERT INTO recipes (
@@ -1367,7 +1362,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '447e65df-c812-4845-924f-cd060d009844', 
+  '64e98979-70a8-4c68-ac6e-8fafec69c005', 
   'creamy-cherry-shake', 
   'Creamy Cherry Shake', 
   NULL, 
@@ -1386,32 +1381,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/3', NULL, NULL);
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '98a88ff5-543b-4f6d-8436-50a63ee52205', '1/3', NULL, NULL);
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', '5ca4feb1-18be-47c7-a5ff-db5e3f36daf6', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '66dbd110-8f1b-4f24-975f-e37c215fbe33', '1/2', NULL, NULL);
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', '2d337b6b-ef5d-4584-806b-bb20032a0b28', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('447e65df-c812-4845-924f-cd060d009844', '/images/recipes/creamy-cherry-shake.jpg', true);
+VALUES ('64e98979-70a8-4c68-ac6e-8fafec69c005', '/images/recipes/creamy-cherry-shake.jpg', true);
 
 -- Insert recipe: Mint Green Smoothie
 INSERT INTO recipes (
@@ -1436,7 +1431,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', 
+  '450c8385-c05d-4fdf-806c-667eed34958e', 
   'mint-green-smoothie', 
   'Mint Green Smoothie', 
   NULL, 
@@ -1455,36 +1450,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', 'b9d9dc4a-4839-4718-bddd-24838e987f7e', '1/2', NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', 'd2713795-db5a-4e97-a510-e6ab8f7b45c4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', '388a24ee-1abf-40b4-96fc-1fb9465c4b46', '1/3', NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', '3850f4b7-6b9c-4702-987c-640ceca4f905', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', '4204f30e-0e9d-4e3d-bd4a-f9a01d8330c4', NULL, NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', 'f7449b67-5eeb-4419-8b17-4359d90ff3de', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', 'b83e4798-b12e-42d4-baaf-3f74662a49c5', '1', NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', 'f50b274b-4ed7-4e3e-8d89-51db2ccb95af', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', '77053997-69f6-4fd5-8f69-8876a74f6c89', '1/4', NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', '10310779-a0ac-42a7-81a0-556627eb252f', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', 'ecc57390-da4b-4c14-adfb-53686cf5b747', '1', NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', 'b02a82ee-66c7-4909-93c7-d8bd275d7113', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', '71f7f1dd-6827-4064-a974-93d84b322f70', '1', NULL, NULL);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', '26c7c51a-484e-4481-bfa1-5df62aeff61d', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('ad5a5f41-b2b4-4b4c-bf78-677e0ce2074a', '/images/recipes/mint-green-smoothie.jpg', true);
+VALUES ('450c8385-c05d-4fdf-806c-667eed34958e', '/images/recipes/mint-green-smoothie.jpg', true);
 
 -- Insert recipe: Cinnamon Cookie Protein Shake
 INSERT INTO recipes (
@@ -1509,7 +1504,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '604e893e-03e6-4829-ad79-9dd181e9636f', 
+  '8ea33e10-2df6-431d-a116-2677fd163a76', 
   'cinnamon-cookie-protein-shake', 
   'Cinnamon Cookie Protein Shake', 
   NULL, 
@@ -1528,34 +1523,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', 'c0623c18-b698-4864-b903-d5b4a131d3b9', '1', NULL, NULL);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '1667d8c3-dda5-4651-9da3-ddffa0549d52', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1', NULL, NULL);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', '87aaaf71-dc91-4716-a917-c3787e463f22', '1', NULL, NULL);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '8122ef25-1a7e-43a3-ba28-1952cba989a3', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', '269747a7-0500-4497-9c04-94236bcdb45a', '1', NULL, NULL);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', 'c2120b5e-25cb-4266-a23c-28d2505a4980', NULL, NULL, NULL);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', 'a98eea2c-fa10-44b3-89ac-471e17d52ee0', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', '92940e47-70fc-4093-bf84-b813afcce9db', '1', NULL, NULL);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '3b4c5896-19d6-4d91-b4eb-b865dc992554', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('604e893e-03e6-4829-ad79-9dd181e9636f', '/images/recipes/cinnamon-cookie-protein-shake.jpg', true);
+VALUES ('8ea33e10-2df6-431d-a116-2677fd163a76', '/images/recipes/cinnamon-cookie-protein-shake.jpg', true);
 
 -- Insert recipe: Tropical Green Protein Shake
 INSERT INTO recipes (
@@ -1580,7 +1575,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'b8dc8087-b8f6-48a4-ad71-925845e0ea1c', 
+  '7f6b7379-5e1c-4081-a2fe-99742591d745', 
   'tropical-green-protein-shake', 
   'Tropical Green Protein Shake', 
   NULL, 
@@ -1599,32 +1594,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', '156de6dd-6a5b-4408-8966-ac0c4bc6310c', '1', NULL, NULL);
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', 'f947e659-2950-496f-b9ab-bb7fb55907b1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', 'b9d9dc4a-4839-4718-bddd-24838e987f7e', '1', NULL, NULL);
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', 'd2713795-db5a-4e97-a510-e6ab8f7b45c4', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', '3dba3e4e-7e2a-42d5-9e2e-7a8fd31f3687', '1', NULL, NULL);
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', 'a97cd716-6519-44e5-adc2-51d95a30aaf4', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', 'c2120b5e-25cb-4266-a23c-28d2505a4980', NULL, NULL, NULL);
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', 'a98eea2c-fa10-44b3-89ac-471e17d52ee0', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('b8dc8087-b8f6-48a4-ad71-925845e0ea1c', '/images/recipes/tropical-green-protein-shake.jpg', true);
+VALUES ('7f6b7379-5e1c-4081-a2fe-99742591d745', '/images/recipes/tropical-green-protein-shake.jpg', true);
 
 -- Insert recipe: Mango and Coconut Smoothie
 INSERT INTO recipes (
@@ -1649,7 +1644,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '328380d3-7670-49e2-a3e4-6d29553c4d1d', 
+  '353de717-d923-4a8b-b1da-98aa2ccc7f31', 
   'mango-and-coconut-smoothie', 
   'Mango and Coconut Smoothie', 
   NULL, 
@@ -1668,36 +1663,36 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '709a1de8-44d0-4f0a-b421-339b689e50cb', '1/2', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '74a294b0-d5a5-4f2d-9dcd-333a8c51d269', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/3', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '386d39d2-1a02-4334-b2f7-c8fdd9ecce12', '1', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '51009a96-8a3f-4b21-83cd-a1c6b01360af', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '0d3189b2-0d44-44c9-8c68-8fe0519c596c', '1', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', 'c5be113a-450a-44e9-994a-00f1487ca66e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '87aaaf71-dc91-4716-a917-c3787e463f22', '1', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '8122ef25-1a7e-43a3-ba28-1952cba989a3', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '269747a7-0500-4497-9c04-94236bcdb45a', '1', NULL, NULL);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('328380d3-7670-49e2-a3e4-6d29553c4d1d', '/images/recipes/mango-and-coconut-smoothie.jpg', true);
+VALUES ('353de717-d923-4a8b-b1da-98aa2ccc7f31', '/images/recipes/mango-and-coconut-smoothie.jpg', true);
 
 -- Insert recipe: Blackberry and Ginger Smoothie
 INSERT INTO recipes (
@@ -1722,7 +1717,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '220d4f58-e28a-4f33-b073-269e5e7d52bb', 
+  '79f04f04-8cea-414c-994f-749c51c7f167', 
   'blackberry-and-ginger-smoothie', 
   'Blackberry and Ginger Smoothie', 
   NULL, 
@@ -1741,36 +1736,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '8521bf6e-73a3-4d32-8bf0-eefc89612756', '1', NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', 'd61914a6-555c-4737-851f-f450ec193a23', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '3bcb0a03-1b51-42de-9b4d-682b2c19449e', NULL, NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', '3d93b988-3309-42f4-9137-3557ce797044', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', 'c2120b5e-25cb-4266-a23c-28d2505a4980', NULL, NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', 'a98eea2c-fa10-44b3-89ac-471e17d52ee0', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '87aaaf71-dc91-4716-a917-c3787e463f22', '1', NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', '8122ef25-1a7e-43a3-ba28-1952cba989a3', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '60c4666c-cf9d-467b-9383-172f711a10d8', '1', NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', '91b92e06-a167-4705-a3f8-fde55f3524e6', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '3a10dad0-a9c5-4adc-8223-f14d1f1e2efd', '1', NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', '540ac873-c6b9-490a-9914-f220756dedd4', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('220d4f58-e28a-4f33-b073-269e5e7d52bb', '/images/recipes/blackberry-and-ginger-smoothie.jpg', true);
+VALUES ('79f04f04-8cea-414c-994f-749c51c7f167', '/images/recipes/blackberry-and-ginger-smoothie.jpg', true);
 
 -- Insert recipe: Peachy Pecan Protein Shake
 INSERT INTO recipes (
@@ -1795,7 +1790,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'fc146427-a829-4513-9ea5-c14bbf20903d', 
+  'dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', 
   'peachy-pecan-protein-shake', 
   'Peachy Pecan Protein Shake', 
   NULL, 
@@ -1814,38 +1809,38 @@ INSERT INTO recipes (
   false,
   ARRAY['Vegan'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', 'b4f24656-8522-4773-ad0f-e968c253e92f', '1', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '15edf6be-c8d1-4306-b1ce-03e19864c37f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '0248dad1-45f5-4469-bd0d-502773ed4a05', NULL, NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '55816de5-c9e0-417a-8eed-47445c7b2e4a', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '4d85e08a-89a3-4fe3-8d37-d9aea569fc63', '1', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '8dfdcea0-8292-4bef-bf3a-bb3bc49d8c9c', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '9cd286a3-ed17-4811-9fcd-51b7a10ed0d1', '1', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '2f16dd60-cd27-4a3a-9feb-bea6aa464839', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/2', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '269747a7-0500-4497-9c04-94236bcdb45a', '1/4', NULL, NULL);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('fc146427-a829-4513-9ea5-c14bbf20903d', '/images/recipes/peachy-pecan-protein-shake.jpg', true);
+VALUES ('dbfd46c7-bdb1-486c-80a9-6d8f148fb46d', '/images/recipes/peachy-pecan-protein-shake.jpg', true);
 
 -- Insert recipe: Green Pistachio Protein Smoothie
 INSERT INTO recipes (
@@ -1870,7 +1865,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '533c4e8d-3107-4891-95c6-265e53875213', 
+  'd2828105-8014-4f0d-adeb-2933cc5936fa', 
   'green-pistachio-protein-smoothie', 
   'Green Pistachio Protein Smoothie', 
   NULL, 
@@ -1889,36 +1884,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/3', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '9d91c617-4019-43ee-be59-11d1411a0c03', '1/2', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', 'cadefd24-3a6b-4404-9244-ef93f10bf4f5', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '156de6dd-6a5b-4408-8966-ac0c4bc6310c', '1/2', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', 'f947e659-2950-496f-b9ab-bb7fb55907b1', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '85243ca7-94af-4f86-9b8a-c4a78f765796', '1', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '8889f2b1-a54d-419b-b928-9d4b2a2e3c50', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/4', NULL, NULL);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('533c4e8d-3107-4891-95c6-265e53875213', '/images/recipes/green-pistachio-protein-smoothie.jpg', true);
+VALUES ('d2828105-8014-4f0d-adeb-2933cc5936fa', '/images/recipes/green-pistachio-protein-smoothie.jpg', true);
 
 -- Insert recipe: Orange Creamsicle Protein Shake
 INSERT INTO recipes (
@@ -1943,7 +1938,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'e7379ba8-2fc5-46df-bdff-ac26f57b89a3', 
+  '2cf608a8-a1b5-4d46-81db-d3b0bed52519', 
   'orange-creamsicle-protein-shake', 
   'Orange Creamsicle Protein Shake', 
   NULL, 
@@ -1962,32 +1957,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', '70d4f7d8-923e-4707-aeb6-d30df0516618', '1/2', NULL, NULL);
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', 'd64fd3f1-3fac-4184-a01d-57396c653660', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', '156de6dd-6a5b-4408-8966-ac0c4bc6310c', '2/3', NULL, NULL);
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', 'f947e659-2950-496f-b9ab-bb7fb55907b1', '2/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', '0d3189b2-0d44-44c9-8c68-8fe0519c596c', '1', NULL, NULL);
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', 'c5be113a-450a-44e9-994a-00f1487ca66e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', 'aca9641d-bf4c-4a8c-830e-a2e0ce6317b3', '1/4', NULL, NULL);
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', 'b23bea4e-c2fa-48fc-a91d-1d317177fdbc', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', 'd3798b21-7f24-495e-9e43-b3d5c47254d3', '1', NULL, NULL);
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', '05bf9cb3-0f12-40c9-ad24-56723b249c43', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('e7379ba8-2fc5-46df-bdff-ac26f57b89a3', '/images/recipes/orange-creamsicle-protein-shake.jpg', true);
+VALUES ('2cf608a8-a1b5-4d46-81db-d3b0bed52519', '/images/recipes/orange-creamsicle-protein-shake.jpg', true);
 
 -- Insert recipe: Mixed Berry Meal Replacement Shake
 INSERT INTO recipes (
@@ -2012,7 +2007,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '05a72bf6-797c-4ab3-98f7-2606e2ec21c6', 
+  '94f0a651-111b-42cc-8da7-a18d4476c7db', 
   'mixed-berry-meal-replacement-shake', 
   'Mixed Berry Meal Replacement Shake', 
   NULL, 
@@ -2031,36 +2026,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '8521bf6e-73a3-4d32-8bf0-eefc89612756', '1/4', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', 'd61914a6-555c-4737-851f-f450ec193a23', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', 'd87682b6-2dc9-4480-b552-c8a153ac235a', '1/4', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', '349bc500-2bf1-4c7c-9f77-8079ae264c54', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '102cd91f-4e09-44f4-8b62-b4be1616f9d2', '1/4', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', 'ade83372-cf50-44e0-8b3e-9ab5b3c86936', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/2', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '0c9d6963-9ac0-43a7-999a-7866625bb92b', '1', NULL, NULL);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', '187c3cfd-e8f6-43bc-8ce8-690317b41c8f', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('05a72bf6-797c-4ab3-98f7-2606e2ec21c6', '/images/recipes/mixed-berry-meal-replacement-shake.jpg', true);
+VALUES ('94f0a651-111b-42cc-8da7-a18d4476c7db', '/images/recipes/mixed-berry-meal-replacement-shake.jpg', true);
 
 -- Insert recipe: Cocoa Mint Shake
 INSERT INTO recipes (
@@ -2085,7 +2080,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'fddf38a4-e353-4730-9d2d-2a932c97c862', 
+  '6338cb22-7aea-4e38-90d0-eafa9642986e', 
   'cocoa-mint-shake', 
   'Cocoa Mint Shake', 
   NULL, 
@@ -2104,38 +2099,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '3cdcd813-ebe3-42c2-bfdc-b2a4fb276e5e', '1', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '03576724-6abf-4698-94cd-24b854fda90a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '71f7f1dd-6827-4064-a974-93d84b322f70', '1', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '26c7c51a-484e-4481-bfa1-5df62aeff61d', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', 'f2d79146-fb81-4269-ac7b-e8a1e7cb1497', '3', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '3da82515-fe43-4317-87d7-0ae4f78a4435', '3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', 'f67e5fcc-8606-40ff-959f-fdd4220aba1c', '2', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', 'f6d6bdc0-4012-444d-ba57-b5073546f4f7', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '4526600a-dab3-490c-a829-cfde22169f5d', '1/8', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '7b81949e-900c-42a2-b021-a87dd9da302b', '1/8', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/4', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', 'b6d64020-6fbc-4633-9ebb-97438e98cead', '2', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', 'a5004e0b-ce7f-4f4b-baf2-a6f5c3eeaddf', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '36d0792f-16a2-4b9c-9371-f330f1227abd', '1/8', NULL, NULL);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '2bba3ce6-4191-445f-bb52-c9211aafab6a', '1/8', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('fddf38a4-e353-4730-9d2d-2a932c97c862', '/images/recipes/cocoa-mint-shake.jpg', true);
+VALUES ('6338cb22-7aea-4e38-90d0-eafa9642986e', '/images/recipes/cocoa-mint-shake.jpg', true);
 
 -- Insert recipe: Cherry Almond Protein Smoothie
 INSERT INTO recipes (
@@ -2160,7 +2155,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', 
+  'b84338ad-c432-4c26-a3ff-a945a2e68047', 
   'cherry-almond-protein-smoothie', 
   'Cherry Almond Protein Smoothie', 
   NULL, 
@@ -2179,32 +2174,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '6c50483a-a4e3-4e76-89af-36ba5edc65f2', '1', NULL, NULL);
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', '49f973bf-daef-4155-9c78-4bff488e9068', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '695dedfc-c37c-4de1-ae6b-2aeb4db38241', '1', NULL, NULL);
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', '2ed0a644-e436-4faf-b278-732a82f447af', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '3dfe9f2e-7a83-4132-a66b-f544ee5c12b1', '1', NULL, NULL);
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', '4b55b20f-af32-441e-a2ad-a9a86be5829a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/4', NULL, NULL);
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('f4d52dc6-7b6f-42e0-b78b-cb514dc20c03', '/images/recipes/cherry-almond-protein-smoothie.jpg', true);
+VALUES ('b84338ad-c432-4c26-a3ff-a945a2e68047', '/images/recipes/cherry-almond-protein-smoothie.jpg', true);
 
 -- Insert recipe: Chia Java Shake
 INSERT INTO recipes (
@@ -2229,7 +2224,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'dcd84bce-e3dd-4105-8b3e-f7a0531a194f', 
+  'bd2be748-ed05-4826-9c70-5855576d18d5', 
   'chia-java-shake', 
   'Chia Java Shake', 
   NULL, 
@@ -2248,36 +2243,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '666c5b4b-6f7a-4202-9386-d952ffb8fb4a', '1', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '1f1b4e94-5252-481a-942b-400865115262', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '695dedfc-c37c-4de1-ae6b-2aeb4db38241', '1', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '2ed0a644-e436-4faf-b278-732a82f447af', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', 'eea74b44-c60c-48e3-94ff-b6501370751a', '2', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', 'c708f7b2-f5b8-4e8a-8c0c-a671e7edfd19', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '3152ebaa-2c09-434d-aa91-5c41b4a17d4c', '1/2', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '0159ba56-1218-4bc9-852e-6e8955222fbf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', 'cb07b004-e042-440b-80a4-168a7aa33db5', '1/2', NULL, NULL);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '1252c61a-9d28-41e4-85ea-e7f2bc8e8135', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('dcd84bce-e3dd-4105-8b3e-f7a0531a194f', '/images/recipes/chia-java-shake.jpg', true);
+VALUES ('bd2be748-ed05-4826-9c70-5855576d18d5', '/images/recipes/chia-java-shake.jpg', true);
 
 -- Insert recipe: Blueberry Cauliflower Smoothie
 INSERT INTO recipes (
@@ -2302,7 +2297,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c4506bbe-8a39-4e55-83b3-3437a6e470ee', 
+  'badd109c-1869-4031-af65-f3366b74d1b6', 
   'blueberry-cauliflower-smoothie', 
   'Blueberry Cauliflower Smoothie', 
   NULL, 
@@ -2321,32 +2316,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', '1037125b-477d-419c-8651-f8efd1416f3b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', 'a3322b37-b75f-4411-a4d2-9c9cebeda0bc', '1/2', NULL, NULL);
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', '6ab1fbb2-4dab-431b-8693-12c7a79eecda', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', '083e60bb-c33d-4267-a151-77351a939048', '1/4', NULL, NULL);
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', '35c83f62-3d14-4b73-ae28-a248895e284a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', '0d3189b2-0d44-44c9-8c68-8fe0519c596c', '1', NULL, NULL);
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', 'c5be113a-450a-44e9-994a-00f1487ca66e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c4506bbe-8a39-4e55-83b3-3437a6e470ee', '/images/recipes/blueberry-cauliflower-smoothie.jpg', true);
+VALUES ('badd109c-1869-4031-af65-f3366b74d1b6', '/images/recipes/blueberry-cauliflower-smoothie.jpg', true);
 
 -- Insert recipe: Nutella Shake
 INSERT INTO recipes (
@@ -2371,7 +2366,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '637b12e2-bdab-4313-aa8b-f936a7b0d5c0', 
+  'a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', 
   'nutella-shake', 
   'Nutella Shake', 
   NULL, 
@@ -2390,32 +2385,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', '1037125b-477d-419c-8651-f8efd1416f3b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', 'a699e1a4-a13c-494c-9463-71f7f53ae677', '2', NULL, NULL);
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', 'f5942ac2-d1ca-4973-a7c8-fae9cd7234a9', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', '48dfaa85-7de3-4e14-acb8-8533f8f325db', '1', NULL, NULL);
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', '0d5d30d4-5bec-4e6b-8860-39498c89a0bb', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', '6c66183b-aec1-40fd-8df5-e8d11da5c4f7', '1/2', NULL, NULL);
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', 'd6b9c81b-c21c-4f25-ade6-5988b9eb5660', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('637b12e2-bdab-4313-aa8b-f936a7b0d5c0', '/images/recipes/nutella-shake.jpg', true);
+VALUES ('a8bef07c-b0dc-47e7-97de-17cb2bcb7af8', '/images/recipes/nutella-shake.jpg', true);
 
 -- Insert recipe: Pumpkin Pie Shake
 INSERT INTO recipes (
@@ -2440,7 +2435,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '9eb76fde-7ffd-4596-8220-9b1dcaa6157d', 
+  '4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', 
   'pumpkin-pie-shake', 
   'Pumpkin Pie Shake', 
   NULL, 
@@ -2459,32 +2454,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '1037125b-477d-419c-8651-f8efd1416f3b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '60b0364b-aa18-477a-bfc1-5f76003237ca', '1', NULL, NULL);
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', 'd4c8e169-ac88-4039-9e11-8a6355c246ff', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '37e0aced-6bd5-4e35-9ca2-27f587cee955', '1/4', NULL, NULL);
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '606f3c8d-5af9-4310-af38-d70d1bdd5f09', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', 'ef5f57f4-baa2-402c-a979-8c2ba9f38ce7', '1/2', NULL, NULL);
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '451f3d91-c580-45f4-8126-10839c7f35b9', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '8a93b3db-06af-4938-831c-6dcfc2481d47', '1', NULL, NULL);
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '26a15b3c-77bb-48e1-9252-bc0ef681955f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '51d04809-5d24-4366-843e-b7a16521f379', '1', NULL, NULL);
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '21fe0542-5af8-477f-a9e3-f86c2c03cbd5', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('9eb76fde-7ffd-4596-8220-9b1dcaa6157d', '/images/recipes/pumpkin-pie-shake.jpg', true);
+VALUES ('4f4548a3-4f19-4dbd-a32d-c7b24c4b3e82', '/images/recipes/pumpkin-pie-shake.jpg', true);
 
 -- Insert recipe: Kale Berry Shake
 INSERT INTO recipes (
@@ -2509,7 +2504,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', 
+  '37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', 
   'kale-berry-shake', 
   'Kale Berry Shake', 
   NULL, 
@@ -2528,34 +2523,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', '1037125b-477d-419c-8651-f8efd1416f3b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', 'cc38f058-9a9b-4d63-a72f-f8e70976a1ec', '2', NULL, NULL);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', 'bf320a64-2360-4207-9ded-eb6409c7d3ff', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', '1/4', NULL, NULL);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', 'ca2594d4-b087-41f4-83fe-e4fd82e843b5', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '779967b7-d01c-4c05-b489-8fcabf14576e', '1/2', NULL, NULL);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', 'a84ad96d-9cfb-48d4-a633-24f90c8e7748', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '71f7f1dd-6827-4064-a974-93d84b322f70', '1', NULL, NULL);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', '26c7c51a-484e-4481-bfa1-5df62aeff61d', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '7768b9b9-1fd5-4fa8-8de3-d984cd5a7119', '1', NULL, NULL);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', '2b23c2c6-aff9-45de-bbcd-c4bc90b13d4c', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('4fbbf5e0-0f06-49ce-8e4c-9fb11633f264', '/images/recipes/kale-berry-shake.jpg', true);
+VALUES ('37a730d2-6a63-4c55-9bcb-f3b62b67e0f4', '/images/recipes/kale-berry-shake.jpg', true);
 
 -- Insert recipe: Beetroot Booster
 INSERT INTO recipes (
@@ -2580,7 +2575,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '8cf95f34-c81a-49c8-b533-e09646b14c6a', 
+  'a599d5b3-750a-4143-8f83-c263440ca4ab', 
   'beetroot-booster', 
   'Beetroot Booster', 
   NULL, 
@@ -2599,38 +2594,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '1037125b-477d-419c-8651-f8efd1416f3b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '7768b9b9-1fd5-4fa8-8de3-d984cd5a7119', '1/2', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '2b23c2c6-aff9-45de-bbcd-c4bc90b13d4c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '3050386f-85de-4f27-ae94-3877e6d2a1fe', '1/4', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '8c5b0e6c-90ca-45a8-ad0d-8ae1989f5bf1', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', 'dadc8d43-eb0c-4adc-801f-b26e4ed13097', '1/2', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', 'a19e9688-87d4-4c76-93b4-db338f86c49d', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '399ec0ca-87a1-42d9-a208-504098448f19', NULL, NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', 'aab7d2c3-9449-49f8-81f1-429a3acfc999', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '7006d98b-c1d9-447a-bc9b-7a577d3c0232', '1', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '0714bb59-0d3d-44ba-8a8c-edcc202a5345', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', 'cb07b004-e042-440b-80a4-168a7aa33db5', '1/2', NULL, NULL);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '1252c61a-9d28-41e4-85ea-e7f2bc8e8135', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('8cf95f34-c81a-49c8-b533-e09646b14c6a', '/images/recipes/beetroot-booster.jpg', true);
+VALUES ('a599d5b3-750a-4143-8f83-c263440ca4ab', '/images/recipes/beetroot-booster.jpg', true);
 
 -- Insert recipe: Keto Strawberry Smoothie
 INSERT INTO recipes (
@@ -2655,7 +2650,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', 
+  '60b6bbad-cb8c-4783-80ce-b862a34494fa', 
   'keto-strawberry-smoothie', 
   'Keto Strawberry Smoothie', 
   NULL, 
@@ -2674,32 +2669,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', 'eea74b44-c60c-48e3-94ff-b6501370751a', '1', NULL, NULL);
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', 'c708f7b2-f5b8-4e8a-8c0c-a671e7edfd19', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/4', NULL, NULL);
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/4', NULL, NULL);
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', '461d1b12-9148-4a12-afc7-71869e5c925d', '1', NULL, NULL);
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', '3c69b04a-c615-4427-bd19-dc83380abf2c', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5ee4e1c7-e9a2-4855-8553-f2fd9c25076f', '/images/recipes/keto-strawberry-smoothie.jpg', true);
+VALUES ('60b6bbad-cb8c-4783-80ce-b862a34494fa', '/images/recipes/keto-strawberry-smoothie.jpg', true);
 
 -- Insert recipe: Coconut and Citrus Keto Shake
 INSERT INTO recipes (
@@ -2724,7 +2719,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '3896322a-38a8-433a-8f12-583da93eb927', 
+  'f203cf7e-a4f0-4da4-aa8c-84803442f342', 
   'coconut-and-citrus-keto-shake', 
   'Coconut and Citrus Keto Shake', 
   NULL, 
@@ -2743,36 +2738,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', 'cb07b004-e042-440b-80a4-168a7aa33db5', '1/2', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '1252c61a-9d28-41e4-85ea-e7f2bc8e8135', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1/2', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '2d7e1d6d-a254-4f56-995a-0bb0dcd92ea9', '1', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '9a11d02e-2a86-4c9b-a57f-7b2cb3ad807c', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '10c7467a-8da9-4cc2-ba02-9e8e53a23a75', '1', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '706c3c5f-115d-4365-a877-1a9f0ea74b9f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '269747a7-0500-4497-9c04-94236bcdb45a', '1/2', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '17c15e63-6b2d-4f2b-abfd-02d64d75860a', '1', NULL, NULL);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', 'c33ba6ec-9f98-4a9f-87b9-864d40527d29', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('3896322a-38a8-433a-8f12-583da93eb927', '/images/recipes/coconut-and-citrus-keto-shake.jpg', true);
+VALUES ('f203cf7e-a4f0-4da4-aa8c-84803442f342', '/images/recipes/coconut-and-citrus-keto-shake.jpg', true);
 
 -- Insert recipe: Caramel Keto Shake
 INSERT INTO recipes (
@@ -2797,7 +2792,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '3e04696b-ea76-48e7-93d2-4b9bbb270a38', 
+  '1a0285b1-0339-44d4-9ae7-0776b8e724c4', 
   'caramel-keto-shake', 
   'Caramel Keto Shake', 
   NULL, 
@@ -2816,38 +2811,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '102cd91f-4e09-44f4-8b62-b4be1616f9d2', '1/8', NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', 'ade83372-cf50-44e0-8b3e-9ab5b3c86936', '1/8', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '61bc0f8f-c905-4293-8412-9ad838401840', NULL, NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', 'e53d0cd9-b3e4-46ef-ab54-9d5579d64ac6', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '6cafd19d-f0d2-40d7-aed0-5389a97e0d46', NULL, NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', '9cc4b26a-468c-46b5-af1b-6d1096391018', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/2', NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', 'd89781f7-b98c-41be-87f4-68e859410e06', '1', NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', '92fab1b4-5277-4165-9f80-ad521abbb8f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '64d1242d-9a02-40cf-bc2e-cc7689c6be95', '1', NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', 'e53a6c19-1d9e-4637-958a-d4a7e8fe059c', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '3/4', NULL, NULL);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', 'c03083ce-c086-4801-a773-4c90dd3608ff', '3/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('3e04696b-ea76-48e7-93d2-4b9bbb270a38', '/images/recipes/caramel-keto-shake.jpg', true);
+VALUES ('1a0285b1-0339-44d4-9ae7-0776b8e724c4', '/images/recipes/caramel-keto-shake.jpg', true);
 
 -- Insert recipe: Chocolate Cookie Keto Smoothie
 INSERT INTO recipes (
@@ -2872,7 +2867,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '815c2565-52a6-4857-9a90-d15d3d4311de', 
+  '2b02893e-d04b-4e3d-b982-50fe015564db', 
   'chocolate-cookie-keto-smoothie', 
   'Chocolate Cookie Keto Smoothie', 
   NULL, 
@@ -2891,36 +2886,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/4', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/4', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', 'fb011f3e-e013-4d54-98ed-411c57d1832d', '1', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', 'effaad48-5304-4c69-8e90-237d88f6ab4f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/4', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', '64d1242d-9a02-40cf-bc2e-cc7689c6be95', '1/2', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', 'e53a6c19-1d9e-4637-958a-d4a7e8fe059c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', '666c5b4b-6f7a-4202-9386-d952ffb8fb4a', '1', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', '1f1b4e94-5252-481a-942b-400865115262', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', 'b4c21bd5-2fd4-4d19-a29b-5997110207c3', '1', NULL, NULL);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', '822d2eae-d540-4b8f-bc40-3c833c8c04e4', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('815c2565-52a6-4857-9a90-d15d3d4311de', '/images/recipes/chocolate-cookie-keto-smoothie.jpg', true);
+VALUES ('2b02893e-d04b-4e3d-b982-50fe015564db', '/images/recipes/chocolate-cookie-keto-smoothie.jpg', true);
 
 -- Insert recipe: Tropical Keto Shake
 INSERT INTO recipes (
@@ -2945,7 +2940,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '2f1f420e-d9c7-42f4-af80-7c44ed62b78d', 
+  'add19ef5-cef4-460a-b7c6-0b042ddbfec3', 
   'tropical-keto-shake', 
   'Tropical Keto Shake', 
   NULL, 
@@ -2964,32 +2959,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', 'b9d9dc4a-4839-4718-bddd-24838e987f7e', '1/4', NULL, NULL);
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', 'd2713795-db5a-4e97-a510-e6ab8f7b45c4', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/4', NULL, NULL);
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/4', NULL, NULL);
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', '7768b9b9-1fd5-4fa8-8de3-d984cd5a7119', '1/2', NULL, NULL);
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', '2b23c2c6-aff9-45de-bbcd-c4bc90b13d4c', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('2f1f420e-d9c7-42f4-af80-7c44ed62b78d', '/images/recipes/tropical-keto-shake.jpg', true);
+VALUES ('add19ef5-cef4-460a-b7c6-0b042ddbfec3', '/images/recipes/tropical-keto-shake.jpg', true);
 
 -- Insert recipe: Peanut Butter Keto Shake
 INSERT INTO recipes (
@@ -3014,7 +3009,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', 
+  'cf27fc90-d543-46a0-8087-8b97238fff85', 
   'peanut-butter-keto-shake', 
   'Peanut Butter Keto Shake', 
   NULL, 
@@ -3033,32 +3028,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/4', NULL, NULL);
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', 'fb011f3e-e013-4d54-98ed-411c57d1832d', '1', NULL, NULL);
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', 'effaad48-5304-4c69-8e90-237d88f6ab4f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', '2733d3a3-a44d-4df7-bb27-e72a62e599ea', '1', NULL, NULL);
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', 'fd0a69cc-0786-4b0d-a70a-7e2c1fb06875', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', '0c670e20-2c45-4fb4-8f16-bbb4e01f5d51', NULL, NULL, NULL);
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', '2c854626-6c38-43c7-9a95-5a74bd0fe68f', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('3a44fcf4-77d8-4b17-99e0-a0f9b9cc40ba', '/images/recipes/peanut-butter-keto-shake.jpg', true);
+VALUES ('cf27fc90-d543-46a0-8087-8b97238fff85', '/images/recipes/peanut-butter-keto-shake.jpg', true);
 
 -- Insert recipe: Keto Eggnog Smoothie
 INSERT INTO recipes (
@@ -3083,7 +3078,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', 
+  'f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 
   'keto-eggnog-smoothie', 
   'Keto Eggnog Smoothie', 
   NULL, 
@@ -3102,36 +3097,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/4', NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', '3b4513c0-3266-45af-a8fc-18881cd8881c', '1', NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 'a07867d0-6e0d-4cbe-aa66-d2282c763209', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', '64d1242d-9a02-40cf-bc2e-cc7689c6be95', '1/2', NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 'e53a6c19-1d9e-4637-958a-d4a7e8fe059c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', 'f091263c-3a65-46f2-a993-a09dc7fd1f79', '1', NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 'a99e3702-e158-4f4c-8754-ae3984af660f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', 'f7182f32-1415-4132-a492-cc3a20d76de9', '1/2', NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', 'bd82b519-cac2-4d68-b7df-261d5aef4635', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', '5a5b1ec3-d5ac-402d-a036-8a08732cc98f', NULL, NULL, NULL);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', '6f2c3ec0-24cd-49d2-9864-9e0647e31b0b', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c9bd9e3f-ad97-4d83-991d-2cfb06a2dccb', '/images/recipes/keto-eggnog-smoothie.jpg', true);
+VALUES ('f4f9c94b-646b-4be0-8c01-0c8c6ec5d7a4', '/images/recipes/keto-eggnog-smoothie.jpg', true);
 
 -- Insert recipe: Greens and Avocado
 INSERT INTO recipes (
@@ -3156,7 +3151,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '12adc5e1-ab98-452e-b1bb-b4182ac3929b', 
+  'f8a118f1-9caa-453c-9baf-632d61f1c80c', 
   'greens-and-avocado', 
   'Greens and Avocado', 
   NULL, 
@@ -3175,20 +3170,20 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('12adc5e1-ab98-452e-b1bb-b4182ac3929b', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('f8a118f1-9caa-453c-9baf-632d61f1c80c', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('12adc5e1-ab98-452e-b1bb-b4182ac3929b', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('f8a118f1-9caa-453c-9baf-632d61f1c80c', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('12adc5e1-ab98-452e-b1bb-b4182ac3929b', '/images/recipes/greens-and-avocado.jpg', true);
+VALUES ('f8a118f1-9caa-453c-9baf-632d61f1c80c', '/images/recipes/greens-and-avocado.jpg', true);
 
 -- Insert recipe: Acai Berry Shake
 INSERT INTO recipes (
@@ -3213,7 +3208,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '394ef189-885e-4301-a018-02a73d694332', 
+  '151ea54b-2935-4f55-a703-d8b3c783c269', 
   'acai-berry-shake', 
   'Acai Berry Shake', 
   NULL, 
@@ -3232,20 +3227,20 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('394ef189-885e-4301-a018-02a73d694332', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('151ea54b-2935-4f55-a703-d8b3c783c269', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('394ef189-885e-4301-a018-02a73d694332', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('151ea54b-2935-4f55-a703-d8b3c783c269', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('394ef189-885e-4301-a018-02a73d694332', '/images/recipes/acai-berry-shake.jpg', true);
+VALUES ('151ea54b-2935-4f55-a703-d8b3c783c269', '/images/recipes/acai-berry-shake.jpg', true);
 
 -- Insert recipe: Apple and Lemon Smoothie
 INSERT INTO recipes (
@@ -3270,7 +3265,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '8ed8b5bc-ff65-40b8-ad1e-5d6b55c5935c', 
+  'eaa7ee1b-b214-4f51-8649-acaad1597460', 
   'apple-and-lemon-smoothie', 
   'Apple and Lemon Smoothie', 
   NULL, 
@@ -3289,24 +3284,24 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('8ed8b5bc-ff65-40b8-ad1e-5d6b55c5935c', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('eaa7ee1b-b214-4f51-8649-acaad1597460', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ed8b5bc-ff65-40b8-ad1e-5d6b55c5935c', 'aeacc735-7508-4eba-be30-f81b93819896', '1', NULL, NULL);
+VALUES ('eaa7ee1b-b214-4f51-8649-acaad1597460', '7e335830-3f4d-40e2-83b9-270d5e7fabf3', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('8ed8b5bc-ff65-40b8-ad1e-5d6b55c5935c', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('eaa7ee1b-b214-4f51-8649-acaad1597460', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('8ed8b5bc-ff65-40b8-ad1e-5d6b55c5935c', '/images/recipes/apple-and-lemon-smoothie.jpg', true);
+VALUES ('eaa7ee1b-b214-4f51-8649-acaad1597460', '/images/recipes/apple-and-lemon-smoothie.jpg', true);
 
 -- Insert recipe: Citrus Pre Workout Shake
 INSERT INTO recipes (
@@ -3331,7 +3326,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '03eb6a0f-0f21-48a9-ae5e-760a93339187', 
+  'e1e284eb-cf33-4630-949b-8908c9c075d1', 
   'citrus-pre-workout-shake', 
   'Citrus Pre Workout Shake', 
   NULL, 
@@ -3350,32 +3345,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', 'eb644955-f2a2-490d-8c75-fedee7108148', '1', NULL, NULL);
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '6ba905b4-f22b-43b0-bf2e-dcee49371802', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', '845f2290-890d-4906-a3a6-1e95507220b7', '1', NULL, NULL);
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '1d24db3d-a7f4-4bd3-bd67-c21b4197a75f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('03eb6a0f-0f21-48a9-ae5e-760a93339187', '/images/recipes/citrus-pre-workout-shake.jpg', true);
+VALUES ('e1e284eb-cf33-4630-949b-8908c9c075d1', '/images/recipes/citrus-pre-workout-shake.jpg', true);
 
 -- Insert recipe: Strawberry Mint
 INSERT INTO recipes (
@@ -3400,7 +3395,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'd1e8b418-e8af-47cb-a909-45e3cee274f7', 
+  '51e0d2eb-6b81-4eab-8035-e950c103c337', 
   'strawberry-mint', 
   'Strawberry Mint', 
   NULL, 
@@ -3419,20 +3414,20 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('d1e8b418-e8af-47cb-a909-45e3cee274f7', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('51e0d2eb-6b81-4eab-8035-e950c103c337', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('d1e8b418-e8af-47cb-a909-45e3cee274f7', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('51e0d2eb-6b81-4eab-8035-e950c103c337', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('d1e8b418-e8af-47cb-a909-45e3cee274f7', '/images/recipes/strawberry-mint.jpg', true);
+VALUES ('51e0d2eb-6b81-4eab-8035-e950c103c337', '/images/recipes/strawberry-mint.jpg', true);
 
 -- Insert recipe: Hard Greens Shake
 INSERT INTO recipes (
@@ -3457,7 +3452,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'dc5b996f-02be-417f-9278-907b41249e1c', 
+  'aaa098c1-9c3d-4682-8693-f3f5da2348cf', 
   'hard-greens-shake', 
   'Hard Greens Shake', 
   NULL, 
@@ -3476,20 +3471,20 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('dc5b996f-02be-417f-9278-907b41249e1c', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('aaa098c1-9c3d-4682-8693-f3f5da2348cf', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('dc5b996f-02be-417f-9278-907b41249e1c', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('aaa098c1-9c3d-4682-8693-f3f5da2348cf', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('dc5b996f-02be-417f-9278-907b41249e1c', '/images/recipes/hard-greens-shake.jpg', true);
+VALUES ('aaa098c1-9c3d-4682-8693-f3f5da2348cf', '/images/recipes/hard-greens-shake.jpg', true);
 
 -- Insert recipe: Keto Pre-workout Berry Smoothie
 INSERT INTO recipes (
@@ -3514,7 +3509,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c047c2b4-0d32-4577-9e3f-3ef702f008be', 
+  'aa4e3ffb-0e9d-411b-97af-21bb7552467d', 
   'keto-pre-workout-berry-smoothie', 
   'Keto Pre-workout Berry Smoothie', 
   NULL, 
@@ -3533,20 +3528,20 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c047c2b4-0d32-4577-9e3f-3ef702f008be', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('aa4e3ffb-0e9d-411b-97af-21bb7552467d', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c047c2b4-0d32-4577-9e3f-3ef702f008be', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('aa4e3ffb-0e9d-411b-97af-21bb7552467d', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c047c2b4-0d32-4577-9e3f-3ef702f008be', '/images/recipes/keto-pre-workout-berry-smoothie.jpg', true);
+VALUES ('aa4e3ffb-0e9d-411b-97af-21bb7552467d', '/images/recipes/keto-pre-workout-berry-smoothie.jpg', true);
 
 -- Insert recipe: Rasberry and Pineapple Smoothie
 INSERT INTO recipes (
@@ -3571,7 +3566,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '761afc28-4449-476b-bd52-2a7a78bae23b', 
+  '69a76e08-5a29-40ee-a135-a4a99f57caaf', 
   'rasberry-and-pineapple-smoothie', 
   'Rasberry and Pineapple Smoothie', 
   NULL, 
@@ -3590,20 +3585,20 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('761afc28-4449-476b-bd52-2a7a78bae23b', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('69a76e08-5a29-40ee-a135-a4a99f57caaf', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('761afc28-4449-476b-bd52-2a7a78bae23b', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('69a76e08-5a29-40ee-a135-a4a99f57caaf', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('761afc28-4449-476b-bd52-2a7a78bae23b', '/images/recipes/rasberry-and-pineapple-smoothie.jpg', true);
+VALUES ('69a76e08-5a29-40ee-a135-a4a99f57caaf', '/images/recipes/rasberry-and-pineapple-smoothie.jpg', true);
 
 -- Insert recipe: Cranberry Oat Smoothie
 INSERT INTO recipes (
@@ -3628,7 +3623,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '45561452-7fbb-43f2-8632-056ab0cc6985', 
+  '1653d8e2-a665-496b-8682-1ff8e9a5cbec', 
   'cranberry-oat-smoothie', 
   'Cranberry Oat Smoothie', 
   NULL, 
@@ -3647,36 +3642,36 @@ INSERT INTO recipes (
   false,
   ARRAY['Vegan'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1/2', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '269747a7-0500-4497-9c04-94236bcdb45a', '1/4', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '4d08545f-5da2-4523-b9cb-1c8a1cc8a88d', '1/2', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '33a00a7d-2af0-4b38-a3dd-188d158431df', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '1517ec87-a694-48a0-9d65-732ed95379e9', '1/2', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '51ff70ff-b381-4570-afb8-5f6fcd6e7d18', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '2bc2c763-3491-4dfb-b2f1-eb70ab047db2', '1', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '2568e6de-9593-4df5-ae31-98073e031db2', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', 'f80932f6-796e-4c71-8bd9-39852826fefd', '1/4', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '85fb8e71-ff8a-43a2-9fdd-b70cc95aa810', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/4', NULL, NULL);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('45561452-7fbb-43f2-8632-056ab0cc6985', '/images/recipes/cranberry-oat-smoothie.jpg', true);
+VALUES ('1653d8e2-a665-496b-8682-1ff8e9a5cbec', '/images/recipes/cranberry-oat-smoothie.jpg', true);
 
 -- Insert recipe: Ruby Red
 INSERT INTO recipes (
@@ -3701,7 +3696,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5c068861-8540-4c87-a6e5-40277f810e03', 
+  '782c9fe7-44cb-49b2-bad2-a81f559de7ba', 
   'ruby-red', 
   'Ruby Red', 
   NULL, 
@@ -3720,38 +3715,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c');
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', 'ef47dd4a-92a9-4fef-80e9-26bced577583');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '3bcb0a03-1b51-42de-9b4d-682b2c19449e', NULL, NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '3d93b988-3309-42f4-9137-3557ce797044', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', 'e13c6835-6031-4189-981b-fa815995a89b', NULL, NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '2fcb975f-838c-4025-bfc5-bea7b3530355', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', 'f80b6ac9-c528-4824-96af-b312b9506162', NULL, NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '8199a4b4-f3ca-4622-81e4-9b9d2644d4ec', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '4af2051e-3fb4-4231-a3e5-7e43a3606c00', '1', NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', 'f2f9530b-e92f-40e4-85fe-bd502dd10dc3', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '7c6566bb-463f-40ee-81da-3548e816de10', '1', NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', 'd7de1f51-d0d4-4490-939f-a42bf81baec9', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5c068861-8540-4c87-a6e5-40277f810e03', '/images/recipes/ruby-red.jpg', true);
+VALUES ('782c9fe7-44cb-49b2-bad2-a81f559de7ba', '/images/recipes/ruby-red.jpg', true);
 
 -- Insert recipe: Banana Split
 INSERT INTO recipes (
@@ -3776,7 +3771,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '0a3af327-1f62-41c5-95f8-9cdf0f9c5983', 
+  '33336c68-8b4f-494e-a08b-aa434d662d2d', 
   'banana-split', 
   'Banana Split', 
   NULL, 
@@ -3795,36 +3790,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '3050386f-85de-4f27-ae94-3877e6d2a1fe', '1/2', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', '8c5b0e6c-90ca-45a8-ad0d-8ae1989f5bf1', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '156de6dd-6a5b-4408-8966-ac0c4bc6310c', '1/2', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', 'f947e659-2950-496f-b9ab-bb7fb55907b1', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '5ee9320d-8020-47e6-9873-eb070a9c4b9c', '1/2', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', 'a9147221-acc1-41c2-b14f-c4c56dca7aa8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '1afb048d-c16e-4d8e-8e2e-b5ad6cf3fa8d', '1', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', 'd68f80b2-d770-47ae-9819-f8c8c49d7af6', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '84e28d4b-0f27-4204-b597-bc0f9888b042', '1', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', '77683272-6d39-42ec-8cde-0be6144f4b5e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', 'cb3d12d0-709d-4244-9c80-98ad68409645', '1', NULL, NULL);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', 'a8fe0594-cdaf-4792-ad97-efc885c7f7ea', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('0a3af327-1f62-41c5-95f8-9cdf0f9c5983', '/images/recipes/banana-split.jpg', true);
+VALUES ('33336c68-8b4f-494e-a08b-aa434d662d2d', '/images/recipes/banana-split.jpg', true);
 
 -- Insert recipe: Orange and Banana Protein Shake
 INSERT INTO recipes (
@@ -3849,7 +3844,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '93e7a513-2d44-4dbf-a9a8-a45c2644a784', 
+  'ea03fea5-e589-4429-890c-026088adb5d6', 
   'orange-and-banana-protein-shake', 
   'Orange and Banana Protein Shake', 
   NULL, 
@@ -3868,34 +3863,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', 'a61c83c8-11ab-48a9-b0e4-1f5f867aa00a', '1', NULL, NULL);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '655a1603-be12-480f-b998-1a502402c988', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', 'eb644955-f2a2-490d-8c75-fedee7108148', '1/2', NULL, NULL);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '6ba905b4-f22b-43b0-bf2e-dcee49371802', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/3', NULL, NULL);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', '71f7f1dd-6827-4064-a974-93d84b322f70', '1', NULL, NULL);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '26c7c51a-484e-4481-bfa1-5df62aeff61d', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('93e7a513-2d44-4dbf-a9a8-a45c2644a784', '/images/recipes/orange-and-banana-protein-shake.jpg', true);
+VALUES ('ea03fea5-e589-4429-890c-026088adb5d6', '/images/recipes/orange-and-banana-protein-shake.jpg', true);
 
 -- Insert recipe: Simple Spinach Shake
 INSERT INTO recipes (
@@ -3920,7 +3915,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '2a78ada9-93ce-4a36-8bb7-a204dac467ab', 
+  '6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', 
   'simple-spinach-shake', 
   'Simple Spinach Shake', 
   NULL, 
@@ -3939,32 +3934,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', '506e1a86-0aa1-487a-a82a-6e96b616c13e', '1', NULL, NULL);
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', '192e0b08-bc7e-4ae3-8081-9680b014f536', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('2a78ada9-93ce-4a36-8bb7-a204dac467ab', '/images/recipes/simple-spinach-shake.jpg', true);
+VALUES ('6cd62d3a-5f3e-4ed7-84bd-d3c8c18d8a8f', '/images/recipes/simple-spinach-shake.jpg', true);
 
 -- Insert recipe: Chia Peanut Protein Smoothie
 INSERT INTO recipes (
@@ -3989,7 +3984,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', 
+  'beae5da2-664c-4d26-940a-51d04f2b81d3', 
   'chia-peanut-protein-smoothie', 
   'Chia Peanut Protein Smoothie', 
   NULL, 
@@ -4008,34 +4003,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', 'eea74b44-c60c-48e3-94ff-b6501370751a', '1', NULL, NULL);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', 'c708f7b2-f5b8-4e8a-8c0c-a671e7edfd19', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', '506e1a86-0aa1-487a-a82a-6e96b616c13e', '1', NULL, NULL);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', '192e0b08-bc7e-4ae3-8081-9680b014f536', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/4', NULL, NULL);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', '9cd286a3-ed17-4811-9fcd-51b7a10ed0d1', '1', NULL, NULL);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', '2f16dd60-cd27-4a3a-9feb-bea6aa464839', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('ea180e3d-ce6b-4626-ae28-d4e7ea3443a1', '/images/recipes/chia-peanut-protein-smoothie.jpg', true);
+VALUES ('beae5da2-664c-4d26-940a-51d04f2b81d3', '/images/recipes/chia-peanut-protein-smoothie.jpg', true);
 
 -- Insert recipe: Creamy Chocolate Smoothie
 INSERT INTO recipes (
@@ -4060,7 +4055,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '303e4b6e-be42-44a4-a14c-f4c70220ebb8', 
+  '48bf5bb5-e02c-42de-8d3f-428d19fc34a1', 
   'creamy-chocolate-smoothie', 
   'Creamy Chocolate Smoothie', 
   NULL, 
@@ -4079,36 +4074,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', 'b996dd67-c043-473f-b250-3c98420b4b86');
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', '6f5c6a53-a785-48cb-a1a5-2a9f664f3b10');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '16d9feb1-fa24-4f81-89de-a5b6d5ac0dc9', '1', NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', '16fbf04f-3488-401a-96e0-39cddabd42c8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', 'aadc88b2-f9bd-4a52-8643-fc05b72ccda2', NULL, NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', 'bba7c25a-0ebc-49cd-a351-eeac0ba9a3ec', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '666c5b4b-6f7a-4202-9386-d952ffb8fb4a', '2', NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', '1f1b4e94-5252-481a-942b-400865115262', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '269747a7-0500-4497-9c04-94236bcdb45a', '1/4', NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '0d3189b2-0d44-44c9-8c68-8fe0519c596c', '1', NULL, NULL);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', 'c5be113a-450a-44e9-994a-00f1487ca66e', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('303e4b6e-be42-44a4-a14c-f4c70220ebb8', '/images/recipes/creamy-chocolate-smoothie.jpg', true);
+VALUES ('48bf5bb5-e02c-42de-8d3f-428d19fc34a1', '/images/recipes/creamy-chocolate-smoothie.jpg', true);
 
 -- Insert recipe: ABC Smoothie
 INSERT INTO recipes (
@@ -4133,7 +4128,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '04653dbf-ea25-4acd-92df-8f928c7226de', 
+  '100c25e4-0442-4d75-abe8-b1173f171b6c', 
   'abc-smoothie', 
   'ABC Smoothie', 
   NULL, 
@@ -4152,32 +4147,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', '083e60bb-c33d-4267-a151-77351a939048', '1', NULL, NULL);
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', '35c83f62-3d14-4b73-ae28-a248895e284a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', 'aca9641d-bf4c-4a8c-830e-a2e0ce6317b3', '1/4', NULL, NULL);
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', 'b23bea4e-c2fa-48fc-a91d-1d317177fdbc', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('04653dbf-ea25-4acd-92df-8f928c7226de', '/images/recipes/abc-smoothie.jpg', true);
+VALUES ('100c25e4-0442-4d75-abe8-b1173f171b6c', '/images/recipes/abc-smoothie.jpg', true);
 
 -- Insert recipe: Buttercream-y Protein Shake
 INSERT INTO recipes (
@@ -4202,7 +4197,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '660368f9-bf71-43ef-9f03-d7d335bee466', 
+  'b15ff18a-c7af-43f0-bf57-c1235e52e6fc', 
   'buttercream-y-protein-shake', 
   'Buttercream-y Protein Shake', 
   NULL, 
@@ -4221,34 +4216,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/4', NULL, NULL);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1', NULL, NULL);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', '76631ea8-869b-4362-992d-8d008ffa4ee8', '1/4', NULL, NULL);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', '7a39d4ae-e7a2-4b4f-9f27-143572f7774e', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', 'ec49671f-2f92-4f4a-b0aa-b14a713fe3ef', '1', NULL, NULL);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', 'cfd27138-28b1-4949-9cef-5f4d6be1f04a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', '9cd286a3-ed17-4811-9fcd-51b7a10ed0d1', '1', NULL, NULL);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', '2f16dd60-cd27-4a3a-9feb-bea6aa464839', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('660368f9-bf71-43ef-9f03-d7d335bee466', '/images/recipes/buttercream-y-protein-shake.jpg', true);
+VALUES ('b15ff18a-c7af-43f0-bf57-c1235e52e6fc', '/images/recipes/buttercream-y-protein-shake.jpg', true);
 
 -- Insert recipe: Creamy Chocolate Peanut Shake
 INSERT INTO recipes (
@@ -4273,7 +4268,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', 
+  '19617e4c-5cfb-4b57-8f67-c3362d054cf7', 
   'creamy-chocolate-peanut-shake', 
   'Creamy Chocolate Peanut Shake', 
   NULL, 
@@ -4292,32 +4287,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1', NULL, NULL);
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', 'fb011f3e-e013-4d54-98ed-411c57d1832d', '1', NULL, NULL);
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', 'effaad48-5304-4c69-8e90-237d88f6ab4f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('32c51dc0-93e2-4e17-b3b2-474a8cd7ee97', '/images/recipes/creamy-chocolate-peanut-shake.jpg', true);
+VALUES ('19617e4c-5cfb-4b57-8f67-c3362d054cf7', '/images/recipes/creamy-chocolate-peanut-shake.jpg', true);
 
 -- Insert recipe: Nutty Banana Coconut Shake
 INSERT INTO recipes (
@@ -4342,7 +4337,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '1bd378d2-598f-4988-a76a-77d11a00be3a', 
+  'bfd2f810-c808-4c79-8318-6d36247509fd', 
   'nutty-banana-coconut-shake', 
   'Nutty Banana Coconut Shake', 
   NULL, 
@@ -4361,30 +4356,30 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1', NULL, NULL);
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', '9560a75e-4171-4aea-9186-b27d99d7f8cb', '15', NULL, NULL);
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', 'b36a228b-0e3e-4706-8408-dab8e0b44969', '15', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('1bd378d2-598f-4988-a76a-77d11a00be3a', '/images/recipes/nutty-banana-coconut-shake.jpg', true);
+VALUES ('bfd2f810-c808-4c79-8318-6d36247509fd', '/images/recipes/nutty-banana-coconut-shake.jpg', true);
 
 -- Insert recipe: Vanilla Honey and Almond Shake
 INSERT INTO recipes (
@@ -4409,7 +4404,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '721da604-95f7-462b-a424-86615ec02f3e', 
+  '1cc72776-c8b2-4a4e-9085-f3b7e21e450d', 
   'vanilla-honey-and-almond-shake', 
   'Vanilla Honey and Almond Shake', 
   NULL, 
@@ -4428,40 +4423,40 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '48806fc1-25c3-43b4-b26e-61274b9f3a76', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '1d019929-18df-4856-bb33-f6719574d12a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '695dedfc-c37c-4de1-ae6b-2aeb4db38241', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '2ed0a644-e436-4faf-b278-732a82f447af', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', 'f1e14137-ccb3-420a-92b6-bfff40579dab', '1/4', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '0f69acb7-84b0-4d89-8b36-1afa210da46d', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '9cd286a3-ed17-4811-9fcd-51b7a10ed0d1', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '2f16dd60-cd27-4a3a-9feb-bea6aa464839', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '269747a7-0500-4497-9c04-94236bcdb45a', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '96a9cec3-4bcf-4980-bf69-0f5a16d51aff', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '3cdcd813-ebe3-42c2-bfdc-b2a4fb276e5e', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '03576724-6abf-4698-94cd-24b854fda90a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '87aaaf71-dc91-4716-a917-c3787e463f22', '1', NULL, NULL);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '8122ef25-1a7e-43a3-ba28-1952cba989a3', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('721da604-95f7-462b-a424-86615ec02f3e', '/images/recipes/vanilla-honey-and-almond-shake.jpg', true);
+VALUES ('1cc72776-c8b2-4a4e-9085-f3b7e21e450d', '/images/recipes/vanilla-honey-and-almond-shake.jpg', true);
 
 -- Insert recipe: High Fat Chocolate Shake
 INSERT INTO recipes (
@@ -4486,7 +4481,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '8ba87d78-d045-4310-a8f6-5a5ad5a31199', 
+  'f5da114c-b256-491d-ae2c-e8cc64eb7d81', 
   'high-fat-chocolate-shake', 
   'High Fat Chocolate Shake', 
   NULL, 
@@ -4505,38 +4500,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', 'e72f2908-d452-4339-a1cc-d566ba47442e');
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '72d5f822-6cac-4d8d-9c2e-5a104ae153e4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '666c5b4b-6f7a-4202-9386-d952ffb8fb4a', '1', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '1f1b4e94-5252-481a-942b-400865115262', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1/2', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '02aaecc8-c47e-4cf2-8669-b90493d611ff', NULL, NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '9ed6bbb3-6a00-492c-993e-d63624a0c90a', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '362b8522-ffb1-44ea-93dd-498f9096a6b9', '1/2', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '957a8096-22ca-4424-b894-8761ab208e88', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', 'fb011f3e-e013-4d54-98ed-411c57d1832d', '2', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', 'effaad48-5304-4c69-8e90-237d88f6ab4f', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', 'd89781f7-b98c-41be-87f4-68e859410e06', '1', NULL, NULL);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '92fab1b4-5277-4165-9f80-ad521abbb8f1', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('8ba87d78-d045-4310-a8f6-5a5ad5a31199', '/images/recipes/high-fat-chocolate-shake.jpg', true);
+VALUES ('f5da114c-b256-491d-ae2c-e8cc64eb7d81', '/images/recipes/high-fat-chocolate-shake.jpg', true);
 
 -- Insert recipe: Cashew Cookie Shake
 INSERT INTO recipes (
@@ -4561,7 +4556,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a0813a57-7b41-487f-b721-9609e5324954', 
+  'a0615c72-daf5-4d04-893f-153287a63cc2', 
   'cashew-cookie-shake', 
   'Cashew Cookie Shake', 
   NULL, 
@@ -4580,32 +4575,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', '23f66450-0e46-4401-aee8-3f5acba2053e', '1', NULL, NULL);
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '37e6ff62-f56a-464a-a928-42558e3999f8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', '02195729-0951-46b0-85c5-72d383f4795d', '1', NULL, NULL);
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '20d062c9-a1f0-43aa-86fa-19a08f6ff524', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', 'c0623c18-b698-4864-b903-d5b4a131d3b9', '1', NULL, NULL);
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '1667d8c3-dda5-4651-9da3-ddffa0549d52', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', '4a2c572e-bf0f-4192-baa7-fdccfbd80c5f', '1/2', NULL, NULL);
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '6ad91708-16b4-426b-8f21-cf78600cc293', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a0813a57-7b41-487f-b721-9609e5324954', '/images/recipes/cashew-cookie-shake.jpg', true);
+VALUES ('a0615c72-daf5-4d04-893f-153287a63cc2', '/images/recipes/cashew-cookie-shake.jpg', true);
 
 -- Insert recipe: Low Carb Coffee Smoothie
 INSERT INTO recipes (
@@ -4630,7 +4625,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '40d43233-80cc-4292-8601-ea408de0effe', 
+  'acfceada-c6ce-46af-9537-8940556a3edf', 
   'low-carb-coffee-smoothie', 
   'Low Carb Coffee Smoothie', 
   NULL, 
@@ -4649,38 +4644,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '34b3647e-9223-493f-9263-5a8c1247979b', '1/2', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '9fc99710-eb63-41da-8438-67803c2e7294', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', 'f2d79146-fb81-4269-ac7b-e8a1e7cb1497', '1', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '3da82515-fe43-4317-87d7-0ae4f78a4435', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '7414408f-24f3-4329-b611-3d2800c58601', '1', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '192139a3-3f2f-4555-9a22-42dc03d67b7f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('40d43233-80cc-4292-8601-ea408de0effe', '/images/recipes/low-carb-coffee-smoothie.jpg', true);
+VALUES ('acfceada-c6ce-46af-9537-8940556a3edf', '/images/recipes/low-carb-coffee-smoothie.jpg', true);
 
 -- Insert recipe: Coconut Berry Shake
 INSERT INTO recipes (
@@ -4705,7 +4700,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c3398f1f-9372-49b1-9c53-dccc0d2813a5', 
+  'be8525e6-d783-4423-b3c4-b801ac71a7b0', 
   'coconut-berry-shake', 
   'Coconut Berry Shake', 
   NULL, 
@@ -4724,32 +4719,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', 'd87682b6-2dc9-4480-b552-c8a153ac235a', '1/2', NULL, NULL);
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', '349bc500-2bf1-4c7c-9f77-8079ae264c54', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', 'c573685b-22dd-4744-8d00-b106452a9e5a', '1', NULL, NULL);
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', '6e6331a7-2046-432a-883c-c9f5592b9cf6', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', 'c2120b5e-25cb-4266-a23c-28d2505a4980', NULL, NULL, NULL);
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', 'a98eea2c-fa10-44b3-89ac-471e17d52ee0', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', 'ff375103-8546-49b8-9db4-5146e44ae220', '1', NULL, NULL);
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', '3b06ccec-0e96-4740-a163-568030f93f3d', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c3398f1f-9372-49b1-9c53-dccc0d2813a5', '/images/recipes/coconut-berry-shake.jpg', true);
+VALUES ('be8525e6-d783-4423-b3c4-b801ac71a7b0', '/images/recipes/coconut-berry-shake.jpg', true);
 
 -- Insert recipe: Lemony Smoothie
 INSERT INTO recipes (
@@ -4774,7 +4769,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '7441ffcc-d5bb-4da1-a17e-5db78963f5af', 
+  '74856eb3-3fb0-4140-8efd-f629b51c673a', 
   'lemony-smoothie', 
   'Lemony Smoothie', 
   NULL, 
@@ -4793,34 +4788,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '5bb53099-f5ba-45a1-b4fb-6d857581cc59', '1', NULL, NULL);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', 'd26607a4-9c21-4350-80ef-1859f16c857b', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', 'ea8d8844-42a1-4bee-944c-85641ce7596a', NULL, NULL, NULL);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', '41c405b8-ab0f-4cb0-bcc6-95c9fae1ea09', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '800ef418-2e3d-494e-8933-4f6faa1cc92c', '1', NULL, NULL);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', 'c9056f98-f7e5-4a6d-9dff-0edd25e45351', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '98bd455a-8d5b-47b8-9f77-475ae6a62f2b', NULL, NULL, NULL);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', 'b7842493-8d15-4228-88c0-316602028754', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '090b310c-ebb9-42a7-b13c-d52b52d6eaa8', '1', NULL, NULL);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', '56fdfad8-c81a-4421-b7fe-e1e971a192e9', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('7441ffcc-d5bb-4da1-a17e-5db78963f5af', '/images/recipes/lemony-smoothie.jpg', true);
+VALUES ('74856eb3-3fb0-4140-8efd-f629b51c673a', '/images/recipes/lemony-smoothie.jpg', true);
 
 -- Insert recipe: Keto Blueberry Shake
 INSERT INTO recipes (
@@ -4845,7 +4840,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '25e1d865-4c08-4f60-add2-509f343ad7e3', 
+  '70446c5d-0740-4762-ae16-df9f60937fa2', 
   'keto-blueberry-shake', 
   'Keto Blueberry Shake', 
   NULL, 
@@ -4864,32 +4859,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/4', NULL, NULL);
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/4', NULL, NULL);
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', '461d1b12-9148-4a12-afc7-71869e5c925d', '1', NULL, NULL);
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', '3c69b04a-c615-4427-bd19-dc83380abf2c', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/4', NULL, NULL);
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('25e1d865-4c08-4f60-add2-509f343ad7e3', '/images/recipes/keto-blueberry-shake.jpg', true);
+VALUES ('70446c5d-0740-4762-ae16-df9f60937fa2', '/images/recipes/keto-blueberry-shake.jpg', true);
 
 -- Insert recipe: Chocolate Avocado Shake
 INSERT INTO recipes (
@@ -4914,7 +4909,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'd4e71da6-a5c4-49f2-82bc-8ff2d9de5089', 
+  '5a7df40c-364b-4833-9b01-887c3aaf9019', 
   'chocolate-avocado-shake', 
   'Chocolate Avocado Shake', 
   NULL, 
@@ -4933,34 +4928,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', 'b2c9b094-6c2b-4a19-81c2-e12ae90715c8', NULL, NULL, NULL);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '55641b29-e1ad-4e21-b58e-d064e931e3c7', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', 'f0fed2ab-f063-410e-949d-7dbc2e9fd962', '1', NULL, NULL);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '20ca3295-f0df-4f86-ab13-505ba21f5931', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', '3bde9846-81de-4d2e-afe7-6b10e3f7d90f', '1', NULL, NULL);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '3ca52200-056d-4de8-980d-7290484be720', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/4', NULL, NULL);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('d4e71da6-a5c4-49f2-82bc-8ff2d9de5089', '/images/recipes/chocolate-avocado-shake.jpg', true);
+VALUES ('5a7df40c-364b-4833-9b01-887c3aaf9019', '/images/recipes/chocolate-avocado-shake.jpg', true);
 
 -- Insert recipe: Vanilla Bean Thickshake
 INSERT INTO recipes (
@@ -4985,7 +4980,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '8b207cb2-ddc5-4283-b608-22b1eb9e65f2', 
+  'c28688c5-2775-461b-aaf0-f79432bbc6fc', 
   'vanilla-bean-thickshake', 
   'Vanilla Bean Thickshake', 
   NULL, 
@@ -5004,28 +4999,28 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('8b207cb2-ddc5-4283-b608-22b1eb9e65f2', 'c0087909-c83b-4c11-b62d-d21fde1b0e41');
+VALUES ('c28688c5-2775-461b-aaf0-f79432bbc6fc', '6b20dfa0-6b2b-4719-8b1b-8a575fdfd51c');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8b207cb2-ddc5-4283-b608-22b1eb9e65f2', '83ac8def-7e29-4efc-bc5e-bd7d563abdf1', '1', NULL, NULL);
+VALUES ('c28688c5-2775-461b-aaf0-f79432bbc6fc', '58f61454-dc69-49fb-933c-8a83d9a969b7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8b207cb2-ddc5-4283-b608-22b1eb9e65f2', '46daa4d5-98da-4f55-910b-9a76f0e0b3b5', '1', NULL, NULL);
+VALUES ('c28688c5-2775-461b-aaf0-f79432bbc6fc', '140e694f-50ce-4276-bb93-f1b4debad0be', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('8b207cb2-ddc5-4283-b608-22b1eb9e65f2', '7537208e-a6c1-4c08-bcfc-18a01b7ac5cd', '1', NULL, NULL);
+VALUES ('c28688c5-2775-461b-aaf0-f79432bbc6fc', 'ab18b4c0-3832-488c-882d-63bd4846a9b1', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('8b207cb2-ddc5-4283-b608-22b1eb9e65f2', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('c28688c5-2775-461b-aaf0-f79432bbc6fc', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('8b207cb2-ddc5-4283-b608-22b1eb9e65f2', '/images/recipes/vanilla-bean-thickshake.jpg', true);
+VALUES ('c28688c5-2775-461b-aaf0-f79432bbc6fc', '/images/recipes/vanilla-bean-thickshake.jpg', true);
 
 -- Insert recipe: Coffee & Banana Shake
 INSERT INTO recipes (
@@ -5050,7 +5045,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'e5c47b12-7819-49d5-a313-82f123f52d2a', 
+  'baa7497c-da34-4f21-b11e-f5984e1064fc', 
   'coffee-&-banana-shake', 
   'Coffee & Banana Shake', 
   NULL, 
@@ -5069,32 +5064,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', 'f07c241a-ba63-477f-bb83-3c793aac9456', '1/3', NULL, NULL);
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', 'b7104a58-e197-4151-92dc-60013206bda0', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', '666c5b4b-6f7a-4202-9386-d952ffb8fb4a', '1', NULL, NULL);
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', '1f1b4e94-5252-481a-942b-400865115262', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', '19affb80-6ba4-44b7-aff4-3b314d1a32da', '2', NULL, NULL);
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', '8d6be6ed-ad36-46b6-bcd9-d0a344062337', '2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('e5c47b12-7819-49d5-a313-82f123f52d2a', '/images/recipes/coffee-&-banana-shake.jpg', true);
+VALUES ('baa7497c-da34-4f21-b11e-f5984e1064fc', '/images/recipes/coffee-&-banana-shake.jpg', true);
 
 -- Insert recipe: Wild Berrie Zone
 INSERT INTO recipes (
@@ -5119,7 +5114,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c759b200-a998-4c3a-bdb8-354ba177908d', 
+  '4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', 
   'wild-berrie-zone', 
   'Wild Berrie Zone', 
   NULL, 
@@ -5138,34 +5133,34 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '5836c625-6a95-40e9-a1dc-0173eb253edb');
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/2', NULL, NULL);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', '1/4', NULL, NULL);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', 'ca2594d4-b087-41f4-83fe-e4fd82e843b5', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '0cf2d71d-04b4-485e-b6c3-035f2e31cce1', '1/4', NULL, NULL);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '60e5da96-994f-4cd1-9388-b1713d266c1c', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/2', NULL, NULL);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', 'ad2c77d0-e361-4f59-87c4-85f51b01ab0d', '1', NULL, NULL);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '6df1ac2c-5cee-4a91-8470-58844176fcbd', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '922b8392-0332-42b3-a0e1-ebeef974c33d');
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '68836e77-ce82-4016-8f5f-638d0ed73c8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c759b200-a998-4c3a-bdb8-354ba177908d', '/images/recipes/wild-berrie-zone.jpg', true);
+VALUES ('4e7aaa1a-6d93-493b-9a37-2f7dba60ce1e', '/images/recipes/wild-berrie-zone.jpg', true);
 
 -- Insert recipe: Blue Almond Fiesta
 INSERT INTO recipes (
@@ -5190,7 +5185,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '9a9aba08-71ff-4796-827a-284314651423', 
+  'a1277eb4-76c0-40d2-890f-f3ea28125058', 
   'blue-almond-fiesta', 
   'Blue Almond Fiesta', 
   NULL, 
@@ -5209,32 +5204,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '69108149-eb3d-4cfc-84ec-20a826485ca1');
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '28e80a60-3a60-4e8a-a9cd-d3d06e35b103', '10', NULL, NULL);
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', '7cb2d677-0c41-443c-9d98-cea08721a379', '10', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '5ee9320d-8020-47e6-9873-eb070a9c4b9c', '1', NULL, NULL);
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', 'a9147221-acc1-41c2-b14f-c4c56dca7aa8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '6364fec7-7418-4cec-be81-b86bfa3ce04f', '1', NULL, NULL);
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', 'cd3f480b-e897-4b34-ab2e-7df756484d9e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/4', NULL, NULL);
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('9a9aba08-71ff-4796-827a-284314651423', '/images/recipes/blue-almond-fiesta.jpg', true);
+VALUES ('a1277eb4-76c0-40d2-890f-f3ea28125058', '/images/recipes/blue-almond-fiesta.jpg', true);
 
 -- Insert recipe: Blue Sky Shake
 INSERT INTO recipes (
@@ -5259,7 +5254,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '3d540ca7-e9a5-43df-8584-b19b84088126', 
+  '96c2e39c-ea47-4149-8b3d-77cc574ad4ac', 
   'blue-sky-shake', 
   'Blue Sky Shake', 
   NULL, 
@@ -5278,36 +5273,36 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/4', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1/2', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '76558d79-e539-4077-888a-2c0d85ef6611', '2', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', '82535be2-e51d-4322-91cc-013f1c60fedc', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', 'aa535633-9d79-485b-b114-526796ba00ae', '1/2', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', 'e87f9523-b391-4e07-b6b2-b4f87c087ef0', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '264cbcee-ab79-491a-af34-d16bad14f579', '1/4', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', 'd8d45b87-1e3e-46a1-a533-8851fbd8ebaa', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '9af1055d-2baf-4472-8687-012648bacfd8', '1', NULL, NULL);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', 'cc5ed93a-4bd3-4423-ac3e-75c19455b898', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('3d540ca7-e9a5-43df-8584-b19b84088126', '/images/recipes/blue-sky-shake.jpg', true);
+VALUES ('96c2e39c-ea47-4149-8b3d-77cc574ad4ac', '/images/recipes/blue-sky-shake.jpg', true);
 
 -- Insert recipe: Green Delite
 INSERT INTO recipes (
@@ -5332,7 +5327,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'fef44606-6057-44d6-a8c4-0524af3bc42e', 
+  '6fedd7c1-3594-4392-8706-722c30c7ec97', 
   'green-delite', 
   'Green Delite', 
   NULL, 
@@ -5351,34 +5346,34 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', 'fac2758d-ffa1-4edb-bc1f-f9c8d16ecf6f');
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '28e80a60-3a60-4e8a-a9cd-d3d06e35b103', '4', NULL, NULL);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '7cb2d677-0c41-443c-9d98-cea08721a379', '4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1/2', NULL, NULL);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '72e33646-22c7-40ca-befc-62877d4ed626', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '3dba3e4e-7e2a-42d5-9e2e-7a8fd31f3687', '1/2', NULL, NULL);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', 'a97cd716-6519-44e5-adc2-51d95a30aaf4', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '00fc4f82-c9e4-4836-b0e2-d112d945e8b5', '1', NULL, NULL);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '8b55b575-d43b-4bd7-8860-723d79bd83b7', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('fef44606-6057-44d6-a8c4-0524af3bc42e', '/images/recipes/green-delite.jpg', true);
+VALUES ('6fedd7c1-3594-4392-8706-722c30c7ec97', '/images/recipes/green-delite.jpg', true);
 
 -- Insert recipe: Smooth Banana Nut
 INSERT INTO recipes (
@@ -5403,7 +5398,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', 
+  'ed96c1de-265a-4b49-aab1-a40631b11455', 
   'smooth-banana-nut', 
   'Smooth Banana Nut', 
   NULL, 
@@ -5422,32 +5417,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', '2c74674c-17e6-45b4-a59f-93457cb7aaaa', NULL, NULL, NULL);
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '297c1fca-0622-4cc2-9cd2-f8a963d0c7b6', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', 'cbed9c4c-db5a-4641-bd30-dcf3e735fb2a', NULL, NULL, NULL);
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '4b57dc75-ee68-411b-9835-b019f599ffd4', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', 'e6bc05a2-0ad0-482d-92cf-6d7e7a207bd7', '1/4', NULL, NULL);
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '9ce5170b-013f-4fc5-b4a1-24a5d275bd6a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', 'ce3d541b-5736-4d32-8d16-76b54b783062', NULL, NULL, NULL);
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '5d50f7fb-5e59-4eca-a933-590b1bd0d749', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('44e5d0f1-e51e-4a5b-8c72-cff9858e6c85', '/images/recipes/smooth-banana-nut.jpg', true);
+VALUES ('ed96c1de-265a-4b49-aab1-a40631b11455', '/images/recipes/smooth-banana-nut.jpg', true);
 
 -- Insert recipe: Raspberry Zinger Haven
 INSERT INTO recipes (
@@ -5472,7 +5467,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '36f08a6b-bf68-4f4d-9b5e-3181d34c3957', 
+  '9e7f3074-ab25-450c-896e-32b29fc144c3', 
   'raspberry-zinger-haven', 
   'Raspberry Zinger Haven', 
   NULL, 
@@ -5491,32 +5486,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', '1', NULL, NULL);
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', 'ca2594d4-b087-41f4-83fe-e4fd82e843b5', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '5e931db8-5262-430a-accc-e30a77dc6a0b', '1', NULL, NULL);
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', '70973f4d-46d3-4943-8514-cd38013dc245', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', 'bdfda85e-fd8a-4a98-a362-50d518a698e8', '1', NULL, NULL);
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', '2e234779-a3c9-440d-b2a8-eb1d4234d2b8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '5ce32f80-2642-4b33-8664-77585980d613', '1', NULL, NULL);
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', '51c2ee08-ab90-40fb-9666-cab7b8417bbc', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1', NULL, NULL);
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('36f08a6b-bf68-4f4d-9b5e-3181d34c3957', '/images/recipes/raspberry-zinger-haven.jpg', true);
+VALUES ('9e7f3074-ab25-450c-896e-32b29fc144c3', '/images/recipes/raspberry-zinger-haven.jpg', true);
 
 -- Insert recipe: No Bull Berry Light
 INSERT INTO recipes (
@@ -5541,7 +5536,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'b5ceb059-1b58-4473-97e6-79f884e4793f', 
+  '09c14232-5048-4a16-803a-3723e2c9f237', 
   'no-bull-berry-light', 
   'No Bull Berry Light', 
   NULL, 
@@ -5560,34 +5555,34 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/2', NULL, NULL);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', '1/2', NULL, NULL);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', 'ca2594d4-b087-41f4-83fe-e4fd82e843b5', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '6364fec7-7418-4cec-be81-b86bfa3ce04f', '1', NULL, NULL);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', 'cd3f480b-e897-4b34-ab2e-7df756484d9e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/2', NULL, NULL);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', 'e53d134f-4aaa-4911-9ffe-269cd06cd9fd', '1', NULL, NULL);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', 'f05a30f9-a97a-4dd4-9317-708b260567de', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('b5ceb059-1b58-4473-97e6-79f884e4793f', '/images/recipes/no-bull-berry-light.jpg', true);
+VALUES ('09c14232-5048-4a16-803a-3723e2c9f237', '/images/recipes/no-bull-berry-light.jpg', true);
 
 -- Insert recipe: Strawberry Lemon Explosion
 INSERT INTO recipes (
@@ -5612,7 +5607,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c1845639-6059-49b6-893a-47065776c7fd', 
+  '8fde5581-53c4-463a-960a-a067f8726d77', 
   'strawberry-lemon-explosion', 
   'Strawberry Lemon Explosion', 
   NULL, 
@@ -5631,28 +5626,28 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c1845639-6059-49b6-893a-47065776c7fd', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('8fde5581-53c4-463a-960a-a067f8726d77', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c1845639-6059-49b6-893a-47065776c7fd', 'f6b722e3-a967-45ed-905c-59877a245e51', '1', NULL, NULL);
+VALUES ('8fde5581-53c4-463a-960a-a067f8726d77', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c1845639-6059-49b6-893a-47065776c7fd', 'ab907e10-272d-4b23-9f18-5ba693403912', '1/2', NULL, NULL);
+VALUES ('8fde5581-53c4-463a-960a-a067f8726d77', '2d539f19-4125-4f72-ad01-13c4c9087b26', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c1845639-6059-49b6-893a-47065776c7fd', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1', NULL, NULL);
+VALUES ('8fde5581-53c4-463a-960a-a067f8726d77', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c1845639-6059-49b6-893a-47065776c7fd', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('8fde5581-53c4-463a-960a-a067f8726d77', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c1845639-6059-49b6-893a-47065776c7fd', '/images/recipes/strawberry-lemon-explosion.jpg', true);
+VALUES ('8fde5581-53c4-463a-960a-a067f8726d77', '/images/recipes/strawberry-lemon-explosion.jpg', true);
 
 -- Insert recipe: Awesome Peanut Butter
 INSERT INTO recipes (
@@ -5677,7 +5672,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '7038064e-b974-4d43-99bd-eaa9a2f7f06c', 
+  '9ff4373f-9e3c-4911-9813-6ed0af973f00', 
   'awesome-peanut-butter', 
   'Awesome Peanut Butter', 
   NULL, 
@@ -5696,30 +5691,30 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', '5ee9320d-8020-47e6-9873-eb070a9c4b9c', '1', NULL, NULL);
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', 'a9147221-acc1-41c2-b14f-c4c56dca7aa8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', 'e6bc05a2-0ad0-482d-92cf-6d7e7a207bd7', '1/2', NULL, NULL);
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', '9ce5170b-013f-4fc5-b4a1-24a5d275bd6a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/4', NULL, NULL);
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('7038064e-b974-4d43-99bd-eaa9a2f7f06c', '/images/recipes/awesome-peanut-butter.jpg', true);
+VALUES ('9ff4373f-9e3c-4911-9813-6ed0af973f00', '/images/recipes/awesome-peanut-butter.jpg', true);
 
 -- Insert recipe: Blueberry Pie Cloud
 INSERT INTO recipes (
@@ -5744,7 +5739,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a49ffc2a-68be-4b48-a430-88774ce135a5', 
+  'bbebaeab-be49-4c12-887a-943df3f66b2f', 
   'blueberry-pie-cloud', 
   'Blueberry Pie Cloud', 
   NULL, 
@@ -5764,32 +5759,32 @@ Pour smoothie into a glass or bowl. Stir through granola (or sprinkle over top) 
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '43353b72-103d-44ae-bda1-7a41cee6f1da');
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', '1/2', NULL, NULL);
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', 'ca2594d4-b087-41f4-83fe-e4fd82e843b5', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '373a2f2d-dbab-4249-a770-0120f1a13292', '1/2', NULL, NULL);
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', 'db1d511e-adf3-4201-b42f-d1b5a8d967c2', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '2f2cec86-052c-40d8-9765-4ea2ed7030c8', '1', NULL, NULL);
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', '5bd84c38-7e7c-40c8-a7cf-3c78792b409f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/2', NULL, NULL);
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a49ffc2a-68be-4b48-a430-88774ce135a5', '/images/recipes/blueberry-pie-cloud.jpg', true);
+VALUES ('bbebaeab-be49-4c12-887a-943df3f66b2f', '/images/recipes/blueberry-pie-cloud.jpg', true);
 
 -- Insert recipe: Hot San Diego
 INSERT INTO recipes (
@@ -5814,7 +5809,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a445cca8-9289-4503-b199-9fc90dbf07c8', 
+  '73121f98-afab-4d44-8d83-ade828f0cbd9', 
   'hot-san-diego', 
   'Hot San Diego', 
   NULL, 
@@ -5833,28 +5828,28 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a445cca8-9289-4503-b199-9fc90dbf07c8', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('73121f98-afab-4d44-8d83-ade828f0cbd9', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a445cca8-9289-4503-b199-9fc90dbf07c8', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/2', NULL, NULL);
+VALUES ('73121f98-afab-4d44-8d83-ade828f0cbd9', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a445cca8-9289-4503-b199-9fc90dbf07c8', '5e931db8-5262-430a-accc-e30a77dc6a0b', '1', NULL, NULL);
+VALUES ('73121f98-afab-4d44-8d83-ade828f0cbd9', '70973f4d-46d3-4943-8514-cd38013dc245', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a445cca8-9289-4503-b199-9fc90dbf07c8', '88dfb7f5-5fc5-4364-966b-d9d82506ac68', '1', NULL, NULL);
+VALUES ('73121f98-afab-4d44-8d83-ade828f0cbd9', 'd50fff26-d475-475a-a49c-18d61b9b6b5f', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a445cca8-9289-4503-b199-9fc90dbf07c8', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('73121f98-afab-4d44-8d83-ade828f0cbd9', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a445cca8-9289-4503-b199-9fc90dbf07c8', '/images/recipes/hot-san-diego.jpg', true);
+VALUES ('73121f98-afab-4d44-8d83-ade828f0cbd9', '/images/recipes/hot-san-diego.jpg', true);
 
 -- Insert recipe: Baby Mango 
 INSERT INTO recipes (
@@ -5879,7 +5874,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '0568f628-cbb0-42d2-a09d-6efa13ac39a9', 
+  'ac9a7e18-22b3-4325-921c-57a181e0ba4c', 
   'baby-mango', 
   'Baby Mango', 
   NULL, 
@@ -5898,28 +5893,28 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('0568f628-cbb0-42d2-a09d-6efa13ac39a9', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('ac9a7e18-22b3-4325-921c-57a181e0ba4c', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0568f628-cbb0-42d2-a09d-6efa13ac39a9', '41059918-7a0c-4ae4-8e2f-71784f5610ca', '1/2', NULL, NULL);
+VALUES ('ac9a7e18-22b3-4325-921c-57a181e0ba4c', '13a4493e-48af-43ed-b532-ce78a8af866f', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0568f628-cbb0-42d2-a09d-6efa13ac39a9', 'b7e90e59-b859-4019-98f3-0b8469477b69', '1/2', NULL, NULL);
+VALUES ('ac9a7e18-22b3-4325-921c-57a181e0ba4c', '5a292d44-3aee-4a9b-b452-7ad880b69e81', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0568f628-cbb0-42d2-a09d-6efa13ac39a9', '88dfb7f5-5fc5-4364-966b-d9d82506ac68', '1', NULL, NULL);
+VALUES ('ac9a7e18-22b3-4325-921c-57a181e0ba4c', 'd50fff26-d475-475a-a49c-18d61b9b6b5f', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('0568f628-cbb0-42d2-a09d-6efa13ac39a9', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('ac9a7e18-22b3-4325-921c-57a181e0ba4c', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('0568f628-cbb0-42d2-a09d-6efa13ac39a9', '/images/recipes/baby-mango.jpg', true);
+VALUES ('ac9a7e18-22b3-4325-921c-57a181e0ba4c', '/images/recipes/baby-mango.jpg', true);
 
 -- Insert recipe: Red Kiwi Brothers
 INSERT INTO recipes (
@@ -5944,7 +5939,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'b40744c6-7e08-4132-983a-449ece35c3e0', 
+  '9a6e729a-2bcd-48af-9810-64f2d671d2ae', 
   'red-kiwi-brothers', 
   'Red Kiwi Brothers', 
   NULL, 
@@ -5963,32 +5958,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', 'd6a410d6-d5d4-45c6-b827-2b13a3706ab3', '1', NULL, NULL);
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '34c4fec4-3a45-40f9-9e27-ec3ff4bcd741', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '8bff7fc3-823d-4ea2-926b-d739be251641', '6', NULL, NULL);
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '8b0ff819-cf22-4f0c-9339-095c147a111b', '6', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/2', NULL, NULL);
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '5ce32f80-2642-4b33-8664-77585980d613', '1', NULL, NULL);
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '51c2ee08-ab90-40fb-9666-cab7b8417bbc', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('b40744c6-7e08-4132-983a-449ece35c3e0', '/images/recipes/red-kiwi-brothers.jpg', true);
+VALUES ('9a6e729a-2bcd-48af-9810-64f2d671d2ae', '/images/recipes/red-kiwi-brothers.jpg', true);
 
 -- Insert recipe: Blue Oat-Crunch
 INSERT INTO recipes (
@@ -6013,7 +6008,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '1afa62e9-198b-4ff1-9072-3c103decd83f', 
+  'd96cb3ea-c9a7-49b9-8af9-faeab601826a', 
   'blue-oat-crunch', 
   'Blue Oat-Crunch', 
   NULL, 
@@ -6032,32 +6027,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '0a990722-46ed-47d0-9f37-4f7bbe855171', '1/4', NULL, NULL);
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', 'f2de22f5-2242-4e9d-a0e7-931ccaa713ec', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/2', NULL, NULL);
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '3423fd4c-4d6c-4e08-8a36-8a442358f9a8', '1/4', NULL, NULL);
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', 'abf825dc-126c-4ec3-8b74-f921a07d8c9a', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('1afa62e9-198b-4ff1-9072-3c103decd83f', '/images/recipes/blue-oat-crunch.jpg', true);
+VALUES ('d96cb3ea-c9a7-49b9-8af9-faeab601826a', '/images/recipes/blue-oat-crunch.jpg', true);
 
 -- Insert recipe: Dirty Chicago
 INSERT INTO recipes (
@@ -6082,7 +6077,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', 
+  '1919527b-82c9-4068-b3bf-cfb943701fb2', 
   'dirty-chicago', 
   'Dirty Chicago', 
   NULL, 
@@ -6101,34 +6096,34 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', 'df58c376-0933-4107-ad13-594ea1debfce', '1/2', NULL, NULL);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '8890ac9c-5fe4-401c-bc19-2d700175f862', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', '5e931db8-5262-430a-accc-e30a77dc6a0b', '1', NULL, NULL);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '70973f4d-46d3-4943-8514-cd38013dc245', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', 'ed257518-f255-4022-83e7-7cf9ae616b86', '1/4', NULL, NULL);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', 'b1eae386-77f7-450a-9e49-b018700028df', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', '2f2cec86-052c-40d8-9765-4ea2ed7030c8', '1/2', NULL, NULL);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '5bd84c38-7e7c-40c8-a7cf-3c78792b409f', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', 'd3798b21-7f24-495e-9e43-b3d5c47254d3', '1/2', NULL, NULL);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '05bf9cb3-0f12-40c9-ad24-56723b249c43', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1/2', NULL, NULL);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('4a88fa7b-48a7-4df2-8772-e4b6a9724ae1', '/images/recipes/dirty-chicago.jpg', true);
+VALUES ('1919527b-82c9-4068-b3bf-cfb943701fb2', '/images/recipes/dirty-chicago.jpg', true);
 
 -- Insert recipe: Mix Berry Blast
 INSERT INTO recipes (
@@ -6153,7 +6148,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '9ea46dfd-68ff-4f71-9728-692404f9aef9', 
+  'e4413b22-245d-441c-80eb-74da0dfa0a98', 
   'mix-berry-blast', 
   'Mix Berry Blast', 
   NULL, 
@@ -6172,32 +6167,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', '23fa2c34-f89a-49c4-9a69-c7d9987ac6bd', '1/2', NULL, NULL);
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', 'ca2594d4-b087-41f4-83fe-e4fd82e843b5', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/2', NULL, NULL);
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', '5ce32f80-2642-4b33-8664-77585980d613', '1', NULL, NULL);
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', '51c2ee08-ab90-40fb-9666-cab7b8417bbc', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('9ea46dfd-68ff-4f71-9728-692404f9aef9', '/images/recipes/mix-berry-blast.jpg', true);
+VALUES ('e4413b22-245d-441c-80eb-74da0dfa0a98', '/images/recipes/mix-berry-blast.jpg', true);
 
 -- Insert recipe: Wild Mambo
 INSERT INTO recipes (
@@ -6222,7 +6217,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '32bca4ca-bd45-447e-b41f-3d676988a5e2', 
+  'b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', 
   'wild-mambo', 
   'Wild Mambo', 
   NULL, 
@@ -6241,30 +6236,30 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', 'f6b722e3-a967-45ed-905c-59877a245e51', '1/2', NULL, NULL);
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', '34a58f0b-9c1b-487b-af2d-2bb4fad0d4db', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', '1591a286-48ed-421f-8893-73699da30f4c', '1/2', NULL, NULL);
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', 'd54446b4-1693-4e41-8a9a-40dac98bf607', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', 'd3798b21-7f24-495e-9e43-b3d5c47254d3', '1', NULL, NULL);
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', '05bf9cb3-0f12-40c9-ad24-56723b249c43', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', 'aca9641d-bf4c-4a8c-830e-a2e0ce6317b3', '1/4', NULL, NULL);
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', 'b23bea4e-c2fa-48fc-a91d-1d317177fdbc', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('32bca4ca-bd45-447e-b41f-3d676988a5e2', '/images/recipes/wild-mambo.jpg', true);
+VALUES ('b9ad66c3-ab0d-4798-96d5-8a7f63e675f0', '/images/recipes/wild-mambo.jpg', true);
 
 -- Insert recipe: Clean Banana Tango
 INSERT INTO recipes (
@@ -6289,7 +6284,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'bb86daf2-320a-45c0-b09a-f47f85ec4630', 
+  '00e92289-2dc8-4c58-83aa-a2023d23a824', 
   'clean-banana-tango', 
   'Clean Banana Tango', 
   NULL, 
@@ -6308,28 +6303,28 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('bb86daf2-320a-45c0-b09a-f47f85ec4630', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('00e92289-2dc8-4c58-83aa-a2023d23a824', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('bb86daf2-320a-45c0-b09a-f47f85ec4630', '420787d6-481d-40e3-8aba-a69bd3402a21', '2', NULL, NULL);
+VALUES ('00e92289-2dc8-4c58-83aa-a2023d23a824', '4b633a12-cccb-4806-b087-711eb605f33a', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('bb86daf2-320a-45c0-b09a-f47f85ec4630', '3423fd4c-4d6c-4e08-8a36-8a442358f9a8', '1/2', NULL, NULL);
+VALUES ('00e92289-2dc8-4c58-83aa-a2023d23a824', 'abf825dc-126c-4ec3-8b74-f921a07d8c9a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('bb86daf2-320a-45c0-b09a-f47f85ec4630', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '3/4', NULL, NULL);
+VALUES ('00e92289-2dc8-4c58-83aa-a2023d23a824', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '3/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('bb86daf2-320a-45c0-b09a-f47f85ec4630', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('00e92289-2dc8-4c58-83aa-a2023d23a824', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('bb86daf2-320a-45c0-b09a-f47f85ec4630', '/images/recipes/clean-banana-tango.jpg', true);
+VALUES ('00e92289-2dc8-4c58-83aa-a2023d23a824', '/images/recipes/clean-banana-tango.jpg', true);
 
 -- Insert recipe: Sky Mango
 INSERT INTO recipes (
@@ -6354,7 +6349,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'fc621bfd-1c08-460d-acd5-f4e33427fa56', 
+  '39663dd7-e05a-4a1f-9e45-6055e1f8a07b', 
   'sky-mango', 
   'Sky Mango', 
   NULL, 
@@ -6373,30 +6368,30 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/2', NULL, NULL);
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', '236b8335-3c46-480d-aa9c-ce7756a3af35', '1', NULL, NULL);
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '10b46d88-06bb-43ab-867b-ad121158ef80', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', 'df58c376-0933-4107-ad13-594ea1debfce', '1/2', NULL, NULL);
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '8890ac9c-5fe4-401c-bc19-2d700175f862', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', 'ad2c77d0-e361-4f59-87c4-85f51b01ab0d', '1', NULL, NULL);
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '6df1ac2c-5cee-4a91-8470-58844176fcbd', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('fc621bfd-1c08-460d-acd5-f4e33427fa56', '/images/recipes/sky-mango.jpg', true);
+VALUES ('39663dd7-e05a-4a1f-9e45-6055e1f8a07b', '/images/recipes/sky-mango.jpg', true);
 
 -- Insert recipe: Fruity Fuschia
 INSERT INTO recipes (
@@ -6421,11 +6416,11 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '96564107-cc7e-4f73-90e9-768c823268d3', 
+  '74efc099-fa12-443e-805d-25d82c2cb453', 
   'fruity-fuschia', 
   'Fruity Fuschia', 
   NULL, 
-  'Get ready for this bright pink superfood smoothie that has tons of healthy vitamins and minerals.', 
+  'Get ready for this bright pink Superfoods smoothie that has tons of healthy vitamins and minerals.', 
   ARRAY['Combine all ingredients in a blender. Add more ice or water to reach the desired consistency.'], 
   'Appearance', 
   14.7, 
@@ -6440,36 +6435,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '7780c9d3-9ba5-41e4-89ff-e6cdd80ded5c');
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', 'ef47dd4a-92a9-4fef-80e9-26bced577583');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '3eb7c432-5823-4dd5-b0ce-0f0cbe432a43', NULL, NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', 'e7208176-e10e-46a9-92d3-79ba2564358c', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '98a75334-7980-4d2d-be93-b07501ad4aab', NULL, NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', '843fa3e3-5b83-4aea-9b12-fa33a4b254cb', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', 'd6dcdb7c-fae4-4421-bc90-3e8e15c00d35', NULL, NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', 'a811b704-4a35-43a5-b563-317d789e2fe4', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '399ec0ca-87a1-42d9-a208-504098448f19', NULL, NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', 'aab7d2c3-9449-49f8-81f1-429a3acfc999', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', 'ca8b3ca3-e49f-4833-968d-754d32c57756', NULL, NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', '97978a43-f7ef-4253-be22-a6856d2e5247', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('96564107-cc7e-4f73-90e9-768c823268d3', '/images/recipes/fruity-fuschia.jpg', true);
+VALUES ('74efc099-fa12-443e-805d-25d82c2cb453', '/images/recipes/fruity-fuschia.jpg', true);
 
 -- Insert recipe: Honey B*tch
 INSERT INTO recipes (
@@ -6494,7 +6489,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '9798f8a6-67b9-4719-8dd6-8ce8300e306d', 
+  'cf6b1f9c-e457-405e-913e-073c71979ed3', 
   'honey-b*tch', 
   'Honey B*tch', 
   NULL, 
@@ -6513,32 +6508,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', 'a5409167-d29d-4831-b99c-eb51d58f1b8c');
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', 'a94346c6-daf1-44e0-b249-80ce7406c52b');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', 'aa535633-9d79-485b-b114-526796ba00ae', '1', NULL, NULL);
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', 'e87f9523-b391-4e07-b6b2-b4f87c087ef0', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', '437c9755-c92b-41fd-97e4-89bc4c3c6836', '3/4', NULL, NULL);
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', 'becbb2cc-19bc-4655-9336-4fd63adcc2a6', '3/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', '5e931db8-5262-430a-accc-e30a77dc6a0b', '1', NULL, NULL);
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', '70973f4d-46d3-4943-8514-cd38013dc245', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', '3423fd4c-4d6c-4e08-8a36-8a442358f9a8', '1', NULL, NULL);
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', 'abf825dc-126c-4ec3-8b74-f921a07d8c9a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', '3996784f-2da1-45fc-90d7-3b5ea1a2ba7c', '1/2', NULL, NULL);
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', '656f5cb7-bed4-473a-94e6-e0dbe20319fe', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('9798f8a6-67b9-4719-8dd6-8ce8300e306d', '/images/recipes/honey-b*tch.jpg', true);
+VALUES ('cf6b1f9c-e457-405e-913e-073c71979ed3', '/images/recipes/honey-b*tch.jpg', true);
 
 -- Insert recipe: Lemon Sunrise Hour
 INSERT INTO recipes (
@@ -6563,7 +6558,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a587a911-07d0-43d5-9e29-a05bbe25711c', 
+  '10ded85c-2549-425a-b7e4-7d893f7dc99f', 
   'lemon-sunrise-hour', 
   'Lemon Sunrise Hour', 
   NULL, 
@@ -6582,32 +6577,32 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', 'd93ec3bb-f7c3-40f9-93b9-964893b62a5f', '1/2', NULL, NULL);
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', '652084d7-c162-4927-b002-00dce0cbfc74', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', '53fd49d1-4632-4c53-847e-5b5f84c1b745', '6', NULL, NULL);
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', 'd76917fd-3775-42e9-9717-afff8b3f2183', '6', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', '9d91c617-4019-43ee-be59-11d1411a0c03', '1/2', NULL, NULL);
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', 'cadefd24-3a6b-4404-9244-ef93f10bf4f5', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', 'df58c376-0933-4107-ad13-594ea1debfce', '1/2', NULL, NULL);
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', '8890ac9c-5fe4-401c-bc19-2d700175f862', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', 'ebe01ce3-df8c-4853-973e-9a12253b78a3', '3/4', NULL, NULL);
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', '36daee65-370c-4295-8902-c1a412b99ea7', '3/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a587a911-07d0-43d5-9e29-a05bbe25711c', '/images/recipes/lemon-sunrise-hour.jpg', true);
+VALUES ('10ded85c-2549-425a-b7e4-7d893f7dc99f', '/images/recipes/lemon-sunrise-hour.jpg', true);
 
 -- Insert recipe: Hyper Tropical Blast
 INSERT INTO recipes (
@@ -6632,7 +6627,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '64de74dd-f673-45b4-a169-e0f910172e89', 
+  '68e29aab-b2b5-4cd6-bbb4-18c24baf9587', 
   'hyper-tropical-blast', 
   'Hyper Tropical Blast', 
   NULL, 
@@ -6651,20 +6646,20 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('64de74dd-f673-45b4-a169-e0f910172e89', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('68e29aab-b2b5-4cd6-bbb4-18c24baf9587', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('64de74dd-f673-45b4-a169-e0f910172e89', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('68e29aab-b2b5-4cd6-bbb4-18c24baf9587', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('64de74dd-f673-45b4-a169-e0f910172e89', '/images/recipes/hyper-tropical-blast.jpg', true);
+VALUES ('68e29aab-b2b5-4cd6-bbb4-18c24baf9587', '/images/recipes/hyper-tropical-blast.jpg', true);
 
 -- Insert recipe: My Oasis
 INSERT INTO recipes (
@@ -6689,7 +6684,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', 
+  '5356d734-c2c3-4e1b-9bdd-8d353546cff2', 
   'my-oasis', 
   'My Oasis', 
   NULL, 
@@ -6708,30 +6703,30 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/4', NULL, NULL);
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', 'df58c376-0933-4107-ad13-594ea1debfce', '1', NULL, NULL);
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '8890ac9c-5fe4-401c-bc19-2d700175f862', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', '2ab2b65d-810b-4f2f-8395-411b50286563', '1', NULL, NULL);
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '79a5908d-7948-4a28-9bde-3f61a0eb457b', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('ba0f3ac2-7f61-4337-8d48-bbcd0dbd343d', '/images/recipes/my-oasis.jpg', true);
+VALUES ('5356d734-c2c3-4e1b-9bdd-8d353546cff2', '/images/recipes/my-oasis.jpg', true);
 
 -- Insert recipe: Inflamation fighter and Mood booster
 INSERT INTO recipes (
@@ -6756,18 +6751,18 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '0b0709ba-57a3-45fb-b57c-d198faacc887', 
+  'cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', 
   'inflamation-fighter-and-mood-booster', 
   'Inflamation fighter and Mood booster', 
   NULL, 
-  'This smoothie is fullpacked with Omega 3 fatty accids, Anti-inflammatory, immunity booster and calming nerve system (reducing stress, anxiety, boosting mood and helping to relax)', 
+  'This smoothie is fullpacked with Omega 3 fatty accids, Anti Inflammatory, immunity booster and calming nerve system (reducing stress, anxiety, boosting mood and helping to relax)', 
   ARRAY['-        Cut pineapple into smaller pieces
 -        Open passion fruit and scoop out the pulp
 -        Remove stems from lemon balm (use the leaves only)
 -        Put all ingredients into a blender, add chia seeds and orange juice 
 -        Blend well together 
 -        Serve with extra chia seeds on top and enjoy ☺'], 
-  'Anti-inflammatory
+  'Anti Inflammatory
 Immunity booster, 
 Calming nerve system', 
   1.4, 
@@ -6782,28 +6777,28 @@ Calming nerve system',
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('0b0709ba-57a3-45fb-b57c-d198faacc887', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0b0709ba-57a3-45fb-b57c-d198faacc887', '9d91c617-4019-43ee-be59-11d1411a0c03', '1 1/2', NULL, NULL);
+VALUES ('cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', 'cadefd24-3a6b-4404-9244-ef93f10bf4f5', '1 1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0b0709ba-57a3-45fb-b57c-d198faacc887', 'dfe7f82d-b0aa-48e5-843c-db69570b0058', '1', NULL, NULL);
+VALUES ('cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', '6c71ed76-e412-4353-8a90-20c234fe2670', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0b0709ba-57a3-45fb-b57c-d198faacc887', '26edf41d-4159-4a77-ac0d-23499601ecde', '1', NULL, NULL);
+VALUES ('cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', '625582dd-4682-4688-89ad-a8bc546f0025', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('0b0709ba-57a3-45fb-b57c-d198faacc887', 'ad7bd848-0fc7-42f1-bc7e-bd18f56cd07c');
+VALUES ('cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', '9980e4e5-ac13-49c6-a84a-546b1cb404c2');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('0b0709ba-57a3-45fb-b57c-d198faacc887', '/images/recipes/inflamation-fighter-and-mood-booster.jpg', true);
+VALUES ('cbcbf1d2-1370-4ac7-affc-b8e8cd2eb8bf', '/images/recipes/inflamation-fighter-and-mood-booster.jpg', true);
 
 -- Insert recipe: Papaya queen
 INSERT INTO recipes (
@@ -6828,16 +6823,16 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '32cba900-ddcf-4b13-a6bb-130ba3b878f8', 
+  '88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', 
   'papaya-queen', 
   'Papaya queen', 
   NULL, 
-  'This smoothie is anti-inflammatory, supports digestion and blood sugar regulation', 
+  'This smoothie is Anti Inflammatory, supports digestion and blood sugar regulation', 
   ARRAY['-        Cut papaya and frozen bananas into smaller pieces
 -        Open passion fruit and scoop out the pulp
 -        Put all ingredients into a blender, add fresh coconut water and blend well together 
 -        Serve with passion fruit on top and enjoy ☺'], 
-  'Anti-inflammatory, 
+  'Anti Inflammatory, 
 Digestion, 
 Blood sugar regulation', 
   2.4, 
@@ -6852,28 +6847,28 @@ Blood sugar regulation',
   false,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('32cba900-ddcf-4b13-a6bb-130ba3b878f8', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32cba900-ddcf-4b13-a6bb-130ba3b878f8', 'b2c005ae-b690-4169-b478-ad234149ab10', '1', NULL, NULL);
+VALUES ('88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', 'b7248b8e-3960-4750-aab1-7f82a40aacff', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32cba900-ddcf-4b13-a6bb-130ba3b878f8', '71e15a5e-3a2f-4d74-84ea-e75b5841c59a', '1', NULL, NULL);
+VALUES ('88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', 'f3c8e831-e669-42d3-bc47-f307f6bd1a46', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('32cba900-ddcf-4b13-a6bb-130ba3b878f8', '331a2b28-a9ee-4da4-9db5-cff52416510f', NULL, NULL, NULL);
+VALUES ('88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', 'd521d918-28bb-429c-8ce0-a514db43321d', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('32cba900-ddcf-4b13-a6bb-130ba3b878f8', 'b66c9378-6a0c-45d9-9839-490c69d7ac3a');
+VALUES ('88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', 'a99b85e7-f567-4d9d-9224-2dc40ad86d35');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('32cba900-ddcf-4b13-a6bb-130ba3b878f8', '/images/recipes/papaya-queen.jpg', true);
+VALUES ('88bf1fef-02c1-4cbb-b5c4-c3efb2705eb1', '/images/recipes/papaya-queen.jpg', true);
 
 -- Insert recipe: Garden in a Cup
 INSERT INTO recipes (
@@ -6898,7 +6893,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '3b2c061d-f52e-48f9-99d2-2183829dd3d2', 
+  '51e044aa-363b-4e93-a8fa-0edc21bf6b85', 
   'garden-in-a-cup', 
   'Garden in a Cup', 
   NULL, 
@@ -6917,38 +6912,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '7f579daa-d87e-4de3-8b2c-704b9177bf6c', '1', NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '8566c961-302f-49ba-9664-a44dafbb43cc', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '7cd434ae-d9e1-4171-bceb-7e232e7ff9fc', NULL, NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', 'f4ae276f-272a-43ae-afcd-c25b4539e137', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '8f9fd75e-4a47-4b1d-904b-dcdf400ae91b', NULL, NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', 'a2b8e28d-ab50-4441-9a3a-a4adaeb6f51e', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '318025f9-b912-4732-9d3c-1a9119d14f01', NULL, NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', 'b6e065cf-8843-4fc3-869f-f5bf2e7aab91', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', 'dd0eefe1-d924-4bea-9d87-3b4befd9b87f', NULL, NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '0a17fb8a-7fe8-4307-bbf0-a35a6a7efdfb', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('3b2c061d-f52e-48f9-99d2-2183829dd3d2', '/images/recipes/garden-in-a-cup.jpg', true);
+VALUES ('51e044aa-363b-4e93-a8fa-0edc21bf6b85', '/images/recipes/garden-in-a-cup.jpg', true);
 
 -- Insert recipe: Citrus Green-Berry Smoothie
 INSERT INTO recipes (
@@ -6973,7 +6968,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'f6059b92-346b-43a8-884b-37489c7b6ad4', 
+  'e0f8e0be-214e-4831-b8d5-91522b3f94fa', 
   'citrus-green-berry-smoothie', 
   'Citrus Green-Berry Smoothie', 
   NULL, 
@@ -6992,42 +6987,42 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '3bcb0a03-1b51-42de-9b4d-682b2c19449e', NULL, NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', '3d93b988-3309-42f4-9137-3557ce797044', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', 'f211cf3e-688a-4eb9-93bf-b9944d0b908b', NULL, NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'df19648d-1645-4550-b56c-343dd0e735ef', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', 'd66a0778-e893-4cbb-9cb4-1f34b368a9c2', NULL, NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', '4982e162-475e-4220-b176-9091693b3fd2', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '399ec0ca-87a1-42d9-a208-504098448f19', NULL, NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'aab7d2c3-9449-49f8-81f1-429a3acfc999', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '63f41488-ad40-4302-b7bb-9645cd091d31', NULL, NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', '3dea223c-2a9f-465a-bd92-d85ddef4902a', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '599b520a-ba57-4280-aef0-105b0ef56981', '1', NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'da059e9e-0d95-4c04-88d1-2c60746cd93a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '516197b6-c32c-4c28-b603-5c6498813d35', '1', NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'c20bdd4f-e0c9-4b48-978b-8d773d90710a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('f6059b92-346b-43a8-884b-37489c7b6ad4', '/images/recipes/citrus-green-berry-smoothie.jpg', true);
+VALUES ('e0f8e0be-214e-4831-b8d5-91522b3f94fa', '/images/recipes/citrus-green-berry-smoothie.jpg', true);
 
 -- Insert recipe: Chocolate Java
 INSERT INTO recipes (
@@ -7052,7 +7047,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', 
+  'a894b402-5e3d-4ded-83aa-cd8b2f94cd82', 
   'chocolate-java', 
   'Chocolate Java', 
   NULL, 
@@ -7071,38 +7066,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', 'cd31ae7f-e2ee-43c9-96ec-e7aba7822504');
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', 'ee157d01-5d08-4059-bfd4-fde228806eff');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '475eadee-1634-4a4b-b05c-e36951636236', NULL, NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', 'e4bb5a32-b927-4f44-affc-ab2dbc428397', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', 'd7f90ff4-15d4-46ba-bbb6-e99229347e0a', '1/3', NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', '7923d6a1-8651-464a-8e04-46a97aad208d', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '666c5b4b-6f7a-4202-9386-d952ffb8fb4a', '1', NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', '1f1b4e94-5252-481a-942b-400865115262', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '01a57246-8419-4bef-8d6a-9269c1d58175', '1', NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', 'a263df57-3ade-4eb4-98f0-11adb5c56aee', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', 'aadc88b2-f9bd-4a52-8643-fc05b72ccda2', NULL, NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', 'bba7c25a-0ebc-49cd-a351-eeac0ba9a3ec', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', 'b0322e49-f110-454f-9fae-bec83b300b4a', '1', NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', 'e3444b13-dea6-4349-9606-d2051c61d088', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('4ddbe1a2-11aa-4065-b17d-34a5dfaa221e', '/images/recipes/chocolate-java.jpg', true);
+VALUES ('a894b402-5e3d-4ded-83aa-cd8b2f94cd82', '/images/recipes/chocolate-java.jpg', true);
 
 -- Insert recipe: Blue Dream
 INSERT INTO recipes (
@@ -7127,7 +7122,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'e17bd9b7-1775-4542-a536-7faf68eeb745', 
+  '0ed18ac8-cbf8-4355-b1c8-9ea111566e80', 
   'blue-dream', 
   'Blue Dream', 
   NULL, 
@@ -7146,34 +7141,34 @@ INSERT INTO recipes (
   true,
   NULL,
   ARRAY['Casein Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '1f6d5365-08ed-44f0-8812-70a587b6e7e9');
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', 'ee157d01-5d08-4059-bfd4-fde228806eff');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '083e60bb-c33d-4267-a151-77351a939048', '1', NULL, NULL);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', '35c83f62-3d14-4b73-ae28-a248895e284a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '3bcb0a03-1b51-42de-9b4d-682b2c19449e', NULL, NULL, NULL);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', '3d93b988-3309-42f4-9137-3557ce797044', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '6dcbf7e5-6939-413e-9ee8-c18278066642', NULL, NULL, NULL);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', 'ba17b0ef-d171-4ab7-b9c3-9a7c23b4daf4', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '475eadee-1634-4a4b-b05c-e36951636236', NULL, NULL, NULL);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', 'e4bb5a32-b927-4f44-affc-ab2dbc428397', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '3b940834-c672-4213-a883-b21be7d0130b', '1', NULL, NULL);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', 'aba33feb-1c9a-4956-947e-5620fa5724c5', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '856514ae-7515-427d-8642-e92859603d9e');
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', '0bba0cc1-602c-4387-877d-5281d5e5d4ff');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('e17bd9b7-1775-4542-a536-7faf68eeb745', '/images/recipes/blue-dream.jpg', true);
+VALUES ('0ed18ac8-cbf8-4355-b1c8-9ea111566e80', '/images/recipes/blue-dream.jpg', true);
 
 -- Insert recipe: HappyHour Pineapple Paradise
 INSERT INTO recipes (
@@ -7198,7 +7193,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', 
+  '24fdc19e-f762-4ac0-a0df-513d173f0d74', 
   'happyhour-pineapple-paradise', 
   'HappyHour Pineapple Paradise', 
   NULL, 
@@ -7217,34 +7212,34 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '9d91c617-4019-43ee-be59-11d1411a0c03', '1/2', NULL, NULL);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', 'cadefd24-3a6b-4404-9244-ef93f10bf4f5', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '5e931db8-5262-430a-accc-e30a77dc6a0b', '1', NULL, NULL);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', '70973f4d-46d3-4943-8514-cd38013dc245', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '9a750b10-7fc5-4cb7-a03c-d582c41a8072', '1', NULL, NULL);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', 'b455c9cd-eebc-418d-a203-d9e380d3462d', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '6c0446bf-8805-4ff1-8afe-c0adc9aeb336', '1', NULL, NULL);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', 'fff069a1-6a22-4126-91b2-230021fa2b0c', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '5ce32f80-2642-4b33-8664-77585980d613', '1', NULL, NULL);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', '51c2ee08-ab90-40fb-9666-cab7b8417bbc', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '2f2cec86-052c-40d8-9765-4ea2ed7030c8', '1/2', NULL, NULL);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', '5bd84c38-7e7c-40c8-a7cf-3c78792b409f', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '922b8392-0332-42b3-a0e1-ebeef974c33d');
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', '68836e77-ce82-4016-8f5f-638d0ed73c8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('0839ac6c-ff2a-4f7f-ab6e-2a61ef28ba84', '/images/recipes/happyhour-pineapple-paradise.jpg', true);
+VALUES ('24fdc19e-f762-4ac0-a0df-513d173f0d74', '/images/recipes/happyhour-pineapple-paradise.jpg', true);
 
 -- Insert recipe: Creamy Green
 INSERT INTO recipes (
@@ -7269,7 +7264,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '086f9281-1f9a-49b8-824b-1f29091070df', 
+  '4bf5adf5-d409-414d-a834-8bfaedb02f37', 
   'creamy-green', 
   'Creamy Green', 
   NULL, 
@@ -7288,34 +7283,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/3', NULL, NULL);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', 'd3c9dca0-2c04-4706-b6ae-9b8d9fac14cd', NULL, NULL, NULL);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '9eb84209-e474-4d98-98f3-38565801af3b', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', '1e7c054d-90d8-48d3-9cc6-c813f81ff37d', NULL, NULL, NULL);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '66982b41-0355-4ff8-884f-2c9316724d71', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', '7006d98b-c1d9-447a-bc9b-7a577d3c0232', '1', NULL, NULL);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '0714bb59-0d3d-44ba-8a8c-edcc202a5345', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('086f9281-1f9a-49b8-824b-1f29091070df', '/images/recipes/creamy-green.jpg', true);
+VALUES ('4bf5adf5-d409-414d-a834-8bfaedb02f37', '/images/recipes/creamy-green.jpg', true);
 
 -- Insert recipe: Coconut Carrot and Ginger
 INSERT INTO recipes (
@@ -7340,7 +7335,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5db2d4bd-d055-47f9-83ab-68544f448762', 
+  '2bb67219-3ce8-4d5d-882a-f881c341850f', 
   'coconut-carrot-and-ginger', 
   'Coconut Carrot and Ginger', 
   NULL, 
@@ -7359,38 +7354,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant-Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', 'cad9abb4-4238-443f-864b-049afadd2da6');
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', 'fafaeebc-8a58-49f7-80cf-eabaedf7ace5');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '87a34bc3-e8c1-472f-9494-82a124a2aa5d', '1', NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', 'e7b85d4b-840f-47d0-914b-b0e8efabe4da', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '8fa2d6ac-fabd-4355-b7da-6cb19f224df1', NULL, NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', 'e768039a-145f-4694-bf3a-ff4f7e9b732f', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '4d8e1624-3696-426e-b5c5-bf1f3d293f45', '2', NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '6aa706ea-2420-49f4-afad-a719dd2b34ca', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '60bd1df5-9404-49db-96b5-c6388fd56da0', NULL, NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '4dd0caf5-7d23-4077-8ded-86112b28e238', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1', NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '72e33646-22c7-40ca-befc-62877d4ed626', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', 'f1835df2-c600-4086-bc88-b9de779251fe', NULL, NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '8ee387f9-3111-4fb0-aef8-276cb36a3035', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '755cf242-2ea3-4e83-97f6-7852342502ac', NULL, NULL, NULL);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '2bcfd1cf-07c6-471c-bf1e-0d079b17898f', NULL, NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '0cb1fdf7-4cf2-4c12-8a4a-7f6330ac3e5f');
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '5a48e22a-f836-47a0-bdba-b59d08849d8e');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5db2d4bd-d055-47f9-83ab-68544f448762', '/images/recipes/coconut-carrot-and-ginger.jpg', true);
+VALUES ('2bb67219-3ce8-4d5d-882a-f881c341850f', '/images/recipes/coconut-carrot-and-ginger.jpg', true);
 
 -- Insert recipe: Chocolate Elvis
 INSERT INTO recipes (
@@ -7415,7 +7410,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'b60e58fe-2a62-4f6b-810f-748fc82c7705', 
+  'cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', 
   'chocolate-elvis', 
   'Chocolate Elvis', 
   NULL, 
@@ -7434,36 +7429,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '48dfaa85-7de3-4e14-acb8-8533f8f325db', '1', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', '0d5d30d4-5bec-4e6b-8860-39498c89a0bb', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '156de6dd-6a5b-4408-8966-ac0c4bc6310c', '1/2', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', 'f947e659-2950-496f-b9ab-bb7fb55907b1', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '5ee9320d-8020-47e6-9873-eb070a9c4b9c', '1', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', 'a9147221-acc1-41c2-b14f-c4c56dca7aa8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '89196c9e-4612-4a8a-80da-ac9e7bbd8490', '1', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', '69e49fbb-001d-45bf-acb5-8e587a5c28e0', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/4', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/3', NULL, NULL);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/3', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('b60e58fe-2a62-4f6b-810f-748fc82c7705', '/images/recipes/chocolate-elvis.jpg', true);
+VALUES ('cf1239af-4b1f-4b46-aae2-ab3f9c1b0d44', '/images/recipes/chocolate-elvis.jpg', true);
 
 -- Insert recipe: Peanut Butter Cup
 INSERT INTO recipes (
@@ -7488,7 +7483,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '494a9846-9c4d-4ed7-b015-826b339ea7ff', 
+  '0cf64906-c194-4765-8359-7c0117262f55', 
   'peanut-butter-cup', 
   'Peanut Butter Cup', 
   NULL, 
@@ -7507,34 +7502,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', '5ee9320d-8020-47e6-9873-eb070a9c4b9c', '1', NULL, NULL);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', 'a9147221-acc1-41c2-b14f-c4c56dca7aa8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', '48dfaa85-7de3-4e14-acb8-8533f8f325db', '1', NULL, NULL);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', '0d5d30d4-5bec-4e6b-8860-39498c89a0bb', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/2', NULL, NULL);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', 'bc80d70f-9993-499c-a523-bda6a14cd918', '1', NULL, NULL);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', '3178d354-d456-49f5-b150-cc929f266121', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('494a9846-9c4d-4ed7-b015-826b339ea7ff', '/images/recipes/peanut-butter-cup.jpg', true);
+VALUES ('0cf64906-c194-4765-8359-7c0117262f55', '/images/recipes/peanut-butter-cup.jpg', true);
 
 -- Insert recipe: Birthday Cake Shake
 INSERT INTO recipes (
@@ -7559,7 +7554,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '2aad9697-540a-4478-a6da-b3c091597f5b', 
+  'fba42a60-1a06-4a86-91aa-cbf1a024cd81', 
   'birthday-cake-shake', 
   'Birthday Cake Shake', 
   NULL, 
@@ -7578,36 +7573,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '8cb9a0bf-af57-477d-ae20-176a5aa2923e', '3', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', '0829f65e-e91c-48b8-80a3-c774538a23c9', '3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '432102dc-2a68-4090-9fce-8b73677db1d4', '2', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', 'dc53765f-5410-483f-806c-e68aebb40af7', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/2', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '7537208e-a6c1-4c08-bcfc-18a01b7ac5cd', '1', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', 'ab18b4c0-3832-488c-882d-63bd4846a9b1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', 'ee02e838-a759-4eca-8ce9-0f19439fdec2', '1', NULL, NULL);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', '2c7315c0-a53d-4d42-949c-1db6812ee135', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('2aad9697-540a-4478-a6da-b3c091597f5b', '/images/recipes/birthday-cake-shake.jpg', true);
+VALUES ('fba42a60-1a06-4a86-91aa-cbf1a024cd81', '/images/recipes/birthday-cake-shake.jpg', true);
 
 -- Insert recipe: Chocolate Coconut
 INSERT INTO recipes (
@@ -7632,7 +7627,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'f27d28b2-ab6f-404d-ba1d-3e3397d00307', 
+  'bcfb4fb8-123e-4210-ac90-7907bfd8701d', 
   'chocolate-coconut', 
   'Chocolate Coconut', 
   NULL, 
@@ -7651,36 +7646,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '48dfaa85-7de3-4e14-acb8-8533f8f325db', '1', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '0d5d30d4-5bec-4e6b-8860-39498c89a0bb', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', 'd3000d0d-a737-48dd-b0f0-951256225ef6', '1', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '671733e6-d6c2-4dfa-863f-c3d6915c14e7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '1afb048d-c16e-4d8e-8e2e-b5ad6cf3fa8d', '1', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', 'd68f80b2-d770-47ae-9819-f8c8c49d7af6', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/2', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', 'bc80d70f-9993-499c-a523-bda6a14cd918', '1', NULL, NULL);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '3178d354-d456-49f5-b150-cc929f266121', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('f27d28b2-ab6f-404d-ba1d-3e3397d00307', '/images/recipes/chocolate-coconut.jpg', true);
+VALUES ('bcfb4fb8-123e-4210-ac90-7907bfd8701d', '/images/recipes/chocolate-coconut.jpg', true);
 
 -- Insert recipe: Nutty Butter 
 INSERT INTO recipes (
@@ -7705,7 +7700,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', 
+  '65220666-68c0-4376-9323-8e714a9d8150', 
   'nutty-butter', 
   'Nutty Butter', 
   NULL, 
@@ -7724,34 +7719,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '5ee9320d-8020-47e6-9873-eb070a9c4b9c', '1', NULL, NULL);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', 'a9147221-acc1-41c2-b14f-c4c56dca7aa8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '3/4', NULL, NULL);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '3/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '3f1fc4f4-cdae-4281-847a-82d429602168', '1', NULL, NULL);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', '7e60118a-e6a6-4343-82b7-2b63d7e47ca7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '2e31b557-b89f-4ec4-bbad-6211f8e3163d', '1', NULL, NULL);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', '302e20d5-dc33-4d02-9b61-10f1f35c87d9', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('a1a1ef60-940b-4e41-8a4c-4bc6276eccc6', '/images/recipes/nutty-butter.jpg', true);
+VALUES ('65220666-68c0-4376-9323-8e714a9d8150', '/images/recipes/nutty-butter.jpg', true);
 
 -- Insert recipe: Hawaiian Breeze Splash
 INSERT INTO recipes (
@@ -7776,7 +7771,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', 
+  '9f3b8f7e-2ce3-411c-949c-b3dd0869532b', 
   'hawaiian-breeze-splash', 
   'Hawaiian Breeze Splash', 
   NULL, 
@@ -7795,34 +7790,34 @@ INSERT INTO recipes (
   true,
   NULL,
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', '456b0b42-63ad-48ff-890f-a6ea5dc71bff', '1/4', NULL, NULL);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '789a9021-26cf-4e33-8af1-bcda624d9d52', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', '420787d6-481d-40e3-8aba-a69bd3402a21', '1', NULL, NULL);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '4b633a12-cccb-4806-b087-711eb605f33a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', 'ed257518-f255-4022-83e7-7cf9ae616b86', '1/2', NULL, NULL);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', 'b1eae386-77f7-450a-9e49-b018700028df', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', 'df58c376-0933-4107-ad13-594ea1debfce', '1/2', NULL, NULL);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '8890ac9c-5fe4-401c-bc19-2d700175f862', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', '2f2cec86-052c-40d8-9765-4ea2ed7030c8', '1', NULL, NULL);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '5bd84c38-7e7c-40c8-a7cf-3c78792b409f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', 'ebe01ce3-df8c-4853-973e-9a12253b78a3', '1/4', NULL, NULL);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '36daee65-370c-4295-8902-c1a412b99ea7', '1/4', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('1e8e868a-dab3-4d9a-bfc5-24c9eba6ea9d', '/images/recipes/hawaiian-breeze-splash.jpg', true);
+VALUES ('9f3b8f7e-2ce3-411c-949c-b3dd0869532b', '/images/recipes/hawaiian-breeze-splash.jpg', true);
 
 -- Insert recipe: Vanilla Bean
 INSERT INTO recipes (
@@ -7847,7 +7842,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'ae605334-da8f-4cf4-84d3-2ebd57a938e6', 
+  '550e8902-bc1b-4cf6-8571-4d096bf0333a', 
   'vanilla-bean', 
   'Vanilla Bean', 
   NULL, 
@@ -7866,34 +7861,34 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '2bd3d9bc-b315-4bc3-938a-87ec74c496b8', NULL, NULL, NULL);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '41935302-612f-458b-82ac-8c15a6080c5e', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '413f9832-6f95-43d3-9c3a-8a1806bf9bb0', '1', NULL, NULL);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', 'dd34e691-d409-460a-b195-995020c03bd2', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1', NULL, NULL);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '36e02ce1-6a5d-47d3-9c77-1d5326f047dc', '1/2', NULL, NULL);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '97dfc184-791d-4f05-bcf2-70c785f42af0', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '7be45a5f-ba94-4f44-b561-842316dbc62d', '1/2', NULL, NULL);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '89401a47-db79-4193-8953-826e11053070', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('ae605334-da8f-4cf4-84d3-2ebd57a938e6', '/images/recipes/vanilla-bean.jpg', true);
+VALUES ('550e8902-bc1b-4cf6-8571-4d096bf0333a', '/images/recipes/vanilla-bean.jpg', true);
 
 -- Insert recipe: Matcha Blend Smoothie
 INSERT INTO recipes (
@@ -7918,7 +7913,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '3b2b5658-927b-44b3-a294-2eabc58de9cc', 
+  '24f5ab41-a146-44f6-bae8-a74ea5ee29e5', 
   'matcha-blend-smoothie', 
   'Matcha Blend Smoothie', 
   NULL, 
@@ -7937,36 +7932,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole30'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', 'edf8c28c-1233-4371-bc63-eea66929b2ae', '1/2', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '3fa3ea81-9bd9-4c41-b52d-9a6bed89f920', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', '70d4f7d8-923e-4707-aeb6-d30df0516618', '1/2', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', 'd64fd3f1-3fac-4184-a01d-57396c653660', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', 'f770310f-6b4f-41ab-a791-0809a0e55a4e', '1/2', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '72e33646-22c7-40ca-befc-62877d4ed626', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/2', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', '53ab8697-a67f-4c7a-bdde-c90e4a6ec3ce', '1/2', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', 'dbfff2c3-669e-4528-9821-fcc979e407f6', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', '52a90956-6ae5-4bc0-82a7-f23040296e54', '1', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '3590dceb-7b78-4f3d-9ceb-5ca5bfea7948', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', 'e33b3f53-2893-46ac-948e-f6b070bcddfd', '1', NULL, NULL);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '15c12c40-d3e2-4456-9734-c14aa30e5b67', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('3b2b5658-927b-44b3-a294-2eabc58de9cc', '/images/recipes/matcha-blend-smoothie.jpg', true);
+VALUES ('24f5ab41-a146-44f6-bae8-a74ea5ee29e5', '/images/recipes/matcha-blend-smoothie.jpg', true);
 
 -- Insert recipe: Mixed Berry Replenisher
 INSERT INTO recipes (
@@ -7991,7 +7986,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '379cef11-f5b4-4dcb-9030-4ff64fabe424', 
+  'e86783f5-01c5-4527-9829-61157d6f2c78', 
   'mixed-berry-replenisher', 
   'Mixed Berry Replenisher', 
   NULL, 
@@ -8010,32 +8005,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole30'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '133004cf-aa5c-4f29-9c77-eef4d5b9440e', '1', NULL, NULL);
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', 'b3e60273-d414-44d4-8c2b-2e9194407cc1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '00fc4f82-c9e4-4836-b0e2-d112d945e8b5', '1', NULL, NULL);
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', '8b55b575-d43b-4bd7-8860-723d79bd83b7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', 'e33b3f53-2893-46ac-948e-f6b070bcddfd', '1', NULL, NULL);
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', '15c12c40-d3e2-4456-9734-c14aa30e5b67', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('379cef11-f5b4-4dcb-9030-4ff64fabe424', '/images/recipes/mixed-berry-replenisher.jpg', true);
+VALUES ('e86783f5-01c5-4527-9829-61157d6f2c78', '/images/recipes/mixed-berry-replenisher.jpg', true);
 
 -- Insert recipe: Chocolate Fudge 
 INSERT INTO recipes (
@@ -8060,7 +8055,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '995197a0-3c60-4c41-8324-31ad2d4c7c1c', 
+  'f573e7f7-8c91-46b9-9312-b545c1a8f348', 
   'chocolate-fudge', 
   'Chocolate Fudge', 
   NULL, 
@@ -8079,32 +8074,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/3', NULL, NULL);
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/3', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', 'abb1bd55-9c26-4c02-8534-25b676bac231', '2', NULL, NULL);
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', '8187d625-4ecc-4510-a5cc-d89fcd989501', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', 'dd51e8de-a18b-4169-a0a0-e8372f3cb31e', '1', NULL, NULL);
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', 'fbeae687-eda6-41d4-9698-29c22276e28b', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('995197a0-3c60-4c41-8324-31ad2d4c7c1c', '/images/recipes/chocolate-fudge.jpg', true);
+VALUES ('f573e7f7-8c91-46b9-9312-b545c1a8f348', '/images/recipes/chocolate-fudge.jpg', true);
 
 -- Insert recipe: Blueberry Pie
 INSERT INTO recipes (
@@ -8129,7 +8124,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'f55fa555-8bdf-436b-a1f5-d2df2060da90', 
+  '9053ac76-ea8f-43fb-99b3-83994335dea6', 
   'blueberry-pie', 
   'Blueberry Pie', 
   NULL, 
@@ -8148,36 +8143,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', '083e60bb-c33d-4267-a151-77351a939048', '1/2', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '35c83f62-3d14-4b73-ae28-a248895e284a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', 'c88a4ca3-afa3-49bc-bcb5-40c6b75b6eac', '2', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', 'bd887c7f-8d75-4138-ab03-10590ae88070', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', 'fd3a93ba-5509-4d70-afeb-a9652e6d5987', '1', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '121e4c7b-4bfc-4f7a-8535-6b18ebf3a409', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', '9cd286a3-ed17-4811-9fcd-51b7a10ed0d1', '1', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '2f16dd60-cd27-4a3a-9feb-bea6aa464839', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', 'eadf25cd-5305-484e-8569-21c70917da1d', '1/2', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '5216e132-71d0-4a3b-bc92-144bf682f2f6', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/2', NULL, NULL);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('f55fa555-8bdf-436b-a1f5-d2df2060da90', '/images/recipes/blueberry-pie.jpg', true);
+VALUES ('9053ac76-ea8f-43fb-99b3-83994335dea6', '/images/recipes/blueberry-pie.jpg', true);
 
 -- Insert recipe: Banana Almond Shake
 INSERT INTO recipes (
@@ -8202,7 +8197,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '1f14ce3e-fe30-49e8-8455-28f21811994f', 
+  '2dbad349-7ea4-489b-be04-6df6c41f1ec4', 
   'banana-almond-shake', 
   'Banana Almond Shake', 
   NULL, 
@@ -8221,36 +8216,36 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', 'fd3a93ba-5509-4d70-afeb-a9652e6d5987', '1', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', '121e4c7b-4bfc-4f7a-8535-6b18ebf3a409', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '156de6dd-6a5b-4408-8966-ac0c4bc6310c', '1/4', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', 'f947e659-2950-496f-b9ab-bb7fb55907b1', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', 'aa535633-9d79-485b-b114-526796ba00ae', '1/2', NULL, NULL);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', 'e87f9523-b391-4e07-b6b2-b4f87c087ef0', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('1f14ce3e-fe30-49e8-8455-28f21811994f', '/images/recipes/banana-almond-shake.jpg', true);
+VALUES ('2dbad349-7ea4-489b-be04-6df6c41f1ec4', '/images/recipes/banana-almond-shake.jpg', true);
 
 -- Insert recipe: Golden Shake
 INSERT INTO recipes (
@@ -8275,11 +8270,11 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5becb3bc-fb9d-42de-972c-16e2921cb173', 
+  'a69a7858-6650-44b8-afcc-6be4b413937c', 
   'golden-shake', 
   'Golden Shake', 
   NULL, 
-  'Known for its golden color, turmeric is used in the shake not only for beauty but for it''s anti-inflammatory benefits', 
+  'Known for its golden color, turmeric is used in the shake not only for beauty but for it''s Anti Inflammatory benefits', 
   ARRAY['Combine all ingredients in a blender. Add more ice or water to reach the desired consistency.'], 
   'Energy', 
   27.3, 
@@ -8294,34 +8289,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole30'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '3bcb0a03-1b51-42de-9b4d-682b2c19449e', NULL, NULL, NULL);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '3d93b988-3309-42f4-9137-3557ce797044', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '1cb0470a-7569-42fa-977a-e5144b4cf4fc', NULL, NULL, NULL);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '3d2c547e-84d3-4e5f-8b21-66cf577f3cc8', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '599b520a-ba57-4280-aef0-105b0ef56981', '1', NULL, NULL);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', 'da059e9e-0d95-4c04-88d1-2c60746cd93a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '0260a610-fbfb-486e-b12c-14a96f968fbc', '1', NULL, NULL);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', 'a0a1246c-a2f5-4e7a-80ac-4470f187efe4', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '86c02909-9e3f-46a8-ad7d-78a330808b45', '1', NULL, NULL);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '28b36a0b-c2c2-4f78-8b30-a9d1636438b8', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '05014bf3-2d42-44e1-b553-aaebf10bc3dc');
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '910a6bd6-afcd-476f-a88c-09ecdab6e75f');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5becb3bc-fb9d-42de-972c-16e2921cb173', '/images/recipes/golden-shake.jpg', true);
+VALUES ('a69a7858-6650-44b8-afcc-6be4b413937c', '/images/recipes/golden-shake.jpg', true);
 
 -- Insert recipe: Passion fruit smoothie
 INSERT INTO recipes (
@@ -8346,7 +8341,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '7d2839be-2bd6-4fda-a722-746c41a83f23', 
+  '04d5b533-0d4c-46bb-89d8-7daba1c44b3f', 
   'passion-fruit-smoothie', 
   'Passion fruit smoothie', 
   NULL, 
@@ -8369,32 +8364,32 @@ INSERT INTO recipes (
   false,
   ARRAY['Low Carb, Low Fat'],
   NULL,
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', '70086b28-ee82-4354-a9fb-ca0c5361275f');
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', '9dd95988-eb93-4056-bfbb-aeb63982cfff', '1 1/2', NULL, NULL);
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', '33b8e49a-ffb0-4ef9-aeb7-5fc5a4c63aab', '1 1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', '71e15a5e-3a2f-4d74-84ea-e75b5841c59a', '1/2', NULL, NULL);
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', 'f3c8e831-e669-42d3-bc47-f307f6bd1a46', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', 'f6b0a071-7b46-4cc9-8182-74eac510be74', '50', NULL, NULL);
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', '4b6b580e-e9ac-4f57-ac0c-d92ec51a5781', '50', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', 'd02b4ada-5bd7-4169-90d0-8d59267b8c5a', '1/2', NULL, NULL);
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', '4f03cbf9-0d94-4905-aa05-0579e03a4796', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', '0e85d6a9-eecf-4f39-8e17-0058e9713361', '1', NULL, NULL);
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', '687c56c4-4fd1-4e1d-baed-dd194b71458e', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', '4e7e8a45-540f-40ff-b11b-f000334b0c32');
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', 'a747cf29-9eb0-4821-815c-fa7382a0ae31');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('7d2839be-2bd6-4fda-a722-746c41a83f23', '/images/recipes/passion-fruit-smoothie.jpg', true);
+VALUES ('04d5b533-0d4c-46bb-89d8-7daba1c44b3f', '/images/recipes/passion-fruit-smoothie.jpg', true);
 
 -- Insert recipe: Rainbow Shake
 INSERT INTO recipes (
@@ -8419,7 +8414,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'b99ff1bd-8e81-4c3e-ae2a-98e737505270', 
+  '9c13d8d5-f786-494f-9425-b175cb43a289', 
   'rainbow-shake', 
   'Rainbow Shake', 
   NULL, 
@@ -8438,36 +8433,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole 30'],
   ARRAY['Rice Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1/2', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/4', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1/2', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', '1c104b5f-aced-4932-b99c-82594142b2bf', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', '8521bf6e-73a3-4d32-8bf0-eefc89612756', '1/4', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', 'd61914a6-555c-4737-851f-f450ec193a23', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', '70d4f7d8-923e-4707-aeb6-d30df0516618', '1/4', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', 'd64fd3f1-3fac-4184-a01d-57396c653660', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', 'd87682b6-2dc9-4480-b552-c8a153ac235a', '1/4', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', '349bc500-2bf1-4c7c-9f77-8079ae264c54', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', '71f7f1dd-6827-4064-a974-93d84b322f70', '1', NULL, NULL);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', '26c7c51a-484e-4481-bfa1-5df62aeff61d', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('b99ff1bd-8e81-4c3e-ae2a-98e737505270', '/images/recipes/rainbow-shake.jpg', true);
+VALUES ('9c13d8d5-f786-494f-9425-b175cb43a289', '/images/recipes/rainbow-shake.jpg', true);
 
 -- Insert recipe: Citrus Fiesta
 INSERT INTO recipes (
@@ -8492,7 +8487,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '9953a54c-33c8-4205-bfd8-b5d9f338a6ac', 
+  'b571b97a-c393-41d5-bdf0-d8a3395882b0', 
   'citrus-fiesta', 
   'Citrus Fiesta', 
   NULL, 
@@ -8511,40 +8506,40 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole30'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '89149363-8dd9-43a7-b415-1b3ba3f638a6');
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', '2b6fb45a-c9b1-4bb7-ad76-5cd70b3709f4');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', 'e191a678-ee3a-4823-894b-6f711ce84a62', NULL, NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'ee19621e-0cec-446e-b32b-fa7b8af1b16d', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '618cd48d-6ac1-4da8-8af6-f645321ea8df', '2', NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', '34559114-6dff-4116-95b9-778ef861c452', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '8fa2d6ac-fabd-4355-b7da-6cb19f224df1', NULL, NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'e768039a-145f-4694-bf3a-ff4f7e9b732f', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '87a34bc3-e8c1-472f-9494-82a124a2aa5d', '1', NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'e7b85d4b-840f-47d0-914b-b0e8efabe4da', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', 'd66a0778-e893-4cbb-9cb4-1f34b368a9c2', NULL, NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', '4982e162-475e-4220-b176-9091693b3fd2', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '399ec0ca-87a1-42d9-a208-504098448f19', NULL, NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'aab7d2c3-9449-49f8-81f1-429a3acfc999', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '63f41488-ad40-4302-b7bb-9645cd091d31', NULL, NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', '3dea223c-2a9f-465a-bd92-d85ddef4902a', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '0d3189b2-0d44-44c9-8c68-8fe0519c596c', '1', NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'c5be113a-450a-44e9-994a-00f1487ca66e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1', NULL, NULL);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('9953a54c-33c8-4205-bfd8-b5d9f338a6ac', '/images/recipes/citrus-fiesta.jpg', true);
+VALUES ('b571b97a-c393-41d5-bdf0-d8a3395882b0', '/images/recipes/citrus-fiesta.jpg', true);
 
 -- Insert recipe: Chocolate Strawberry Smoothie
 INSERT INTO recipes (
@@ -8569,7 +8564,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', 
+  '57edcded-8f0d-4344-b2a9-5f21ef51f8f6', 
   'chocolate-strawberry-smoothie', 
   'Chocolate Strawberry Smoothie', 
   NULL, 
@@ -8588,32 +8583,32 @@ INSERT INTO recipes (
   false,
   ARRAY['Plant Based'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', '34a03ea5-0ccc-4c9e-bd4a-41226f845fdf', '1', NULL, NULL);
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', '69ff2f21-7489-4966-859d-1f28b0da8eb0', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', 'e94f1dba-94ee-4b5f-894e-289bbe83ee57', '1', NULL, NULL);
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', 'a56aa61d-2bae-4489-b33b-533a163359f7', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', '2ff70d06-33fe-449b-8419-3c259b40d839', '1', NULL, NULL);
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', 'ce4cab50-7a38-41e8-a9c8-5e98d64533f8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', '9cb442c7-0850-4d77-90cd-59250e60997f', '1', NULL, NULL);
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', '6f52c041-bce5-49fc-879d-c904096045b0', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', 'af9fb79c-276f-49b9-9893-d39e318e6a2d', '1', NULL, NULL);
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', 'afd2edb7-07a6-4dd5-9e53-a3e27b082824', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c9766ef0-4b85-4bd4-87c9-8cc63a9ec27b', '/images/recipes/chocolate-strawberry-smoothie.jpg', true);
+VALUES ('57edcded-8f0d-4344-b2a9-5f21ef51f8f6', '/images/recipes/chocolate-strawberry-smoothie.jpg', true);
 
 -- Insert recipe: Tropical Fruit Shake
 INSERT INTO recipes (
@@ -8638,7 +8633,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', 
+  'e6dd1c02-b48c-4cf5-a20e-30f981db8cff', 
   'tropical-fruit-shake', 
   'Tropical Fruit Shake', 
   NULL, 
@@ -8657,32 +8652,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Paleo'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', '98a75334-7980-4d2d-be93-b07501ad4aab', NULL, NULL, NULL);
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', '843fa3e3-5b83-4aea-9b12-fa33a4b254cb', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', '9135eded-9422-4a01-a1e2-e9c5e2fc508f', NULL, NULL, NULL);
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', '289cf8ae-0d94-4e9f-a54f-56dd1d7bbe8b', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', 'e191a678-ee3a-4823-894b-6f711ce84a62', NULL, NULL, NULL);
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', 'ee19621e-0cec-446e-b32b-fa7b8af1b16d', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', '47bb90d7-b44a-4444-9a41-5f9984c764fe', '1', NULL, NULL);
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', '7d71b8b1-47fa-4b60-9334-8be74a08bebf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', '2440d918-b708-4e43-8d04-ee811b5a72ad', '1', NULL, NULL);
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', '2492d2b3-a410-4ee7-986d-ebe435cc20ec', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5aad8c0b-d0bb-4d5c-a3d9-4a819fce2656', '/images/recipes/tropical-fruit-shake.jpg', true);
+VALUES ('e6dd1c02-b48c-4cf5-a20e-30f981db8cff', '/images/recipes/tropical-fruit-shake.jpg', true);
 
 -- Insert recipe: Tropical Workout Shake
 INSERT INTO recipes (
@@ -8707,7 +8702,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', 
+  '54d2964a-0179-4958-bc13-6b174001e8b6', 
   'tropical-workout-shake', 
   'Tropical Workout Shake', 
   NULL, 
@@ -8726,34 +8721,34 @@ INSERT INTO recipes (
   true,
   ARRAY['Whole30'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', '052457cf-02cc-4515-893b-a4c212b0cdf5');
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', '2ee93ab6-ef51-40a2-8532-1445338d2051');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', '604ee887-32cc-4f33-af28-0b3d7e2b9bdf', '1', NULL, NULL);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', 'afe4ad53-619a-4269-80b3-0cdaaec37e5e', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', '70d4f7d8-923e-4707-aeb6-d30df0516618', '1/2', NULL, NULL);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', 'd64fd3f1-3fac-4184-a01d-57396c653660', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', 'e33b3f53-2893-46ac-948e-f6b070bcddfd', '1', NULL, NULL);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', '15c12c40-d3e2-4456-9734-c14aa30e5b67', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', '70e3598b-43a5-4262-93b0-88319bb793df', '2', NULL, NULL);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', '48984c28-d433-49f8-922e-9a6f183ece7c', '2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', 'd3000d0d-a737-48dd-b0f0-951256225ef6', '1', NULL, NULL);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', '671733e6-d6c2-4dfa-863f-c3d6915c14e7', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('9246ac6b-31fd-4f7e-a3fe-d78abb7bd182', '/images/recipes/tropical-workout-shake.jpg', true);
+VALUES ('54d2964a-0179-4958-bc13-6b174001e8b6', '/images/recipes/tropical-workout-shake.jpg', true);
 
 -- Insert recipe: Cinnamon Roll Shake
 INSERT INTO recipes (
@@ -8778,7 +8773,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', 
+  '79d60390-7a0b-4dac-a008-2c33aeece63f', 
   'cinnamon-roll-shake', 
   'Cinnamon Roll Shake', 
   NULL, 
@@ -8797,32 +8792,32 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Oat Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', '16d9feb1-fa24-4f81-89de-a5b6d5ac0dc9', '1/2', NULL, NULL);
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '16fbf04f-3488-401a-96e0-39cddabd42c8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', '8a93b3db-06af-4938-831c-6dcfc2481d47', '1', NULL, NULL);
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '26a15b3c-77bb-48e1-9252-bc0ef681955f', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', 'eadf25cd-5305-484e-8569-21c70917da1d', '1', NULL, NULL);
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '5216e132-71d0-4a3b-bc92-144bf682f2f6', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', '00fc4f82-c9e4-4836-b0e2-d112d945e8b5', '1', NULL, NULL);
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '8b55b575-d43b-4bd7-8860-723d79bd83b7', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('4e54ffdc-4edb-4af2-8b94-0bd6fb975e38', '/images/recipes/cinnamon-roll-shake.jpg', true);
+VALUES ('79d60390-7a0b-4dac-a008-2c33aeece63f', '/images/recipes/cinnamon-roll-shake.jpg', true);
 
 -- Insert recipe: Creamy Coffee Shake
 INSERT INTO recipes (
@@ -8847,7 +8842,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', 
+  '9e580132-bb4d-473e-8153-43cc0d1245d2', 
   'creamy-coffee-shake', 
   'Creamy Coffee Shake', 
   NULL, 
@@ -8866,38 +8861,38 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', 'ea64cb95-56eb-47d8-ba75-7eab97e6da13', '1/4', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '38341cd3-c4d9-4ad4-8b4a-d78e6a48e67a', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '82b75e00-6c1c-4362-8a3a-75d8d32729aa', '1', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '856ed6f3-9e0d-4190-82b0-e6c1b784be34', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '23f66450-0e46-4401-aee8-3f5acba2053e', '1/2', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '37e6ff62-f56a-464a-a928-42558e3999f8', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', 'd7f90ff4-15d4-46ba-bbb6-e99229347e0a', '1', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '7923d6a1-8651-464a-8e04-46a97aad208d', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', 'e8f5d5e3-b5a9-4339-8d92-9c31182fe0b1', NULL, NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '9f998224-4d55-4acb-8606-44bd01f15244', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '92940e47-70fc-4093-bf84-b813afcce9db', '1', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '3b4c5896-19d6-4d91-b4eb-b865dc992554', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '6afa38a4-9343-4889-aeb4-3d0cd46942b6', '1/2', NULL, NULL);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', 'c03083ce-c086-4801-a773-4c90dd3608ff', '1/2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('5f122d90-16ef-4ad4-a5cc-cdccd9fc672f', '/images/recipes/creamy-coffee-shake.jpg', true);
+VALUES ('9e580132-bb4d-473e-8153-43cc0d1245d2', '/images/recipes/creamy-coffee-shake.jpg', true);
 
 -- Insert recipe: PB & J Smoothie
 INSERT INTO recipes (
@@ -8922,7 +8917,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  'c08366db-8645-4970-9333-3e53f666dbbf', 
+  '76a88447-ae31-4047-8c16-bf7ad31b1a4b', 
   'pb-&-j-smoothie', 
   'PB & J Smoothie', 
   NULL, 
@@ -8941,30 +8936,30 @@ INSERT INTO recipes (
   true,
   ARRAY['Keto'],
   ARRAY['Whey Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '23f66450-0e46-4401-aee8-3f5acba2053e', '1', NULL, NULL);
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', '37e6ff62-f56a-464a-a928-42558e3999f8', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '3050386f-85de-4f27-ae94-3877e6d2a1fe', '1/4', NULL, NULL);
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', '8c5b0e6c-90ca-45a8-ad0d-8ae1989f5bf1', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '506e1a86-0aa1-487a-a82a-6e96b616c13e', '1', NULL, NULL);
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', '192e0b08-bc7e-4ae3-8081-9680b014f536', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '090b310c-ebb9-42a7-b13c-d52b52d6eaa8', '1', NULL, NULL);
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', '56fdfad8-c81a-4421-b7fe-e1e971a192e9', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '2979b26b-8a4b-4d97-a363-68f1f9afacdb');
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', 'b225f952-e95c-44fe-87fb-09c0bdbfbd83');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('c08366db-8645-4970-9333-3e53f666dbbf', '/images/recipes/pb-&-j-smoothie.jpg', true);
+VALUES ('76a88447-ae31-4047-8c16-bf7ad31b1a4b', '/images/recipes/pb-&-j-smoothie.jpg', true);
 
 -- Insert recipe: Basil and Honeydew Smoothie
 INSERT INTO recipes (
@@ -8989,7 +8984,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '325b0ecc-9249-44d3-9d5f-3ce49de1afd0', 
+  '085c7fba-6031-48b2-9ac8-7a3965372706', 
   'basil-and-honeydew-smoothie', 
   'Basil and Honeydew Smoothie', 
   NULL, 
@@ -9008,36 +9003,36 @@ INSERT INTO recipes (
   true,
   ARRAY['Vegan'],
   ARRAY['Plant Based'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', 'd93e88aa-c54c-4677-9994-ce8537776227', '1/2', NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', 'a4e4bab5-e54a-48aa-815a-a236722345b0', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', 'd02b4ada-5bd7-4169-90d0-8d59267b8c5a', '1', NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '4f03cbf9-0d94-4905-aa05-0579e03a4796', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', '06edb950-0025-4fde-a33b-212bda638552', NULL, NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '4080f5ca-30e1-421b-9b7b-29082db322b6', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', '1e7c054d-90d8-48d3-9cc6-c813f81ff37d', NULL, NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '66982b41-0355-4ff8-884f-2c9316724d71', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', 'aa535633-9d79-485b-b114-526796ba00ae', '1/2', NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', 'e87f9523-b391-4e07-b6b2-b4f87c087ef0', '1/2', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', '56d0369a-c31a-4b65-9154-75ba94acabc7', '1', NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '8dff8ca5-82d9-46c0-9be4-5ba75dc0b2f1', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', '4645f203-f40a-42d6-bac2-4064d9b47b35', '2', NULL, NULL);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '610cb00d-6cf7-46f8-b98e-00524fe5b4c3', '2', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('325b0ecc-9249-44d3-9d5f-3ce49de1afd0', '/images/recipes/basil-and-honeydew-smoothie.jpg', true);
+VALUES ('085c7fba-6031-48b2-9ac8-7a3965372706', '/images/recipes/basil-and-honeydew-smoothie.jpg', true);
 
 -- Insert recipe: Lemon Sorbet Shake
 INSERT INTO recipes (
@@ -9062,7 +9057,7 @@ INSERT INTO recipes (
   protein_type,
   author_id
 ) VALUES (
-  '075f32dc-1b78-4913-844c-71822e746d3c', 
+  '3e559baa-96da-40de-8294-fa3749d39b00', 
   'lemon-sorbet-shake', 
   'Lemon Sorbet Shake', 
   NULL, 
@@ -9081,31 +9076,31 @@ INSERT INTO recipes (
   true,
   ARRAY['Plant Based'],
   ARRAY['Pea Protein'],
-  '00900618-82dd-41d5-a8e5-d0273194ea09'
+  '999ee74e-c899-4638-9e1f-bf0366499947'
 );
 
 -- Associate recipe with category
 INSERT INTO recipe_categories (recipe_id, category_id)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', '01cea7d2-e7bc-4405-a9f6-29e2846e99a9');
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', '994a569f-3284-42d8-babb-6ecd8aab552e');
 
 -- Insert recipe ingredients
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', '06a82a58-9241-46b4-9d91-0f8a92708d50', '1', NULL, NULL);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', '1c104b5f-aced-4932-b99c-82594142b2bf', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', 'e538b1f1-0d31-4b88-9136-f4c2df4d20df', '1', NULL, NULL);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', 'dd133b80-a695-4e68-9c9b-ce2548ed4c7a', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', '800ef418-2e3d-494e-8933-4f6faa1cc92c', '1', NULL, NULL);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', 'c9056f98-f7e5-4a6d-9dff-0edd25e45351', '1', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', 'abd7cf9d-c322-47d5-a3c8-b946cdd37266', NULL, NULL, NULL);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', '1d5e5faa-6167-4ecd-ab5f-2e36ff550b45', NULL, NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', '93998ebd-8ad0-471a-af3b-25bacd848abb', '1/4', NULL, NULL);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', '176b2ad8-5f61-40ef-8e81-565585ac9ddd', '1/4', NULL, NULL);
 INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit, info)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', '49d9ace5-346c-4f47-9f54-5fc6f1100230', '1', NULL, NULL);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', '95811b61-3020-4385-913d-cb1c4abb84e9', '1', NULL, NULL);
 
 -- Insert recipe label
 INSERT INTO recipe_labels (recipe_id, label_id)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', 'a49a63d9-cc6b-40c7-9336-e90ed900790c');
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', 'bcc5210d-e11e-416a-b6a5-566a73a4be32');
 
 -- Add dummy media for recipe
 INSERT INTO recipe_media (recipe_id, url, is_main)
-VALUES ('075f32dc-1b78-4913-844c-71822e746d3c', '/images/recipes/lemon-sorbet-shake.jpg', true);
+VALUES ('3e559baa-96da-40de-8294-fa3749d39b00', '/images/recipes/lemon-sorbet-shake.jpg', true);
