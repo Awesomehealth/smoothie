@@ -33,6 +33,8 @@ const CategorySidebarComponent = ({
   const [collapsed, setCollapsed] = useState(isCollapsed);
   const router = useRouter();
 
+  const sidebarCategories = categories.filter(category => category.show_in_sidebar === true);
+
   // Update internal state when external prop changes
   useEffect(() => {
     setCollapsed(isCollapsed);
@@ -72,7 +74,7 @@ const CategorySidebarComponent = ({
                 </>
               )
             }
-            {categories.length ? categories.slice(0, 8).map((category) => (
+            {sidebarCategories.length ? sidebarCategories.slice(0, 8).map((category) => (
               <li key={category.id}>
                 <button
                   onClick={() => handleCategoryClick(category.slug)}
@@ -95,11 +97,13 @@ const CategorySidebarComponent = ({
                 </button>
               </li>
             )) :
-              <>
-                <p className='text-gray-400 px-3 py-2 text-sm text-left'>
-                  No categories
-                </p>
-              </>
+              !isCategoriesLoading && (
+                <>
+                  <p className='text-gray-400 px-3 py-2 text-sm text-left'>
+                    No categories
+                  </p>
+                </>
+              )
             }
           </ul>
         </div>
