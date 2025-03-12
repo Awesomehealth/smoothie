@@ -4,7 +4,7 @@
 import CategorySidebar from "@/components/CategorySidebar";
 import SearchSection from "@/components/sections/SearchSection";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
-import SidebarProvider, { useSidebar } from "@/contexts/SidebarContext";
+import { useSidebar } from "@/contexts/SidebarContext";
 import { Suspense, useEffect, useState } from "react";
 import { Loader } from "lucide-react";
 
@@ -64,16 +64,14 @@ function Home() {
 
 export default function HomePage() {
   return (
-    <SidebarProvider>
-      <SmoothieAppLayout
-        sidebar={<CategorySidebar />}
-        mainContent={
-          <Suspense fallback={<Loader />}>
-            <Home />
-          </Suspense>
-        }
-      />
-    </SidebarProvider>
+    <SmoothieAppLayout
+      sidebar={<CategorySidebar />}
+      mainContent={
+        <Suspense fallback={<Loader />}>
+          <Home />
+        </Suspense>
+      }
+    />
 
   );
 }

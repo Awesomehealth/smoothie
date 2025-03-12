@@ -2,11 +2,8 @@
 import type { Metadata } from 'next';
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CategoriesProvider } from "@/contexts/CategoriesContext";
-import { QueryClient } from '@tanstack/react-query';
 import '../index.css';
-
-// Create a client
-const queryClient = new QueryClient();
+import SidebarProvider from '@/contexts/SidebarContext';
 
 export const metadata: Metadata = {
   title: 'Awesome Kitchen - Delicious Smoothie Recipes',
@@ -32,7 +29,9 @@ export default function RootLayout({
         <div id="root">
           <AuthProvider>
             <CategoriesProvider>
-              {children}
+              <SidebarProvider>
+                {children}
+              </SidebarProvider>
             </CategoriesProvider>
           </AuthProvider>
         </div>

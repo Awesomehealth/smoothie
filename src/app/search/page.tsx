@@ -8,7 +8,6 @@ import SearchSection from "@/components/sections/SearchSection";
 import SmoothieList from "@/components/SmoothieList";
 import { smoothies } from "@/data/smoothiesData";
 import { Smoothie } from "@/data/types";
-import SidebarProvider from "@/contexts/SidebarContext";
 import Loader from "@/components/ui/loader";
 
 function Search() {
@@ -126,15 +125,13 @@ function Search() {
 
 export default function SearchPage() {
   return (
-    <SidebarProvider>
-      <SmoothieAppLayout
-        sidebar={<CategorySidebar />}
-        mainContent={
-          <Suspense fallback={<Loader />}>
-            <Search />
-          </Suspense>
-        }
-      />
-    </SidebarProvider>
+    <SmoothieAppLayout
+      sidebar={<CategorySidebar />}
+      mainContent={
+        <Suspense fallback={<Loader />}>
+          <Search />
+        </Suspense>
+      }
+    />
   );
 }
