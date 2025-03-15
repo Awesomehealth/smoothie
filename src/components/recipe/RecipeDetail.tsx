@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import CategorySidebar from '@/components/CategorySidebar';
 import RecipeContent from './RecipeContent';
@@ -7,24 +8,10 @@ import CollectionDialog from '@/components/collections/CollectionDialog';
 
 interface RecipeDetailProps {
   smoothie: any;
-  recipeProps: any;
+  recipeProps?: any;
 }
 
-interface RecipeContentProps {
-  handleSaveRecipe: () => void;
-  handlePrintRecipe: () => void;
-  handleEmailRecipe: () => void;
-  handleTextIngredients: () => void;
-  videoThumbnail?: string;
-  videoUrl?: string;
-  onViewAllPhotos?: () => void;
-  onGoBack?: () => void;
-  smoothieId?: string;
-  smoothieName?: string;
-  scrollToReviews?: () => void;
-}
-
-const RecipeDetail = ({ smoothie, recipeProps }: RecipeDetailProps) => {
+const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
   const [showGallery, setShowGallery] = useState(false);
   const [showCollectionDialog, setShowCollectionDialog] = useState(false);
   
@@ -43,6 +30,20 @@ const RecipeDetail = ({ smoothie, recipeProps }: RecipeDetailProps) => {
     setShowCollectionDialog(true);
   };
 
+  // Default props if not provided
+  const defaultRecipeProps = {
+    handleSaveRecipe,
+    handlePrintRecipe: () => console.log('Print recipe'),
+    handleEmailRecipe: () => console.log('Email recipe'),
+    handleTextIngredients: () => console.log('Text ingredients'),
+    ...recipeProps
+  };
+
+  if (!smoothie) {
+    console.error('No smoothie data provided to RecipeDetail component');
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="flex flex-col md:flex-row h-full">
       <CategorySidebar isCollapsed={false} />
@@ -53,7 +54,7 @@ const RecipeDetail = ({ smoothie, recipeProps }: RecipeDetailProps) => {
         onGoBack={() => window.history.back()}
         smoothieId={smoothie.id}
         smoothieName={smoothie.name}
-        {...recipeProps}
+        {...defaultRecipeProps}
       />
 
       {showGallery && (
