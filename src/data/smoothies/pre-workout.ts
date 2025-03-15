@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const preWorkoutSmoothies: Smoothie[] = [
   {
     id: "tropical-dream",
+    slug: "tropical-dream",
     name: "Tropical Dream Protein Shake",
     description: "A tropical blend of mango, pineapple, and coconut with a scoop of protein for sustained energy.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -34,6 +35,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "coffee-protein",
+    slug: "coffee-protein",
     name: "Coffee Protein Breakfast Shake",
     description: "Jump-start your day with this coffee-infused protein shake that combines caffeine and nutrition.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -65,6 +67,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "matcha-recovery",
+    slug: "matcha-recovery",
     name: "Matcha Recovery Shake",
     description: "Green tea antioxidants combined with protein for recovery and gentle energy boost without caffeine crash.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -95,6 +98,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "berry-blast-pre",
+    slug: "berry-blast-pre",
     name: "Berry Blast Pre-Workout",
     description: "Antioxidant-rich berries with a natural caffeine boost from green tea to energize your workout.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -126,6 +130,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "beet-power-smoothie",
+    slug: "beet-power-smoothie",
     name: "Beet Power Smoothie",
     description: "Beet-based smoothie with natural nitrates to boost blood flow and enhance workout performance.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -157,6 +162,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "apple-cinnamon-energy",
+    slug: "apple-cinnamon-energy",
     name: "Apple Cinnamon Energy Shake",
     description: "A warming pre-workout shake with apple and cinnamon that provides steady energy release.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -188,6 +194,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "banana-espresso-kick",
+    slug: "banana-espresso-kick",
     name: "Banana Espresso Kick",
     description: "Double caffeine kick from espresso and chocolate protein for maximum pre-workout energy.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -219,6 +226,7 @@ export const preWorkoutSmoothies: Smoothie[] = [
   },
   {
     id: "citrus-energy-burst",
+    slug: "citrus-energy-burst",
     name: "Citrus Energy Burst",
     description: "Vitamin C packed citrus smoothie with natural caffeine from guarana for pre-workout energy.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",

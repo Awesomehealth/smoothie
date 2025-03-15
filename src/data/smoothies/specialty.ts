@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const specialtySmoothies: Smoothie[] = [
   {
     id: "orange-creamsicle-recovery",
+    slug: "orange-creamsicle-recovery",
     name: "Orange Creamsicle Recovery",
     description: "Vitamin C rich oranges help with collagen synthesis for muscle repair, while protein rebuilds damaged tissue.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -35,6 +36,7 @@ export const specialtySmoothies: Smoothie[] = [
   },
   {
     id: "honey-yogurt-protein",
+    slug: "honey-yogurt-protein",
     name: "Honey Yogurt Protein Recovery",
     description: "Simple ingredients that pack a powerful recovery punch with the perfect protein-to-carb ratio.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -65,6 +67,7 @@ export const specialtySmoothies: Smoothie[] = [
   },
   {
     id: "strawberry-banana-recovery",
+    slug: "strawberry-banana-recovery",
     name: "Strawberry Banana Recovery",
     description: "A classic flavor combination loaded with recovery-enhancing protein and antioxidants.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -95,6 +98,7 @@ export const specialtySmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-mint-recovery",
+    slug: "chocolate-mint-recovery",
     name: "Chocolate Mint Recovery",
     description: "Refreshing mint combined with rich chocolate protein for a dessert-like post-workout treat.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -126,6 +130,7 @@ export const specialtySmoothies: Smoothie[] = [
   },
   {
     id: "cashew-date-protein",
+    slug: "cashew-date-protein",
     name: "Cashew Date Protein Shake",
     description: "Natural sweetness from dates with protein and healthy fats for comprehensive post-workout recovery.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -156,6 +161,7 @@ export const specialtySmoothies: Smoothie[] = [
   },
   {
     id: "plant-protein-recovery",
+    slug: "plant-protein-recovery",
     name: "Plant Protein Complete Recovery",
     description: "Vegan-friendly protein shake with complete amino acid profile for optimal muscle recovery.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -187,6 +193,7 @@ export const specialtySmoothies: Smoothie[] = [
   },
   {
     id: "peanut-butter-jelly-recovery",
+    slug: "peanut-butter-jelly-recovery",
     name: "PB&J Recovery Shake",
     description: "The nostalgic sandwich flavor in smoothie form, providing the perfect balance of protein and carbs.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",

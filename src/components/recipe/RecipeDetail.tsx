@@ -63,6 +63,7 @@ const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
 
       {showGallery && (
         <ImageGallery
+          isOpen={showGallery}
           images={smoothie.image ? [smoothie.image] : []}
           onClose={() => setShowGallery(false)}
         />

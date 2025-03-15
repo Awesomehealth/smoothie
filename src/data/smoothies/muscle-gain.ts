@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const muscleGainSmoothies: Smoothie[] = [
   {
     id: "chocolate-peanut",
+    slug: "chocolate-peanut",
     name: "Chocolate Peanut Butter Power Shake",
     description: "A rich, creamy blend of chocolate protein and peanut butter, perfect for muscle gain and recovery.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -35,6 +36,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "vanilla-oat-muscle-repair",
+    slug: "vanilla-oat-muscle-repair",
     name: "Vanilla Oat Muscle Repair",
     description: "Slow-release carbs from oats paired with protein for extended muscle recovery benefits.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -66,6 +68,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "triple-berry-mass-gainer",
+    slug: "triple-berry-mass-gainer",
     name: "Triple Berry Mass Gainer",
     description: "High-calorie smoothie with mixed berries and oats to support muscle building and weight gain.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -98,6 +101,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "banana-beast-gainer",
+    slug: "banana-beast-gainer",
     name: "Banana Beast Gainer",
     description: "Calorie-dense banana smoothie designed to fuel intense workouts and support muscle growth.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -130,6 +134,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "coconut-mango-muscle",
+    slug: "coconut-mango-muscle",
     name: "Coconut Mango Muscle Builder",
     description: "Tropical flavors with added calories from coconut cream to support muscle growth.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -161,6 +166,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "avocado-spinach-mass",
+    slug: "avocado-spinach-mass",
     name: "Avocado Spinach Mass Builder",
     description: "Nutrient-dense green smoothie with healthy fats from avocado to support muscle growth.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -192,6 +198,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-banana-gainer",
+    slug: "chocolate-banana-gainer",
     name: "Chocolate Banana Gainer",
     description: "Classic chocolate and banana combination optimized for calorie and protein content.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -223,6 +230,7 @@ export const muscleGainSmoothies: Smoothie[] = [
   },
   {
     id: "pineapple-coconut-bulker",
+    slug: "pineapple-coconut-bulker",
     name: "Pineapple Coconut Muscle Bulker",
     description: "Tropical mass gainer with digestive enzymes from pineapple to aid protein absorption.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",

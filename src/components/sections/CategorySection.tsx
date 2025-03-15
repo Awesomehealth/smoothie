@@ -60,7 +60,8 @@ const CategorySection = () => {
     meta_description: null,
     category_banner_img: null,
     category_banner_description: null,
-    keyword_group: null
+    keyword_group: null,
+    show_in_sidebar: true
   }));
 
   return (

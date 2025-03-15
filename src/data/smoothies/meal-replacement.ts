@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const mealReplacementSmoothies: Smoothie[] = [
   {
     id: "green-machine",
+    slug: "green-machine",
     name: "Green Machine Detox Smoothie",
     description: "Packed with nutrients from spinach, kale, and avocado, this smoothie is perfect for a nutritious breakfast.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -35,6 +36,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "keto-avocado",
+    slug: "keto-avocado",
     name: "Keto Avocado Smoothie",
     description: "A low-carb, high-fat smoothie with avocado and MCT oil, perfect for those following a ketogenic diet.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -67,6 +69,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "coffee-protein",
+    slug: "coffee-protein",
     name: "Coffee Protein Breakfast Shake",
     description: "Jump-start your day with this coffee-infused protein shake that combines caffeine and nutrition.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -98,6 +101,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "peanut-butter-banana-complete",
+    slug: "peanut-butter-banana-complete",
     name: "Peanut Butter Banana Complete",
     description: "A filling meal replacement with the perfect balance of protein, carbs, and healthy fats.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -129,6 +133,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "berry-oatmeal-smoothie",
+    slug: "berry-oatmeal-smoothie",
     name: "Berry Oatmeal Smoothie Bowl",
     description: "A hearty breakfast replacement with the staying power of oats and antioxidants from fresh berries.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -160,6 +165,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "greek-yogurt-power-meal",
+    slug: "greek-yogurt-power-meal",
     name: "Greek Yogurt Power Meal",
     description: "A protein-packed meal replacement with Greek yogurt, fruits, and honey for sustained energy.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -191,6 +197,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-avocado-complete",
+    slug: "chocolate-avocado-complete",
     name: "Chocolate Avocado Complete Meal",
     description: "Rich chocolate flavor with avocado providing healthy fats and creamy texture for a satisfying meal.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -222,6 +229,7 @@ export const mealReplacementSmoothies: Smoothie[] = [
   },
   {
     id: "tropical-meal-paradise",
+    slug: "tropical-meal-paradise",
     name: "Tropical Meal Paradise",
     description: "A tropical-flavored complete meal with mango, pineapple, and coconut protein.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",

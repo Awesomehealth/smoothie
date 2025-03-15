@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const ketoSmoothies: Smoothie[] = [
   {
     id: "keto-avocado",
+    slug: "keto-avocado",
     name: "Keto Avocado Smoothie",
     description: "A low-carb, high-fat smoothie with avocado and MCT oil, perfect for those following a ketogenic diet.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -36,6 +37,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-peanut-keto",
+    slug: "chocolate-peanut-keto",
     name: "Chocolate Peanut Butter Keto Shake",
     description: "Indulgent chocolate and peanut butter shake that fits perfectly into a ketogenic macronutrient ratio.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -67,6 +69,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "berry-coconut-keto",
+    slug: "berry-coconut-keto",
     name: "Berry Coconut Keto Smoothie",
     description: "A refreshing berry smoothie with coconut cream that keeps carbs low while providing antioxidants.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -98,6 +101,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "vanilla-chai-keto",
+    slug: "vanilla-chai-keto",
     name: "Vanilla Chai Keto Shake",
     description: "Aromatic chai spices blend with creamy vanilla for a comforting keto-friendly treat.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -130,6 +134,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "matcha-avocado-keto",
+    slug: "matcha-avocado-keto",
     name: "Matcha Avocado Keto Smoothie",
     description: "Energizing matcha combined with creamy avocado provides a perfect balance of healthy fats and antioxidants.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -161,6 +166,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "cinnamon-roll-keto",
+    slug: "cinnamon-roll-keto",
     name: "Cinnamon Roll Keto Shake",
     description: "All the warm, comforting flavors of a cinnamon roll without the carbs or sugar.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -193,6 +199,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "cucumber-mint-keto",
+    slug: "cucumber-mint-keto",
     name: "Cucumber Mint Keto Refresher",
     description: "A light, hydrating smoothie that's perfect for hot days while maintaining ketosis.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -226,6 +233,7 @@ export const ketoSmoothies: Smoothie[] = [
   },
   {
     id: "key-lime-keto",
+    slug: "key-lime-keto",
     name: "Key Lime Keto Smoothie",
     description: "Tangy and sweet key lime flavor in a creamy, low-carb package.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",

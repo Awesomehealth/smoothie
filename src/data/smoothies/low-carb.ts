@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const lowCarbSmoothies: Smoothie[] = [
   {
     id: "keto-avocado",
+    slug: "keto-avocado",
     name: "Keto Avocado Smoothie",
     description: "A low-carb, high-fat smoothie with avocado and MCT oil, perfect for those following a ketogenic diet.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -36,6 +37,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "cucumber-lime-recovery",
+    slug: "cucumber-lime-recovery",
     name: "Cucumber Lime Recovery",
     description: "Light, refreshing and hydrating post-workout shake that replenishes electrolytes and fluids.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -68,6 +70,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "berry-protein-bowl",
+    slug: "berry-protein-bowl",
     name: "Berry Protein Bowl",
     description: "A refreshing low-carb protein bowl with mixed berries and coconut cream.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -99,6 +102,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "spinach-collagen-smoothie",
+    slug: "spinach-collagen-smoothie",
     name: "Spinach Collagen Smoothie",
     description: "A nutrient-dense, low-carb smoothie that supports skin health and provides essential nutrients.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -130,6 +134,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-almond-low-carb",
+    slug: "chocolate-almond-low-carb",
     name: "Chocolate Almond Low-Carb Shake",
     description: "Rich chocolate flavor with healthy fats from almonds, perfect for satisfying cravings on a low-carb diet.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -161,6 +166,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "coconut-matcha-low-carb",
+    slug: "coconut-matcha-low-carb",
     name: "Coconut Matcha Low-Carb Smoothie",
     description: "Energizing matcha with the creamy texture of coconut and MCT oil for sustained energy without the carbs.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -192,6 +198,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "strawberry-coconut-low-carb",
+    slug: "strawberry-coconut-low-carb",
     name: "Strawberry Coconut Low-Carb Shake",
     description: "Fresh strawberries add natural sweetness to this creamy coconut shake without adding many carbs.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -223,6 +230,7 @@ export const lowCarbSmoothies: Smoothie[] = [
   },
   {
     id: "mint-chocolate-chip-low-carb",
+    slug: "mint-chocolate-chip-low-carb",
     name: "Mint Chocolate Chip Low-Carb Smoothie",
     description: "Refreshing mint flavor with chocolate protein and cacao nibs for a guilt-free dessert experience.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
