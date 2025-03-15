@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "npx serve@latest ./build"
+    "start": "npx serve@latest ./build",
+    "build:dev": "next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
