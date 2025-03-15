@@ -1,16 +1,17 @@
+
 import CategoryRecipeList from "@/components/category/CategoryRecipeList"
 import CategorySidebar from "@/components/CategorySidebar"
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout"
 import { CategoryRecipesProvider } from "@/contexts/CategoryRecipesContext"
-import { Loader } from "lucide-react"
+import Loader from "@/components/ui/loader"
 import { Suspense } from "react"
 
-export default async function CategoryPage({
+export default function CategoryPage({
   params,
 }: {
-  params: Promise<{ categorySlug: string }>
+  params: { categorySlug: string }
 }) {
-  const { categorySlug } = await params
+  const { categorySlug } = params
   return <SmoothieAppLayout
     sidebar={<CategorySidebar />}
     mainContent={

@@ -1,4 +1,6 @@
 
+'use client';
+
 import React, { useState } from 'react';
 import CategorySidebar from '@/components/CategorySidebar';
 import RecipeContent from './RecipeContent';

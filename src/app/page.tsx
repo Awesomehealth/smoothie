@@ -6,7 +6,7 @@ import SearchSection from "@/components/sections/SearchSection";
 import SmoothieAppLayout from "@/components/layouts/SmoothieAppLayout";
 import { useSidebar } from "@/contexts/SidebarContext";
 import { Suspense, useEffect, useState } from "react";
-import { Loader } from "lucide-react";
+import Loader from "@/components/ui/loader";
 
 function Home() {
   const {
@@ -30,7 +30,6 @@ function Home() {
     console.log("URL submitted:", url);
   };
 
-
   const handleFilterSelect = (filterType: string, values: string[]) => {
     console.log("Filter selected:", filterType, values);
   };
@@ -47,7 +46,6 @@ function Home() {
     console.log("Image uploaded:", file.name);
     // Image upload functionality will be implemented later
   };
-
 
   return (
     <div className="h-full flex items-center justify-center">
@@ -72,6 +70,5 @@ export default function HomePage() {
         </Suspense>
       }
     />
-
   );
 }
