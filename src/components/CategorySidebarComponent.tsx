@@ -1,3 +1,4 @@
+
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -20,6 +21,7 @@ interface CategorySidebarProps {
   showAdvancedSearch: boolean;
   onAdvancedSearchToggle: (show: boolean) => void;
   isCollapsed?: boolean;
+  categories: any[]; // Add the categories prop to resolve the type error
 }
 
 const CategorySidebarComponent = ({
@@ -27,13 +29,12 @@ const CategorySidebarComponent = ({
   onCategorySelect,
   showAdvancedSearch,
   onAdvancedSearchToggle,
-  isCollapsed = false
+  isCollapsed = false,
+  categories
 }: CategorySidebarProps) => {
-  const { categories, loading: isCategoriesLoading, error: categoriesFetchError } = useCategories();
+  const { loading: isCategoriesLoading, error: categoriesFetchError } = useCategories();
   const [collapsed, setCollapsed] = useState(isCollapsed);
   const router = useRouter();
-
-  const sidebarCategories = categories.filter(category => category.show_in_sidebar === true);
 
   // Update internal state when external prop changes
   useEffect(() => {
@@ -74,7 +75,7 @@ const CategorySidebarComponent = ({
                 </>
               )
             }
-            {sidebarCategories.length ? sidebarCategories.slice(0, 8).map((category) => (
+            {categories.length ? categories.slice(0, 8).map((category) => (
               <li key={category.id}>
                 <button
                   onClick={() => handleCategoryClick(category.slug)}
@@ -125,46 +126,10 @@ const CategorySidebarComponent = ({
                     <Switch
                       checked={showAdvancedSearch}
                       onCheckedChange={onAdvancedSearchToggle}
-                      className="data-[state=checked]:bg-green-600"
                     />
                   </div>
                 )}
               </div>
-            </li>
-            <li>
-              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Recipe Creator" : undefined}>
-                <FileText className="h-4 w-4 text-green-600" />
-                {!collapsed && <span className="text-sm">Recipe Creator</span>}
-              </button>
-            </li>
-            <li>
-              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Nutrition Guide" : undefined}>
-                <BookOpen className="h-4 w-4 text-green-600" />
-                {!collapsed && <span className="text-sm">Nutrition Guide</span>}
-              </button>
-            </li>
-          </ul>
-        </div>
-
-        {/* Support Section */}
-        <div className={`p-3 ${collapsed ? 'mt-4' : ''}`}>
-          {!collapsed && (
-            <h3 className="text-sm text-gray-500 font-medium mb-2 text-left">
-              Support
-            </h3>
-          )}
-          <ul className="space-y-1">
-            <li>
-              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Help Center" : undefined}>
-                <HelpCircle className="h-4 w-4 text-green-600" />
-                {!collapsed && <span className="text-sm">Help Center</span>}
-              </button>
-            </li>
-            <li>
-              <button className={`w-full text-left px-3 py-2 rounded-lg transition-colors flex items-center ${collapsed ? 'justify-center' : 'gap-2'} hover:bg-gray-100 text-gray-700`} title={collapsed ? "Contact Us" : undefined}>
-                <MessageCircle className="h-4 w-4 text-green-600" />
-                {!collapsed && <span className="text-sm">Contact Us</span>}
-              </button>
             </li>
           </ul>
         </div>

@@ -1,93 +1,76 @@
-'use client'
+import React, { useState } from 'react';
+import CategorySidebar from '@/components/CategorySidebar';
+import RecipeContent from './RecipeContent';
+import ImageGallery from '@/components/gallery/ImageGallery';
+import { useSidebar } from '@/contexts/SidebarContext';
+import CollectionDialog from '@/components/collections/CollectionDialog';
 
-import RecipeDetailContainer from "@/containers/RecipeDetailContainer";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-import LoginDialog from "../auth/LoginDialog";
-import CategorySidebar from "../CategorySidebar";
-import CollectionDialog from "../collections/CollectionDialog";
-import ImageGallery from "../gallery/ImageGallery";
-import SmoothieAppLayout from "../layouts/SmoothieAppLayout";
-import NotFoundContent from "./NotFoundContent";
-import RecipeContent from "./RecipeContent";
-import { useRecipe } from "@/contexts/RecipeContext";
-import Loader from "../ui/loader";
-
-function Recipe(){
-  
+interface RecipeDetailProps {
+  smoothie: any;
+  recipeProps: any;
 }
 
-export default function RecipeDetail({ recipeId }: { recipeId: string }) {
-  const { recipe: smoothie, loading } = useRecipe()
-  const [loginDialogOpen, setLoginDialogOpen] = useState(false);
-  const [collectionDialogOpen, setCollectionDialogOpen] = useState(false);
-  const [galleryOpen, setGalleryOpen] = useState(false);
-  const router = useRouter();
+interface RecipeContentProps {
+  handleSaveRecipe: () => void;
+  handlePrintRecipe: () => void;
+  handleEmailRecipe: () => void;
+  handleTextIngredients: () => void;
+  videoThumbnail?: string;
+  videoUrl?: string;
+  onViewAllPhotos?: () => void;
+  onGoBack?: () => void;
+  smoothieId?: string;
+  smoothieName?: string;
+  scrollToReviews?: () => void;
+}
 
-  const {
-    sidebarProps,
-    recipeProps
-  } = RecipeDetailContainer({
-    smoothie,
-    onOpenLoginDialog: () => setLoginDialogOpen(true),
-    onOpenCollectionDialog: () => setCollectionDialogOpen(true),
-    onOpenGallery: (index) => {
-      recipeProps.initialImageIndex = index;
-      setGalleryOpen(true);
-    }
-  });
+const RecipeDetail = ({ smoothie, recipeProps }: RecipeDetailProps) => {
+  const [showGallery, setShowGallery] = useState(false);
+  const [showCollectionDialog, setShowCollectionDialog] = useState(false);
+  
+  const { 
+    selectedCategory, 
+    setSelectedCategory, 
+    showAdvancedSearch, 
+    setShowAdvancedSearch 
+  } = useSidebar();
 
-  if (loading) {
-    return <Loader />
-  }
+  const handleViewAllPhotos = () => {
+    setShowGallery(true);
+  };
 
-  const handleGoBack = () => {
-    router.back();
+  const handleSaveRecipe = () => {
+    setShowCollectionDialog(true);
   };
 
   return (
-    <>
-      <SmoothieAppLayout
-        sidebar={
-          <CategorySidebar
-            selectedCategory={sidebarProps.selectedCategory}
-            onCategorySelect={sidebarProps.onCategorySelect}
-            showAdvancedSearch={sidebarProps.showAdvancedSearch}
-            onAdvancedSearchToggle={sidebarProps.onAdvancedSearchToggle}
-          />
-        }
-        mainContent={
-          <div className="w-full">
-            {!smoothie ? (
-              <NotFoundContent />
-            ) : (
-              <RecipeContent
-                smoothie={smoothie}
-                smoothieId={recipeId || ''}
-                {...recipeProps}
-                onViewAllPhotos={() => setGalleryOpen(true)}
-                onGoBack={handleGoBack}
-              />
-            )}
-          </div>
-        }
+    <div className="flex flex-col md:flex-row h-full">
+      <CategorySidebar isCollapsed={false} />
+      
+      <RecipeContent 
+        handleSaveRecipe={handleSaveRecipe}
+        onViewAllPhotos={handleViewAllPhotos}
+        onGoBack={() => window.history.back()}
+        smoothieId={smoothie.id}
+        smoothieName={smoothie.name}
+        {...recipeProps}
       />
 
-      <LoginDialog isOpen={loginDialogOpen} onClose={() => setLoginDialogOpen(false)} />
+      {showGallery && (
+        <ImageGallery
+          images={[smoothie.image]}
+          onClose={() => setShowGallery(false)}
+        />
+      )}
 
       <CollectionDialog
-        isOpen={collectionDialogOpen}
-        onClose={() => setCollectionDialogOpen(false)}
-        smoothieId={recipeId || ''}
-        smoothieName={smoothie?.name || ''}
+        isOpen={showCollectionDialog}
+        onClose={() => setShowCollectionDialog(false)}
+        smoothieId={smoothie.id}
+        smoothieName={smoothie.name}
       />
+    </div>
+  );
+};
 
-      <ImageGallery
-        isOpen={galleryOpen}
-        onClose={() => setGalleryOpen(false)}
-        images={recipeProps.galleryImages}
-        initialIndex={recipeProps.initialImageIndex}
-      />
-    </>
-  )
-}
+export default RecipeDetail;

@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const highProteinSmoothies: Smoothie[] = [
   {
     id: "berry-blast",
+    slug: "berry-blast",
     name: "Berry Blast Protein Smoothie",
     description: "A delicious blend of mixed berries with vanilla protein powder, perfect for post-workout recovery.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -34,6 +35,7 @@ export const highProteinSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-peanut",
+    slug: "chocolate-peanut",
     name: "Chocolate Peanut Butter Power Shake",
     description: "A rich, creamy blend of chocolate protein and peanut butter, perfect for muscle gain and recovery.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -65,6 +67,7 @@ export const highProteinSmoothies: Smoothie[] = [
   },
   {
     id: "banana-recovery",
+    slug: "banana-recovery",
     name: "Banana Recovery Shake",
     description: "Rich in potassium and protein, this banana shake helps replenish electrolytes lost during intense workouts.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -95,6 +98,7 @@ export const highProteinSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-banana-recovery",
+    slug: "chocolate-banana-recovery",
     name: "Chocolate Banana Recovery",
     description: "The perfect combination of protein, carbs, and electrolytes to maximize your post-workout recovery.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
