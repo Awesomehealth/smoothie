@@ -4,6 +4,7 @@ import { Smoothie } from '../types';
 export const weightLossSmoothies: Smoothie[] = [
   {
     id: "green-machine",
+    slug: "green-machine",
     name: "Green Machine Detox Smoothie",
     description: "Packed with nutrients from spinach, kale, and avocado, this smoothie is perfect for a nutritious breakfast.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -35,6 +36,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "spinach-avocado-recovery",
+    slug: "spinach-avocado-recovery",
     name: "Spinach Avocado Recovery",
     description: "Nutrient-dense greens and healthy fats support recovery and reduce inflammation after tough workouts.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -66,6 +68,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "berry-metabolism-booster",
+    slug: "berry-metabolism-booster",
     name: "Berry Metabolism Booster",
     description: "High protein, low calorie smoothie with metabolism-boosting ingredients to support weight loss goals.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -97,6 +100,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "pineapple-ginger-slim",
+    slug: "pineapple-ginger-slim",
     name: "Pineapple Ginger Slim Down",
     description: "Refreshing tropical smoothie with digestive aids to support metabolism and weight management.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -128,6 +132,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "chocolate-slim",
+    slug: "chocolate-slim",
     name: "Chocolate Slim Shake",
     description: "Satisfies chocolate cravings while providing high protein and low calories to support weight loss.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
@@ -159,6 +164,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "green-tea-cucumber-slim",
+    slug: "green-tea-cucumber-slim",
     name: "Green Tea Cucumber Refresher",
     description: "Ultra-light smoothie with green tea for metabolism support and cucumber for hydration.",
     image: "/lovable-uploads/dcc8522c-06dd-4f6d-bdab-3bfbca8a9b0f.png",
@@ -190,6 +196,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "apple-cinnamon-fat-burner",
+    slug: "apple-cinnamon-fat-burner",
     name: "Apple Cinnamon Fat Burner",
     description: "Apple and cinnamon provide natural sweetness while supporting metabolism with thermogenic spices.",
     image: "/lovable-uploads/8fa95fdd-3aa3-4a65-8c77-b55c9e15f22c.jpg",
@@ -222,6 +229,7 @@ export const weightLossSmoothies: Smoothie[] = [
   },
   {
     id: "cold-brew-protein-slim",
+    slug: "cold-brew-protein-slim",
     name: "Cold Brew Protein Slim",
     description: "Coffee-infused protein shake that boosts metabolism and provides sustained energy for workouts.",
     image: "/lovable-uploads/5f31cd0f-9fbc-4fca-8d50-01aad54a4a37.jpg",
