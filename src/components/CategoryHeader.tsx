@@ -42,11 +42,10 @@ const CategoryHeader = ({ category, isPostWorkout }: CategoryHeaderProps) => {
         )}
       </div>
       <p className="text-gray-600 max-w-2xl mx-auto">
-        {/* {getCategoryDescription(category?.id)} */}
-        {category?.main_description || category?.description}
+        {category?.main_description || getCategoryDescription(category?.id)}
       </p>
     </header>
   );
-};
+}
 
 export default CategoryHeader;

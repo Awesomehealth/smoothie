@@ -4,7 +4,11 @@ import { useSidebar } from '@/contexts/SidebarContext';
 import CategorySidebarComponent from './CategorySidebarComponent';
 import { useCategories } from '@/contexts/CategoriesContext';
 
-export default function CategorySidebar({ isCollapsed = false }) {
+interface CategorySidebarProps {
+  isCollapsed?: boolean;
+}
+
+export default function CategorySidebar({ isCollapsed = false }: CategorySidebarProps) {
   const { 
     selectedCategory, 
     setSelectedCategory, 
