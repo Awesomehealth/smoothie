@@ -39,9 +39,10 @@ const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
     ...recipeProps
   };
 
+  // Safely handle missing smoothie data
   if (!smoothie) {
     console.error('No smoothie data provided to RecipeDetail component');
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center h-screen">Loading recipe details...</div>;
   }
 
   return (
@@ -49,17 +50,18 @@ const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
       <CategorySidebar isCollapsed={false} />
       
       <RecipeContent 
+        smoothie={smoothie}
         handleSaveRecipe={handleSaveRecipe}
         onViewAllPhotos={handleViewAllPhotos}
         onGoBack={() => window.history.back()}
-        smoothieId={smoothie.id}
-        smoothieName={smoothie.name}
+        smoothieId={smoothie.id || ''}
+        smoothieName={smoothie.name || ''}
         {...defaultRecipeProps}
       />
 
       {showGallery && (
         <ImageGallery
-          images={[smoothie.image]}
+          images={smoothie.image ? [smoothie.image] : []}
           onClose={() => setShowGallery(false)}
         />
       )}
@@ -67,8 +69,8 @@ const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
       <CollectionDialog
         isOpen={showCollectionDialog}
         onClose={() => setShowCollectionDialog(false)}
-        smoothieId={smoothie.id}
-        smoothieName={smoothie.name}
+        smoothieId={smoothie.id || ''}
+        smoothieName={smoothie.name || ''}
       />
     </div>
   );
