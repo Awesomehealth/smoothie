@@ -22,7 +22,7 @@ interface CategorySidebarProps {
   onAdvancedSearchToggle: (show: boolean) => void;
   isCollapsed?: boolean;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  categories: any[]; // Add the categories prop to resolve the type error
+  categories?: any[]; // Make categories optional
 }
 
 const CategorySidebarComponent = ({
@@ -31,7 +31,7 @@ const CategorySidebarComponent = ({
   showAdvancedSearch,
   onAdvancedSearchToggle,
   isCollapsed = false,
-  categories
+  categories = [] // Provide default empty array
 }: CategorySidebarProps) => {
   const { loading: isCategoriesLoading, error: categoriesFetchError } = useCategories();
   const [collapsed, setCollapsed] = useState(isCollapsed);
@@ -76,7 +76,7 @@ const CategorySidebarComponent = ({
                 </>
               )
             }
-            {categories.length ? categories.slice(0, 8).map((category) => (
+            {categories.length > 0 ? categories.slice(0, 8).map((category) => (
               <li key={category.id}>
                 <button
                   onClick={() => handleCategoryClick(category.slug)}

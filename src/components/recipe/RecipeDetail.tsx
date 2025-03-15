@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 'use client';
@@ -12,9 +13,11 @@ import CollectionDialog from '@/components/collections/CollectionDialog';
 interface RecipeDetailProps {
   smoothie: any;
   recipeProps?: any;
+  smoothieId?: string;
+  smoothieName?: string;
 }
 
-const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
+const RecipeDetail = ({ smoothie, recipeProps = {}, smoothieId, smoothieName }: RecipeDetailProps) => {
   const [showGallery, setShowGallery] = useState(false);
   const [showCollectionDialog, setShowCollectionDialog] = useState(false);
   
@@ -57,8 +60,8 @@ const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
         handleSaveRecipe={handleSaveRecipe}
         onViewAllPhotos={handleViewAllPhotos}
         onGoBack={() => window.history.back()}
-        smoothieId={smoothie.id || ''}
-        smoothieName={smoothie.name || ''}
+        smoothieId={smoothieId || smoothie.id || ''}
+        smoothieName={smoothieName || smoothie.name || ''}
         {...defaultRecipeProps}
       />
 
@@ -73,8 +76,8 @@ const RecipeDetail = ({ smoothie, recipeProps = {} }: RecipeDetailProps) => {
       <CollectionDialog
         isOpen={showCollectionDialog}
         onClose={() => setShowCollectionDialog(false)}
-        smoothieId={smoothie.id || ''}
-        smoothieName={smoothie.name || ''}
+        smoothieId={smoothieId || smoothie.id || ''}
+        smoothieName={smoothieName || smoothie.name || ''}
       />
     </div>
   );
