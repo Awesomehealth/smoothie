@@ -21,6 +21,7 @@ interface CategorySidebarProps {
   showAdvancedSearch: boolean;
   onAdvancedSearchToggle: (show: boolean) => void;
   isCollapsed?: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   categories: any[]; // Add the categories prop to resolve the type error
 }
 
